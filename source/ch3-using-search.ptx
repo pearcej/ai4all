@@ -8,9 +8,29 @@
   </introduction>
 
   <!-- include sections -->
-  <section xml:id="sec-using-search-change-this">
-    <title>Solving Problems Using Search</title>
+  <section xml:id="sec-introduction-to-state-spaces">
+    <title>Introduction to State Spaces</title>
+    <p>Content for the section.</p>
+  </section>
+  
+  <section xml:id="sec-trees-and-nodes">
+    <title>Trees and Nodes</title>
     <p>Content for the section.</p>
   </section>
 
-</chapter>
+  <section xml:id="sec-uninformed-search">
+    <title>Uninformed Search</title>
+    <p>Content for the section.</p>
+  </section>  
+
+  <section xml:id="sec-informed-search">
+    <title>Informed Search</title>
+    <p>Content for the section.</p>
+  </section>    
+
+  <section xml:id="sec-adversarial-search">
+    <title>Adversarial Search</title>
+    <p>Content for the section.</p>
+  </section>   
+
+</chapter>  
