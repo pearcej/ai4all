@@ -8,8 +8,23 @@
   </introduction>
 
   <!-- include sections -->
-  <section xml:id="sec-statistics-needed-by-ai-change-this">
-    <title>Statistics Needed by AI</title>
+  <section xml:id="sec-data-literacy">
+    <title>Data Literacy</title>
+    <p>Content for the section.</p>
+  </section>
+
+  <section xml:id="sec-reading-the-distribution">
+    <title>Reading the Distribution</title>
+    <p>Content for the section.</p>
+  </section>
+
+  <section xml:id="sec-the-power-of-correlation">
+    <title>The Power of Correlation</title>
+    <p>Content for the section.</p>
+  </section>
+
+  <section xml:id="sec-the-data-split">
+    <title>The Data Split</title>
     <p>Content for the section.</p>
   </section>
 
