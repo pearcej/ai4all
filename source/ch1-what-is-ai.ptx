@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="what-is-ai" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>What is AI and How has it Changed?</title>
+
+  <introduction>
+    <p> Text before the first section. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <section xml:id="sec-what-is-ai-change-this">
+    <title>What is AI?</title>
+    <p>Content for the section.</p>
+  </section>
+
+</chapter>

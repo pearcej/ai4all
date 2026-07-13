@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-example" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Example</title>
+
+  <introduction>
+    <p> Text before the first section. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <section xml:id="sec-example-section-name">
+    <title>Example Section</title>
+    <p>Content for the example section.</p>
+  </section>
+
+</chapter>

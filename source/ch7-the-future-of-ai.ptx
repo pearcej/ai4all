@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="the-future-of-ai" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Future of AI</title>
+
+  <introduction>
+    <p> Text before the first section. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <section xml:id="sec-the-future-of-ai-change-this">
+    <title>The Future of AI</title>
+    <p>Content for the section.</p>
+  </section>
+
+</chapter>

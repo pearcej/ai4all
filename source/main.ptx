@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- we first include a file which contains the docinfo element: -->
+  <xi:include href="./docinfo.ptx" />
+
+  <book xml:id="ai4all">
+    <title>AI for All</title>
+
+    <!-- Include frontmatter -->
+    <xi:include href="./frontmatter.ptx" />
+
+    <!-- Include chapters -->
+    <xi:include href="./ch1-what-is-ai.ptx" />
+    <xi:include href="./ch2-ai-in-education.ptx" />
+    <xi:include href="./ch3-using-search.ptx" />
+    <xi:include href="./ch4-statistics.ptx" />
+    <xi:include href="./ch5-machine-learning.ptx" />
+    <xi:include href="./ch6-neural-networks.ptx" />
+    <xi:include href="./ch7-the-future-of-ai.ptx" />
+  
+
+    <!-- Include backmatter -->
+    <!-- xi:include href="./backmatter.ptx" /-->
+      <index>
+    <title>Index</title>
+    <index-list/>
+  </index>
+
+    <!-- xi:include href="./ap-bash-cheatsheet.ptx" /-->
+
+  </book>
+</pretext>
