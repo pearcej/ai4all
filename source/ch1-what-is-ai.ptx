@@ -8,8 +8,23 @@
   </introduction>
 
   <!-- include sections -->
-  <section xml:id="sec-what-is-ai-change-this">
-    <title>What is AI?</title>
+  <section xml:id="sec-a-very-brief-history-of-ai">
+    <title>A Very Brief History of AI</title>
+    <p>Content for the section.</p>
+  </section>
+
+  <section xml:id="sec-defining-intelligence">
+    <title>Defining Intelligence</title>
+    <p>Content for the section.</p>
+  </section>
+
+  <section xml:id="sec-the-evolution-of-automation">
+    <title>The Evolution of Automation</title>
+    <p>Content for the section.</p>
+  </section>
+
+  <section xml:id="sec-common-myths">
+    <title>Common Myths</title>
     <p>Content for the section.</p>
   </section>
 
