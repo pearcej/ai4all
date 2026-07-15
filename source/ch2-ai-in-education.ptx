@@ -8,8 +8,28 @@
   </introduction>
 
   <!-- include sections -->
-  <section xml:id="sec-ai-in-education-change-this">
-    <title>AI in Education</title>
+  <section xml:id="sec-the-dangers-of-ai-as-a-learner">
+    <title>The Dangers of AI as a Learner</title>
+    <p>Content for the section.</p>
+  </section>
+
+  <section xml:id="sec-ai-powered-study-buddy">
+    <title>AI-Powered Study Buddy</title>
+    <p>Content for the section.</p>
+  </section>
+
+  <section xml:id="sec-the-anatomy-of-a-prompt-and-writing-loops">
+    <title>The Anatomy of a Prompt and Writing Loops</title>
+    <p>Content for the section.</p>
+  </section>
+  
+  <section xml:id="sec-spotting-hallucinations">
+    <title>Spotting Hallucinations</title>
+    <p>Content for the section.</p>
+  </section>
+
+  <section xml:id="sec-academic-integrity-and-ai-policies">
+    <title>Academic Integrity and AI Policies</title>
     <p>Content for the section.</p>
   </section>
 
