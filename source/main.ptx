@@ -11,7 +11,7 @@
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
-    <xi:include href="./ch1-what-is-ai.ptx" />
+    <xi:include href="./ch1-the-story-of-ai.ptx" />
     <xi:include href="./ch2-ai-in-education.ptx" />
     <xi:include href="./ch3-using-search.ptx" />
     <xi:include href="./ch4-statistics.ptx" />

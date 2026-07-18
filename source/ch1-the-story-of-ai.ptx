@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="the-story-of-ai" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Story of AI</title>
+
+  <section xml:id="sec-ai-backstory">
+    <title>AI's Back Story</title>
+
+<introduction xml:id="intro-story-of-ai">
+
+  <p><term>Artificial intelligence</term><idx><h>artificial intelligence</h></idx> (<term>AI</term>) <idx><h>AI</h></idx> is becoming part of everyday life. It can recommend a movie, recognize faces in photographs, translate between languages, help doctors identify diseases, create works of art, and even carry on conversations that sound surprisingly human. To many people, AI feels almost magical.</p>
+
+<assemblage xml:id="asm-clarke-quote">
+
+  <blockquote>
+    <p><q>Any sufficiently advanced technology is indistinguishable from magic.</q></p>
+    <attribution>Arthur C. Clarke, <title>Profiles of the Future</title> (1962)</attribution>
+  </blockquote>
+
+  <p><em>Have you ever wondered why AI seems almost magical? Clarke's observation reminds us that unfamiliar technology can feel mysterious. One of the goals of this book is to pull back the curtain and explore what is really happening behind today's AI systems. As you learn more about AI, you'll discover that understanding it doesn't make it less amazing—it makes it even more fascinating.</em></p>
+</assemblage>
+
+  <p>This book is about exploring questions. What is artificial intelligence? How did computers become capable of doing things that once seemed possible only for people? Are AI systems really thinking, learning, or understanding? Why have they improved so dramatically in recent years? What can AI do well, where does it still struggle, and how should we decide when to trust it?</p>
+
+  <p>You do not need to be a programmer or a mathematician to answer these questions. All you need is curiosity. Whether your interests lie in science, business, healthcare, education, the arts, or simply understanding the technology that is becoming part of everyday life, our goal is to help you become an informed user of AI and a thoughtful participant in conversations about its future.</p>
+
+  <p>To understand where AI is today, we first need to understand where it came from.</p>
+
+</introduction>
+
+<figure xml:id="fig-story-of-ai">
+    <caption>
+        The story of artificial intelligence is a journey of ideas,
+        breakthroughs, setbacks, and discoveries. This chapter introduces
+        several milestones that shaped modern AI and provides the foundation
+        for the chapters that follow.
+    </caption>
+
+    <image source="story-of-ai.png">
+        <shortdescription>
+            Illustrated roadmap of major milestones in AI history; a detailed
+            description follows.
+        </shortdescription>
+
+        <description>
+            <p>
+                An open book is shown from above, symbolizing the continuing
+                story of artificial intelligence. A winding blue path travels
+                across the two pages, guiding the reader through major
+                milestones in the development of AI. The journey begins with
+                early dreams of intelligent machines and continues with Alan
+                Turing's 1950 question of whether machines can think; the 1956
+                Dartmouth Summer Research Project on Artificial Intelligence,
+                where the term <q>artificial intelligence</q> was coined
+                and the field began to take shape; the rise of expert systems;
+                periods known as AI winters; IBM's Deep Blue defeating
+                reigning world chess champion Garry Kasparov in a 1997 match;
+                IBM Watson defeating leading human champions on
+                <em>Jeopardy!</em> in 2011; the resurgence of deep learning;
+                AlphaFold's advances in protein-structure prediction; and
+                ChatGPT bringing generative AI to broad public attention.
+                The path ends with <q>The Story Continues...</q>, emphasizing
+                that AI continues to evolve and that the reader is beginning
+                that journey through this book.
+            </p>
+        </description>
+    </image>
+</figure>
+
+    <p>
+        Every story has a beginning. Today's AI systems may seem as though they
+        appeared almost overnight, but their story stretches back much further
+        than ChatGPT—or even the Internet. The ideas behind
+        <term>artificial intelligence</term><idx>artificial intelligence</idx>
+        have developed over decades through periods of excitement,
+        disappointment, and breakthroughs. Understanding AI's back
+        story helps us understand why today's systems can accomplish so much,
+        while also recognizing the challenges they have yet to overcome.
+    </p>
+
+    <p>
+        Although the field of
+        <term>artificial intelligence</term><idx>artificial intelligence</idx>
+        emerged after the Second World War, the idea of creating intelligent
+        machines is much older. Ancient myths described artificial beings brought to
+        life, inventors built increasingly sophisticated mechanical automata, and
+        philosophers debated whether human reasoning could be reduced to rules. These
+        ideas laid the intellectual foundation for the scientific study of AI.
+        </p>
+        <p>
+        In 1950,
+        <term>Alan Turing</term><idx>Turing, Alan</idx>
+        published his pioneering paper
+        <em><url href="https://courses.cs.umbc.edu/471/papers/turing.pdf">
+        Computing Machinery and Intelligence</url></em>, introducing ideas
+        that would later become associated with the
+        <term>Turing Test</term><idx>Turing Test</idx>. A few years later,
+        <term>John McCarthy</term><idx>McCarthy, John</idx> coined the term
+        <term>artificial intelligence</term> and later described it as
+        <q>the science and engineering of making intelligent machines.</q>
+        These developments culminated in the 
+        <term>Dartmouth Conference</term><idx>Dartmouth Conference</idx>
+        in 1956, which brought together researchers from multiple disciplines
+        to explore the possibility of thinking machines. The conference is
+        widely regarded as the birth of AI as a distinct field of study.
+    </p>
+
+    <p>
+        Beginning in the late 1970s and throughout much of the 1980s, 
+        researchers developed increasingly sophisticated
+        <term>expert systems</term><idx>expert system</idx> using logic rules
+        and reasoning algorithms that captured aspects of the decision-making processes 
+        of human experts. These systems became valuable decision-support tools in
+        specialized domains such as medicine, where their knowledge was encoded
+        by human experts. Expert systems demonstrated that computers could
+        perform surprisingly complex reasoning, but they also revealed an
+        important limitation: unlike humans, they could not learn new rules or
+        adapt their knowledge through experience.
+    </p>
+    
+    <p>
+    Progress in AI was not always steady. As expectations for expert systems
+    grew, researchers and the public hoped that truly intelligent machines
+    were on the horizon. When those expectations proved too optimistic,
+    funding declined and enthusiasm cooled during periods that later became
+    known as the <term>AI winters</term><idx>AI winter</idx>. Although these
+    setbacks slowed progress, they also encouraged researchers to explore new
+    approaches that could overcome the limitations of rule-based systems.
+</p>
+
+    <assemblage xml:id="asm-look-closer-expert-systems">
+        <title>Look Closer..</title>
+
+        <p><em>
+            Early expert systems showed that computers could perform tasks once
+            thought to require human expertise. However, every rule had to be
+            written by people. If knowledge changed or new situations arose,
+            someone had to update the system manually. Researchers realized that
+            truly intelligent systems would need to <em>learn</em> from
+            experience instead of simply following pre-programmed rules.</em>
+        </p>
+    </assemblage>
+
+    <p>
+        The realization that rule-based systems had limitations 
+        marked an important turning point in AI research.
+        Rather than telling computers precisely what to do in each situation, 
+        researchers began exploring ways for computers to discover patterns on their own by
+        learning from examples. This new approach became known as
+        <term>machine learning</term><idx>machine learning</idx> and
+        fundamentally changed the direction of AI research. Neural networks 
+        are one important type of machine learning method. Later in this book, 
+        we'll see how increasingly large and sophisticated neural networks led 
+        to the modern deep learning systems behind today's generative AI.
+    </p>
+
+    <p>
+        <term>Neural networks</term><idx>neural network</idx>, first proposed decades 
+        earlier, experienced renewed interest beginning in the 1980s and achieved 
+        dramatic success during the 2000s and 2010s as faster computers, 
+        larger data sets, and improved algorithms became available.
+        These systems are loosely inspired by the organization of neurons in the
+        brain and learn to recognize complex patterns from data. Early
+        applications included handwriting and character recognition, such as
+        automatically reading license plates. During this era, AI captured the
+        public's imagination through several remarkable demonstrations. In
+        1997, IBM's
+        <term>Deep Blue</term><idx>Deep Blue</idx>
+        defeated world chess champion
+        <term>Garry Kasparov</term><idx>Kasparov, Garry</idx>
+        using highly optimized search algorithms together with carefully 
+        designed evaluation functions created by human experts.
+        In 2011,
+        <term>IBM Watson</term><idx>IBM Watson</idx>
+        defeated the best human contestants on the television quiz show
+        <em>Jeopardy!</em>, demonstrating the growing power of AI
+        combined with enormous collections of information.
+    </p>
+
+    <p>
+        From 2010 to the present,
+        <term>deep learning</term><idx>deep learning</idx>
+        and <term>big data</term><idx>big data</idx>
+        have transformed AI. Affordable
+        <term>graphics processing units (GPUs)</term><idx>graphics processing unit</idx>,
+        originally developed for fast rendering needed by video games, made it practical to
+        train increasingly complex neural networks using enormous amounts of
+        data. Layering these networks enables computers to recognize
+        increasingly sophisticated patterns. This technology now supports
+        applications ranging from automated facial and object recognition to
+        finance, healthcare, transportation, and scientific research. For
+        example,
+        <term>AlphaFold</term><idx>AlphaFold</idx>, developed by Google DeepMind, 
+        has predicted the structures 
+        of more than 200 million proteins from organisms across the tree of life, 
+        dramatically accelerating biological research.
+    </p>
+
+    <p>
+        Although AI had already transformed many industries, most people rarely
+        interacted with it directly. That changed dramatically in November
+        2022, when OpenAI released the AI-powered chatbot
+        <term>ChatGPT</term><idx>ChatGPT</idx>. Within two months, ChatGPT
+        reached more than 100 million users, making it one of the
+        fastest-growing consumer applications in history. Unlike earlier AI
+        breakthroughs, which were largely confined to research laboratories and
+        supercomputers, ChatGPT made powerful generative AI easily accessible 
+        to anyone with a computer or smartphone. For many people, this was the moment AI
+        became part of everyday life.
+    </p>
+
+    <p>
+        As AI becomes increasingly woven into everyday life, understanding it
+        becomes more important than ever. This book will help you understand
+        what AI is, where it came from, how it works, and how it may shape the
+        future. The story of AI is still being written, and in the chapters
+        that follow, you'll discover how today's AI systems learn,
+        reason, create, and interact with the world around us.
+    </p>
+
+</section>
+
+  <section xml:id="sec-defining-intelligence">
+    <title>Defining Intelligence</title>
+    <p>Content for the section.</p>
+  </section>
+
+  <section xml:id="sec-the-evolution-of-automation">
+    <title>The Evolution of Automation</title>
+    <p>Content for the section.</p>
+  </section>
+
+  <section xml:id="sec-common-myths">
+    <title>Common Myths</title>
+    <p>Content for the section.</p>
+  </section>
+
+</chapter>
