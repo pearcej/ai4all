@@ -13,6 +13,11 @@
     <p>Content for the section.</p>
   </section>
 
+  <section xml:id="sec-the-power-of-being-wrong">
+    <title>The Power of Being Wrong</title>
+    <p>Content for the section.</p>
+  </section>
+
   <section xml:id="sec-ai-powered-study-buddy">
     <title>AI-Powered Study Buddy</title>
     <p>Content for the section.</p>
