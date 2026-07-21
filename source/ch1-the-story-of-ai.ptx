@@ -220,19 +220,171 @@
 
 </section>
 
-  <section xml:id="sec-defining-intelligence">
-    <title>Defining Intelligence</title>
-    <p>Content for the section.</p>
-  </section>
+<section xml:id="sec-characterizing-intelligence">
+    <title>Characterizing Intelligence</title>
+<introduction>        
 
-  <section xml:id="sec-the-evolution-of-automation">
+    <p>
+        AI is a rapidly evolving field, so understanding what we mean by
+        <term>intelligence</term><idx>intelligence</idx> is an important first
+        step. Before we can compare human intelligence with
+        artificial intelligence,
+        we need to think about what intelligence actually is.
+        Psychologists, cognitive scientists, computer scientists,
+        philosophers, educators, and many others have debated this question
+        for centuries. Although there is no single universally accepted
+        definition, most people agree that intelligence involves the ability
+        to learn, reason, solve problems, adapt to new situations, and make
+        decisions.
+    </p>
+
+    <p>
+        Many people associate intelligence with an
+        <term>intelligence quotient</term> (<term>IQ</term>) 
+        <idx>intelligence quotient</idx><idx>IQ</idx>
+        score. While IQ tests measure certain kinds of reasoning and
+        problem-solving ability, they do not capture every aspect of human
+        intelligence. One influential, but controversial, educational theory, proposed by
+        <term>Howard Gardner</term><idx>Gardner, Howard</idx>, suggests that
+        people possess several different kinds of intelligence rather than a
+        single general intelligence. Gardner's theory includes intelligences
+        such as linguistic, logical-mathematical, spatial, musical,
+        interpersonal, and bodily-kinesthetic abilities. Although
+        psychologists continue to debate this theory, it has had an
+        influence on education by encouraging educators to recognize that
+        people learn and demonstrate their strengths in different ways.
+    </p>
+
+    <assemblage xml:id="asm-look-closer-multiple-intelligences">
+        <title>Look Closer...</title>
+
+        <p>
+            <em>
+                Gardner's Theory of Multiple Intelligences is widely known in
+                education, but it is not universally accepted within
+                the field of psychology. Many psychologists argue that intelligence is
+                better explained by a smaller number of underlying cognitive
+                abilities. Throughout this book, we use the word
+                <q>intelligence</q> in its broad everyday sense rather than
+                adopting any single psychological theory.
+            </em>
+        </p>
+    </assemblage>
+
+    <p>
+        Rather than thinking of intelligence as one specific skill, it is
+        helpful to think of it as a collection of abilities that allow an
+        individual to understand the world, learn from experience, solve
+        problems, and adapt to changing situations. Humans demonstrate these
+        abilities in many different ways, and modern AI systems can now
+        perform some of them remarkably well. However, AI and human
+        intelligence are not the same, and understanding those differences is
+        one of the goals of this book.
+    </p>
+</introduction>
+
+    <subsection xml:id="ssec-turing-test">
+        <title>The Turing Test</title>
+
+        <p>
+            Because intelligence is difficult to define precisely, early AI
+            researchers looked for practical ways to evaluate it. In 1950,
+            British mathematician and computer scientist
+            <term>Alan Turing</term><idx>Turing, Alan</idx> proposed what later
+            became known as the
+            <term>Turing Test</term><idx>Turing Test</idx>. Rather than asking
+            <q>Can machines think?</q>, Turing suggested asking whether a
+            machine could successfully imitate a human during a conversation.
+        </p>
+
+        <p>
+            In the classic version of the Turing Test, three participants are
+            involved: a human interrogator, another human participant, and a
+            computer program. The interrogator communicates with both the human
+            and the computer through text messages, without knowing which is
+            which. After the conversation, the interrogator attempts to
+            identify the computer. If the computer consistently convinces
+            interrogators that it is the human participant, it is said to have
+            passed the Turing Test.
+        </p>
+
+        <assemblage xml:id="asm-look-closer-turing">
+            <title>Look Closer...</title>
+
+            <p>
+                <em>
+                    Turing never claimed that passing the Turing Test proved a
+                    machine was truly intelligent or conscious. Instead, he
+                    proposed it as a practical way to evaluate whether a
+                    computer could produce conversational behavior that was
+                    indistinguishable from that of a human.
+                </em>
+            </p>
+        </assemblage>
+
+        <p>
+            Passing the Turing Test does not prove that a computer thinks,
+            understands language, or is conscious. Instead, it evaluates
+            whether a machine can produce behavior that is indistinguishable
+            from that of a human during conversation. Although modern AI
+            systems have become remarkably good at generating human-like text,
+            researchers continue to debate whether the Turing Test is an
+            adequate measure of intelligence.
+        </p>
+
+        <p>
+            Today, AI systems excel at some tasks that humans find difficult,
+            such as analyzing enormous amounts of data or recognizing subtle
+            patterns. At the same time, they often struggle with tasks that
+            people find effortless, such as applying common sense,
+            understanding the broader context of a situation, or reasoning
+            reliably about unfamiliar problems. As we explore AI throughout
+            this book, we will return to an important question:
+            <q>What does it really mean to be intelligent?</q>
+        </p>
+
+        <p>
+            For decades, the Turing Test shaped how many people thought about
+            artificial intelligence. Today, however, AI systems perform many
+            impressive tasks that have little to do with carrying on a
+            conversation. As a result, researchers now evaluate AI in many
+            different ways depending on the problems they are trying to solve.
+        </p>
+    </subsection>
+
+  <subsection xml:id="ssec-the-evolution-of-automation">
     <title>The Evolution of Automation</title>
     <p>Content for the section.</p>
-  </section>
+  </subsection>
 
-  <section xml:id="sec-common-myths">
+<subsection xml:id="ssec-what-is-generative-ai">
+    <title>What Is Generative AI?</title>
+
+    <p>
+        One reason <term>artificial intelligence</term><idx>artificial intelligence</idx> has become such a common topic of conversation is the rapid growth of <term>generative artificial intelligence</term><idx>generative artificial intelligence</idx> (<term>GenAI</term><idx>GenAI</idx>). Unlike many earlier AI systems that focused on recognizing patterns or making predictions, generative AI creates new content. Depending on the system, that content may include text, images, audio, video, computer code, or three-dimensional designs.
+    </p>
+
+    <p>
+        Generative AI learns from large collections of examples known as <term>training data</term><idx>training data</idx>. During training, the model identifies patterns and relationships within the data rather than memorizing a fixed collection of answers. When given a <term>prompt</term><idx>prompt</idx>, it uses those learned patterns to generate a new response. Although the output is influenced by its training data, it is not simply retrieved from a database or copied from a single source.
+    </p>
+
+    <p>
+        The same underlying idea applies regardless of what the system produces. A <term>language model</term><idx>language model</idx> can generate essays, conversations, or computer programs. An <term>image model</term><idx>image model</idx> can create original illustrations. Other systems generate music, speech, video, or scientific designs. While the outputs differ, they are all created by learning patterns from data and using those patterns to generate something new.
+    </p>
+
+    <p>
+        Like all AI systems, generative AI has both strengths and limitations. It can produce creative and useful results in seconds, but it can also make mistakes, reflect <term>bias</term><idx>bias</idx> present in its training data, or generate information that is inaccurate or misleading. Learning to understand these strengths and limitations is an important part of becoming an informed user of AI.
+    </p>
+
+    <p>
+        In later chapters, we will examine how generative AI systems learn from data, why they sometimes make mistakes, and how they are changing the way people learn, work, and solve problems.
+    </p>
+</subsection>
+
+  <subsection xml:id="sec-common-myths">
     <title>Common Myths</title>
     <p>Content for the section.</p>
-  </section>
+  </subsection>
+</section>
 
 </chapter>
