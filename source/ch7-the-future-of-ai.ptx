@@ -79,9 +79,63 @@
 
   </section>
 
-  <section xml:id="sec-the-black-box-problem">
+<section xml:id="sec-the-black-box-problem">
     <title>The Black Box Problem</title>
-    <p>Content for the section.</p>
+
+    <p>
+      To understand the challenges of modern AI, we must start with how these
+      systems process information. With traditional computing, humans write the
+      explicit logic. As Mimi Onuoha and Diana Nucera define it, an
+      <term>algorithm</term><idx>algorithm</idx> is a series of steps (or set of
+      rules) for solving or performing a task.
+    </p>
+
+    <p>
+      However, nowadays modern systems do not operate under these clear,
+      human-written rules. These tools interact with our world through hardware:
+      <term>sensors</term><idx>sensors</idx>, devices that detect and respond to
+      some type of input from the physical environment. When physical inputs are
+      processed by complex algorithms, the internal reasoning becomes hidden. The
+      user can’t see how the system is getting the outcomes and this is what is
+      referred to as the <q>Black Box Problem</q>
+      <idx>Black Box Problem</idx>. The algorithms are so complicated that the
+      processes behind them are hidden, even to the people creating them.
+    </p>
+
+    <p>
+      As these systems are used for high-stakes societal tasks, the lack of
+      transparency becomes dangerous. <term>Social decision-making</term> is the
+      act of making decisions that have social consequences, or ramifications that
+      can be felt by individual people. Now that AI is deeply integrated into our
+      world, these high-stakes societal tasks are integrated in fields like
+      education, employment, resource allocation, and healthcare. Because these
+      black boxes operate without clear transparency, individuals are left without a
+      way to see or challenge the systems governing these critical societal
+      decisions.
+    </p>
+
+    <p>
+      Another negative outcome of the black box is <term>structural racism</term>
+      <idx>structural racism</idx>. This is a system in which public policies,
+      institutional practices, cultural representations, and other norms work in
+      mutually reinforcing ways to perpetuate racial group inequality. A structural
+      analysis of racism identifies dimensions of our history and culture that
+      have allowed privileges associated with <q>whiteness</q> and disadvantages
+      associated with <q>color</q> to endure and adapt over time. Structural
+      racism is not something that a few people or institutions choose to
+      practice. Instead, it is a feature of the social, economic, and political
+      systems in which we all exist.
+    </p>
+
+    <p>
+      When an AI system operates within these deeply ingrained social structures,
+      the inequality might seem like it is created out of nowhere, but it is
+      encoded directly through the data choices made during development. Because
+      the internal reasoning remains hidden from view, affected individuals are left
+      without the means to question or challenge decisions that directly impact
+      their lives.
+    </p>
+
   </section>
 
   <section xml:id="sec-environmental-impacts">
