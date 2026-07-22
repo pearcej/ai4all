@@ -18,7 +18,7 @@
     <p>Content for the section.</p>
   </section>
 
-<section xml:id="sec-ai-powered-study-buddy">
+  <section xml:id="sec-ai-powered-study-buddy">
     <title>AI-Powered Study Buddy</title>
 
     <introduction>
@@ -96,7 +96,7 @@
             details how to better form AI prompts to get the best results.
         </p>
     </subsection>
-</section>
+  </section>
 
   <section xml:id="sec-the-anatomy-of-a-prompt-and-writing-loops">
     <title>The Anatomy of a Prompt and Writing Loops</title>
