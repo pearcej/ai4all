@@ -3,14 +3,15 @@
 <chapter xml:id="the-story-of-ai" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Story of AI</title>
 
-  <section xml:id="sec-brief-history-ai">
-    <title>A Very Brief History of AI</title>
+  <section xml:id="sec-ais-back-story">
+    <title>AI's Back Story</title>
 
     <p>
         The history of <term>artificial intelligence</term><idx>artificial intelligence</idx> 
-        began to take shape in 1950 when <term>Alan Turing</term><idx>Turing, Alan</idx> 
-        published his paper on creating thinking machines. A few years later, in 1956, 
-        <term>John McCarthy</term><idx>McCarthy, John</idx> presented his definition of artificial intelligence.
+        began to take shape in 1950 when British mathematician <term>Alan Turing</term><idx>Turing, Alan</idx> 
+        published his landmark paper on creating thinking machines. A few years later, in 1956, 
+        computer scientist <term>John McCarthy</term><idx>McCarthy, John</idx> presented his foundational 
+        definition of artificial intelligence as <q>the science and engineering of making intelligent machines.</q>
     </p>
 
     <p>
@@ -18,40 +19,57 @@
         <term>means-to-end algorithms</term><idx>means-to-end algorithms</idx> were first 
         developed to <q>walk</q> simple decision paths and make decisions. These approaches 
         provided the ability to solve complex mathematical expressions and process strings of words, 
-        known as <term>natural language processing</term><idx>natural language processing</idx>. 
+        a field known as <term>natural language processing</term><idx>natural language processing</idx>. 
         These early methods led to the ability to formulate logic and rules to interpret and compose 
-        sentences, and they also marked the beginning of <term>game theory</term><idx>game theory</idx>, 
-        which was realized in basic computer games.
+        sentences, and they also marked the beginning of <term>game theory</term><idx>game theory</idx>—the 
+        study of mathematical strategies in decision-making—which was first realized in basic computer games.
     </p>
 
     <p>
         From 1980 to 1987, complex systems were developed using logic rules and reasoning algorithms 
         that mimic human experts. This began the rise of <term>expert systems</term><idx>expert system</idx>, 
-        such as decision support tools that learned the <q>rules</q> of a specific knowledge domain 
-        like those a physician would follow when performing a medical diagnosis. Such systems were 
-        capable of complex reasoning, but unlike humans, they could not learn new rules to evolve and 
-        expand their decision-making.
+        which functioned as decision-support tools by encoding the <q>rules</q> of a specific knowledge 
+        domain—such as the step-by-step reasoning a physician follows when performing a medical diagnosis. 
+        Such systems were capable of complex reasoning, but unlike humans, they could not learn new rules 
+        to evolve and expand their decision-making on their own.
     </p>
+
+    <assemblage xml:id="asm-look-closer-neural-nets">
+        <title>Look Closer..</title>
+
+        <p><em>
+            Early expert systems showed that computers could follow complex rules, but every rule had to be 
+            manually written by human experts. The emergence of biologically inspired <term>neural networks</term> 
+            shifted this approach completely: instead of following static pre-programmed rules, software could 
+            now learn directly from experience to identify patterns, enabling systems to perform real-world tasks 
+            like reading license plates automatically.
+        </em></p>
+    </assemblage>
 
     <p>
         Between 1993 and 2009, biologically inspired software known as 
         <term>neural networks</term><idx>neural network</idx> came on the scene. These networks 
         mimic the way living things learn how to identify complex patterns and, in doing so, can 
         complete complex tasks. Character recognition for license plate readers was one of the first 
-        applications of this technology.
+        practical applications of this technology.
     </p>
 
     <p>
         From 2010 to the present, <term>deep learning</term><idx>deep learning</idx> and 
         <term>big data</term><idx>big data</idx> have moved into the limelight. Affordable 
-        <term>graphics processing units (GPUs)</term><idx>graphics processing unit</idx> from the 
-        gaming industry have enabled neural networks to be trained using big data. Layering these 
-        networks mimics how humans learn to recognize and categorize simple patterns into complex patterns. 
-        This software is being applied in automated facial and object detection and recognition, as well as 
-        medical image diagnostics, financial patterns, and governance regulations. Projects such as 
-        <term>Life Long Learning Machines</term><idx>Life Long Learning Machines</idx>, from the 
-        <term>Defense Advanced Research Projects Agency (DARPA)</term><idx>DARPA</idx>, seek to 
-        further advance AI algorithms toward learning continuously in ways similar to humans.
+        <term>graphics processing units (GPUs)</term><idx>graphics processing unit</idx> originally 
+        designed for the gaming industry enabled neural networks to be trained using big data. 
+        Layering these networks mimics how humans learn to recognize and categorize simple patterns into 
+        complex patterns. This software is now applied in automated facial and object detection, 
+        medical image diagnostics, financial pattern analysis, and governance regulations. 
+    </p>
+
+    <p>
+        To push these capabilities further, government research initiatives like the 
+        <term>Life Long Learning Machines</term><idx>Life Long Learning Machines</idx> project—funded by the 
+        <term>Defense Advanced Research Projects Agency (DARPA)</term><idx>DARPA</idx>, the U.S. Department 
+        of Defense's research arm—seek to advance AI algorithms so that machines can learn continuously 
+        and adapt in real time, similar to human learning.
     </p>
 </section>
 
