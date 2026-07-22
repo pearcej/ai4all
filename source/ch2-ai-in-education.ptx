@@ -206,7 +206,232 @@
 
   <section xml:id="sec-the-anatomy-of-a-prompt-and-writing-loops">
     <title>The Anatomy of a Prompt and Writing Loops</title>
-    <p>Content for the section.</p>
+
+    <introduction>
+        <p>
+            In the context of <term>large language models</term> (<term>LLMs</term>)<idx><h>large language model</h></idx><idx><h>LLM</h></idx>—artificial intelligence systems designed to understand and generate human-like text—<term>prompting</term><idx><h>prompting</h></idx> refers to the method of providing an LLM with a specific input or cue to generate a desired output or perform a task. Prompting is crucial because it directly influences how effectively these models understand and respond to user queries. A well-crafted prompt can guide an LLM to generate more accurate, relevant, and contextually appropriate responses.
+        </p>
+
+        <p>
+            A prompt can be constructed using a <term>prompt template</term><idx><h>prompt template</h></idx>, which is a segment of text containing placeholders or variables that are filled with specific information depending on the context. Consider a template with a single placeholder:
+        </p>
+
+        <assemblage xml:id="asm-basic-prompt-template">
+            <title>Basic Prompt Template Example</title>
+            <p>
+                If <c>{premise}</c>, what are your suggestions for a fun weekend?
+            </p>
+        </assemblage>
+
+        <p>
+            The variable <c>{premise}</c> is specified by the user to set the context for the model's recommendations. For instance, if the input is <q>the weather is nice this weekend,</q> the final prompt becomes: <q>If the weather is nice this weekend, what are your suggestions for a fun weekend?</q>
+        </p>
+
+        <p>
+            When a problem is difficult to describe purely through specific variables, it is common to provide the LLM with a detailed instruction set or context. One effective strategy is to assign a persona or role to the model.
+        </p>
+
+        <assemblage xml:id="asm-persona-prompt-template">
+            <title>Persona-Based Prompt Template</title>
+            <p>
+                You are a computer scientist with extensive knowledge in the field of deep learning. Please explain the following computer-related concept to a child around 10 years old, using simple examples whenever possible: <c>{concept}</c>
+            </p>
+        </assemblage>
+    </introduction>
+
+    <subsection xml:id="ssec-in-context-learning">
+        <title>In-Context Learning</title>
+
+        <p>
+            An essential concept in prompt engineering is <term>in-context learning</term><idx><h>in-context learning</h></idx>. When prompting an LLM, users can include new information outside the model's static training data—such as step-by-step demonstrations—allowing the LLM to learn how to perform a task within that specific conversation.
+        </p>
+
+        <p>
+            For example, an LLM can be provided with a few demonstrations of how to perform text classification:
+        </p>
+
+        <assemblage xml:id="asm-demonstration-prompt">
+            <title>In-Context Demonstration Example</title>
+            <p>
+                Here are some examples of text classification.
+            </p>
+            <p>
+                Example 1: We had a delightful dinner together. <m>\rightarrow</m> Label: Positive.
+            </p>
+            <p>
+                Example 2: I'm frustrated with the delays. <m>\rightarrow</m> Label: Negative.
+            </p>
+            <p>
+                What is the label for <q>That comment was quite hurtful.</q>?
+            </p>
+            <p>
+                Label:
+            </p>
+        </assemblage>
+
+        <p>
+            In-context learning is typically characterized by the number of examples provided prior to the target query:
+        </p>
+
+        <p>
+            <term>Zero-shot learning</term><idx><h>zero-shot learning</h></idx> does not involve providing any concrete examples of solved tasks. Instead, it directly prompts the LLM to address a problem using its baseline training.
+        </p>
+
+        <assemblage xml:id="asm-zero-shot-prompt">
+            <title>Zero-Shot Grammar Prompt</title>
+            <p>
+                You are a helpful assistant, and are great at grammar correction. You will be provided with a sentence in English. The task is to output the correct sentence.
+            </p>
+            <p>
+                Input: She don't like going to the park.
+            </p>
+            <p>
+                Output:
+            </p>
+        </assemblage>
+
+        <p>
+            <term>One-shot learning</term><idx><h>one-shot learning</h></idx> expands on this approach by supplying a single demonstration of the desired task, allowing the model to learn from the provided example:
+        </p>
+
+        <assemblage xml:id="asm-one-shot-prompt">
+            <title>One-Shot Grammar Prompt</title>
+            <p>
+                You are a helpful assistant, and are great at grammar correction. You will be provided with a sentence in English. The task is to output the correct sentence.
+            </p>
+            <p>
+                Input: There is many reasons to celebrate.
+            </p>
+            <p>
+                Output: There are many reasons to celebrate.
+            </p>
+            <p>
+                Input: She don't like going to the park.
+            </p>
+            <p>
+                Output:
+            </p>
+        </assemblage>
+
+        <p>
+            <term>Few-shot learning</term><idx><h>few-shot learning</h></idx> provides multiple demonstrations to establish a clear pattern mapping inputs to outputs, which the model follows to generate its prediction:
+        </p>
+
+        <assemblage xml:id="asm-few-shot-prompt">
+            <title>Few-Shot Grammar Prompt</title>
+            <p>
+                You are a helpful assistant, and are great at grammar correction. You will be provided with a sentence in English. The task is to output the correct sentence.
+            </p>
+            <p>
+                Input: There is many reasons to celebrate.
+            </p>
+            <p>
+                Output: There are many reasons to celebrate.
+            </p>
+            <p>
+                Input: Me and my friend goes to the gym every day.
+            </p>
+            <p>
+                Output: My friend and I go to the gym every day.
+            </p>
+            <p>
+                Input: She don't like going to the park.
+            </p>
+            <p>
+                Output:
+            </p>
+        </assemblage>
+    </subsection>
+
+    <subsection xml:id="ssec-writing-good-prompts">
+        <title>Strategies for Effective Prompts</title>
+
+        <p>
+            Writing effective prompts involves strategic structure and clarity. Key techniques include:
+        </p>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <term>Clarity and Precision</term>: Providing a precise, specific description of the task ensures the model remains aligned with expectations.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <term>Step-by-Step Reasoning</term>: Instructing LLMs to reason through a problem step-by-step improves performance on complex logic tasks.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <term>Reference Context</term>: Supplying authoritative source text and instructing the model to rely exclusively on that reference helps prevent ungrounded predictions.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <term>Formatting Sensitivity</term>: Modifying structural layout or punctuation can significantly impact the model's output consistency.
+                    </p>
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            To bypass manual trial-and-error, LLMs can be used to automate prompt creation through <term>discrete prompt optimization</term><idx><h>discrete prompt optimization</h></idx>. By instructing the LLM to act as a prompt engineer, the model can iteratively rewrite, expand, and refine instructions.
+        </p>
+
+        <assemblage xml:id="asm-automated-prompt-design">
+            <title>Automated Prompt Generation Template</title>
+            <p>
+                You are given a task to complete using LLMs. Please write a prompt to guide the LLMs. <c>{task-description}</c>
+            </p>
+        </assemblage>
+
+        <p>
+            To improve reliability on complex operations, tasks can be divided into smaller components. In <term>prompt chaining</term><idx><h>prompt chaining</h></idx>, the output of one prompt serves directly as the input for the next, building a sequence of specialized operations to accomplish a multi-step task.
+        </p>
+    </subsection>
+
+    <subsection xml:id="ssec-human-ai-writing-loops">
+        <title>Human-AI Writing Loops</title>
+
+        <p>
+            In practice, combining structured prompt design with interactive workflows creates an effective <term>human-AI writing loop</term><idx><h>human-AI writing loop</h></idx>. This process demonstrates how an LLM functions as an active collaborator rather than a single-use tool:
+        </p>
+
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        <term>Preparation &amp; Brainstorming</term>: Begin by gathering research and developing an outline. Prompt the AI to brainstorm alternative approaches aligned with that outline.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <term>Drafting</term>: Combine primary knowledge with selected AI ideas to author an initial draft.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <term>Critique &amp; Verification</term>: Ask the AI for detailed feedback and critique on the draft. Evaluate its suggestions critically, verifying all cited facts and claims manually.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <term>Revision &amp; Polishing</term>: Revise the content and use target prompts to refine sentence mechanics, punctuation, and style.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <term>Attribution &amp; Voice Check</term>: Ensure that the final text reflects your distinct voice, accurate reasoning, and includes proper attribution of AI involvement throughout the writing process.
+                    </p>
+                </li>
+            </ol>
+        </p>
+
+        <p>
+            Relying on iterative workflows allows writers to maintain control and precision, identify errors early, and ensure that final artifacts remain original and aligned with primary learning goals.
+        </p>
+    </subsection>
   </section>
   
   <section xml:id="sec-spotting-hallucinations">
