@@ -35,12 +35,9 @@
         Because the correct target is required for every training example, supervised learning relies heavily on 
         <term>labeled data</term><idx>labeled data</idx>, which is often annotated by human experts or domain specialist systems.
         </p>
-    </introduction>
-
-    <subsection xml:id="subsec-look-closer-supervised-learning">
-        <title>Look Closer..</title>
-
+    
         <assemblage xml:id="asm-look-closer-supervised-learning">
+          <title>Look Closer..</title>
             <p><em>
                 Why is it called "supervised" learning? Think of the algorithm as a student studying with flashcards. 
                 The front of the card has the input (such as an image or a set of measurements), and the back has the 
@@ -49,7 +46,7 @@
                 questions it has never seen before.
             </em></p>
         </assemblage>
-    </subsection>
+    </introduction>
 
     <subsection xml:id="subsec-supervised-categories">
         <title>Categories of Supervised Learning</title>
