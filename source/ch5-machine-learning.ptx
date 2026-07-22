@@ -115,7 +115,102 @@
 
   <section xml:id="sec-unsupervised-learning">
     <title>Unsupervised Learning</title>
-    <p>Content for the section.</p>
+
+    <subsection xml:id="subsec-what-is-unsupervised-learning">
+      <title>What is unsupervised learning?</title>
+        <p>
+            Unlike supervised learning, <term>unsupervised learning</term><idx><h>unsupervised learning</h></idx> 
+            does not involve learning a mapping function based on paired input-output examples. Instead, the 
+            learning algorithm is provided with a dataset consisting entirely of <term>unlabeled data</term><idx>unlabeled data</idx> 
+            and is tasked with discovering inherent structure, patterns, or relationships within it.
+        </p>
+
+        <p>
+            Because unlabeled data is vastly more abundant and cheaper to collect than human-annotated data, 
+            machine learning methods that support unsupervised learning are exceptionally valuable across data science.
+        </p>
+
+        <assemblage xml:id="asm-look-closer-unsupervised-learning">
+        <title>Look Closer..</title>
+
+        <p><em>
+            Imagine handing a child a giant box of mixed, unlabeled Lego bricks. Without telling them what to build 
+            or providing an instruction manual (no "supervisor"), the child naturally starts organizing the bricks: 
+            putting red blocks in one pile, long blocks in another, and wheels in a third. Unsupervised learning 
+            works the same way—it searches for natural groupings, similarities, and patterns in data without ever 
+            being told what the "right answer" is.
+        </em></p>
+        </assemblage>
+
+        <p>
+        The objective of unsupervised learning can be as straightforward as uncovering hidden patterns within a dataset, 
+        or it can involve <term>feature learning</term><idx>feature learning</idx>. Feature learning enables a system to 
+        automatically discover the representations needed to analyze raw data. Without receiving explicit targets, 
+        unsupervised methods organize complex information into meaningful structures.
+        </p>
+    </subsection>
+
+    
+
+    <subsection xml:id="subsec-unsupervised-tasks">
+      <title>Common Unsupervised Learning Tasks</title>
+
+      <p>
+          Unsupervised learning problems generally fall into three main functional categories:
+      </p>
+
+      <p>
+          <term>Clustering</term><idx>clustering</idx> algorithms group together samples that exhibit similar traits. 
+          The goal is to discover a natural partitioning of the dataset that highlights underlying structure. For instance, 
+          an algorithm given a collection of untagged photos of dogs can analyze visual likenesses and automatically group 
+          similar dog images together.
+      </p>
+
+      <p>
+          <term>Density estimation</term><idx>density estimation</idx> aims to model the underlying probability 
+          distribution of the input data itself. Because the algorithm focuses purely on the distribution of input features 
+          without needing target values, it operates as a purely unsupervised task. Once trained, the model can estimate 
+          the probability of encountering new data points or generate brand-new synthetic samples from the learned distribution.
+      </p>
+
+      <p>
+          <term>Dimensionality reduction</term><idx>dimensionality reduction</idx> re-represents complex data using 
+          fewer variables or features while preserving its most critical information. This technique is particularly 
+          valuable for visualizing and compressing <term>high-dimensional data</term><idx>high-dimensional data</idx>—datasets 
+          containing a large number of attributes relative to the overall number of samples.
+      </p>
+</subsection>
+
+    <subsection xml:id="subsec-unsupervised-applications">
+        <title>Applications of Unsupervised Learning</title>
+
+        <p>
+            Unsupervised learning algorithms are widely deployed in business, security, and analytics. Key applications include:
+        </p>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        Analyzing customer transactional data to reveal hidden purchasing patterns and relationships that 
+                        might not be obvious to human analysts.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Powering <term>anomaly detection</term><idx>anomaly detection</idx> systems to flag unusual transactions, 
+                        such as potential credit card fraud, by detecting data points that deviate from normal behavior.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Driving <term>recommendation systems</term><idx>recommendation system</idx> that cluster similar products 
+                        or user profiles to suggest items to buy or watch next.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </subsection>
   </section>
 
   <section xml:id="sec-reinforcement-learning">
