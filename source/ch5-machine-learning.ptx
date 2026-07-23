@@ -220,7 +220,122 @@
 
   <section xml:id="sec-evaluating-success">
     <title>Evaluating Success</title>
-    <p>Content for the section.</p>
+
+    <introduction xml:id="intro-evaluating-success">
+        <p>
+            Once a machine learning model has been trained, it must be thoroughly evaluated to ensure its 
+            predictions are both accurate and reliable. This evaluation process assesses the model's 
+            <term>validity</term><idx>validity</idx>—its overall correctness, soundness, and ability to precisely 
+            measure what it was engineered to predict before it is deployed in real-world settings.
+        </p>
+        <assemblage xml:id="asm-look-closer-evaluating-models">
+            <title>Look Closer..</title>
+
+                <p><em>
+                    Imagine studying for a final exam by memorizing the exact answers to a single practice test. If the 
+                    real exam features those exact same questions, you might score 100%—but that doesn't mean you actually 
+                    learned the subject! In machine learning, evaluating a model on brand-new test data ensures it didn't 
+                    just "memorize" its training examples (<term>overfitting</term>), but truly understands the underlying patterns.
+                </em></p>
+        </assemblage>
+    </introduction>
+
+    
+
+    <subsection xml:id="subsec-data-splitting">
+        <title>Data Splitting and Overfitting</title>
+
+        <p>
+            One primary way to evaluate a model is through a <term>validation set</term><idx>validation set</idx>—a 
+            distinct subset of data reserved specifically for testing a trained model's quality. Because the validation 
+            set is completely separate from the training data, this practice guards against 
+            <term>overfitting</term><idx>overfitting</idx>, a common failure mode where a model learns the training 
+            data too closely and fails to <term>generalize</term><idx>generalization</idx> to new information.
+        </p>
+
+        <p>
+            Traditionally, a complete dataset is divided into three mutually exclusive subsets:
+        </p>
+
+        <paragraphs xml:id="par-training-set">
+            <title>Training Set</title>
+            <p>
+                The <term>training set</term><idx>training set</idx> contains the sample data used directly by the 
+                algorithm to learn patterns and adjust its parameters.
+            </p>
+        </paragraphs>
+
+        <paragraphs xml:id="par-validation-set">
+            <title>Validation Set</title>
+            <p>
+                The <term>validation set</term><idx>validation set</idx> provides an initial evaluation during training 
+                to fine-tune model settings and detect overfitting early.
+            </p>
+        </paragraphs>
+
+        <paragraphs xml:id="par-test-set">
+            <title>Test Set</title>
+            <p>
+                The <term>test set</term><idx>test set</idx> is held back for the final, unbiased assessment of how 
+                the fully trained model will perform in the real world.
+            </p>
+        </paragraphs>
+
+        <p>
+            Ideally, each example in the dataset should belong to strictly one of these three subsets. For example, 
+            a single data point should never appear in both the training set and the validation set.
+        </p>
+    </subsection>
+
+    <subsection xml:id="subsec-loss-functions">
+        <title>Loss Functions and Error Severity</title>
+
+        <p>
+            The quality of predictions from a model is formally measured using a 
+            <term>loss function</term><idx>loss function</idx>. A loss function quantifies how much a model is 
+            penalized when its predicted output differs from the actual true value.
+        </p>
+
+        <p>
+            Different loss functions are selected depending on the problem class, as certain errors carry far greater 
+            consequences than others. For example, in medical diagnostics, incorrectly predicting that a patient 
+            does <em>not</em> have a serious condition when they actually do (a missed diagnosis) is generally far more 
+            dangerous than incorrectly flagging a healthy patient for follow-up testing.
+        </p>
+    </subsection>
+
+    <subsection xml:id="subsec-classification-errors">
+        <title>False Positives vs. False Negatives</title>
+
+        <p>
+            In classification problems, prediction errors are categorized based on the nature of the mistake:
+        </p>
+
+        <paragraphs xml:id="par-false-positive">
+            <title>False Positives</title>
+            <p>
+                A <term>false positive</term><idx>false positive</idx> occurs when a model incorrectly indicates 
+                that a condition or class is present when it is actually absent. For example, a medical diagnostic test 
+                incorrectly flagging a healthy patient as having a disease, or a spam filter incorrectly sending a 
+                legitimate email to the junk folder.
+            </p>
+        </paragraphs>
+
+        <paragraphs xml:id="par-false-negative">
+            <title>False Negatives</title>
+            <p>
+                A <term>false negative</term><idx>false negative</idx> occurs when a test result incorrectly indicates 
+                that a condition is absent when it is actually present. In medical testing, this means telling a 
+                sick patient that they are healthy, missing a critical window for treatment.
+            </p>
+        </paragraphs>
+
+        <p>
+            Ultimately, evaluating a machine learning model requires assessing its performance across hundreds or 
+            thousands of individual predictions. A truly successful model does not simply score well on its training 
+            data—it demonstrates strong generalization when presented with new, unseen data in real-world scenarios.
+        </p>
+    </subsection>
   </section>
 
 </chapter>
