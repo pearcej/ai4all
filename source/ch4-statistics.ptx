@@ -25,7 +25,60 @@
 
   <section xml:id="sec-the-data-split">
     <title>The Data Split</title>
-    <p>Content for the section.</p>
+
+    <introduction>
+        <p>
+            Before any analysis or learning happens, data must first be collected. Compiling a data set involves identifying a target population (of people or things), as well as defining and measuring features and labels from it. Typically, it is not feasible to include the entire target population, and instead, features and labels are sampled from a subset of it. Often, machine learning practitioners use existing data sets rather than going through the data collection process.
+        </p>
+
+        <assemblage xml:id="asm-loan-population-example">
+        <title>Example</title>
+            <p>
+                For a loan-approval system, the target population could be people who live in the state in which the system will be used, have previously applied for loans, own credit cards, and so on. The particular sample that ends up in the data set will be a subset of this target population, heavily depending on the sampling method used (e.g., sourcing information from public records or surveying people). There is also the question of which features to measure, such as debt history, number of credit cards, income, and occupation. Some of these things will be chosen to serve as labels: for example, information about whether the person received or paid back a loan in the past.
+            </p>
+        </assemblage>
+
+        <p>
+            Depending on the data modality and task, various preprocessing techniques or data cleaning may be applied to the data set before it is fed into a model. Data sets are usually split into <term>training data</term><idx><h>training data</h></idx> used during model development, and <term>test data</term><idx><h>test data</h></idx> used during model evaluation. A portion of the training data is also frequently set aside as <term>validation data</term><idx><h>validation data</h></idx>.
+        </p>
+
+        <assemblage xml:id="asm-loan-preprocessing-example">
+        <title>Example</title>
+            <p>
+                For the loan-approval system, preprocessing might involve addressing missing data (e.g., imputing missing credit history values via interpolation), simplifying the feature space (e.g., grouping occupations in broader categories like <q>physician</q> rather than encoding detailed specialties), or normalizing continuous measurements (e.g., scaling income so it lies on a 0-to-1 scale). If a resulting data set included 1,000 examples (e.g., data collected from 1,000 people), 600 might be allocated for training, 100 as a validation set during training, and 300 for postdevelopment testing.
+            </p>
+        </assemblage>
+    </introduction>
+
+    <subsection xml:id="ssec-model-building-and-validation">
+        <title>Model Building and Validation</title>
+
+        <p>
+            Models are built using the training data. Typically, models are trained to optimize a specified objective, such as minimizing the mean squared error between its predictions and the actual labels. A number of different model types, hyperparameters, and optimization methods may be tested at this point; usually these different configurations are compared based on their performance on the validation data, and the best one chosen.
+        </p>
+
+        <assemblage xml:id="asm-loan-optimization-example">
+        <title>Example</title>
+            <p>
+              The development team would first need to instantiate a specific model architecture and define its objective function. During the optimization process, the model attempts to learn a function that goes from the inputs (e.g., income, occupation, etc.) to the output (e.g., whether the person paid back a previous loan). They might also train a number of different models (e.g., with varying architectures or training procedures) and choose the one that performs best on the validation set.
+            </p>
+        </assemblage>
+    </subsection>
+
+    <subsection xml:id="ssec-testing-on-unseen-data">
+        <title>Testing on Unseen Data</title>
+
+        <p>
+            After the final model is selected, its performance on the test data is reported. The test data is intentionally kept unseen before this step to ensure that the model's evaluated performance reflects how it will generalize to new, real-world data.
+        </p>
+
+        <assemblage xml:id="asm-loan-testing-example">
+        <title>Example</title>
+            <p>
+                Here, the model developed in the previous step would be evaluated by its performance on the test set. There might be several performance metrics to consider—for example, applicants might be concerned with <term>false negatives</term> (i.e., being denied a loan when they actually are deserving), while lenders might care more about <term>false positives</term> (i.e., recommending loans to people who don't pay them back). In addition, the model might be evaluated on existing data sets used for similar tasks (e.g., the data set from the U.S. Small Business Association described by Min Li and collaborators).
+            </p>
+        </assemblage>
+    </subsection>
   </section>
 
 </chapter>
