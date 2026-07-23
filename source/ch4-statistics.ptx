@@ -10,7 +10,165 @@
   <!-- include sections -->
   <section xml:id="sec-data-literacy">
     <title>Data Literacy</title>
-    <p>Content for the section.</p>
+
+    <introduction>
+        <p>
+            Data science allows us to extract insights and knowledge from data, driving decision-making and innovation in business, health care, entertainment, and beyond. The field has roots in math, statistics, and computer science, but it only began to emerge as its own distinct field in the early 2000s with the proliferation of digital data and advances in computing power and technology. It gained significant momentum and recognition around the mid to late 2000s with the rise of big data and the need for sophisticated techniques to analyze and derive insights from large and complex datasets. Its evolution since then has been rapid, and it is quickly becoming a cornerstone of many industries and domains.
+        </p>
+
+        <p>
+            Data, however, is not new! Humans have been collecting data and generating datasets from the beginning of time. This started in the Stone Age when people carved shapes and pictures, called <term>petroglyphs</term><idx><h>petroglyphs</h></idx>, on rock. Petroglyphs provide insights into how animals looked and how people carried out their daily lives, offering valuable historical <q>data.</q> Ancient Egyptians invented papyrus—an early form of paper—to journal their data. Papyrus made it easier to store data in bulk, such as listing inventories, recording financial transactions, and preserving stories for future generations.
+        </p>
+    </introduction>
+
+    <subsection xml:id="ssec-what-is-data">
+        <title>What Exactly is Data?</title>
+
+        <p>
+            The word <term>data</term><idx><h>data</h></idx> is the plural of the Latin word <em>datum</em>, which translates as <q>something that is given or used.</q> It is often used to mean a single piece of information or a single point of reference in a dataset. 
+        </p>
+
+        <p>
+            When you hear the word <q>data,</q> you may think of numbers. While numbers are a primary form of data, there are many other forms of data all around us. Anything that we can analyze to compile information—high-level insights—is considered data.
+        </p>
+    </subsection>
+
+    <subsection xml:id="ssec-types-of-data">
+        <title>Types of Data</title>
+
+        <p>
+            Data can be categorized based on its structure and mathematical properties:
+        </p>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <term>Quantitative Data</term><idx><h>quantitative data</h></idx>: Deals with quantities, amounts, and numeric measurements. It is highly structured and naturally suited for mathematical calculations and statistical analysis. Quantitative variables are divided into two main types:
+                    </p>
+                    <p>
+                        <ul>
+                            <li>
+                                <p>
+                                    <term>Numeric Data</term>: Represented by numbers indicating measurable quantities. Numeric data can be further split into:
+                                </p>
+                                <p>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <term>Continuous Data</term><idx><h>continuous data</h></idx>: Can take any value within a range, including infinite fractions and decimals. Continuous data must be measured rather than counted (for example, there is an infinite number of possible values between 0 and 0.1, such as 0.05, 0.001, or 0.0001).
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <term>Discrete Data</term><idx><h>discrete data</h></idx>: Takes numerical values that follow specific intervals, making it directly countable. Examples include shoe sizes (e.g., 5, 5.5, 6, 6.5, 7), where 5.5 is valid, but 5.25 is not.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <term>Categorical Data</term><idx><h>categorical data</h></idx>: Represented in various forms such as words, symbols, or code numbers. The possible values a categorical variable can take are called its <term>levels</term>. Unlike numeric data, categorical values do not indicate a physically measurable quantity. Instead, values are chosen from a finite set of classes:
+                                </p>
+                                <p>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <term>Nominal Data</term><idx><h>nominal data</h></idx>: Unordered categorical variables where the set of possible values carries no natural order. Examples include state of residence (AL, AK, WY), binary indicators (Yes/No), or experimental groups (treatment/control).
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <term>Ordinal Data</term><idx><h>ordinal data</h></idx>: Categorical variables where the levels possess a natural, logical ordering, even if the exact mathematical distance between values cannot be measured. Examples include letter grades (A, B, C, D, F), education levels (high school diploma, some college, bachelor's degree), or satisfaction ratings (<q>Not recommended at all</q> to <q>Highly recommended</q>).
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <term>Qualitative Data</term><idx><h>qualitative data</h></idx>: Consists of non-numerical data that describe subjective attributes, experiences, or characteristics. Unlike categorical data which is cleanly structured into predefined categories, qualitative data often deals with unquantifiable, complex details. Examples include raw descriptions, field observations, personal interviews, open-ended survey responses, or photos.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </subsection>
+
+    <subsection xml:id="ssec-datasets">
+        <title>Datasets</title>
+
+        <p>
+            A <term>dataset</term><idx><h>dataset</h></idx> is a collection of observations or data entities organized for analysis and interpretation. Many datasets can be represented as a table where each row indicates a unique data entity and each column defines the structure of those entities.
+        </p>
+
+        <table xml:id="tbl-course-dataset-example">
+            <title>Example of a Structured Course Dataset</title>
+            <tabular halign="center">
+                <row header="yes" bottom="medium">
+                    <cell>Semester</cell>
+                    <cell>Instructor</cell>
+                    <cell>Class Size</cell>
+                    <cell>Rating</cell>
+                </row>
+                <row>
+                    <cell>Fall 2023</cell>
+                    <cell>Dr. Smith</cell>
+                    <cell>35</cell>
+                    <cell>4.5</cell>
+                </row>
+                <row>
+                    <cell>Spring 2024</cell>
+                    <cell>Dr. Jones</cell>
+                    <cell>45</cell>
+                    <cell>4.2</cell>
+                </row>
+                <row>
+                    <cell>Fall 2024</cell>
+                    <cell>Dr. Smith</cell>
+                    <cell>120</cell>
+                    <cell>2.4</cell>
+                </row>
+                <row>
+                    <cell>Spring 2025</cell>
+                    <cell>Dr. Lee</cell>
+                    <cell>85</cell>
+                    <cell>3.9</cell>
+                </row>
+                <row>
+                    <cell>Fall 2025</cell>
+                    <cell>Dr. Jones</cell>
+                    <cell>110</cell>
+                    <cell>4.8</cell>
+                </row>
+                <row>
+                    <cell>Spring 2026</cell>
+                    <cell>Dr. Lee</cell>
+                    <cell>90</cell>
+                    <cell>3.2</cell>
+                </row>
+            </tabular>
+        </table>
+
+        <p>
+            The dataset in <xref ref="tbl-course-dataset-example"/> has six entities (also referred to as items, entries, or instances), distinguished by semester. Each entity is defined by a combination of four attributes or characteristics (also known as features or variables)—<c>Semester</c>, <c>Instructor</c>, <c>Class Size</c>, and <c>Rating</c>.
+        </p>
+
+        <p>
+            Although the actual values of the attributes vary across entities, all entities have values for the same four attributes, making this a <term>structured dataset</term><idx><h>structured dataset</h></idx>. Structured datasets are organized in a tabular format with clearly defined fields and relationships.
+        </p>
+
+        <p>
+            By contrast, an <term>unstructured dataset</term><idx><h>unstructured dataset</h></idx> lacks a predefined or organized data model. Unstructured data lacks a fixed schema and is often in the form of text, images, videos, audio recordings, or other content where information does not fit neatly into rows and columns.
+        </p>
+
+        <p>
+            Unstructured data is extremely common—some estimates suggest that most real-world data is unstructured. Examples include product reviews, social media posts, public images, and short online videos. In practice, these unstructured datasets are often processed into structured formats so data scientists can analyze them effectively, as discussed in <xref ref="sec-the-data-split"/>.
+        </p>
+    </subsection>
   </section>
 
   <section xml:id="sec-reading-the-distribution">
