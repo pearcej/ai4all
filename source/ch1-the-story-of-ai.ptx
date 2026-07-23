@@ -381,10 +381,56 @@
     </p>
 </subsection>
 
-  <subsection xml:id="sec-common-myths">
+<subsection xml:id="sec-common-myths">
     <title>Common Myths</title>
-    <p>Content for the section.</p>
-  </subsection>
+    
+    <introduction xml:id="intro-common-myths">
+        <p>There are a lot of misconceptions and misinformation about AI, but we also want to acknowledge that the application and integration of AI raises some very serious and valid concerns. It's healthy to be skeptical of how AI is used. The issue arises when that skepticism turns to panic and fear. Fearing a technology makes us want to disengage with it, and we need skeptics to be engaging. Otherwise, only the blindly optimistic are left to guide where this technology goes, and that usually doesn't end up well.</p>
+    </introduction>
+
+    <assemblage xml:id="asm-myth-ai-is-objective-and-infallible">
+        <title>Myth: AI is objective and infallible</title>
+        <p><em>Reality:</em> AI reflects and amplifies the biases present in its training data. Rather than being objective, AI systems absorb all the biases and flaws of the data they're trained on. Additionally, they are designed to prioritize giving any answer over giving a correct answer, which can lead to confident but incorrect outputs.</p>
+        <p><em>Key idea:</em> AI is a tool that should be evaluated critically, not trusted blindly. Studies have shown that AI still struggles with generating sexist, homophobic, racist, or xenophobic content. Algorithms developed for AI systems are criticized not only for the biased content embedded in their training data, but also for exploiting this data without proper consent. These practices have extensive social impacts that will be further discussed in chapter 7.</p>
+    </assemblage>
+
+    <assemblage xml:id="asm-myth-ai-is-conscious">
+        <title>Myth: AI is conscious</title>
+        <p><em>Reality:</em> AI replicates patterns in data rather than possessing any form of inner experience or self-awareness. While AI can produce outputs that appear thoughtful or even emotional, these are statistical associations, not genuine consciousness.</p>
+        <p><em>Key idea:</em> The concept of AI raises fascinating philosophical questions about the nature of consciousness, but for now, nobody needs to worry about <q>sentient AI</q> in any meaningful sense.</p>
+    </assemblage>
+
+    <assemblage xml:id="asm-myth-ai-learns-like-humans">
+        <title>Myth: AI learns like humans</title>
+        <p><em>Reality:</em> While there are superficial similarities in the learning processes of humans and AI, AI systems have no understanding of meaning, context, or cause and effect. They are fundamentally making statistical associations based on patterns in their training data.</p>
+        <p><em>Key idea:</em> What AI learns depends entirely on what data it is given—it cannot develop true understanding or common sense. AI can find patterns that a human might miss due to the sheer size of the datasets they learn from, but this pattern recognition is fundamentally different from human comprehension.</p>
+    </assemblage>
+
+    <assemblage xml:id="asm-myth-ai-will-take-our-jobs">
+        <title>Myth: AI will take our jobs</title>
+        <p><em>Reality:</em> There is a widely-held and understandable fear that AI will destroy a significant portion of current jobs over the coming years, with the concern that replacements will mostly be lower-paying, routine tasks. However, we tend to vastly overestimate AI's capabilities and underestimate the flexibility and judgment needed in many manual or cognitive jobs.</p>
+        <p><em>Key idea:</em> Historical patterns show that new technologies often displace some jobs while creating others. Over the last couple of centuries, every introduction of new and more efficient tools has meant jobs are lost which are then replaced by a vast array of others. Additionally, much of the seemingly automated work delegated to AI is based on invisible labour delegated to an underpaid workforce, either offshored or at precarious career stages.</p>
+    </assemblage>
+
+    <assemblage xml:id="asm-myth-ai-will-outsmart-humans">
+        <title>Myth: AI will outsmart humans</title>
+        <p><em>Reality:</em> Increased computing speed and memory capacity simply allow AI to process more data faster—they do not make AI more intelligent or capable of understanding in the way humans do. Cognitive capabilities are also curtailed by the physical limits on how much speed we can engineer.</p>
+        <p><em>Key idea:</em> Speed doesn't give computers the ability to understand things the way humans do, or to be more flexible and less failure-prone. The concept of a <q><term>singularity</term><idx>singularity</idx></q>—a tipping point when computers become more intelligent than humans—ignores fundamental differences between computational processing and human cognition.</p>
+    </assemblage>
+
+    <assemblage xml:id="asm-myth-ai-is-capable-of-autonomous-actions">
+        <title>Myth: AI is capable of autonomous actions</title>
+        <p><em>Reality:</em> We are frequently shown footage of robots that makes them appear much more successful than they actually are. In reality, most of these videos are staged to one degree or another—some robots are remotely controlled, while others might show one successful run out of a hundred. Scientists still do not possess the necessary knowledge to allow AI to combine skills of perception, analysis, and reaction in the way living creatures can.</p>
+        <p><em>Key idea:</em> Our understanding of how cognition works is patchy and shallow, and AI programs are very specialised. They match some human capabilities only in very specific, well-understood environments, but fail when placed within new contexts.</p>
+    </assemblage>
+
+    <assemblage xml:id="asm-myth-ai-is-immaterial">
+        <title>Myth: AI is immaterial</title>
+        <p><em>Reality:</em> While popular conception often characterises AI and other computing technologies as intangible entities, AI's functioning primarily relies on concrete, physical infrastructures including data centres filled with servers, fibre-optic cables, electricity grids, and myriad electronic devices.</p>
+        <p><em>Key idea:</em> AI is deeply interwoven with physical realities around the globe. Without this physical backbone—including the cold, secure, and electricity-rich environments in which it operates—the advanced software capabilities of AI would be unable to function. AI's algorithms require vast amounts of data, which is stored and processed in these material infrastructures, consuming substantial energy.</p>
+    </assemblage>
+
+</subsection>
 </section>
 
 </chapter>
