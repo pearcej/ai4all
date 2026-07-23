@@ -7,10 +7,104 @@
     <p> Text before the first section. </p>
   </introduction>
 
-  <!-- include sections -->
   <section xml:id="sec-an-overview">
-    <title>An Overview</title>
-    <p>Content for the section.</p>
+    <title>An Overview of Machine Learning</title>
+
+    <introduction xml:id="intro-ml-overview">
+        <p>
+            Human knowledge is wide, variable, and inherently difficult to capture. 
+            The human mind can absorb and work with complex knowledge because it operates 
+            not merely by memorizing facts, but by generating underlying models of how the world works.
+        </p>
+
+        <assemblage xml:id="asm-chomsky-quote">
+            <blockquote>
+                <p>
+                    <q>a surprisingly efficient and even elegant system that operates with small amounts 
+                    of information; it seeks not to infer brute correlations among data points but to 
+                    create explanations.</q>
+                </p>
+                <attribution>Noam Chomsky</attribution>
+            </blockquote>
+
+            <p><em>
+                Chomsky's observation highlights a crucial difference between human minds and raw computational 
+                power. While traditional algorithms rely on human programmers to explicitly code every rule and explanation, 
+                <term>machine learning</term> aims to bridge this gap by enabling computers 
+                to discover patterns and build explanatory models directly from data.
+            </em></p>
+        </assemblage>
+
+        <p>
+            <term>Machine learning</term><idx><h>machine learning</h></idx> was created in order to replicate 
+            aspects of this capability. As a major subfield of 
+            <term>artificial intelligence</term><idx><h>artificial intelligence</h></idx> (<term>AI</term>)<idx><h>AI</h></idx>, 
+            the overarching goal of machine learning is to understand the structure of data and fit that data into models 
+            that can be understood, interpreted, and utilized by people.
+        </p>
+    </introduction>
+    <subsection xml:id="subsec-traditional-vs-ml">
+        <title>Traditional Computing vs. Machine Learning</title>
+    <p>
+        Although machine learning is a core field within computer science, it differs fundamentally from 
+        <term>traditional computing</term><idx><h>traditional computing</h></idx>. In traditional computing, 
+        <term>algorithms</term><idx><h>algorithm</h></idx> are sets of explicitly programmed instructions written by 
+        human developers to calculate solutions or perform specific tasks. Machine learning algorithms, by contrast, 
+        allow computers to train on data inputs and use statistical analysis to output predictions or decisions. 
+        Rather than requiring explicit instructions for every edge case, machine learning enables computers to 
+        build models from sample data in order to automate decision-making processes.
+    </p>
+
+    <assemblage xml:id="asm-look-closer-traditional-vs-ml">
+        <title>Look Closer..</title>
+        <p><em>
+            Consider the difference between traditional software and machine learning. In traditional software, 
+            a programmer writes: <c>Data + Rules = Answers</c>. If you want a program to recognize photos of cats, 
+            you would have to write rules defining ears, whiskers, and tails. In machine learning, the formula is 
+            flipped: <c>Data + Answers = Rules</c>. By showing the computer thousands of labeled cat photos, 
+            the algorithm learns to identify the defining patterns on its own.
+        </em></p>
+    </assemblage>
+    <p>
+        Any technology user today benefits daily from machine learning applications:
+    </p>
+    <p>
+        <ul>
+            <li>
+                <p>
+                    <term>Facial recognition</term><idx><h>facial recognition</h></idx> technology allows social media 
+                    platforms and photo libraries to automatically recognize, tag, and organize images of friends and family.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <term>Optical character recognition</term><idx><h>optical character recognition (OCR)</h></idx> 
+                    (<term>OCR</term>) converts physical documents and images of text into searchable, editable digital text.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <term>Recommendation engines</term><idx><h>recommendation engine</h></idx> analyze individual viewing 
+                    histories and broader user trends to suggest movies, television shows, or music tailored to personal preferences.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <term>Autonomous vehicles</term><idx><h>autonomous vehicle</h></idx> (self-driving cars) rely on complex 
+                    machine learning systems to interpret sensor data, detect obstacles, and navigate roadways safely.
+                </p>
+            </li>
+        </ul>
+    </p>
+    <p>
+        There are many different problem classes in machine learning, categorized primarily by the type of data provided 
+        and the specific conclusions to be drawn from that data. In the following sections of this chapter, we will explore 
+        three foundational paradigms: 
+        <term>supervised learning</term><idx><h>supervised learning</h></idx>, 
+        <term>unsupervised learning</term><idx><h>unsupervised learning</h></idx>, and 
+        <term>reinforcement learning</term><idx><h>reinforcement learning</h></idx>.
+    </p>
+    </subsection>
   </section>
 
   <section xml:id="sec-supervised-learning">
