@@ -385,7 +385,7 @@
     <title>Common Myths</title>
     
     <introduction xml:id="intro-common-myths">
-        <p>There are a lot of misconceptions and misinformation about AI, but we also want to acknowledge that the application and integration of AI raises some very serious and valid concerns. It's healthy to be skeptical of how AI is used. The issue arises when that skepticism turns to panic and fear. Fearing a technology makes us want to disengage with it, and we need skeptics to be engaging. Otherwise, only the blindly optimistic are left to guide where this technology goes, and that usually doesn't end up well.</p>
+        <p>As AI becomes more integrated into daily life, misconceptions about what it can and cannot do have spread widely. Some of these myths stem from science fiction, others from overhyped marketing claims, and still others from a genuine lack of understanding about how AI systems actually work. Let's examine some of the most common myths about AI, separates fact from fiction, and offers a more grounded perspective on what AI is truly capable of.</p>
     </introduction>
 
     <assemblage xml:id="asm-myth-ai-is-objective-and-infallible">
@@ -396,7 +396,7 @@
 
     <assemblage xml:id="asm-myth-ai-is-conscious">
         <title>Myth: AI is conscious</title>
-        <p><em>Reality:</em> AI replicates patterns in data rather than possessing any form of inner experience or self-awareness. While AI can produce outputs that appear thoughtful or even emotional, these are statistical associations, not genuine consciousness.</p>
+        <p><em>Reality:</em> AI replicates patterns in data rather than possessing any form of subjective awareness, emotions, or self-consciousness. While AI can produce outputs that appear thoughtful or even emotional, these are statistical associations, not genuine consciousness.</p>
         <p><em>Key idea:</em> The concept of AI raises fascinating philosophical questions about the nature of consciousness, but for now, nobody needs to worry about <q>sentient AI</q> in any meaningful sense.</p>
     </assemblage>
 
@@ -421,7 +421,7 @@
     <assemblage xml:id="asm-myth-ai-is-capable-of-autonomous-actions">
         <title>Myth: AI is capable of autonomous actions</title>
         <p><em>Reality:</em> We are frequently shown footage of robots that makes them appear much more successful than they actually are. In reality, most of these videos are staged to one degree or another—some robots are remotely controlled, while others might show one successful run out of a hundred. Scientists still do not possess the necessary knowledge to allow AI to combine skills of perception, analysis, and reaction in the way living creatures can.</p>
-        <p><em>Key idea:</em> Our understanding of how cognition works is patchy and shallow, and AI programs are very specialised. They match some human capabilities only in very specific, well-understood environments, but fail when placed within new contexts.</p>
+        <p><em>Key idea:</em> Our understanding of how cognition works is patchy and shallow, and AI programs are very specialised. They match some human capabilities only in very specific, well-understood environments—such as playing chess, translating text between languages, or recognizing objects in clear photographs—but fail when placed within new contexts. For example, a self-driving car trained in sunny California may struggle with snow-covered roads, and a medical AI trained on hospital data from one country may perform poorly when used in another with different patient demographics.</p>
     </assemblage>
 
     <assemblage xml:id="asm-myth-ai-is-immaterial">
@@ -429,7 +429,10 @@
         <p><em>Reality:</em> While popular conception often characterises AI and other computing technologies as intangible entities, AI's functioning primarily relies on concrete, physical infrastructures including data centres filled with servers, fibre-optic cables, electricity grids, and myriad electronic devices.</p>
         <p><em>Key idea:</em> AI is deeply interwoven with physical realities around the globe. Without this physical backbone—including the cold, secure, and electricity-rich environments in which it operates—the advanced software capabilities of AI would be unable to function. AI's algorithms require vast amounts of data, which is stored and processed in these material infrastructures, consuming substantial energy.</p>
     </assemblage>
-
+    <conclusion xml:id="conc-common-myths">
+        <p>There are a lot of misconceptions and misinformation about AI, but we also want to acknowledge that the application and integration of AI raises some very serious and valid concerns. These include ethical issues like algorithmic bias, lack of consent in data collection, and accountability for AI-driven decisions; practical issues like job displacement, massive energy consumption, and the brittleness of AI systems in unfamiliar contexts; privacy issues around surveillance and data ownership; and epistemic issues about the reliability of AI-generated information and its potential to spread misinformation.</p> 
+        <p>It's healthy to be skeptical of how AI is used. The issue arises when that skepticism turns to panic and fear. Fearing a technology makes us want to disengage with it, and we need skeptics to be engaging. Otherwise, only the blindly optimistic are left to guide where this technology goes, and that usually doesn't end up well.</p>
+    </conclusion>
 </subsection>
 </section>
 
