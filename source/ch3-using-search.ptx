@@ -188,7 +188,7 @@
             <term><idx>graph</idx>Graph</term> — a set of nodes connected by edges.
             The difference between trees and graphs is that trees are fully
             connected, and all nodes in a tree have to descend from the root in a
-            perfect hierarchy where each node only has one parent. This also
+            hierarchy where each node only has one parent. This also
             means that trees are a subset of graphs (all trees are graphs).
         </p>
 
@@ -268,6 +268,73 @@
             e-commerce.</p>
         </paragraphs>
     </subsection>
+    <reading-questions xml:id="rq-tree-properties">
+    <title>Reading Question</title>
+    <exercise label="treeProperties">
+        <statement>
+        <p>Which of the following are true about trees?</p>
+
+        </statement>
+        <choices>
+
+            <choice correct="yes">
+                <statement>
+                    <p>siblings share the same parent node</p>
+                </statement>
+                <feedback>
+                    <p>correct</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>nodes can have 2 parents</p>
+                </statement>
+                <feedback>
+                    <p>nodes can only have one parent</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>each node has children</p>
+                </statement>
+                <feedback>
+                    <p>leaf nodes have no children</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>hierarchy</p>
+                </statement>
+                <feedback>
+                    <p>correct</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>trees must have at least 2 nodes</p>
+                </statement>
+                <feedback>
+                    <p>trees only need one node (the root)</p>
+                </feedback>
+            </choice>
+
+               <choice correct="yes">
+                <statement>
+                    <p>trees must be connected</p>
+                </statement>
+                <feedback>
+                    <p>correct</p>
+                </feedback>
+            </choice>
+        </choices>
+
+    </exercise>
+    </reading-questions>
+
   </section>
 
   <section xml:id="sec-introduction-to-state-spaces">
