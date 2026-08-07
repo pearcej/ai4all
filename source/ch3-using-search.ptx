@@ -157,12 +157,11 @@
     <subsection xml:id="ssec-tree-applications">
         <title>Real World Application of Tree Structure</title>
 
-        <p>Many operating systems use a tree structure to organize your
-        directories, folders, and files. Some of you may have a folder, within a
-        folder, within a folder, that leads to your assignments files. The files
-        you reach from a folder would be considered the leaf nodes while the
-        folder(s) that got you to those files would be the parent nodes. Here is a
-        visual of how the files and folders may look as a tree.</p>
+        <p>Many operating systems use a tree structure to organize your directories, folders,
+        and files. Some of you may have a folder, within afolder, within a folder, that leads
+        to your assignments files. The files you reach from a folder would be considered the 
+        leaf nodes while the folder(s) that got you to those files would be the parent nodes. 
+        Here is a visual of how the files and folders may look as a tree.</p>
 
         <figure xml:id="fig-file-tree">
             <caption>A visual representation of a computer file system organized as a tree structure.</caption>
@@ -185,11 +184,16 @@
         <title>Graphs</title>
 
         <p>
-            <term><idx>graph</idx>Graph</term> — a set of nodes connected by edges.
-            The difference between trees and graphs is that trees are fully
-            connected, and all nodes in a tree have to descend from the root in a
-            perfect hierarchy where each node only has one parent. This also
-            means that trees are a subset of graphs (all trees are graphs).
+            <term><idx>graph</idx>Graph</term> — a non-linear structure made up
+            of nodes and edges that model relationships between objects.
+        </p>
+        <p>
+            The difference between trees and graphs is that trees are
+            connected (every pair of vertices has a path between them), 
+            and all nodes in a tree must descend from the root in a
+            hierarchy where each node only has one parent. This also
+            means that trees are a subset of graphs (all trees are graphs
+            but all graphs are not trees).
         </p>
 
 
