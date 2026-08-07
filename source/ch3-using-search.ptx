@@ -188,12 +188,10 @@
             of nodes and edges that model relationships between objects.
         </p>
         <p>
-            The difference between trees and graphs is that trees are
-            connected (every pair of vertices has a path between them), 
-            and all nodes in a tree must descend from the root in a
-            hierarchy where each node only has one parent. This also
-            means that trees are a subset of graphs (all trees are graphs
-            but all graphs are not trees).
+            The difference between trees and graphs is that trees are <term><idx>connected graphs</idx>connected</term> 
+            (every pair of vertices has a path between them), and all nodes in a tree must descend from the root in a
+            hierarchy where each node only has one parent. This also means that trees are a subset of graphs (all trees 
+            are graphs but all graphs are not trees).
         </p>
 
 
