@@ -1434,27 +1434,27 @@
 
     <statement>
         <p>
-        Match each search method with it's definition.
+        Match each search method with it's description.
         </p>
     </statement>
 
     <feedback>
         <p>
-        Not quite right, try again
+        Review <xref ref="sec-uninformed-search"/>, <xref ref="sec-informed-search"/>, and <xref ref="sec-adversarial-search"/>.
         </p>
     </feedback>
     <cardsort>
         <match>
         <premise order="2">Informed Search</premise>
-        <response>uses problem-specific knowledge, called heuristics, to guide the search</response>
+        <response>Prioritizes nodes that appear closer to the goal, but can be misled by inaccurate guidance</response>
         </match>
         <match>
         <premise order="3">Uninformed Search</premise>
-        <response>explores a problem's state space without any domain-specific knowledge</response>
+        <response>Follows a fixed pattern of exploration that guarantees success only when applied correctly</response>
         </match>
         <match>
         <premise order="1">Adversarial Search</premise>
-        <response>searches for the best move in a game with an opponent</response>
+        <response>Applies different selection criteria at alternating levels</response>
         </match>
     </cardsort>
     </exercise>
