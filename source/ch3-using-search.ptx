@@ -1426,6 +1426,39 @@
             </tabular>
         </table>
     </subsection>
+
+    <reading-questions xml:id="rqs-search-methods">
+
+    <exercise xml:id="matching-search-methods" label="matching-search">
+    <title>Match the Search Methods</title>
+
+    <statement>
+        <p>
+        Match each search method with it's definition.
+        </p>
+    </statement>
+
+    <feedback>
+        <p>
+        Not quite right, try again
+        </p>
+    </feedback>
+    <cardsort>
+        <match>
+        <premise order="2">Informed Search</premise>
+        <response>uses problem-specific knowledge, called heuristics, to guide the search</response>
+        </match>
+        <match>
+        <premise order="3">Uninformed Search</premise>
+        <response>explores a problem's state space without any domain-specific knowledge</response>
+        </match>
+        <match>
+        <premise order="1">Adversarial Search</premise>
+        <response>searches for the best move in a game with an opponent</response>
+        </match>
+    </cardsort>
+    </exercise>
+    </reading-questions>
 </section>
 
 </chapter>  
