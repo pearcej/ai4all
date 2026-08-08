@@ -1428,6 +1428,39 @@
             </tabular>
         </table>
     </subsection>
+
+    <reading-questions xml:id="rqs-search-methods">
+
+    <exercise xml:id="matching-search-methods" label="matching-search">
+    <title>Match the Search Methods</title>
+
+    <statement>
+        <p>
+        Match each search method with it's description.
+        </p>
+    </statement>
+
+    <feedback>
+        <p>
+        Review <xref ref="sec-uninformed-search"/>, <xref ref="sec-informed-search"/>, and <xref ref="sec-adversarial-search"/>.
+        </p>
+    </feedback>
+    <cardsort>
+        <match>
+        <premise order="2">Informed Search</premise>
+        <response>Prioritizes nodes that appear closer to the goal, but can be misled by inaccurate guidance</response>
+        </match>
+        <match>
+        <premise order="3">Uninformed Search</premise>
+        <response>Follows a fixed pattern of exploration that guarantees success only when applied correctly</response>
+        </match>
+        <match>
+        <premise order="1">Adversarial Search</premise>
+        <response>Applies different selection criteria at alternating levels</response>
+        </match>
+    </cardsort>
+    </exercise>
+    </reading-questions>
 </section>
 
 </chapter>  
