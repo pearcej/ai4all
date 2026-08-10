@@ -6,7 +6,7 @@
   <section xml:id="sec-the-dangers-of-ai-as-a-learner">
     <title>The Dangers of AI as a Learner</title>
 
-<introduction>
+    <introduction>
 
     <p>
         Generative AI has changed education faster than almost any technology in history. In just a few years, students have gained access to AI systems that can answer questions, explain difficult ideas, generate practice problems, summarize readings, and provide feedback in seconds. Whether you are writing an essay, studying for an exam, or learning a new skill, AI is becoming a common part of the learning experience.
@@ -22,10 +22,8 @@
 
     </introduction>
 
-    <section xml:id="sec-ai-as-a-learning-tool">
+    <subsection xml:id="ssec-ai-as-a-learning-tool">
     <title>AI as a Learning Tool</title>
-
-    <introduction>
 
         <p>
             When integrated into study routines, generative AI introduces powerful new ways to engage with academic material. However, because these systems can readily supply answers, framing how they are used becomes critical. Rather than replacing the study process, AI functions best when it serves to deepen comprehension, challenge thinking, and support independent learning.
@@ -38,8 +36,7 @@
         <p>
             This chapter explores both the opportunities and the challenges of learning with AI. You will learn why independent thinking still matters, how AI can become an effective study partner, how to write better prompts, and why it is important to verify AI-generated information instead of accepting it without question.
         </p>
-
-    </introduction>
+    </subsection>
 
     <subsection xml:id="ssec-new-opportunities-for-learning">
         <title>New Opportunities for Learning</title>
@@ -79,8 +76,6 @@
         </p>
 
     </subsection>
-
-</section>
 
     <subsection xml:id="ssec-evidence-from-mathematics-learning">
         <title>Evidence from Mathematics Learning</title>
@@ -161,6 +156,83 @@
           concepts without sacrificing your own cognitive independence.
       </p>
     </subsection>
+    <reading-questions xml:id="rqs-cognitive-debt">
+
+        <exercise xml:id="mc-cognitive-debt" label="multiple-choice-cognitive-debt" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+        <title>Multiple-Choice, Not Randomized, One Answer</title>
+
+        <idx>cognitive debt</idx>
+        <statement>
+            <p>
+            According to Chapter 2, what is the primary risk of relying on generative AI to answer homework questions without active reflection?
+            </p>
+        </statement>
+
+        <choices>
+            <choice>
+            <statement>
+                <p>
+                AI models will eventually charge subscription fees for student access.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                Incorrect. While monetization exists, this is not the primary educational risk highlighted in the text.
+                </p>
+            </feedback>
+            </choice>
+
+            <choice>
+            <statement>
+                <p>
+                AI tools automatically report unauthorized student usage to academic integrity boards.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                Incorrect. AI tools do not automatically report usage to integrity boards.
+                </p>
+            </feedback>
+            </choice>
+
+            <choice>
+            <statement>
+                <p>
+                Students will memorize incorrect information because AI rarely produces grammatically correct sentences.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                Incorrect. LLMs excel at fluent grammar, which is precisely why their hallucinations can be deceivingly persuasive.
+                </p>
+            </feedback>
+            </choice>
+
+            <choice correct="yes">
+            <statement>
+                <p>
+                It creates a <q>cognitive debt cycle</q> where students lose the habit of critical thinking and perform worse on independent evaluations.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                Correct! Routine reliance reduces active cognitive engagement, leading to declines on supervised tests.
+                </p>
+            </feedback>
+            </choice>
+        </choices>
+
+        <hint>
+            <p>
+            Consider how routine shortcutting affects a student's long-term habits when taking closed-book or supervised exams.
+            </p>
+        </hint>
+        </exercise>
+    </reading-questions>
   </section>
 
 <section xml:id="sec-how-mistakes-help-you-learn">
