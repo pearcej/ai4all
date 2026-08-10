@@ -157,12 +157,11 @@
     <subsection xml:id="ssec-tree-applications">
         <title>Real World Application of Tree Structure</title>
 
-        <p>Many operating systems use a tree structure to organize your
-        directories, folders, and files. Some of you may have a folder, within a
-        folder, within a folder, that leads to your assignments files. The files
-        you reach from a folder would be considered the leaf nodes while the
-        folder(s) that got you to those files would be the parent nodes. Here is a
-        visual of how the files and folders may look as a tree.</p>
+        <p>Many operating systems use a tree structure to organize your directories, folders,
+        and files. Some of you may have a folder, within afolder, within a folder, that leads
+        to your assignments files. The files you reach from a folder would be considered the 
+        leaf nodes while the folder(s) that got you to those files would be the parent nodes. 
+        Here is a visual of how the files and folders may look as a tree.</p>
 
         <figure xml:id="fig-file-tree">
             <caption>A visual representation of a computer file system organized as a tree structure.</caption>
@@ -186,10 +185,12 @@
 
         <p>
             <term><idx>graph</idx>Graph</term> — a set of nodes connected by edges.
-            The difference between trees and graphs is that trees are fully
-            connected, and all nodes in a tree have to descend from the root in a
-            perfect hierarchy where each node only has one parent. This also
-            means that trees are a subset of graphs (all trees are graphs).
+        </p>
+        <p>
+            The difference between trees and graphs is that trees are <term><idx>connected graphs</idx>connected</term> 
+            (every pair of nodes has a path between them), and all nodes in a tree must descend from the root in a
+            hierarchy where each node only has one parent. This also means that trees are a subset of graphs (all trees 
+            are graphs but all graphs are not trees).
         </p>
 
 
@@ -268,6 +269,73 @@
             e-commerce.</p>
         </paragraphs>
     </subsection>
+    <reading-questions xml:id="rq-tree-properties">
+    <title>Reading Question</title>
+    <exercise label="treeProperties">
+        <statement>
+        <p>Which of the following are true about trees?</p>
+
+        </statement>
+        <choices>
+
+            <choice correct="yes">
+                <statement>
+                    <p>siblings share the same parent node</p>
+                </statement>
+                <feedback>
+                    <p>correct</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>nodes can have 2 parents</p>
+                </statement>
+                <feedback>
+                    <p>nodes can only have one parent</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>each node has children</p>
+                </statement>
+                <feedback>
+                    <p>leaf nodes have no children</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>hierarchy</p>
+                </statement>
+                <feedback>
+                    <p>correct</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>trees must have at least 2 nodes</p>
+                </statement>
+                <feedback>
+                    <p>trees only need one node (the root)</p>
+                </feedback>
+            </choice>
+
+               <choice correct="yes">
+                <statement>
+                    <p>trees must be connected</p>
+                </statement>
+                <feedback>
+                    <p>correct</p>
+                </feedback>
+            </choice>
+        </choices>
+
+    </exercise>
+    </reading-questions>
+
   </section>
 
   <section xml:id="sec-introduction-to-state-spaces">
@@ -1495,6 +1563,39 @@
             </tabular>
         </table>
     </subsection>
+
+    <reading-questions xml:id="rqs-search-methods">
+
+    <exercise xml:id="matching-search-methods" label="matching-search">
+    <title>Match the Search Methods</title>
+
+    <statement>
+        <p>
+        Match each search method with it's description.
+        </p>
+    </statement>
+
+    <feedback>
+        <p>
+        Review <xref ref="sec-uninformed-search"/>, <xref ref="sec-informed-search"/>, and <xref ref="sec-adversarial-search"/>.
+        </p>
+    </feedback>
+    <cardsort>
+        <match>
+        <premise order="2">Informed Search</premise>
+        <response>Prioritizes nodes that appear closer to the goal, but can be misled by inaccurate guidance</response>
+        </match>
+        <match>
+        <premise order="3">Uninformed Search</premise>
+        <response>Follows a fixed pattern of exploration that guarantees success only when applied correctly</response>
+        </match>
+        <match>
+        <premise order="1">Adversarial Search</premise>
+        <response>Applies different selection criteria at alternating levels</response>
+        </match>
+    </cardsort>
+    </exercise>
+    </reading-questions>
 </section>
 
 </chapter>  
