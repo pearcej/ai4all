@@ -871,5 +871,41 @@
         benefits reach all sectors of society. It also encourages
         interdisciplinary approaches to problem-solving.</p>
     </assemblage>
+
+    <reading-questions xml:id="rqs-myth-ai-education">
+    <exercise label="fact-or-myth" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+    <title>Card Sort: Fact or Myth</title>
+
+    <statement>
+    <p>
+        Sort the following statements into two categories: Fact or Myth. Use the information provided in the chapter to determine the correct classification for each statement.
+    </p>
+    </statement>
+
+    <feedback>
+    <p>
+        Review the myths and realities above and throughout <xref ref="ai-in-education"/>.
+    </p>
+    </feedback>
+    <cardsort>
+    <match>
+        <response>Fact</response>
+        <premise order="8">Using AI on unsupervised homework can boost assignment scores, but routine reliance causes a significant drop in performance on supervised exams.</premise>
+        <premise order="4">Tech-savvy students with high risk tolerance and strong computer skills are actually more likely to experience reduced critical thinking when using AI regularly.</premise>
+        <premise order="1">An AI model can generate a grammatically flawless, highly detailed, and confident response that is entirely fabricated from start to finish.</premise>
+        <premise order="6">Students who regularly depend on generative AI for coursework show a steady decline in their willingness to reflect and think critically over time.</premise>
+    </match>
+    <match>
+        <response>Myth</response>
+        <premise order="7">Integrating generative AI into modern coursework typically requires educators to undergo specialized technical training or learn computer programming.</premise>
+        <premise order="2">When an LLM responds to a prompt, it searches an internal database of verified facts and sources to assemble an accurate answer.</premise>
+        <premise order="3">Accessing generative AI tools that offer genuine educational value generally requires a dedicated school or department budget.</premise>
+        <premise order="9">With thoughtful implementation, advanced AI systems can serve as a primary solution for systemic challenges like student engagement and equity gaps.</premise>
+        <premise order="5">While generative AI has creative applications in the humanities, its main utility and practical benefits remain largely concentrated in STEM subjects.</premise>
+    </match>
+    </cardsort>
+    </exercise>
+    </reading-questions> 
 </section>
+
 </chapter>
