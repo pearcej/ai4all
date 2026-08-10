@@ -650,6 +650,166 @@
         responsibilities of AI systems. Understanding that AI is a tool, not a
         person, helps maintain appropriate human control and accountability.</p>
     </assemblage>
+
+    <exercise label="ai-truths-select-all" adaptive="yes">
+        <title>Select the Truths of AI</title>
+
+        <idx>AI misconceptions</idx>
+        <statement>
+            <p>
+                Which of the following statements are true about artificial
+                intelligence?
+            </p>
+        </statement>
+
+        <choices multiple-correct="yes">
+            <choice>
+                <statement>
+                    <p>AI possesses consciousness.</p>
+                </statement>
+                <feedback>
+                    <p>
+                        This is a myth. AI replicates patterns in data rather than
+                        possessing any form of subjective awareness, emotions, or
+                        self-consciousness. When an AI generates a poem or offers
+                        comforting words, it is not feeling anything.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>AI operates through statistical pattern recognition.</p>
+                </statement>
+                <feedback>
+                    <p>
+                        Correct! AI systems make statistical associations based on
+                        patterns in their training data. They are fundamentally
+                        predicting which outputs are most likely based on the input
+                        they receive.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>AI will outsmart humans in every way.</p>
+                </statement>
+                <feedback>
+                    <p>
+                        This is a myth. Increased computing speed and memory capacity
+                        simply allow AI to process more data faster. They do not make
+                        AI more intelligent or capable of understanding in the way
+                        humans do, nor do they give AI the flexibility and
+                        adaptability of human cognition.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>AI excels in narrow tasks, not general intelligence.</p>
+                </statement>
+                <feedback>
+                    <p>
+                        Correct! AI systems are highly specialized and excel at
+                        specific, well-defined tasks such as playing chess,
+                        translating text, or recognizing objects in clear
+                        photographs. They lack the broad, flexible intelligence that
+                        humans possess.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>AI has intrinsic motivations.</p>
+                </statement>
+                <feedback>
+                    <p>
+                        This is a myth. Current AI systems do not possess the
+                        intrinsic motivations, intentions, or subjective experiences
+                        associated with human thought. They operate through complex
+                        mathematical models designed to recognize statistical
+                        correlations.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>AI should mimic the best human for all tasks.</p>
+                </statement>
+                <feedback>
+                    <p>
+                        This is a myth. An ideal super human who excels at every task
+                        does not exist. AI's goal is to perform tasks optimally, not
+                        to replicate all aspects of human behavior. Comparing AI to
+                        human performance in a general sense is misleading.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>AI is a tool, not a person.</p>
+                </statement>
+                <feedback>
+                    <p>
+                        Correct! AI is a set of many different pieces of algorithmic
+                        software similar to smartphone apps. It lacks self-awareness,
+                        consciousness, emotional intelligence, and the ability to
+                        understand complex human contexts. Treating AI as a tool
+                        helps maintain appropriate human control and accountability.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>AI generates text by predicting word sequences.</p>
+                </statement>
+                <feedback>
+                    <p>
+                        Correct! When an AI generates a text response, it is
+                        statistically predicting which words are most likely to
+                        follow previous ones based on its training data. It does not
+                        understand meaning or context in the way humans do.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>More speed means more understanding.</p>
+                </statement>
+                <feedback>
+                    <p>
+                        This is a myth. Increased computing speed and memory capacity
+                        allow AI to process more data faster, but they do not make AI
+                        more capable of understanding in the way humans do. Speed
+                        does not give computers the ability to understand things or
+                        to be more flexible and less failure-prone.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>AI is algorithmic software, similar to apps.</p>
+                </statement>
+                <feedback>
+                    <p>
+                        Correct! In practice, AI is a set of many different pieces of
+                        algorithmic software similar to smartphone apps. While some
+                        AI systems are combined into robots designed to look or
+                        behave like humans, the underlying technology is software
+                        implementing learning rules and algorithms.
+                    </p>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
 </section>
 
 </chapter>
