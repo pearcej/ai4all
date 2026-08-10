@@ -950,166 +950,167 @@
         where to invest in AI.</p>
     </assemblage>
 
-    <exercise xml:id="mc-ai-learning-supported" label="multiple-choice-randomized-multiple-answers" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+    <reading-questions xml:id="rqs-machine-learning-myths">
+      <exercise xml:id="mc-ai-learning-supported" label="ai-learning" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
 
-      <statement>
-        <p>
-          Which of the following statements about AI learning are supported by the section? Select all that apply.
-        </p>
-      </statement>
+        <statement>
+          <p>
+            Which of the following statements about AI learning are supported by the section?
+          </p>
+        </statement>
 
-      <choices randomize="yes">
-        <choice correct="yes">
-          <statement>
-            <p>
-              The statistical patterns AI identifies are ultimately a reflection of human decisions about what data to collect and how to structure learning problems.
-            </p>
-          </statement>
+        <choices randomize="yes">
+          <choice correct="yes">
+            <statement>
+              <p>
+                The statistical patterns AI identifies are ultimately a reflection of human decisions about what data to collect and how to structure learning problems.
+              </p>
+            </statement>
 
-          <feedback>
-            <p>
-              Correct. AI algorithms learn strictly from datasets curated, structured, and supplied by human developers.
-            </p>
-          </feedback>
-        </choice>
+            <feedback>
+              <p>
+                Correct. AI algorithms learn strictly from datasets curated, structured, and supplied by human developers.
+              </p>
+            </feedback>
+          </choice>
 
-        <choice correct="yes">
-          <statement>
-            <p>
-              AI's inability to understand cause and effect means it cannot reliably determine whether a correlation in its training data represents a causal relationship.
-            </p>
-          </statement>
+          <choice correct="yes">
+            <statement>
+              <p>
+                AI's inability to understand cause and effect means it cannot reliably determine whether a correlation in its training data represents a causal relationship.
+              </p>
+            </statement>
 
-          <feedback>
-            <p>
-              Correct. AI identifies mathematical patterns and correlations rather than understanding causal relationships.
-            </p>
-          </feedback>
-        </choice>
+            <feedback>
+              <p>
+                Correct. AI identifies mathematical patterns and correlations rather than understanding causal relationships.
+              </p>
+            </feedback>
+          </choice>
 
-        <choice>
-          <statement>
-            <p>
-              Because AI processes data at a scale beyond human capability, its pattern recognition can sometimes approximate true comprehension of complex phenomena.
-            </p>
-          </statement>
+          <choice>
+            <statement>
+              <p>
+                Because AI processes data at a scale beyond human capability, its pattern recognition can sometimes approximate true comprehension of complex phenomena.
+              </p>
+            </statement>
 
-          <feedback>
-            <p>
-              Incorrect. Processing data at scale allows for complex statistical matching, but scale does not equal true comprehension.
-            </p>
-          </feedback>
-        </choice>
+            <feedback>
+              <p>
+                Incorrect. Processing data at scale allows for complex statistical matching, but scale does not equal true comprehension.
+              </p>
+            </feedback>
+          </choice>
 
-        <choice>
-          <statement>
-            <p>
-              The way AI learns from datasets shares fundamental similarities with how humans learn from social interaction, just at a much faster pace.
-            </p>
-          </statement>
+          <choice>
+            <statement>
+              <p>
+                The way AI learns from datasets shares fundamental similarities with how humans learn from social interaction, just at a much faster pace.
+              </p>
+            </statement>
 
-          <feedback>
-            <p>
-              Incorrect. Human learning relies on social interaction, semantics, and context, whereas AI relies on mathematical pattern prediction across datasets.
-            </p>
-          </feedback>
-        </choice>
+            <feedback>
+              <p>
+                Incorrect. Human learning relies on social interaction, semantics, and context, whereas AI relies on mathematical pattern prediction across datasets.
+              </p>
+            </feedback>
+          </choice>
 
-        <choice correct="yes">
-          <statement>
-            <p>
-              An AI system trained on biased data will produce biased outputs, even if the algorithm itself is mathematically neutral.
-            </p>
-          </statement>
+          <choice correct="yes">
+            <statement>
+              <p>
+                An AI system trained on biased data will produce biased outputs, even if the algorithm itself is mathematically neutral.
+              </p>
+            </statement>
 
-          <feedback>
-            <p>
-              Correct. AI outputs inherit whatever biases exist in the underlying training data.
-            </p>
-          </feedback>
-        </choice>
-      </choices>
+            <feedback>
+              <p>
+                Correct. AI outputs inherit whatever biases exist in the underlying training data.
+              </p>
+            </feedback>
+          </choice>
+        </choices>
 
-      <hint>
-        <p>
-          Remember that AI models perform statistical pattern prediction rather than genuine human comprehension or cause-and-effect reasoning.
-        </p>
-      </hint>
-    </exercise>
+        <hint>
+          <p>
+            Remember that AI models perform statistical pattern prediction rather than genuine human comprehension or cause-and-effect reasoning.
+          </p>
+        </hint>
+      </exercise>
 
-    <exercise xml:id="mc-ai-implications-understanding" label="multiple-choice-randomized-multiple-answers" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
-      <title>Multiple-Choice, Randomized, Multiple Answers</title>
+      <exercise xml:id="mc-ai-implications-understanding" label="ai-implications-understanding" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
 
-      <idx>AI limitations</idx>
-      <statement>
-        <p>
-          Which of the following implications follow from the section's claim that AI systems <q>have no understanding of meaning, context, or cause and effect</q>? Select all that apply.
-        </p>
-      </statement>
+        <idx>AI limitations</idx>
+        <statement>
+          <p>
+            Which of the following implications follow from the section's claim that AI systems <q>have no understanding of meaning, context, or cause and effect</q>?
+          </p>
+        </statement>
 
-      <choices randomize="yes">
-        <choice correct="yes">
-          <statement>
-            <p>
-              An AI trained to detect disease from medical images cannot explain why a particular pattern indicates illness in biological terms.
-            </p>
-          </statement>
+        <choices randomize="yes">
+          <choice correct="yes">
+            <statement>
+              <p>
+                An AI trained to detect disease from medical images cannot explain why a particular pattern indicates illness in biological terms.
+              </p>
+            </statement>
 
-          <feedback>
-            <p>
-              Correct. The AI spots visual data correlations in scans, but lacks biological or semantic understanding.
-            </p>
-          </feedback>
-        </choice>
+            <feedback>
+              <p>
+                Correct. The AI spots visual data correlations in scans, but lacks biological or semantic understanding.
+              </p>
+            </feedback>
+          </choice>
 
-        <choice correct="yes">
-          <statement>
-            <p>
-              An AI system could identify that people with certain zip codes are more likely to default on loans, but it cannot determine whether zip code is a legitimate factor or a proxy for discriminatory redlining.
-            </p>
-          </statement>
+          <choice correct="yes">
+            <statement>
+              <p>
+                An AI system could identify that people with certain zip codes are more likely to default on loans, but it cannot determine whether zip code is a legitimate factor or a proxy for discriminatory redlining.
+              </p>
+            </statement>
 
-          <feedback>
-            <p>
-              Correct. AI detects statistical relationships but lacks the social, historical, and moral context to recognize proxy variables.
-            </p>
-          </feedback>
-        </choice>
+            <feedback>
+              <p>
+                Correct. AI detects statistical relationships but lacks the social, historical, and moral context to recognize proxy variables.
+              </p>
+            </feedback>
+          </choice>
 
-        <choice>
-          <statement>
-            <p>
-              If an AI system is trained on sufficient data from diverse sources, it can eventually develop contextual awareness equivalent to a human expert.
-            </p>
-          </statement>
+          <choice>
+            <statement>
+              <p>
+                If an AI system is trained on sufficient data from diverse sources, it can eventually develop contextual awareness equivalent to a human expert.
+              </p>
+            </statement>
 
-          <feedback>
-            <p>
-              Incorrect. Adding more data refines statistical accuracy, but it does not grant an algorithm genuine contextual awareness or human-level comprehension.
-            </p>
-          </feedback>
-        </choice>
+            <feedback>
+              <p>
+                Incorrect. Adding more data refines statistical accuracy, but it does not grant an algorithm genuine contextual awareness or human-level comprehension.
+              </p>
+            </feedback>
+          </choice>
 
-        <choice correct="yes">
-          <statement>
-            <p>
-              The outputs of an AI system should be treated as probabilistic suggestions rather than definitive judgments.
-            </p>
-          </statement>
+          <choice correct="yes">
+            <statement>
+              <p>
+                The outputs of an AI system should be treated as probabilistic suggestions rather than definitive judgments.
+              </p>
+            </statement>
 
-          <feedback>
-            <p>
-              Correct. Because AI outputs are generated from statistical probabilities rather than true understanding, they require human evaluation.
-            </p>
-          </feedback>
-        </choice>
-      </choices>
+            <feedback>
+              <p>
+                Correct. Because AI outputs are generated from statistical probabilities rather than true understanding, they require human evaluation.
+              </p>
+            </feedback>
+          </choice>
+        </choices>
 
-      <hint>
-        <p>
-          Consider which scenarios demonstrate a lack of real-world context or moral reasoning.
-        </p>
-      </hint>
-    </exercise>
+        <hint>
+          <p>
+            Consider which scenarios demonstrate a lack of real-world context or moral reasoning.
+          </p>
+        </hint>
+      </exercise>
+    </reading-questions>
 </section>
 </chapter>
