@@ -367,11 +367,6 @@
     <p>For decades, the Turing Test shaped how many people thought about artificial intelligence. Today, however, AI systems perform many impressive tasks that have little to do with carrying on a conversation. As a result, researchers now evaluate AI in many different ways depending on the problems they are trying to solve.</p>
 </subsection>
 
-  <subsection xml:id="ssec-the-evolution-of-automation">
-    <title>The Evolution of Automation</title>
-    <p>Content for the section.</p>
-  </subsection>
-
 <subsection xml:id="ssec-what-is-generative-ai">
     <title>What Is Generative AI?</title>
 
@@ -395,6 +390,149 @@
         In later chapters, we will examine how generative AI systems learn from data, why they sometimes make mistakes, and how they are changing the way people learn, work, and solve problems.
     </p>
 </subsection>
+
+<exercises xml:id="exe-characterizing-intelligence" label="characterizing-intelligence-exercises">
+    <title>Characterizing Intelligence Exercises</title>
+
+    <introduction>
+        <p>
+            The following exercises will help you check your understanding of
+            the key concepts from this section.
+        </p>
+    </introduction>
+
+    <!-- Multiple Choice Question -->
+    <exercise label="turing-test-intention" adaptive="yes">
+        <title>Turing Test Intention</title>
+
+        <idx>Turing Test</idx>
+        <statement>
+            <p>
+                Which of the following best describes Alan Turing's primary
+                intention when he proposed the Turing Test?
+            </p>
+        </statement>
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        To provide a strict, formal definition of what it means for
+                        a machine to <q>think.</q>
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        Turing explicitly avoided giving a strict definition of
+                        thinking. He stated: <q>I don't want to give a definition
+                        of thinking.</q>
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        To establish a practical, observable way to evaluate whether
+                        a machine's behavior is indistinguishable from a human's.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        Correct! Turing shifted the focus from the elusive concept
+                        of <q>thinking</q> to observable interaction, proposing a
+                        practical test based on a machine's ability to imitate human
+                        conversation.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        To prove that machines must use neural networks in order to
+                        be considered intelligent.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        Turing's test is architecture-independent. He did not
+                        specify that machines must use any particular technology,
+                        such as neural networks, to pass the test.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        To create an adversarial questioning system that would
+                        expose the weaknesses of early chatbots.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        Turing's test was not designed to be adversarial or to
+                        expose weaknesses. In fact, the test disallows tricky,
+                        adversarial questions that programmers often use to try and
+                        expose chatbots.
+                    </p>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
+
+    <!-- Cardsort/Matching Question -->
+    <exercise label="ai-concepts-matching" adaptive="yes">
+        <title>AI Concepts Matching</title>
+
+        <idx>generative AI</idx>
+        <idx>Gardner's Theory of Multiple Intelligences</idx>
+        <idx>Turing Test</idx>
+        <idx>intelligence quotient</idx>
+        <statement>
+            <p>
+                Match each concept with its correct description.
+            </p>
+        </statement>
+
+        <cardsort>
+            <match>
+                <premise order="1">Generative AI</premise>
+                <response>
+                    An AI system that creates new content such as text, images, or
+                    audio by learning patterns from training data.
+                </response>
+            </match>
+            <match>
+                <premise order="2">
+                    Gardner's Theory of Multiple Intelligences
+                </premise>
+                <response>
+                    A theory suggesting that humans have multiple distinct
+                    abilities, including linguistic, spatial, and interpersonal
+                    skills.
+                </response>
+            </match>
+            <match>
+                <premise order="3">The Turing Test</premise>
+                <response>
+                    A method where a judge converses with both a human and a
+                    machine to see if the machine can be reliably distinguished.
+                </response>
+            </match>
+            <match>
+                <premise order="4">Intelligence Quotient (IQ)</premise>
+                <response>
+                    A measure that captures certain reasoning abilities but does not
+                    encompass every aspect of human intelligence.
+                </response>
+            </match>
+        </cardsort>
+    </exercise>
+
+</exercises>
+
 </section>
 
 <section xml:id="sec-mythbusting-ch1">
