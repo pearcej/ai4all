@@ -159,7 +159,6 @@
     <reading-questions xml:id="rqs-cognitive-debt">
 
         <exercise xml:id="mc-cognitive-debt" label="multiple-choice-cognitive-debt" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
-        <title>Multiple-Choice, Not Randomized, One Answer</title>
 
         <idx>cognitive debt</idx>
         <statement>
@@ -299,6 +298,81 @@
         <em>Don't ask AI before you've really tried and engaged your own reasoning.</em> The effort you spend thinking before asking an AI tool (or a professor or a peer) is often the most valuable part of the learning process.
     </p>
 
+    <reading-questions xml:id="rqs-productive-struggle">
+
+    <exercise xml:id="mc-productive-struggle" label="multiple-choice-productive-struggle" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+
+        <statement>
+            <p>
+            Which of the following scenarios best demonstrates productive struggle when using AI for learning?
+            </p>
+        </statement>
+
+        <choices>
+            <choice>
+            <statement>
+                <p>
+                Asking AI to generate a complete essay draft, then making minor grammatical edits before submitting it.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                Incorrect. This bypasses active thinking and makes the AI the primary author.
+                </p>
+            </feedback>
+            </choice>
+
+            <choice correct="yes">
+            <statement>
+                <p>
+                Struggling with a math problem for a few minutes, writing out an initial attempt, and then asking AI to review the work and explain where a mistake occurred.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                Correct! Productive struggle requires making an initial independent effort before using AI for targeted feedback.
+                </p>
+            </feedback>
+            </choice>
+
+            <choice>
+            <statement>
+                <p>
+                Copying and pasting textbook questions directly into an LLM to get instant step-by-step solutions without attempting them first.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                Incorrect. Getting instant solutions without an initial mental effort skips the cognitive work necessary for retention.
+                </p>
+            </feedback>
+            </choice>
+
+            <choice>
+            <statement>
+                <p>
+                Avoiding AI entirely and refusing to look up hints or supplemental explanations when stuck on a concept.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                Incorrect. Productive struggle does not mean avoiding help entirely; it means engaging thoughtfully before seeking guidance.
+                </p>
+            </feedback>
+            </choice>
+        </choices>
+
+        <hint>
+            <p>
+            Look for the option where the learner puts in their own cognitive effort first before bringing in AI support.
+            </p>
+        </hint>
+        </exercise>
+    </reading-questions>
   </section>
 
   <section xml:id="sec-ai-powered-study-buddy">
@@ -422,6 +496,82 @@
             into practice, <xref ref="sec-the-anatomy-of-a-prompt-and-writing-loops"/> details how to better form AI prompts to get the best results.
         </p>
     </subsection>
+    <reading-questions xml:id="rqs-primary-authorship">
+        <exercise xml:id="mc-primary-authorship" label="multiple-choice-primary-authorship" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+        <title>Multiple-Choice, Not Randomized, One Answer</title>
+
+        <idx>academic integrity</idx>
+        <statement>
+            <p>
+            What is the recommended approach for maintaining primary authorship when using an AI tool to assist with a writing assignment?
+            </p>
+        </statement>
+
+        <choices>
+            <choice>
+            <statement>
+                <p>
+                Let AI write the first draft, and then rewrite every third sentence in your own words.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                Incorrect. Editing an AI-generated draft leaves the AI as the primary author of the core arguments and structure.
+                </p>
+            </feedback>
+            </choice>
+
+            <choice correct="yes">
+            <statement>
+                <p>
+                Write your own initial draft first, then ask the AI system to provide feedback, point out missing concepts, or suggest revisions.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                Correct! Writing your own draft first ensures you remain the primary author, using AI strictly for feedback.
+                </p>
+            </feedback>
+            </choice>
+
+            <choice>
+            <statement>
+                <p>
+                Use AI to generate an outline and all main arguments, then write the body paragraphs yourself.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                Incorrect. Outlining core arguments is a central part of the authoring process; outsourcing it reduces your ownership of the work.
+                </p>
+            </feedback>
+            </choice>
+
+            <choice>
+            <statement>
+                <p>
+                Submit the AI-generated draft along with a prompt log without making any manual edits to the text.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                Incorrect. Transparency alone does not make you the primary author if the AI generated the entirety of the text.
+                </p>
+            </feedback>
+            </choice>
+        </choices>
+
+        <hint>
+            <p>
+            Think about who produces the foundational ideas, structure, and original text before feedback is requested.
+            </p>
+        </hint>
+        </exercise>
+    </reading-questions>
   </section>
 
   <section xml:id="sec-the-anatomy-of-a-prompt-and-writing-loops">
