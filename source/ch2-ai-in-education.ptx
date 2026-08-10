@@ -496,80 +496,37 @@
             into practice, <xref ref="sec-the-anatomy-of-a-prompt-and-writing-loops"/> details how to better form AI prompts to get the best results.
         </p>
     </subsection>
-    <reading-questions xml:id="rqs-primary-authorship">
-        <exercise xml:id="mc-primary-authorship" label="multiple-choice-primary-authorship" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
-        <title>Multiple-Choice, Not Randomized, One Answer</title>
+    <reading-questions xml:id="rqs-effective-vs-ineffective-practices">
+        <exercise label="effective-vs-ineffective-practices" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
 
-        <idx>academic integrity</idx>
-        <statement>
+            <statement>
             <p>
-            What is the recommended approach for maintaining primary authorship when using an AI tool to assist with a writing assignment?
+                Sort the following study habits into two categories: <q>Effective Practice</q> or <q>Ineffective Practice</q> based on the reading.
             </p>
-        </statement>
-
-        <choices>
-            <choice>
-            <statement>
-                <p>
-                Let AI write the first draft, and then rewrite every third sentence in your own words.
-                </p>
             </statement>
 
             <feedback>
-                <p>
-                Incorrect. Editing an AI-generated draft leaves the AI as the primary author of the core arguments and structure.
-                </p>
-            </feedback>
-            </choice>
-
-            <choice correct="yes">
-            <statement>
-                <p>
-                Write your own initial draft first, then ask the AI system to provide feedback, point out missing concepts, or suggest revisions.
-                </p>
-            </statement>
-
-            <feedback>
-                <p>
-                Correct! Writing your own draft first ensures you remain the primary author, using AI strictly for feedback.
-                </p>
-            </feedback>
-            </choice>
-
-            <choice>
-            <statement>
-                <p>
-                Use AI to generate an outline and all main arguments, then write the body paragraphs yourself.
-                </p>
-            </statement>
-
-            <feedback>
-                <p>
-                Incorrect. Outlining core arguments is a central part of the authoring process; outsourcing it reduces your ownership of the work.
-                </p>
-            </feedback>
-            </choice>
-
-            <choice>
-            <statement>
-                <p>
-                Submit the AI-generated draft along with a prompt log without making any manual edits to the text.
-                </p>
-            </statement>
-
-            <feedback>
-                <p>
-                Incorrect. Transparency alone does not make you the primary author if the AI generated the entirety of the text.
-                </p>
-            </feedback>
-            </choice>
-        </choices>
-
-        <hint>
             <p>
-            Think about who produces the foundational ideas, structure, and original text before feedback is requested.
+                Effective practices use AI as a feedback partner after you try a task yourself. Ineffective practices use AI to skip the mental work.
             </p>
-        </hint>
+            </feedback>
+
+            <cardsort>
+            <match>
+                <response>Effective Practice</response>
+                <premise order="1">Solving a problem yourself first, then asking AI to review your steps for errors.</premise>
+                <premise order="3">Writing your own essay draft first, then asking AI for feedback and revision ideas.</premise>
+                <premise order="5">Asking AI to explain a confusing concept using a real-world analogy.</premise>
+                <premise order="7">Prompting AI to generate practice quiz questions to test your memory.</premise>
+            </match>
+            <match>
+                <response>Ineffective Practice</response>
+                <premise order="2">Pasting a homework problem into AI to get the answer without trying it first.</premise>
+                <premise order="4">Having AI write your paper's first draft and editing it into your own words.</premise>
+                <premise order="6">Asking AI to outline and build your main arguments before brainstorming yourself.</premise>
+                <premise order="8">Accepting AI summaries as fact without checking independent sources.</premise>
+            </match>
+            </cardsort>
         </exercise>
     </reading-questions>
   </section>
