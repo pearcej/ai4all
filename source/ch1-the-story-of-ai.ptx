@@ -218,6 +218,71 @@
         reason, create, and interact with the world around us.
     </p>
 
+    <exercise label="ai-history-timeline" adaptive="yes">
+        <title>AI History Timeline</title>
+
+        <idx>artificial intelligence history</idx>
+        <statement>
+            <p>
+                The events below describe key moments in the history of artificial
+                intelligence. Arrange them in the correct chronological order, from
+                earliest to most recent, to create a timeline of AI's development.
+            </p>
+        </statement>
+        <blocks>
+            <block order="1">
+                <p>
+                    Alan Turing publishes <q>Computing Machinery and Intelligence,</q>
+                    introducing ideas that would later become known as the Turing Test.
+                </p>
+            </block>
+            <block order="2">
+                <p>
+                    The Dartmouth Conference brings together researchers to explore
+                    the possibility of thinking machines, widely considered the birth
+                    of AI as a distinct field.
+                </p>
+            </block>
+            <block order="3">
+                <p>
+                    IBM's Deep Blue defeats world chess champion Garry Kasparov,
+                    demonstrating the power of AI in complex strategic games.
+                </p>
+            </block>
+            <block order="5">
+                <p>
+                    A major leap in performance is unlocked thanks to new deep
+                    learning algorithms and the availability of big data.
+                </p>
+            </block>
+            <block order="4">
+                <p>
+                    IBM Watson achieves a milestone in AI by winning the game show
+                    <q>Jeopardy!</q>
+                </p>
+            </block>
+            <block order="6">
+                <p>
+                    AlphaFold successfully predicts protein structures, transforming
+                    scientific research.
+                </p>
+            </block>
+            <block order="7">
+                <p>
+                    OpenAI releases ChatGPT, making generative AI accessible to
+                    millions and reaching 100 million users in just two months.
+                </p>
+            </block>
+        </blocks>
+        <hint>
+            <p>
+                Think about the order in which these events were described in the
+                section including image. Look for clues about which events happened 
+                earlier or later based on how they connect to one another.
+            </p>
+        </hint>
+    </exercise>
+
 </section>
 
 <section xml:id="sec-characterizing-intelligence">
