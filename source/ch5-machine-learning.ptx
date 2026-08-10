@@ -782,6 +782,42 @@
         can succeed in the real world.
       </p>
     </subsection>
+    <reading-questions xml:id="rqs-model-evaluation-terms">
+      <exercise label="model-evaluation-card-sort" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+        <title>Card Sort: Model Evaluation Terms</title>
+
+        <statement>
+          <p>
+            Match each term to its correct definition.
+          </p>
+        </statement>
+
+        <feedback>
+          <p>
+            Overfitting occurs when a model memorizes training data, generalization measures how well it performs on unseen data, the validation set helps fine-tune hyperparameters, and the test set provides the final unbiased evaluation.
+          </p>
+        </feedback>
+
+        <cardsort>
+          <match>
+            <response>Overfitting</response>
+            <premise order="1">When a model performs well on training data but poorly on new data</premise>
+          </match>
+          <match>
+            <response>Validation Set</response>
+            <premise order="2">Data used to fine-tune model settings and detect overfitting during development</premise>
+          </match>
+          <match>
+            <response>Generalization</response>
+            <premise order="3">A model's ability to perform well on new, unseen data</premise>
+          </match>
+          <match>
+            <response>Test Set</response>
+            <premise order="4">Data held back for the final, unbiased assessment of the trained model</premise>
+          </match>
+        </cardsort>
+      </exercise>
+    </reading-questions>
   </section>
 
 <section xml:id="sec-mythbusting-ch5">
