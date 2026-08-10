@@ -249,16 +249,16 @@
                     demonstrating the power of AI in complex strategic games.
                 </p>
             </block>
-            <block order="5">
-                <p>
-                    A major leap in performance is unlocked thanks to new deep
-                    learning algorithms and the availability of big data.
-                </p>
-            </block>
             <block order="4">
                 <p>
                     IBM Watson achieves a milestone in AI by winning the game show
                     <q>Jeopardy!</q>
+                </p>
+            </block>
+            <block order="5">
+                <p>
+                    A major leap in performance is unlocked thanks to new deep
+                    learning algorithms and the availability of big data.
                 </p>
             </block>
             <block order="6">
@@ -277,8 +277,8 @@
         <hint>
             <p>
                 Think about the order in which these events were described in the
-                section including image. Look for clues about which events happened 
-                earlier or later based on how they connect to one another.
+                section. Look for clues about which events happened earlier or later
+                based on how they connect to one another.
             </p>
         </hint>
     </exercise>
