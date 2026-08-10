@@ -290,6 +290,40 @@
         learning to new, unseen situations.
       </p>
     </subsection>
+    <reading-questions xml:id="rqs-supervised-learning-types">
+      <exercise label="supervised-learning-card-sort" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+
+        <statement>
+          <p>
+            Sort each of the following problems into the most appropriate supervised learning method category: <q>Regression</q>, <q>Binary Classification</q>, or <q>Multi-Class Classification</q>.
+          </p>
+        </statement>
+
+        <feedback>
+          <p>
+            Regression predicts continuous numerical values, Binary Classification predicts one of two outcomes, and Multi-Class Classification categorizes inputs into three or more distinct classes.
+          </p>
+        </feedback>
+
+        <cardsort>
+          <match>
+            <response>Regression</response>
+            <premise order="1">Predicting a student's final grade percentage based on hours studied, attendance, and previous test scores.</premise>
+            <premise order="5">Forecasting the total sales revenue for a retail store next quarter.</premise>
+          </match>
+          <match>
+            <response>Binary Classification</response>
+            <premise order="2">Determining whether a customer will renew their subscription next month.</premise>
+            <premise order="3">Identifying whether an MRI scan shows signs of a tumor.</premise>
+          </match>
+          <match>
+            <response>Multi-Class Classification</response>
+            <premise order="4">Sorting customer support tickets into categories: billing, technical, returns, or general inquiry.</premise>
+            <premise order="6">Classifying an image of a fruit as an apple, orange, banana, or grape based on color, shape, and texture.</premise>
+          </match>
+        </cardsort>
+      </exercise>
+    </reading-questions>
   </section>
 
   <!-- ============================================================ -->
