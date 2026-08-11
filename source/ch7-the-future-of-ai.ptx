@@ -510,6 +510,69 @@
         its environmental impacts isn't just academic—it's essential for making
         informed decisions about the kind of future we want to build.</p>
     </conclusion>
+    <reading-questions xml:id="rq-environmental-impacts">
+      <exercise xml:id="mc-environmental-impacts" label="multiple-choice-environmental-impacts" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+        <statement>
+            <p>
+            A technology company announces plans to build a new AI-focused data center. They emphasize that the facility will use the most energy-efficient servers available. Which of the following statements best explains why this efficiency alone may not reduce the facility's overall environmental impact?
+            </p>
+        </statement>
+
+        <choices randomize="yes">
+            <choice>
+                <statement>
+                    <p>
+                    Energy-efficient servers require more specialized manufacturing processes that produce higher carbon emissions during production, offsetting operational savings over the servers' lifespan.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                    Incorrect. While manufacturing emissions are a real concern, this is not the primary reason efficiency gains fail to reduce overall impact.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                    The rebound effect means that as AI becomes more efficient and cheaper to run, more people and organizations will use it, potentially increasing total energy consumption.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                    Correct. The rebound effect occurs when efficiency improvements make AI cheaper to run, which encourages more usage, and more users mean more total energy consumption. This is similar to how fuel-efficient cars led to more driving, not less total fuel consumption.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                    Energy-efficient servers actually consume more water for cooling because they operate at higher densities, creating a trade-off between energy and water consumption.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                    Incorrect. Water consumption is a concern, but that does not mean that energy-efficient servers necessarily consume more water.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                    The energy savings from efficiency improvements are negligible compared to the energy required to train large AI models, which dominates total data center consumption.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                    Incorrect. While training is energy-intensive, the use of trained models can dominate total energy consumption over time due to the massive scale of users. Efficiency improvements apply to both phases.
+                    </p>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
+    </reading-questions>
 
 </section>
 
