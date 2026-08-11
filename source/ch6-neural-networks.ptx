@@ -765,6 +765,83 @@
             </dl>
         </p>
     </subsection>
+    <reading-questions xml:id="rq-training-the-network">
+        <exercise label="select-all-gradient-descent" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+
+            <statement>
+                <p>
+                    Consider the difference between standard gradient descent and stochastic gradient descent (SGD). Which of the following statements are true? Select all that apply.
+                </p>
+            </statement>
+
+            <choices randomize="yes">
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            Standard gradient descent computes the gradient using the entire training dataset for each update, while SGD computes it using a small mini-batch.
+                        </p>
+                    </statement>
+                    <feedback>
+                        <p>
+                            Correct. The "stochastic" part refers to using random mini-batches rather than the full dataset to estimate the gradient.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            SGD is typically faster per update than standard gradient descent because it processes fewer examples.
+                        </p>
+                    </statement>
+                    <feedback>
+                        <p>
+                            Correct. Think about the math—if you compute a gradient using 100 examples versus 100,000 examples, which calculation finishes faster? SGD's speed advantage comes directly from processing less data per update.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Standard gradient descent will always find the global minimum of the cost function regardless of the network's architecture.
+                        </p>
+                    </statement>
+                    <feedback>
+                        <p>
+                            Incorrect. This statement overpromises what gradient descent can achieve. Neural networks have non-convex cost functions with many local minima. While gradient descent will reduce the cost, it does not guarantee finding the global minimum.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            SGD introduces randomness into the training process because each mini-batch provides a different estimate of the true gradient.
+                        </p>
+                    </statement>
+                    <feedback>
+                        <p>
+                            Correct. The randomness from mini-batch sampling is what makes SGD "stochastic." This noise can actually be beneficial, as it helps the network escape shallow local minima.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Using SGD rather than standard gradient descent guarantees the network will converge to a lower cost value.
+                        </p>
+                    </statement>
+                    <feedback>
+                        <p>
+                            Incorrect. This is an overstatement. SGD is not guaranteed to find a lower cost value than standard gradient descent. The noisy estimates mean SGD often converges to a slightly higher training cost, but it does so much faster and can sometimes find more generalizable solutions.
+                        </p>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+    </reading-questions>
   </section>
 
   <section xml:id="sec-large-language-models">
