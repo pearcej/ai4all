@@ -317,6 +317,41 @@
             Without an activation function, a neural network would merely perform basic addition and multiplication. This means the entire system would collapse into a simple, flat linear calculation, making it mathematically impossible for the network to understand or infer complex, non-linear patterns. The non-linear nature of the activation function bends the signal, enabling the network to learn intricate and highly abstract behaviors.
         </p>
     </subsection>
+    <reading-questions xml:id="rq-inputs-weights-biases">
+        <exercise label="cardsort-neural-network-components" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+
+            <statement>
+                <p>
+                    Match each neural network component on the left with its correct function on the right. Each function may describe only one component.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                    Think about what each component does in the flow of information through a neuron. What enters the neuron? What determines how much each input matters? What allows the neuron to fire more or less easily? What transforms the final signal into a usable output?
+                </p>
+            </feedback>
+
+            <cardsort>
+                <match>
+                    <response>The raw evidence or features passed into the neuron from the previous layer or from the data itself</response>
+                    <premise order="1">Inputs</premise>
+                </match>
+                <match>
+                    <response>Parameters that express how much influence each incoming signal has on the neuron's decision</response>
+                    <premise order="2">Weights</premise>
+                </match>
+                <match>
+                    <response>A parameter that makes it easier or harder for the neuron to fire by shifting the activation threshold</response>
+                    <premise order="3">Bias</premise>
+                </match>
+                <match>
+                    <response>A mathematical filter that compresses the neuron's total signal into a specific output range</response>
+                    <premise order="4">Activation Function</premise>
+                </match>
+            </cardsort>
+        </exercise>
+    </reading-questions>
   </section>
 
   <section xml:id="sec-the-power-of-layers">
