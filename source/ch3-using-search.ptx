@@ -422,13 +422,164 @@
       </p>
     </subsection>
 
-    <subsection xml:id="ssec-tic-tac-toe-example">
-      <title>Tic-Tac-Toe Example</title>
+<subsection xml:id="ssec-tic-tac-toe-example">
+    <title>Tic-Tac-Toe Example</title>
 
-      <p>
-        [Placeholder: Tic-Tac-Toe example content to be added.]
-      </p>
-    </subsection>
+    <p>Using tic-tac-toe as an example, we can visualize game states using a
+    tree structure where each node represents a specific board configuration.
+    Looking at <xref ref="fig-tic-tac-toe-initial-state"/> below, let's say
+    you are player X while AI is player O; we see the initial state, the
+    beginning of the game before any moves have been made. The empty board is
+    the root node. From there, the AI has 9 possible actions for its first
+    move because there are 9 available boxes in a tic-tac-toe grid. Each
+    action leads to a new state, represented by the 9 branches in
+    <xref ref="fig-tic-tac-toe-initial-state"/>. This movement from one state
+    to another through an action is called a <term>transition</term>. Each
+    time a player makes a move, the game transitions from the current state to
+    a new state.</p>
+
+    <figure xml:id="fig-tic-tac-toe-initial-state">
+        <caption>Initial state of tic-tac-toe with nine possible first moves</caption>
+        <image source="tictactoe-image-1.png">
+            <shortdescription>
+                Tree diagram showing the initial empty tic-tac-toe board as the root node
+                with nine branches representing all possible first moves for player O
+            </shortdescription>
+            <description>
+                <p>
+                    A tree diagram illustrating the state space for the first move in a
+                    tic-tac-toe game, where player O moves first. The diagram is structured
+                    vertically from top to bottom with evenly spaced, balanced branches. At
+                    the top is the root node, which displays an empty 3x3 tic-tac-toe grid
+                    representing the initial state before any moves have been made. From
+                    this root node, nine branches extend downward in a balanced tree
+                    formation, each leading to a node that displays a 3x3 tic-tac-toe grid
+                    showing the resulting board state. Each branch corresponds to one of the
+                    nine possible first moves for player O, labeled according to the
+                    position on the grid: Action 1 (top-left), Action 2 (top-center),
+                    Action 3 (top-right), Action 4 (middle-left), Action 5 (center),
+                    Action 6 (middle-right), Action 7 (bottom-left), Action 8
+                    (bottom-center), and Action 9 (bottom-right). In each resulting node,
+                    the corresponding position on the 3x3 grid contains an O marking,
+                    indicating player O's first move. The tree shows that from the empty
+                    board, there are exactly nine possible legal moves for the first player,
+                    each leading to a distinct board configuration.
+                </p>
+            </description>
+        </image>
+    </figure>
+
+    <p>After the first move is made, there are only 8 possible moves, no matter
+    what the first move was. <xref ref="fig-tic-tac-toe-first-move"/> zooms in
+    on just one branch from <xref ref="fig-tic-tac-toe-initial-state"/>—specifically,
+    the branch where the AI placed its O in the center square (Action 5).
+    <xref ref="fig-tic-tac-toe-first-move"/> shows your 8 possible moves after
+    the AI's first move. You can place an X in any of the 8 available boxes.
+    Each of these moves represents another transition, moving the game from the
+    center-O state to one of 8 new states.</p>
+
+    <figure xml:id="fig-tic-tac-toe-first-move">
+        <caption>State space tree after the first move (center square)</caption>
+        <image source="tictactoe-image-2.png">
+            <shortdescription>
+                Tree diagram showing the initial empty board at the root, with nine branches
+                for the first move, and the Action 5 branch expanded to show the eight
+                possible second moves for player X
+            </shortdescription>
+            <description>
+                <p>
+                    A tree diagram illustrating two levels of moves in a tic-tac-toe game,
+                    where player O moves first followed by player X. The diagram is
+                    structured vertically from top to bottom with a hierarchical branching
+                    pattern. At the top is the root node, which displays an empty 3x3
+                    tic-tac-toe grid representing the initial state before any moves have
+                    been made.
+                </p>
+                <p>
+                    From the root node, nine branches extend downward, each representing a
+                    possible first move for player O. These branches are labeled Action 1
+                    through Action 9, corresponding to the nine positions on the tic-tac-toe
+                    grid. Each of these nine branches leads to a node displaying the
+                    resulting board state with an O placed in the corresponding position.
+                </p>
+                <p>
+                    The Action 5 branch (representing O placed in the center square) is
+                    expanded further. From this node, which shows a 3x3 grid with O in the
+                    center, eight branches extend downward, labeled Action 5.1 through
+                    Action 5.8. Each branch represents a possible second move for player X,
+                    corresponding to the eight remaining empty positions on the grid. Each
+                    of these eight branches leads to a node displaying the resulting board
+                    state, showing a 3x3 grid with O in the center and X placed in one of
+                    the eight available positions: top-left, top-center, top-right,
+                    middle-left, middle-right, bottom-left, bottom-center, or bottom-right.
+                </p>
+                <p>
+                    The other eight branches from the root (Actions 1, 2, 3, 4, 6, 7, 8, and
+                    9) are shown as complete first-level paths with their corresponding O
+                    placed in the respective positions, but these branches are not expanded
+                    further, emphasizing that this diagram focuses specifically on the
+                    branch where O plays in the center position. The tree is evenly spaced
+                    at the first level, with the Action 5 branch receiving additional depth
+                    while the others remain unexpanded.
+                </p>
+            </description>
+        </image>
+    </figure>
+
+    <p>AI uses these state spaces to work towards a goal state. Let's fast
+    forward to a state where only 3 moves are left.
+    <xref ref="fig-tic-tac-toe-goal-state"/> shows a state with only 3 empty
+    squares remaining. The goal state is any state where the AI wins the game,
+    so the AI will evaluate its possible actions to see which ones bring it
+    closer to that goal state. Each action the AI considers is a potential
+    transition, moving the game from the current state toward a winning state.
+    By exploring these state spaces and the transitions between them, the AI
+    can look ahead and choose actions that lead toward victory.</p>
+
+    <figure xml:id="fig-tic-tac-toe-goal-state">
+        <caption>State approaching a goal state with three moves remaining</caption>
+        <image source="tictactoe-image-3.png">
+            <shortdescription>
+                Tree diagram showing a current tic-tac-toe state at the root with three
+                possible moves, each branching to further moves
+            </shortdescription>
+            <description>
+                <p>
+                    A tree diagram illustrating three levels of moves in a tic-tac-toe game.
+                    The diagram is structured vertically from top to bottom with a
+                    hierarchical branching pattern. At the top is the root node, which
+                    displays a 3x3 tic-tac-toe grid representing the current state of the
+                    game with three empty squares remaining.
+                </p>
+                <p>
+                    From the root node, three branches extend downward, labeled Action 1,
+                    Action 2, and Action 3. Each branch represents a possible move for
+                    player O, corresponding to one of the three remaining empty positions on
+                    the grid. Each node at this level displays the resulting board state
+                    with O placed in the corresponding position.
+                </p>
+                <p>
+                    At the second level, each action branches further. Action 1 leads to two
+                    branches labeled Action 1.1 and Action 1.2. Action 2 leads to two
+                    branches labeled Action 2.1 and Action 2.2. Action 3 leads to two
+                    branches labeled Action 3.1 and Action 3.2. Each of these branches
+                    represents a possible response move for player X from the resulting
+                    state after O's first action. Each node at this level displays the
+                    resulting board state with X placed in the corresponding position.
+                </p>
+                <p>
+                    At the third level, Action 1.1 leads to Action 1.1.1, Action 1.2 leads
+                    to Action 1.2.1, Action 2.2 leads to Action 2.2.1, and Action 3.2 leads
+                    to Action 3.2.1, representing possible moves for player O from the
+                    resulting states. Action 2.1 and Action 3.1 are shown without further
+                    branching. Each node at this level displays the resulting board state
+                    with O placed in the corresponding position.
+                </p>
+            </description>
+        </image>
+    </figure>
+
+</subsection>
 
     <subsection xml:id="ssec-problem-solving-process">
       <title>The Problem-Solving Process</title>
