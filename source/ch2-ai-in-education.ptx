@@ -156,82 +156,6 @@
           concepts without sacrificing your own cognitive independence.
       </p>
     </subsection>
-    <reading-questions xml:id="rqs-cognitive-debt">
-
-        <exercise xml:id="mc-cognitive-debt" label="multiple-choice-cognitive-debt" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
-
-        <idx>cognitive debt</idx>
-        <statement>
-            <p>
-            According to Chapter 2, what is the primary risk of relying on generative AI to answer homework questions without active reflection?
-            </p>
-        </statement>
-
-        <choices>
-            <choice>
-            <statement>
-                <p>
-                AI models will eventually charge subscription fees for student access.
-                </p>
-            </statement>
-
-            <feedback>
-                <p>
-                Incorrect. While monetization exists, this is not the primary educational risk highlighted in the text.
-                </p>
-            </feedback>
-            </choice>
-
-            <choice>
-            <statement>
-                <p>
-                AI tools automatically report unauthorized student usage to academic integrity boards.
-                </p>
-            </statement>
-
-            <feedback>
-                <p>
-                Incorrect. AI tools do not automatically report usage to integrity boards.
-                </p>
-            </feedback>
-            </choice>
-
-            <choice>
-            <statement>
-                <p>
-                Students will memorize incorrect information because AI rarely produces grammatically correct sentences.
-                </p>
-            </statement>
-
-            <feedback>
-                <p>
-                Incorrect. LLMs excel at fluent grammar, which is precisely why their hallucinations can be deceivingly persuasive.
-                </p>
-            </feedback>
-            </choice>
-
-            <choice correct="yes">
-            <statement>
-                <p>
-                It creates a <q>cognitive debt cycle</q> where students lose the habit of critical thinking and perform worse on independent evaluations.
-                </p>
-            </statement>
-
-            <feedback>
-                <p>
-                Correct! Routine reliance reduces active cognitive engagement, leading to declines on supervised tests.
-                </p>
-            </feedback>
-            </choice>
-        </choices>
-
-        <hint>
-            <p>
-            Consider how routine shortcutting affects a student's long-term habits when taking closed-book or supervised exams.
-            </p>
-        </hint>
-        </exercise>
-    </reading-questions>
   </section>
 
 <section xml:id="sec-how-mistakes-help-you-learn">
@@ -292,87 +216,11 @@
         </ol>
     </p>    
         </statement>        
-</definition>
+    </definition>
 
     <p>
         <em>Don't ask AI before you've really tried and engaged your own reasoning.</em> The effort you spend thinking before asking an AI tool (or a professor or a peer) is often the most valuable part of the learning process.
     </p>
-
-    <reading-questions xml:id="rqs-productive-struggle">
-
-    <exercise xml:id="mc-productive-struggle" label="multiple-choice-productive-struggle" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
-
-        <statement>
-            <p>
-            Which of the following scenarios best demonstrates productive struggle when using AI for learning?
-            </p>
-        </statement>
-
-        <choices>
-            <choice>
-            <statement>
-                <p>
-                Asking AI to generate a complete essay draft, then making minor grammatical edits before submitting it.
-                </p>
-            </statement>
-
-            <feedback>
-                <p>
-                Incorrect. This bypasses active thinking and makes the AI the primary author.
-                </p>
-            </feedback>
-            </choice>
-
-            <choice correct="yes">
-            <statement>
-                <p>
-                Struggling with a math problem for a few minutes, writing out an initial attempt, and then asking AI to review the work and explain where a mistake occurred.
-                </p>
-            </statement>
-
-            <feedback>
-                <p>
-                Correct! Productive struggle requires making an initial independent effort before using AI for targeted feedback.
-                </p>
-            </feedback>
-            </choice>
-
-            <choice>
-            <statement>
-                <p>
-                Copying and pasting textbook questions directly into an LLM to get instant step-by-step solutions without attempting them first.
-                </p>
-            </statement>
-
-            <feedback>
-                <p>
-                Incorrect. Getting instant solutions without an initial mental effort skips the cognitive work necessary for retention.
-                </p>
-            </feedback>
-            </choice>
-
-            <choice>
-            <statement>
-                <p>
-                Avoiding AI entirely and refusing to look up hints or supplemental explanations when stuck on a concept.
-                </p>
-            </statement>
-
-            <feedback>
-                <p>
-                Incorrect. Productive struggle does not mean avoiding help entirely; it means engaging thoughtfully before seeking guidance.
-                </p>
-            </feedback>
-            </choice>
-        </choices>
-
-        <hint>
-            <p>
-            Look for the option where the learner puts in their own cognitive effort first before bringing in AI support.
-            </p>
-        </hint>
-        </exercise>
-    </reading-questions>
   </section>
 
   <section xml:id="sec-ai-powered-study-buddy">
@@ -497,36 +345,146 @@
         </p>
     </subsection>
     <reading-questions xml:id="rqs-effective-vs-ineffective-practices">
-        <exercise label="effective-vs-ineffective-practices" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
-
-            <statement>
+        <exercise label="sa-learning-ai-integration" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+        <statement>
             <p>
-                Sort the following study habits into two categories: <q>Effective Practice</q> or <q>Ineffective Practice</q> based on the reading.
+            A student is preparing for a major exam and wants to use generative AI effectively as part of their study routine. Which of the following study practices are supported by the evidence and principles discussed discussed in this chapter?
             </p>
+        </statement>
+
+        <choices randomize="yes">
+            <choice>
+            <statement>
+                <p>
+                The student asks AI to identify the most important concepts from each chapter and creates flashcards based on the AI's prioritization, concentrating study time on what the AI indicates is most likely to appear on the exam.
+                </p>
             </statement>
 
             <feedback>
-            <p>
-                Effective practices use AI as a feedback partner after you try a task yourself. Ineffective practices use AI to skip the mental work.
-            </p>
+                <p>
+                Incorrect. This seems efficient and strategic, but it fundamentally outsources the judgment of what matters to the AI. The chapter emphasizes that processing ideas with your own mind is "non-negotiable" for true mastery. By letting AI determine what's important, the student bypasses the cognitive work of evaluating, synthesizing, and prioritizing information—exactly the kind of engagement that leads to deeper understanding. While AI might correctly identify exam topics, the student hasn't done the mental work to connect those concepts meaningfully.
+                </p>
             </feedback>
+            </choice>
 
-            <cardsort>
-            <match>
-                <response>Effective Practice</response>
-                <premise order="1">Solving a problem yourself first, then asking AI to review your steps for errors.</premise>
-                <premise order="3">Writing your own essay draft first, then asking AI for feedback and revision ideas.</premise>
-                <premise order="5">Asking AI to explain a confusing concept using a real-world analogy.</premise>
-                <premise order="7">Prompting AI to generate practice quiz questions to test your memory.</premise>
-            </match>
-            <match>
-                <response>Ineffective Practice</response>
-                <premise order="2">Pasting a homework problem into AI to get the answer without trying it first.</premise>
-                <premise order="4">Having AI write your paper's first draft and editing it into your own words.</premise>
-                <premise order="6">Asking AI to outline and build your main arguments before brainstorming yourself.</premise>
-                <premise order="8">Accepting AI summaries as fact without checking independent sources.</premise>
-            </match>
-            </cardsort>
+            <choice>
+            <statement>
+                <p>
+                When encountering a difficult problem, the student asks AI to explain the solution approach step-by-step, then practices applying that same approach to similar problems to build procedural fluency and confidence.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                Incorrect. This approach is tempting because it feels like efficient skill-building—learn the method, then practice it. However, the chapter's research on productive struggle shows that this approach skips the critical cognitive preparation that comes from making an initial attempt. When you see the solution approach first, you lose the opportunity to grapple with the problem, make mistakes, and have your brain in that "especially ready to learn" state that feedback triggers. The TRACE strategy requires Try and Reason before Ask—even if your attempt is wrong, that attempt itself is what makes the subsequent explanation valuable.
+                </p>
+            </feedback>
+            </choice>
+
+            <choice>
+            <statement>
+                <p>
+                The student uses AI to generate a detailed outline for their study notes, organizes the AI's output into a structured review document, and studies this comprehensive guide to ensure they haven't missed any key concepts.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                Incorrect. This sounds thorough and organized, but it's a form of outsourcing the cognitive work of synthesis and organization. The chapter describes how AI tools can be powerful for brainstorming and idea generation, but only when the student has already engaged with the material themselves. Having AI generate the outline means the student never struggles to connect ideas, identify relationships, or determine what fits where—all of which are essential cognitive processes for building durable understanding. The resulting study guide may look comprehensive, but the student's brain hasn't done the work to make that information stick.
+                </p>
+            </feedback>
+            </choice>
+
+            <choice>
+            <statement>
+                <p>
+                The student provides their lecture notes to an AI tool and asks it to identify gaps or inconsistencies in their understanding, then uses the AI's feedback to target specific areas for deeper review.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                Incorrect. This approach sounds like responsible self-assessment—using AI to check your work. However, the chapter emphasizes that effective AI use requires you to engage cognitively first, then use AI for feedback. By giving AI your notes and asking it to identify gaps, you're asking the AI to do the diagnostic work that should be part of your own reflective process. The TRACE strategy (Try, Reason, Ask, Compare, Evaluate) puts the burden of identifying confusion on the learner first, then uses AI to verify and extend that thinking, not replace it.
+                </p>
+            </feedback>
+            </choice>
+
+            <choice correct="yes">
+            <statement>
+                <p>
+                Before asking AI to explain a concept they find confusing, the student writes down their current understanding of the concept and identifies specific points where they're stuck or uncertain.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                Correct! This follows the TRACE strategy's "Try" and "Reason" steps, where students engage their own thinking before seeking AI assistance. Research on desirable difficulties shows that making an initial attempt—even if incomplete—prepares the brain to learn more effectively from subsequent feedback. The student is doing the cognitive work first and using AI strategically to address specific gaps.
+                </p>
+            </feedback>
+            </choice>
+
+            <choice correct="yes">
+            <statement>
+                <p>
+                After receiving an AI-generated explanation, the student cross-checks key claims against their textbook, lecture notes, or other authoritative sources rather than accepting the AI's response as verified information.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                Correct! This demonstrates the "Evaluate" step of the TRACE strategy and addresses the hallucination risks discussed in the chapter. The student maintains intellectual independence by verifying AI output against authoritative sources. The chapter emphasizes that AI systems are imperfect and that "effective AI users do not simply accept AI-generated responses"—they question them and use their own judgment.
+                </p>
+            </feedback>
+            </choice>
+
+            <choice correct="yes">
+            <statement>
+                <p>
+                The student asks AI to generate additional practice problems on topics where they need more practice, works through each problem independently, and then uses AI to check their work and explain any mistakes.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                Correct! This follows the TRACE framework (Try, Reason, Ask, Compare, Evaluate) and leverages AI as a dynamic study partner. The student maintains cognitive independence by working problems independently first, then uses AI for targeted feedback. This also addresses the study's finding that practice and self-testing are more effective when you've attempted the work yourself before seeking assistance.
+                </p>
+            </feedback>
+            </choice>
+
+            <choice correct="yes">
+            <statement>
+                <p>
+                The student uses AI to brainstorm potential essay topics or thesis angles, generates several ideas on their own first, and then combines the strongest ideas from both their own brainstorming and the AI's suggestions.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                Correct! This follows the effective brainstorming strategy described in the AI-Powered Study Buddy section. By generating their own ideas first and then using AI to expand and complement their thinking, the student remains the primary author and thinker while using AI as a creative partner. The chapter explicitly describes brainstorming as a way to use AI "to kickstart your own creative process" without "outsourcing the actual composition."
+                </p>
+            </feedback>
+            </choice>
+
+            <choice correct="yes">
+            <statement>
+                <p>
+                After attempting to understand a difficult concept on their own, the student asks AI to explain it using an analogy, then attempts to explain the concept back to the AI in their own words and asks the AI to identify any misconceptions in their explanation.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                Correct! This approach uses AI as a conversational study partner in a dynamic feedback loop, as described in the AI-Powered Study Buddy section. By explaining the concept back and asking for critique, the student actively processes the material rather than passively consuming information. This creates the kind of retrieval practice and self-testing that the chapter identifies as effective learning strategies.
+                </p>
+            </feedback>
+            </choice>
+        </choices>
+
+        <hint>
+            <p>
+            Use the TRACE strategy (Try, Reason, Ask, Compare, Evaluate) as your test: supported practices always put the student's own thinking first. Unsupported practices let AI do cognitive work (identifying, organizing, diagnosing, or solving) that the student should be doing themselves.
+            </p>
+        </hint>
         </exercise>
     </reading-questions>
   </section>
