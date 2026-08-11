@@ -1074,5 +1074,76 @@
         the world the way humans do and requires careful design and oversight
         to handle novel situations appropriately.</p>
     </assemblage>
+    <reading-questions xml:id="rq-mythbusting-ch6">
+        <exercise xml:id="multiple-choice-ai-objectivity" label="multiple-choice-ai-objectivity" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+        
+            <idx>algorithmic bias</idx>
+            <idx>mythbusting</idx>
+            <statement>
+                <p>
+                    A company announces that their new AI hiring system is "completely objective" because it uses algorithms rather than human judgment. Based on the Mythbusting section, which response best addresses this claim?
+                </p>
+            </statement>
+
+            <choices>
+                <choice>
+                    <statement>
+                        <p>
+                            This claim is plausible because algorithmic decision-making eliminates the unconscious biases that human recruiters bring to the hiring process, even if the algorithm is not perfect.
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p>
+                            Incorrect. This reflects the common misconception that algorithms are inherently neutral. The section states that AI "reflects and amplifies the biases present in its training data"—consistency does not equal objectivity.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            This claim is misleading because AI systems reflect and amplify the biases present in their training data, and they are optimized for plausible outputs rather than verified truth.
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p>
+                            Correct. This directly matches the section's argument: AI absorbs biases from training data and optimizes for plausible-sounding outputs, not verified truth. The company's claim ignores both of these fundamental issues.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            This is true only if the system was trained on a diverse dataset; otherwise, it will reflect the demographics of whoever built it.
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p>
+                            Incorrect. This oversimplifies the problem. The section does not claim diversity alone guarantees objectivity—historical bias can persist in diverse datasets. The issue is about patterns in training data, not just who built the system.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            This claim is false because AI systems are intentionally programmed with the biases of their developers to achieve corporate goals.
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p>
+                            Incorrect. This mischaracterizes how bias enters AI systems. The section describes bias as emerging unintentionally from training data and optimization choices—not as intentional programming by developers.
+                        </p>
+                    </feedback>
+                </choice>
+            </choices>
+
+        </exercise>
+    </reading-questions>
 </section>
 </chapter>
