@@ -719,22 +719,6 @@
               Think of it like exploring a maze with no map, no compass, and no sense of direction. You can only move step by step and explore systematically, but you have no "intuition" about which direction to head. You might try every path until you eventually find the exit—or get hopelessly lost.
           </p>
 
-          <figure xml:id="fig-uninformed-search-overview">
-              <caption>
-                  Uninformed search explores all directions equally, without any guidance toward the goal.
-              </caption>
-              <image source="uninformed-search-overview.png">
-                  <shortdescription>
-                      A diagram showing a search tree expanding outward in all directions from the start node, with no bias toward the goal.
-                  </shortdescription>
-                  <description>
-                      <p>
-                          A search tree diagram with a start node at the top and branches expanding uniformly in all directions. The goal node is located in one branch, but the search has explored many other branches equally before reaching it. The diagram highlights the wasted effort in uninformed search.
-                      </p>
-                  </description>
-              </image>
-          </figure>
-
           <p>
               Because they lack guidance, uninformed search methods are generally slower than informed methods and take more time to find solutions. However, they are guaranteed to find a solution (if one exists) and, in some cases, guaranteed to find the best one. This makes them valuable tools when:
           </p>
@@ -786,22 +770,6 @@
                   <li><p>Repeat until the queue is empty or the goal is found</p></li>
               </ol>
           </p>
-
-          <figure xml:id="fig-bfs-tree">
-              <caption>
-                  Breadth-first search explores all nodes level by level before moving deeper.
-              </caption>
-              <image source="bfs-tree.png">
-                  <shortdescription>
-                      A tree showing BFS exploring nodes in level order: all nodes at depth 0, then depth 1, then depth 2.
-                  </shortdescription>
-                  <description>
-                      <p>
-                          A tree diagram with the root node at the top. The root is labeled "Start." Below it are three child nodes at depth 1. Below each of those are further child nodes at depth 2. Numbers next to each node indicate the order of exploration: the root is 1, all nodes at depth 1 are 2-4, and all nodes at depth 2 are 5-10. The goal node is at depth 2.
-                      </p>
-                  </description>
-              </image>
-          </figure>
 
           <p>
               <em>Properties of BFS:</em>
@@ -871,22 +839,6 @@
                   <li><p>Repeat until the stack is empty or the goal is found</p></li>
               </ol>
           </p>
-
-          <figure xml:id="fig-dfs-tree">
-              <caption>
-                  Depth-first search explores one branch completely before backtracking to explore others.
-              </caption>
-              <image source="dfs-tree.png">
-                  <shortdescription>
-                      A tree showing DFS exploring all the way down one branch before exploring the next branch.
-                  </shortdescription>
-                  <description>
-                      <p>
-                          A tree diagram with the root node at the top. Numbers next to each node indicate the order of exploration: the root is 1, the algorithm goes down the leftmost branch to depth 3 (nodes 2, 3, 4), backtracks to explore the next branch (nodes 5, 6), and continues in this depth-first pattern. The goal node is found on the first branch.
-                      </p>
-                  </description>
-              </image>
-          </figure>
 
           <p>
               <em>Properties of DFS:</em>
@@ -1414,22 +1366,6 @@
         <p>
             In adversarial search, the AI agent faces an opponent with opposing goals. The AI must account for the actions of an adversary who is trying to win. This is the kind of search used in game-playing AI, where the AI must plan its moves while assuming the opponent will do everything possible to defeat it.
         </p>
-
-        <figure xml:id="fig-adversarial-search-overview">
-            <caption>
-                Adversarial search involves an AI (MAX) competing against an opponent (MIN) with opposing goals.
-            </caption>
-            <image source="adversarial-search-overview.png">
-                <shortdescription>
-                    A diagram showing a game tree where two players alternate turns, with one player trying to maximize the outcome and the other trying to minimize it.
-                </shortdescription>
-                <description>
-                    <p>
-                        A game tree diagram with a root node labeled "MAX" at the top. Branching down from the root are nodes at depth 1 labeled "MIN." Below those are nodes at depth 2 labeled "MAX," and so on. The terminal nodes at the bottom have utility values (win, lose, draw). Arrows show how values propagate upward: MIN nodes take the minimum of their children, MAX nodes take the maximum of their children.
-                    </p>
-                </description>
-            </image>
-        </figure>
 
         <assemblage xml:id="asm-adversarial-analogy">
             <title>Think of It This Way...</title>
