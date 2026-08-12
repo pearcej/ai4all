@@ -317,6 +317,41 @@
             Without an activation function, a neural network would merely perform basic addition and multiplication. This means the entire system would collapse into a simple, flat linear calculation, making it mathematically impossible for the network to understand or infer complex, non-linear patterns. The non-linear nature of the activation function bends the signal, enabling the network to learn intricate and highly abstract behaviors.
         </p>
     </subsection>
+    <reading-questions xml:id="rq-inputs-weights-biases">
+        <exercise label="cardsort-neural-network-components" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+
+            <statement>
+                <p>
+                    Match each neural network component on the left with its correct function on the right. Each function may describe only one component.
+                </p>
+            </statement>
+
+            <feedback>
+                <p>
+                    Think about what each component does in the flow of information through a neuron. What enters the neuron? What determines how much each input matters? What allows the neuron to fire more or less easily? What transforms the final signal into a usable output?
+                </p>
+            </feedback>
+
+            <cardsort>
+                <match>
+                    <response>The raw evidence or features passed into the neuron from the previous layer or from the data itself</response>
+                    <premise order="1">Inputs</premise>
+                </match>
+                <match>
+                    <response>Parameters that express how much influence each incoming signal has on the neuron's decision</response>
+                    <premise order="2">Weights</premise>
+                </match>
+                <match>
+                    <response>A parameter that makes it easier or harder for the neuron to fire by shifting the activation threshold</response>
+                    <premise order="3">Bias</premise>
+                </match>
+                <match>
+                    <response>A mathematical filter that compresses the neuron's total signal into a specific output range</response>
+                    <premise order="4">Activation Function</premise>
+                </match>
+            </cardsort>
+        </exercise>
+    </reading-questions>
   </section>
 
   <section xml:id="sec-the-power-of-layers">
@@ -730,6 +765,83 @@
             </dl>
         </p>
     </subsection>
+    <reading-questions xml:id="rq-training-the-network">
+        <exercise label="select-all-gradient-descent" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+
+            <statement>
+                <p>
+                    Consider the difference between standard gradient descent and stochastic gradient descent (SGD). Which of the following statements are true? Select all that apply.
+                </p>
+            </statement>
+
+            <choices randomize="yes">
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            Standard gradient descent computes the gradient using the entire training dataset for each update, while SGD computes it using a small mini-batch.
+                        </p>
+                    </statement>
+                    <feedback>
+                        <p>
+                            Correct. The "stochastic" part refers to using random mini-batches rather than the full dataset to estimate the gradient.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            SGD is typically faster per update than standard gradient descent because it processes fewer examples.
+                        </p>
+                    </statement>
+                    <feedback>
+                        <p>
+                            Correct. Think about the math—if you compute a gradient using 100 examples versus 100,000 examples, which calculation finishes faster? SGD's speed advantage comes directly from processing less data per update.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Standard gradient descent will always find the global minimum of the cost function regardless of the network's architecture.
+                        </p>
+                    </statement>
+                    <feedback>
+                        <p>
+                            Incorrect. This statement overpromises what gradient descent can achieve. Neural networks have non-convex cost functions with many local minima. While gradient descent will reduce the cost, it does not guarantee finding the global minimum.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            SGD introduces randomness into the training process because each mini-batch provides a different estimate of the true gradient.
+                        </p>
+                    </statement>
+                    <feedback>
+                        <p>
+                            Correct. The randomness from mini-batch sampling is what makes SGD "stochastic." This noise can actually be beneficial, as it helps the network escape shallow local minima.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Using SGD rather than standard gradient descent guarantees the network will converge to a lower cost value.
+                        </p>
+                    </statement>
+                    <feedback>
+                        <p>
+                            Incorrect. This is an overstatement. SGD is not guaranteed to find a lower cost value than standard gradient descent. The noisy estimates mean SGD often converges to a slightly higher training cost, but it does so much faster and can sometimes find more generalizable solutions.
+                        </p>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+    </reading-questions>
   </section>
 
   <section xml:id="sec-large-language-models">
@@ -962,5 +1074,76 @@
         the world the way humans do and requires careful design and oversight
         to handle novel situations appropriately.</p>
     </assemblage>
+    <reading-questions xml:id="rq-mythbusting-ch6">
+        <exercise xml:id="multiple-choice-ai-objectivity" label="multiple-choice-ai-objectivity" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+        
+            <idx>algorithmic bias</idx>
+            <idx>mythbusting</idx>
+            <statement>
+                <p>
+                    A company announces that their new AI hiring system is "completely objective" because it uses algorithms rather than human judgment. Based on the Mythbusting section, which response best addresses this claim?
+                </p>
+            </statement>
+
+            <choices>
+                <choice>
+                    <statement>
+                        <p>
+                            This claim is plausible because algorithmic decision-making eliminates the unconscious biases that human recruiters bring to the hiring process, even if the algorithm is not perfect.
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p>
+                            Incorrect. This reflects the common misconception that algorithms are inherently neutral. The section states that AI "reflects and amplifies the biases present in its training data"—consistency does not equal objectivity.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            This claim is misleading because AI systems reflect and amplify the biases present in their training data, and they are optimized for plausible outputs rather than verified truth.
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p>
+                            Correct. This directly matches the section's argument: AI absorbs biases from training data and optimizes for plausible-sounding outputs, not verified truth. The company's claim ignores both of these fundamental issues.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            This is true only if the system was trained on a diverse dataset; otherwise, it will reflect the demographics of whoever built it.
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p>
+                            Incorrect. This oversimplifies the problem. The section does not claim diversity alone guarantees objectivity—historical bias can persist in diverse datasets. The issue is about patterns in training data, not just who built the system.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            This claim is false because AI systems are intentionally programmed with the biases of their developers to achieve corporate goals.
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p>
+                            Incorrect. This mischaracterizes how bias enters AI systems. The section describes bias as emerging unintentionally from training data and optimization choices—not as intentional programming by developers.
+                        </p>
+                    </feedback>
+                </choice>
+            </choices>
+
+        </exercise>
+    </reading-questions>
 </section>
 </chapter>
