@@ -736,7 +736,7 @@
           </figure>
 
           <p>
-              Because they lack guidance, uninformed search methods are generally <term>slower</term> than informed methods and take <term>more time</term> to find solutions. However, they are <term>guaranteed to find a solution</term> (if one exists) and, in some cases, <term>guaranteed to find the best one</term>. This makes them valuable tools when:
+              Because they lack guidance, uninformed search methods are generally slower than informed methods and take more time to find solutions. However, they are guaranteed to find a solution (if one exists) and, in some cases, guaranteed to find the best one. This makes them valuable tools when:
           </p>
 
           <p>
@@ -765,7 +765,7 @@
           <title>Breadth-First Search (BFS)</title>
 
           <p>
-              <term>Breadth-first search</term><idx><h>breadth-first search</h></idx> (BFS) is one of the simplest search strategies. It explores all nodes at the current level before moving to the next level. In other words, BFS examines the <term>shallowest</term> (closest to the start) unexamined node first.
+              <term>Breadth-first search (BFS)</term><idx><h>breadth-first search</h></idx><idx><h>BFS</h></idx> is one of the simplest search strategies. It explores all nodes at the current level before moving to the next level. In other words, BFS examines the shallowest (closest to the start) unexamined node first.
           </p>
 
           <p>
@@ -779,7 +779,7 @@
           <p>
               The algorithm works like this:
               <ol>
-                  <li><p>Start with the initial node and place it in a <term>queue</term><idx><h>queue</h></idx> (think of a line at a store—first in, first out)</p></li>
+                  <li><p>Start with the initial node and place it in a queue (think of a line at a store—first in, first out)</p></li>
                   <li><p>Remove the first node from the queue</p></li>
                   <li><p>If this node is the goal, you're done!</p></li>
                   <li><p>Otherwise, expand the queue by generating all its children and add them to the back of the queue</p></li>
@@ -850,7 +850,7 @@
           <title>Depth-First Search (DFS)</title>
 
           <p>
-              <term>Depth-first search</term><idx><h>depth-first search</h></idx> (DFS) takes the opposite approach. DFS explores as far as possible along each branch before turning back. It expands the <term>deepest</term> (farthest from the start) unexpanded node first.
+              <term>Depth-first search (DFS)</term><idx><h>depth-first search</h></idx><idx><h>DFS</h></idx> takes the opposite approach. DFS explores as far as possible along each branch before turning back. It expands the deepest (farthest from the start) unexpanded node first.
           </p>
 
           <p>
@@ -864,7 +864,7 @@
           <p>
               The algorithm works like this:
               <ol>
-                  <li><p>Start with the initial node and place it on a <term>stack</term><idx><h>stack</h></idx> (think of a stack of plates—last in, first out)</p></li>
+                  <li><p>Start with the initial node and place it on a stack (think of a stack of plates—last in, first out)</p></li>
                   <li><p>Remove the top node from the stack</p></li>
                   <li><p>If this node is the goal, you're done!</p></li>
                   <li><p>Otherwise, expand the node by generating all its children and push them onto the stack</p></li>
@@ -935,7 +935,7 @@
           <title>Depth-Limited Search (DLS)</title>
 
           <p>
-              <term>Depth-limited search</term><idx><h>depth-limited search</h></idx> (DLS) is a version of DFS that avoids the infinite-loop problem by setting a maximum depth limit. The algorithm stops exploring any branch once it reaches this limit.
+              <term>Depth-limited search (DLS)</term><idx><h>depth-limited search</h></idx><idx><h>DLS</h></idx> is a version of DFS that avoids the infinite-loop problem by setting a maximum depth limit. The algorithm stops exploring any branch once it reaches this limit.
           </p>
 
           <p>
@@ -1298,7 +1298,7 @@
         <title>Admissible Heuristics</title>
 
         <p>
-            For A* to guarantee finding the best possible solution, the heuristic must be <term>admissible</term><idx><h>admissible heuristic</h></idx>. This is a fancy word that simply means: <term>the heuristic never overestimates the true cost</term>. In other words, it's always optimistic—it thinks you're at least as close to the goal as you actually are.
+            For A* to guarantee finding the best possible solution, the heuristic must be <term>admissible</term><idx><h>admissible heuristic</h></idx>. This is a fancy word that simply means: the heuristic never overestimates the true cost. In other words, it's always optimistic—it thinks you're at least as close to the goal as you actually are.
         </p>
 
         <p>
@@ -1540,7 +1540,7 @@
         </p>
 
         <p>
-            If at any point alpha is greater than or equal to beta, the remaining branches can be <term>pruned</term> (cut off) because they cannot improve the outcome.
+            If at any point alpha is greater than or equal to beta, the remaining branches can be pruned (cut off) because they cannot improve the outcome.
         </p>
 
         <p>
@@ -1576,7 +1576,7 @@
         </assemblage>
 
         <p>
-            This is how systems like <term>DeepBlue</term><idx><h>DeepBlue</h></idx> (the chess AI that beat world champion Garry Kasparov) and <term>AlphaGo</term><idx><h>AlphaGo</h></idx> (the Go AI that beat world champion Lee Sedol) achieved world-class performance—they combined deep search with sophisticated evaluation heuristics.
+            This is how systems like Deep Blue<idx><h>deep blue</h></idx> (the chess AI that beat world champion Garry Kasparov<idx><h>Kasparov, Garry</h></idx>) and AlphaGo<idx><h>AlphaGo</h></idx> (the Go AI that beat world champion Lee Sedol<idx><h>Sedol, Lee</h></idx>) achieved world-class performance—they combined deep search with sophisticated evaluation heuristics.
         </p>
     </subsection>
 
