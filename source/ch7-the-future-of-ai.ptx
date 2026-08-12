@@ -1112,6 +1112,107 @@
         and accountability. Understanding that AI can be regulated helps create
         a framework for responsible development and use.</p>
     </assemblage>
+    <reading-questions xml:id="rq-mythbusting">
+        <exercise label="sa-mythbusting-jobs-privacy-neutrality" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+            <statement>
+                <p>
+                A technology journalist writes an article making three claims: (1) AI will destroy millions of jobs and create widespread unemployment, (2) AI systems are inherently dangerous because they make autonomous decisions without human oversight, and (3) AI will inevitably destroy personal privacy. Which of the following statements accurately respond to the journalist's claims? Select all that apply.
+                </p>
+            </statement>
 
+            <choices randomize="yes">
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                        AI will displace some jobs but also create new ones, as has happened with previous technological shifts.
+                        </p>
+                    </statement>
+                    <feedback>
+                        <p>
+                        Correct. While job displacement is real, AI will create new roles like AI developers and data scientists. Historical shifts have disrupted some occupations while creating entirely new industries.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                        The journalist is right to be alarmed. AI is fundamentally different from previous technologies and will eliminate far more jobs than it creates.
+                        </p>
+                    </statement>
+                    <feedback>
+                           <p>
+                            Incorrect. Privacy concerns from AI are not entirely new—organizations already collect personal data without AI. Existing regulations can be updated to address AI, and complexity does not make regulation impossible.
+                            </p>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                        The claim that AI operates autonomously is inaccurate. AI systems fail in unfamiliar contexts and require human oversight.
+                        </p>
+                    </statement>
+                    <feedback>
+                        <p>
+                        Correct. Scientists do not yet know how to combine perception, analysis, and reaction like living creatures can. AI programs are specialized and fail when placed in new contexts.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                        Privacy risks from AI are unprecedented and cannot be effectively regulated because AI systems are too complex and opaque.
+                        </p>
+                    </statement>
+                    <feedback>
+                        <p>
+                        Incorrect. Privacy concerns from AI are not entirely new—organizations already collect personal data without AI. Existing regulations can be updated to address AI, and complexity does not make regulation impossible.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                        Privacy concerns about AI are valid, but they are not unique to AI and can be managed through updated regulations.
+                        </p>
+                    </statement>
+                    <feedback>
+                        <p>
+                        Correct. Organizations already collect personal data, and privacy issues will exist regardless of AI. The focus should be on establishing reasonable boundaries and regulations.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                        The journalist is wrong about everything. AI is a neutral tool, so it cannot cause real harm, and privacy is not a concern because AI only uses anonymized data.
+                        </p>
+                    </statement>
+                    <feedback>
+                        <p>
+                         Incorrect. AI reflects patterns in its training data, including biases. Privacy concerns are also real—AI processes personal information, not just anonymized data. Valid concerns exist even if some claims are overstated.
+                        </p>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                        AI is a tool without inherent moral value, but it reflects and amplifies biases in its training data, so its impact depends on human choices in development and deployment.
+                        </p>
+                    </statement>
+                    <feedback>
+                        <p>
+                        Correct. AI is neutral as a tool, but it reflects and amplifies biases. The impact depends on how humans develop and use it, not on the technology itself.
+                        </p>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+    </reading-questions>
 </section>
 </chapter>
