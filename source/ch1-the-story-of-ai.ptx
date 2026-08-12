@@ -218,6 +218,71 @@
         reason, create, and interact with the world around us.
     </p>
 
+    <exercise label="ai-history-timeline" adaptive="yes">
+        <title>AI History Timeline</title>
+
+        <idx>artificial intelligence history</idx>
+        <statement>
+            <p>
+                The events below describe key moments in the history of artificial
+                intelligence. Arrange them in the correct chronological order, from
+                earliest to most recent, to create a timeline of AI's development.
+            </p>
+        </statement>
+        <blocks>
+            <block order="1">
+                <p>
+                    Alan Turing publishes <q>Computing Machinery and Intelligence,</q>
+                    introducing ideas that would later become known as the Turing Test.
+                </p>
+            </block>
+            <block order="2">
+                <p>
+                    The Dartmouth Conference brings together researchers to explore
+                    the possibility of thinking machines, widely considered the birth
+                    of AI as a distinct field.
+                </p>
+            </block>
+            <block order="3">
+                <p>
+                    IBM's Deep Blue defeats world chess champion Garry Kasparov,
+                    demonstrating the power of AI in complex strategic games.
+                </p>
+            </block>
+            <block order="4">
+                <p>
+                    IBM Watson achieves a milestone in AI by winning the game show
+                    <q>Jeopardy!</q>
+                </p>
+            </block>
+            <block order="5">
+                <p>
+                    A major leap in performance is unlocked thanks to new deep
+                    learning algorithms and the availability of big data.
+                </p>
+            </block>
+            <block order="6">
+                <p>
+                    AlphaFold successfully predicts protein structures, transforming
+                    scientific research.
+                </p>
+            </block>
+            <block order="7">
+                <p>
+                    OpenAI releases ChatGPT, making generative AI accessible to
+                    millions and reaching 100 million users in just two months.
+                </p>
+            </block>
+        </blocks>
+        <hint>
+            <p>
+                Think about the order in which these events were described in the
+                section. Look for clues about which events happened earlier or later
+                based on how they connect to one another.
+            </p>
+        </hint>
+    </exercise>
+
 </section>
 
 <section xml:id="sec-characterizing-intelligence">
@@ -302,11 +367,6 @@
     <p>For decades, the Turing Test shaped how many people thought about artificial intelligence. Today, however, AI systems perform many impressive tasks that have little to do with carrying on a conversation. As a result, researchers now evaluate AI in many different ways depending on the problems they are trying to solve.</p>
 </subsection>
 
-  <subsection xml:id="ssec-the-evolution-of-automation">
-    <title>The Evolution of Automation</title>
-    <p>Content for the section.</p>
-  </subsection>
-
 <subsection xml:id="ssec-what-is-generative-ai">
     <title>What Is Generative AI?</title>
 
@@ -330,6 +390,95 @@
         In later chapters, we will examine how generative AI systems learn from data, why they sometimes make mistakes, and how they are changing the way people learn, work, and solve problems.
     </p>
 </subsection>
+
+<!-- Multiple Choice Question -->
+<exercise label="turing-test-intention" adaptive="yes">
+    <title>Turing Test Intention</title>
+
+    <idx>Turing Test</idx>
+    <statement>
+        <p>
+            Which of the following best describes Alan Turing's primary
+            intention when he proposed the Turing Test?
+        </p>
+    </statement>
+
+    <choices>
+        <choice>
+            <statement>
+                <p>
+                    To offer a formal standard for evaluating whether a machine
+                    can be said to possess genuine understanding.
+                </p>
+            </statement>
+            <feedback>
+                <p>
+                    Turing did not propose the test as a formal standard for
+                    genuine understanding. He deliberately avoided giving a
+                    definition of thinking, stating: <q>I don't want to give a
+                    definition of thinking.</q> The test evaluates behavior, not
+                    internal understanding.
+                </p>
+            </feedback>
+        </choice>
+
+        <choice>
+            <statement>
+                <p>
+                    To provide a systematic framework for determining the
+                    specific cognitive abilities that any intelligent system
+                    must demonstrate.
+                </p>
+            </statement>
+            <feedback>
+                <p>
+                    Turing's test does not specify which cognitive abilities an
+                    intelligent system must demonstrate. Instead, it focuses on
+                    observable behavior in open-domain conversation, allowing
+                    any system that can imitate human conversation to pass,
+                    regardless of its internal architecture.
+                </p>
+            </feedback>
+        </choice>
+
+        <choice correct="yes">
+            <statement>
+                <p>
+                    To establish a practical method for assessing machine
+                    intelligence based on observable behavior rather than
+                    abstract definitions.
+                </p>
+            </statement>
+            <feedback>
+                <p>
+                    Correct! Turing shifted the focus from the elusive concept
+                    of <q>thinking</q> to observable interaction. He proposed a
+                    practical test based on whether a machine could successfully
+                    imitate human conversation, avoiding the need for a strict
+                    definition of intelligence.
+                </p>
+            </feedback>
+        </choice>
+
+        <choice>
+            <statement>
+                <p>
+                    To design an interrogation protocol that would reliably show
+                    the limitations of early rule-based systems.
+                </p>
+            </statement>
+            <feedback>
+                <p>
+                    Turing's test was not designed to expose limitations or to
+                    be adversarial. In fact, the test disallows the tricky,
+                    adversarial questions that programmers often use to try and
+                    expose chatbots. The goal was to evaluate imitation, not to
+                    reveal weaknesses.
+                </p>
+            </feedback>
+        </choice>
+    </choices>
+</exercise>
 </section>
 
 <section xml:id="sec-mythbusting-ch1">
@@ -447,6 +596,139 @@
         responsibilities of AI systems. Understanding that AI is a tool, not a
         person, helps maintain appropriate human control and accountability.</p>
     </assemblage>
+
+    <exercise label="ai-truths-select-all" adaptive="yes">
+        <title>Select the Truths of AI</title>
+
+        <idx>AI misconceptions</idx>
+        <statement>
+            <p>
+                Which of the following statements are true about artificial
+                intelligence?
+            </p>
+        </statement>
+
+        <choices multiple-correct="yes">
+            <choice>
+                <statement>
+                    <p>AI possesses consciousness through patterns.</p>
+                </statement>
+                <feedback>
+                    <p>
+                        This is a myth. AI replicates patterns in data rather than
+                        possessing any form of subjective awareness, emotions, or
+                        self-consciousness. When an AI generates a poem or offers
+                        comforting words, it is not feeling anything.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>AI's advancing computing and memory has given it increased capability of human understanding.</p>
+                </statement>
+                <feedback>
+                    <p>
+                        This is a myth. Increased computing speed and memory capacity
+                        simply allow AI to process more data faster. They do not make
+                        AI more intelligent or capable of understanding in the way
+                        humans do, nor do they give AI the flexibility and
+                        adaptability of human cognition.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>AI excels in broader and specific tasks.</p>
+                </statement>
+                <feedback>
+                    <p>
+                        Not true. AI systems are highly specialized and excel at
+                        specific, well-defined tasks such as playing chess,
+                        translating text, or recognizing objects in clear
+                        photographs. They lack the broad, flexible intelligence that
+                        humans possess.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>AI's responses are guided by its intentions.</p>
+                </statement>
+                <feedback>
+                    <p>
+                        This is a myth. Current AI systems do not possess the
+                        intrinsic motivations, intentions, or subjective experiences
+                        associated with human thought. They operate through complex
+                        mathematical models designed to recognize statistical
+                        correlations.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>AI is not an autonomous entity.</p>
+                </statement>
+                <feedback>
+                    <p>
+                        Correct! AI is best understood as a tool rather than an autonomous entity.
+                        AI is a set of many different pieces of algorithmic
+                        software similar to smartphone apps. It lacks self-awareness,
+                        consciousness, emotional intelligence, and the ability to
+                        understand complex human contexts. Treating AI as a tool
+                        helps maintain appropriate human control and accountability.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>AI generates text by predicting word sequences.</p>
+                </statement>
+                <feedback>
+                    <p>
+                        Correct! When an AI generates a text response, it is
+                        statistically predicting which words are most likely to
+                        follow previous ones based on its training data. It does not
+                        understand meaning or context in the way humans do.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>AI's processing speed enables human-like comprehension.</p>
+                </statement>
+                <feedback>
+                    <p>
+                        This is a myth. Increased computing speed and memory capacity
+                        allow AI to process more data faster, but they do not make AI
+                        more capable of understanding in the way humans do. Speed
+                        does not give computers the ability to understand things or
+                        to be more flexible and less failure-prone.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>AI is algorithmic software comparable to other digital applications.</p>
+                </statement>
+                <feedback>
+                    <p>
+                        Correct! In practice, AI is a set of many different pieces of
+                        algorithmic software similar to smartphone apps. While some
+                        AI systems are combined into robots designed to look or
+                        behave like humans, the underlying technology is software
+                        implementing learning rules and algorithms.
+                    </p>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
 </section>
 
 </chapter>
