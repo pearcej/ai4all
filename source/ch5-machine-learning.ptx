@@ -31,7 +31,7 @@
           of information; it seeks not to infer brute correlations among data points but to
           create explanations.</q>
         </p>
-        <attribution>Noam Chomsky</attribution>
+        <attribution>Noam Chomsky<idx><h>Chomsky, Noam</h></idx></attribution>
       </blockquote>
 
       <p>
@@ -71,7 +71,8 @@
 
       <p>
         The idea of machines that can learn has been around since the early days of computing. In 1959,
-        Arthur Samuel defined machine learning as a field of study that gives computers the ability to learn
+        Arthur Samuel<idx><h>Samuel, Arthur</h></idx> defined machine learning 
+        as a field of study that gives computers the ability to learn
         without being explicitly programmed. Samuel created a program that learned to play checkers by playing
         thousands of games against itself—an early example of what we now call reinforcement learning.
       </p>
@@ -127,7 +128,7 @@
           platforms and photo libraries to automatically recognize, tag, and organize images of friends and family.
         </li>
         <li>
-          <term>Optical character recognition</term><idx><h>optical character recognition (OCR)</h></idx>
+          <term>Optical character recognition</term><idx><h>optical character recognition</h></idx><idx><h>OCR</h></idx>
           (<term>OCR</term>) converts physical documents and images of text into searchable, editable digital text.
         </li>
         <li>
@@ -144,9 +145,9 @@
         There are many different problem classes in machine learning, categorized primarily by the type of data provided
         and the specific conclusions to be drawn from that data. In the following sections of this chapter, we will explore
         three foundational paradigms:
-        <term>supervised learning</term><idx><h>supervised learning</h></idx>,
-        <term>unsupervised learning</term><idx><h>unsupervised learning</h></idx>, and
-        <term>reinforcement learning</term><idx><h>reinforcement learning</h></idx>.
+        <term>supervised learning</term>,
+        <term>unsupervised learning</term>, and
+        <term>reinforcement learning</term>.
       </p>
     </subsection>
   </section>
@@ -201,7 +202,7 @@
 
       <p>
         Because the correct target is required for every training example, supervised learning relies heavily on
-        <term>labeled data</term><idx><h>labeled data</h></idx>, which is often annotated by human experts or domain specialist systems.
+        labeled data, which is often annotated by human experts or domain specialist systems.
       </p>
 
       <assemblage xml:id="asm-look-closer-supervised-learning">
@@ -230,7 +231,8 @@
         <li>
           <title><term>Classification</term></title>
           <p>
-            Classification algorithms predict a label or category from a finite set of discrete values.
+            <term>Classification algorithms</term><idx><h>classification algorithms</h></idx> 
+            predict a label or category from a finite set of discrete values.
             Classification problems may be <term>binary classification</term><idx><h>binary classification</h></idx>,
             where there are only two possible classes (such as "spam" or "not spam"), or
             <term>multi-class classification</term><idx><h>multi-class classification</h></idx>, featuring three or more
@@ -242,7 +244,8 @@
         <li>
           <title><term>Regression</term></title>
           <p>
-            Regression algorithms are structured similarly to classification models, except that they predict
+            <term>Regression algorithms</term><idx><h>regression algorithms</h></idx> are structured 
+            similarly to classification models, except that they predict
             continuous numerical values rather than discrete categories. Like classification, regression algorithms
             learn from pairs of input data and corresponding target values. Regression is commonly applied when
             the goal is to predict measurements, prices, temperatures, or other continuous quantities.
