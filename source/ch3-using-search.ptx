@@ -763,7 +763,7 @@
           <p>
               The algorithm works like this:
               <ol>
-                  <li><p>Start with the initial node and place it in a queue (think of a line at a store—first in, first out)</p></li>
+                  <li><p>Start with the initial node and place it in a <term>queue</term><idx><h>queue</h></idx> (think of a line at a store—first in, first out)</p></li>
                   <li><p>Remove the first node from the queue</p></li>
                   <li><p>If this node is the goal, you're done!</p></li>
                   <li><p>Otherwise, expand the queue by generating all its children and add them to the back of the queue</p></li>
@@ -832,7 +832,7 @@
           <p>
               The algorithm works like this:
               <ol>
-                  <li><p>Start with the initial node and place it on a stack (think of a stack of plates—last in, first out)</p></li>
+                  <li><p>Start with the initial node and place it on a <term>stack</term><idx><h>stack</h></idx> (think of a stack of plates—last in, first out)</p></li>
                   <li><p>Remove the top node from the stack</p></li>
                   <li><p>If this node is the goal, you're done!</p></li>
                   <li><p>Otherwise, expand the node by generating all its children and push them onto the stack</p></li>
