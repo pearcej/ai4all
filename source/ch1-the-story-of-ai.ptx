@@ -92,7 +92,7 @@
         <em><url href="https://courses.cs.umbc.edu/471/papers/turing.pdf">
         Computing Machinery and Intelligence</url></em>, introducing ideas
         that would later become associated with the
-        <term>Turing Test</term><idx>turing test</idx>. A few years later,
+        <term>Turing Test</term><idx>Turing test</idx>. A few years later,
         John McCarthy<idx>McCarthy, John</idx> coined the term
         <term>artificial intelligence</term><idx>artificial intelligence</idx> and later described it as
         <q>the science and engineering of making intelligent machines.</q> 
@@ -161,10 +161,10 @@
         applications included handwriting and character recognition, such as
         automatically reading license plates. During this era, AI captured the
         public's imagination through several remarkable demonstrations. In
-        1997, IBM's Deep Blue<idx>deep blue</idx> defeated world chess champion
+        1997, IBM's Deep Blue<idx>Deep Blue</idx> defeated world chess champion
         Garry Kasparov<idx>Kasparov, Garry</idx> using highly optimized search algorithms together with carefully 
         designed evaluation functions created by human experts. In 2011,
-        IBM Watson<idx>IBM watson</idx> defeated the best human contestants on the television quiz show
+        IBM Watson<idx>IBM Watson</idx> defeated the best human contestants on the television quiz show
         <em>Jeopardy!</em>, demonstrating the growing power of AI
         combined with enormous collections of information.
     </p>
@@ -180,7 +180,7 @@
         increasingly sophisticated patterns. This technology now supports
         applications ranging from automated facial and object recognition to
         finance, healthcare, transportation, and scientific research. For example,
-        AlphaFold<idx>alphafold</idx>, developed by Google DeepMind, 
+        AlphaFold<idx>AlphaFold</idx>, developed by Google DeepMind, 
         has predicted the structures of more than 200 million proteins from organisms 
         across the tree of life, dramatically accelerating biological research.
     </p>
