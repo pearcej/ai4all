@@ -369,7 +369,7 @@
         </figure>
 
         <p>
-            The histogram makes it plain that most of the scores are in the middle of the distribution, with fewer scores in the extremes. You can also see that the distribution is not symmetric: the scores extend to the right farther than they do to the left. The distribution is therefore said to be <term>skewed</term> <idx>right-skewed distribution</idx> to the right. If the opposite was true, the distribution would be <term>left-skewed</term> <idx>left-skewed distribution</idx>.
+            The histogram makes it plain that most of the scores are in the middle of the distribution, with fewer scores in the extremes. You can also see that the distribution is not symmetric: the scores extend to the right farther than they do to the left. The distribution is therefore said to be <term>skewed</term> <idx>skewed distribution</idx> to the right. If the opposite was true, the distribution would be left-skewed.
         </p>
     </subsection>
 
@@ -1253,6 +1253,102 @@
             </p>
         </assemblage>
     </subsection>
+    <exercise label="model-deployment-performance-drop" adaptive="yes">
+        <title>Model Deployment Performance Drop</title>
+
+        <statement>
+            <p>
+                A data science team is developing a model to predict whether a
+                patient will be readmitted to the hospital within 30 days of
+                discharge. The team has collected a dataset of 10,000 patient
+                records and preprocesses the data. They split the data into
+                training, validation, and test sets. During development, they use
+                the validation set to compare multiple model architectures and
+                select the best one. After selecting the final model, they
+                evaluate it on the test set and achieve 92% accuracy. The team
+                then deploys the model, but it performs significantly worse on new
+                patients, achieving only 78% accuracy.
+            </p>
+            <p>
+                Which of the following best explains the most likely cause of this
+                performance drop?
+            </p>
+        </statement>
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        The team used the test set during model selection, causing
+                        data leakage and over-optimistic performance estimates.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        The team used the validation set for model selection, not
+                        the test set. If the test set had been used during model
+                        selection, the 92% accuracy would indeed be over-optimistic,
+                        but that is not what happened in this scenario.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        The team used the validation set to select the model, but
+                        the test set was not representative of the target
+                        population.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        Correct! The validation set was used appropriately for model
+                        selection, and the test set gave 92% accuracy. However, the
+                        drop to 78% on new patients suggests the test set did not
+                        accurately represent the broader target population. Even
+                        with proper data splitting, if the test set differs from the
+                        real-world distribution, performance will not generalize.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        The team used cross-validation instead of a simple train-test
+                        split, which overfitted the model to the training data.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        Cross-validation typically reduces overfitting by training
+                        on multiple folds and averaging performance, providing more
+                        reliable estimates than a single split. The team used a
+                        validation set approach, not cross-validation.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        The team used the validation set to select the model, but
+                        the test set should have been used for model selection
+                        instead.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        Using the test set for model selection would defeat its
+                        purpose as a blind evaluation set. The test set must remain
+                        untouched during model development to provide an unbiased
+                        estimate of real-world performance.
+                    </p>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
   </section>
 
 </chapter>
