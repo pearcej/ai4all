@@ -434,8 +434,11 @@
         to visualize and analyze.
       </p>
       <p>
-        One of the most common dimensionality reduction techniques is <term>principal component analysis (PCA)</term><idx><h>principal component analysis (PCA)</h></idx>,
-        which finds the directions of maximum variance in the data and projects the data onto those directions.
+        One of the most common dimensionality reduction techniques is 
+        <term>principal component analysis (PCA)</term>
+        <idx><h>principal component analysis</h></idx><idx>PCA</idx>,
+        which finds the directions of maximum variance in the 
+        data and projects the data onto those directions.
       </p>
 
     </subsection>
@@ -531,7 +534,8 @@
       </p>
 
       <p>
-        One of the key challenges in reinforcement learning is the <term>exploration-exploitation tradeoff</term><idx><h>exploration-exploitation tradeoff</h></idx>.
+        One of the key challenges in reinforcement learning is the 
+        <term>exploration-exploitation tradeoff</term><idx><h>exploration-exploitation tradeoff</h></idx>.
         Exploration means trying new actions to discover whether they lead to better rewards. Exploitation means
         using known actions that have already produced good rewards.
       </p>
@@ -641,7 +645,7 @@
         distinct subset of data reserved specifically for testing a trained model's quality. Because the validation
         set is completely separate from the training data, this practice guards against
         <term>overfitting</term><idx><h>overfitting</h></idx>, a common failure mode where a model learns the training
-        data too closely and fails to <term>generalize</term><idx><h>generalization</h></idx> to new information.
+        data too closely and fails to generalize to new information.
       </p>
 
       <p>
@@ -935,7 +939,7 @@
     <assemblage xml:id="asm-myth-ai-addresses-complex-questions">
         <title>Misconception: The current most successful AI methods address complex questions</title>
         <p><em>Reality:</em> The current most successful AI methods, namely
-        <term><idx>neural networks</idx>neural networks</term>, do not address
+        <idx>neural networks</idx>neural networks, do not address
         complex questions but simple ones such as classification or regression
         for high-dimensional data. This goes counter to the tradition of AI
         taking on novel and complex problems. These complex questions are
