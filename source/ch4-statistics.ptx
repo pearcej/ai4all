@@ -921,6 +921,108 @@
         By calculating the overall spread (or variance) of scores within each group, researchers can estimate how much natural noise exists in the data. Inferential statistics uses this background noise to calculate a simple probability: How likely is it that chance alone produced a difference this big between the two groups? If that probability is very low, researchers infer that the treatment had a genuine causal effect rather than a lucky fluke. Because that probability is never strictly zero, total certainty is never possible—but it gives us a reliable way to separate real cause-and-effect from pure chance.
       </p>
     </subsection>
+    <exercise label="correlation-transformations" adaptive="yes" randomize="yes">
+        <title>Correlation and Transformations</title>
+
+        <statement>
+            <p>
+                A researcher collects data on 200 employees and calculates the
+                correlation between years of work experience and annual salary.
+                The researcher finds a Pearson's correlation of <m>r = 0.85</m>.
+            </p>
+            <p>
+                The researcher then converts all salary values from dollars to
+                thousands of dollars and adds 2 years to every employee's work
+                experience to account for previous unpaid internships. The
+                researcher also restricts the analysis to only employees with
+                10–15 years of experience and recalculates the correlation for
+                this subgroup.
+            </p>
+            <p>
+                Which of the following statements best describes what will happen
+                to the correlation coefficient after these transformations?
+            </p>
+        </statement>
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        The correlation will remain <m>0.85</m> because Pearson's
+                        <m>r</m> is unaffected by linear transformations, and it
+                        will remain unchanged in the restricted subgroup because
+                        subgroups preserve the original correlation.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        Restriction of range can artificially deflate the calculated
+                        correlation. Limiting the data to only employees with 10–15
+                        years of experience reduces the variability in work
+                        experience. How might reduced variability affect the
+                        correlation?
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        The correlation will change because converting salary to
+                        thousands of dollars is not a linear transformation, and it
+                        will remain unchanged in the restricted subgroup.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        Pearson's <m>r</m> is completely unaffected by linear
+                        transformations such as multiplying or dividing by a
+                        constant.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        The correlation will remain <m>0.85</m> because Pearson's
+                        <m>r</m> is unaffected by linear transformations, but it
+                        will decrease in the restricted subgroup due to restriction
+                        of range.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        Correct! Converting salary from dollars to thousands of
+                        dollars and adding 2 years to work experience are both
+                        linear transformations, so Pearson's <m>r</m> remains
+                        <m>0.85</m>. However, restricting the data to only employees
+                        with 10–15 years of experience reduces the variability in
+                        work experience, which typically weakens the correlation
+                        (restriction of range).
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        The correlation will change because adding 2 years to work
+                        experience is not a linear transformation, and it will
+                        decrease in the restricted subgroup due to restriction of
+                        range.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        Pearson's <m>r</m> is completely unaffected by linear
+                        transformations such as adding, subtracting, multiplying, or
+                        dividing by a constant.
+                    </p>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
   </section>
 
   <section xml:id="sec-the-data-split">
