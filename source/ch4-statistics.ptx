@@ -369,7 +369,7 @@
         </figure>
 
         <p>
-            The histogram makes it plain that most of the scores are in the middle of the distribution, with fewer scores in the extremes. You can also see that the distribution is not symmetric: the scores extend to the right farther than they do to the left. The distribution is therefore said to be <term>skewed</term>.
+            The histogram makes it plain that most of the scores are in the middle of the distribution, with fewer scores in the extremes. You can also see that the distribution is not symmetric: the scores extend to the right farther than they do to the left. The distribution is therefore said to be <term>skewed</term> <idx>right-skewed distribution</idx> to the right. If the opposite was true, the distribution would be <term>left-skewed</term> <idx>left-skewed distribution</idx>.
         </p>
     </subsection>
 
@@ -486,6 +486,98 @@
             Once you know how to read a distribution, you can easily summarize a mountain of raw numbers using just its visual shape, its center (averages), and its spread (variation). But looking at one variable at a time only tells us half the story. In the next section, we will look at pairs of data to see how they move together. We will learn how to spot trends, measure how closely two things are linked, and explore correlation versus causation.
         </p>
     </subsection>
+    <exercise label="frequency-polygon-relationship" adaptive="yes" randomize="yes">
+        <title>Frequency Polygon and Cumulative Frequency Polygon</title>
+
+        <statement>
+            <p>
+                A researcher administers a math proficiency test to 800 students.
+                The test scores range from 0 to 200. The researcher creates a
+                histogram with class intervals of 10 points (e.g., 39.5–49.5,
+                49.5–59.5, etc.) and observes that the distribution is skewed to
+                the left. The researcher then creates a frequency polygon and a
+                cumulative frequency polygon from the same data.
+            </p>
+            <p>
+                Which of the following statements correctly describes the
+                relationship between these graphical representations for this
+                dataset?
+            </p>
+        </statement>
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        The frequency polygon will peak in the interval 39.5–49.5,
+                        while the cumulative frequency polygon will rise most
+                        steeply in the interval 149.5–159.5.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        If a distribution were skewed to the right, the peak would
+                        be on the left (lower values) and the tail would stretch to
+                        the right. How does left-skew differ from that?
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        The frequency polygon will peak in the interval 149.5–159.5,
+                        while the cumulative frequency polygon will rise most
+                        steeply in the interval 149.5–159.5.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        Correct! In a left-skewed distribution, the data are
+                        concentrated on the right (higher scores), so the frequency
+                        polygon peaks in the higher interval. The cumulative
+                        frequency polygon rises most steeply where the frequency is
+                        highest, which is also in that same higher interval.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        The frequency polygon will peak in the interval 149.5–159.5,
+                        while the cumulative frequency polygon will rise most
+                        steeply in the interval 39.5–49.5.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        If the cumulative frequency polygon rises most steeply in a
+                        particular interval, that means many data points are being
+                        added in that interval. Would you expect that to happen in a
+                        low-frequency interval or a high-frequency interval?
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        The frequency polygon will peak in the interval 39.5–49.5,
+                        while the cumulative frequency polygon will rise most
+                        steeply in the interval 39.5–49.5.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        In a left-skewed distribution, the tail is on the left. Is a
+                        peak also on the tail, or is the peak somewhere else? Where
+                        would a left-skewed distribution's peak be located?
+                    </p>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
   </section>
 
   <section xml:id="sec-the-power-of-correlation">
