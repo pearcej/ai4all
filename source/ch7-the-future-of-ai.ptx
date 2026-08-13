@@ -1116,7 +1116,13 @@
         <exercise label="sa-mythbusting-jobs-privacy-neutrality" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
             <statement>
                 <p>
-                A technology journalist writes an article making three claims: (1) AI will destroy millions of jobs and create widespread unemployment, (2) AI systems are inherently dangerous because they make autonomous decisions without human oversight, and (3) AI will inevitably destroy personal privacy. Which of the following statements accurately respond to the journalist's claims? Select all that apply.
+                A technology journalist writes an article making three claims: 
+                <ol>
+                <li>AI will destroy millions of jobs and create widespread unemployment</li> 
+                <li>AI systems are inherently dangerous because they make autonomous decisions without human oversight, and </li>
+                <li>AI will inevitably destroy personal privacy. </li>
+                </ol>
+                Which of the following statements accurately respond to the journalist's claims?
                 </p>
             </statement>
 
