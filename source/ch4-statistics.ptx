@@ -165,6 +165,53 @@
             Unstructured data is extremely common—some estimates suggest that most real-world data is unstructured. Examples include product reviews, social media posts, public images, and short online videos. In practice, these unstructured datasets are often processed into structured formats so data scientists can analyze them effectively, as discussed in <xref ref="sec-the-data-split"/>.
         </p>
     </subsection>
+    <exercise label="variable-types" adaptive="yes" randomize="yes">
+        <title>Variable Types</title>
+
+        <statement>
+            <p>
+                A researcher collects the following data from a survey of
+                university students:
+            </p>
+            <ul>
+                <li>Student ID number (e.g., 100234)</li>
+                <li>Year of birth (e.g., 2004)</li>
+                <li>Letter grade in a course (e.g., B+)</li>
+                <li>Number of credits completed (e.g., 72)</li>
+                <li>
+                    Self-reported happiness level on a scale from 1 to 10, where 1
+                    is "not at all happy" and 10 is "extremely happy"
+                </li>
+            </ul>
+            <p>
+                Match each variable with its correct data type.
+            </p>
+        </statement>
+
+        <cardsort>
+            <match>
+                <premise order="1">Student ID number</premise>
+                <response>Nominal</response>
+            </match>
+            <match>
+                <premise order="2">Year of birth</premise>
+                <premise order="3">Number of credits completed</premise>
+                <response>Discrete</response>
+            </match>
+            <match>
+                <response>Numeric</response>
+            </match>
+            <match>
+                <premise order="4">Letter grade in a course</premise>
+                <premise order="5">Self-reported happiness level</premise>
+                <response>Ordinal</response>
+            </match>
+            <match>
+                <response>Continuous</response>
+            </match>
+            
+        </cardsort>
+    </exercise>
   </section>
 
   <section xml:id="sec-reading-the-distribution">
