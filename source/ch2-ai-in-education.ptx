@@ -114,7 +114,7 @@
             study found that students who regularly depended on generative
             AI reported significantly lower cognitive engagement, and
             students with higher enthusiasm for technology, risk tolerance,
-            and <term>computer self-efficacy</term><idx><h>computer self-efficacy</h></idx>&#8212;traits
+            and computer self-efficacy&#8212;traits
             often celebrated and encouraged in STEM&#8212;were actually more
             prone to these effects. Prior experience with AI or academia
             offered no protection.
@@ -148,8 +148,7 @@
           engine for fast answers and instead adopt it as a collaborative tool
           for deeper comprehension. Processing ideas with your own mind,
           making independent judgments, and working alongside peers remain
-          non-negotiable elements of true mastery. To explore how to strike
-          this balance successfully,
+          non-negotiable elements of true mastery. To explore how to strike this balance successfully,
           <xref ref="sec-ai-powered-study-buddy"/> details how to responsibly
           repurpose these tools as an <q>AI-Powered Study Buddy</q>&#8212;focusing
           on how to use AI to brainstorm, explain, or map out different
@@ -174,7 +173,7 @@
     </p>
 
     <p>
-        <term>Generative AI</term> gives you a powerful way to take advantage of this principle—but only if you resist the temptation to ask for the answer immediately. Before asking an AI chatbot for help, spend a few minutes working on the problem yourself. Make your best attempt, even if you are unsure. Then compare your reasoning with the AI's response. If your answer differs, ask yourself what you missed, why the AI approached the problem differently, and which explanation makes the most sense.
+        Generative AI gives you a powerful way to take advantage of this principle—but only if you resist the temptation to ask for the answer immediately. Before asking an AI chatbot for help, spend a few minutes working on the problem yourself. Make your best attempt, even if you are unsure. Then compare your reasoning with the AI's response. If your answer differs, ask yourself what you missed, why the AI approached the problem differently, and which explanation makes the most sense.
     </p>
 
     <p>
@@ -263,15 +262,15 @@
         <title>AI for Personalization and Accessibility</title>
         
         <p>
-            AI is suitable for scheduling and <idx><h>resource optimization</h></idx><term>resource-optimization</term> tasks. 
+            AI is suitable for scheduling and resource-optimization tasks. 
             But the most important application is that which deals with inclusion and integration of the differently abled. 
-            <idx><h>human-machine interface</h></idx><term>Human-machine interface</term> has never been as seamless as it is now, 
-            making multimedia input and output a real possibility. For example, the app <q>Storysign</q> helps translate words to sign language 
-            to help deaf children learn to read.
+            Human-machine interface has never been as seamless as it is now, 
+            making multimedia input and output a real possibility. For example, the app <q>Storysign</q> helps translate 
+            words to sign language to help deaf children learn to read.
         </p>
 
         <p>
-            <idx><h>adaptive learning systems</h></idx><term>Adaptive learning systems (ALSs)</term> evaluate the learner, be it through quizzes or real-time feedback. 
+            <idx><h>adaptive learning systems</h></idx><idx><h>ALS</h></idx><term>Adaptive learning systems (ALSs)</term> evaluate the learner, be it through quizzes or real-time feedback. 
             Based on this evaluation, they present the student with a predefined learning path. Instead of a one-size-fits-all approach, students can spend 
             more or less time on each topic, explore new and related topics. This adaptive software can help them learn to read, write, pronounce and solve problems.
         </p>
@@ -283,7 +282,7 @@
         </p>
 
         <p>
-            Different groups can be formed for different activities (<idx><h>clustering</h></idx><q><term>clustering</term></q>), 
+            Different groups can be formed for different activities, 
             taking into account the individual strengths and weaknesses of each member.
         </p>
 
@@ -297,8 +296,8 @@
         <title>Strategies for Effective AI Interaction</title>
         <p>
             While adaptive platforms and accessible interfaces provide the underlying infrastructure for personalized learning, 
-            technology alone does not guarantee academic success. The true transformative value of an <term>AI Study Buddy</term><idx><h>AI Study Buddy</h></idx> 
-            depends on the dynamic established during individual study sessions.
+            technology alone does not guarantee academic success. The true transformative value of an 
+            <q>AI Study Buddy</q> depends on the dynamic established during individual study sessions.
         </p>
 
         <p>
@@ -724,14 +723,14 @@
 
     <introduction>
         <p>
-            A crucial aspect of AI literacy is learning how to fact-check and verify AI output—because simply put: <alert>AI makes things up!</alert> In computer science, this phenomenon is known as a 
+            A crucial aspect of AI literacy is learning how to fact-check and verify AI output—because simply put: AI makes things up! In computer science, this phenomenon is known as a 
             <term>hallucination</term><idx><h>hallucination</h></idx>, where a Large Language Model (LLM) generates information that sounds completely plausible and authoritative, yet is factually incorrect
             or entirely fabricated. As students increasingly rely on generative AI tools for research and coursework, hallucinations pose a growing threat to learning, critical thinking, and academic integrity. 
             To navigate these tools safely and effectively, AI literacy must expand beyond simple prompt engineering to teach users how to spot, investigate, and respond to fabricated output before accepting it as truth.
         </p>
     </introduction>
 
-    <subsection xml:id="ssec-why-ai-hallucinates">
+    <subsection xml:id="ssec-why-ai-fabricates-information">
         <title>Why AI Fabricates Information</title>
 
         <p>
@@ -765,7 +764,7 @@
         </p>
     </subsection>
 
-    <subsection xml:id="ssec-types-of-hallucinations">
+    <subsection xml:id="ssec-manifestations-of-hallucinations">
         <title>Manifestations of Hallucinations</title>
 
         <p>
@@ -774,7 +773,8 @@
 
         <p>
             Students most easily detect hallucinations in coding and technical topics because the output is immediately verifiable—code can be executed and tested against expected outcomes. This highlights a critical 
-            <term>verifiability gap</term><idx><h>verifiability gap</h></idx>: AI is safest when outputs can be objectively validated, yet students frequently rely on it for tasks where verification is difficult, such as evaluating conceptual understanding or argument quality. In these qualitative areas, plausible but incorrect reasoning easily goes unnoticed without checking external ground truths.
+            verifiability gap: AI is safest when outputs can be objectively validated, yet students frequently rely on it for tasks where verification is difficult, such as evaluating conceptual understanding or 
+            argument quality. In these qualitative areas, plausible but incorrect reasoning easily goes unnoticed without checking external ground truths.
         </p>
     </subsection>
 
