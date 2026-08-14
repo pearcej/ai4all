@@ -500,7 +500,7 @@
       <title>The Agent and Environment Loop</title>
 
       <p>
-        In a reinforcement learning framework, the learning system is called an <term>agent</term><idx><h>agent</h></idx>,
+        In a reinforcement learning framework, the learning system is called an <term>agent</term><idx><h>agentic AI</h></idx>,
         and everything outside the system is the <term>environment</term><idx><h>environment</h></idx>. The learning process
         unfolds as an interactive loop:
       </p>
