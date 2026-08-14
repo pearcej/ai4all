@@ -93,15 +93,15 @@
       some type of input from the physical environment. When physical inputs are
       processed by complex algorithms, the internal reasoning becomes hidden. The
       user can’t see how the system is getting the outcomes and this is what is
-      referred to as the <q>Black Box Problem</q>
+      referred to as the <term>Black Box Problem</term>
       <idx>Black Box Problem</idx>. The algorithms are so complicated that the
       processes behind them are hidden, even to the people creating them.
     </p>
 
     <p>
-      As these systems are used for high-stakes societal tasks, the lack of
-      transparency becomes dangerous. <term>Social decision-making</term> is the
-      act of making decisions that have social consequences, or ramifications that
+      As these systems are used for high-stakes societal tasks, the lack of transparency becomes 
+      dangerous. <term>Social decision-making</term><idx>Social decision-making</idx> 
+      is the act of making decisions that have social consequences, or ramifications that
       can be felt by individual people. Now that AI is deeply integrated into our
       world, these high-stakes societal tasks are integrated in fields like
       education, employment, resource allocation, and healthcare. Because these
@@ -157,7 +157,7 @@
         <subsection xml:id="ssec-data-centers-the-engines-of-ai">
             <title>Data Centers: The Engines of AI</title>
 
-            <p>Data centers are the physical infrastructure that makes modern AI
+            <p><term>Data centers</term><idx>Data centers</idx> are the physical infrastructure that makes modern AI
             possible. These facilities house thousands of specialized computers
             that train and run AI models. Think of them as giant warehouses
             filled with computing power.</p>
@@ -194,7 +194,7 @@
             <p>AI models consume energy in two main phases:</p>
 
             <p>
-                <term>Training</term> is the process where an AI model learns
+                <term>Training</term><idx>training</idx> is the process where an AI model learns
                 from data. This is incredibly energy-intensive. For example,
                 training GPT-4—one of the most powerful language models—required
                 approximately 42.4 GWh of electricity. That's enough to power
@@ -202,7 +202,7 @@
             </p>
 
             <p>
-                <term>Inference</term> happens when you actually use a trained
+                <term>Inference</term><idx>inference</idx> happens when you actually use a trained
                 AI model. Each time you ask ChatGPT a question, the model
                 performs millions of calculations to generate a response. While
                 individual queries use less energy than training, the massive
@@ -227,7 +227,7 @@
 
             <p>You might be wondering: <q>If AI is so energy-hungry, why doesn't
             efficiency keep pace?</q> The answer lies in what economists call the
-            <term>rebound effect</term>—when improvements in efficiency actually
+            <term>rebound effect</term><idx>rebound effect</idx>—when improvements in efficiency actually
             lead to increased consumption. Here's how it works:</p>
 
             <ol>
@@ -325,13 +325,13 @@
 
             <p>Server equipment contains valuable and hazardous materials:</p>
 
-            <p><term>Valuable metals</term> that can be recycled:</p>
+            <p>Valuable metals that can be recycled:</p>
             <ul>
                 <li><p>Gold, silver, platinum, and palladium (used in circuit boards)</p></li>
                 <li><p>Copper, aluminum, nickel, and tin</p></li>
             </ul>
 
-            <p><term>Toxic materials</term> that pose environmental risks:</p>
+            <p>Toxic materials that pose environmental risks:</p>
             <ul>
                 <li><p>Lead and chromium (found in circuit boards)</p></li>
                 <li><p>Cadmium and mercury</p></li>
@@ -398,17 +398,17 @@
 
             <ol>
                 <li>
-                    <p><term>Lifespan Extension</term> — Extending the average
+                    <p><term>Lifespan Extension</term><idx>lifespan extension</idx> — Extending the average
                     lifespan of servers by just one year could reduce e-waste by
                     about 58%.</p>
                 </li>
                 <li>
-                    <p><term>Module Reuse</term> — Reusing components like GPUs,
+                    <p><term>Module Reuse</term><idx>module reuse</idx> — Reusing components like GPUs,
                     CPUs, and memory modules from obsolete servers in other
                     applications could reduce e-waste by about 21%.</p>
                 </li>
                 <li>
-                    <p><term>Material Recycling</term> — Properly recovering
+                    <p><term>Material Recycling</term><idx>material recycling</idx> — Properly recovering
                     valuable metals from retired equipment reduces the need for
                     new mining and provides economic value.</p>
                 </li>
@@ -582,7 +582,7 @@
   <introduction xml:id="intro-deepfakes">
     <p>
       Harmful lies are nothing new. But the ability to distort reality has
-      taken an exponential leap forward with deepfake technology. This
+      taken an exponential leap forward with <term>deepfake technology</term><idx>deepfake</idx>. This
       capability makes it possible to create audio and video of real people
       saying and doing things they never said or did. Machine learning
       techniques are escalating the technology's sophistication, making
@@ -617,19 +617,19 @@
     </p>
 
     <p>
-      <term>Technical Solutions</term><idx>technical solutions</idx>:
+      <term>Technical Solutions</term>:
       Implementing cryptographic authentication trails and provenance tracking
       to verify content origins.
     </p>
 
     <p>
-      <term>Legal &amp; Regulatory Action</term><idx>legal and regulatory action</idx>:
+      <term>Legal &amp; Regulatory Action</term>:
       Updating civil liability and criminal penalties to prosecute malicious
       impersonation and fraud.
     </p>
 
     <p>
-      <term>Platform Governance</term><idx>platform governance</idx>:
+      <term>Platform Governance</term>:
       Enforcing clear detection protocols and labeling mechanisms across
       digital sharing platforms.
     </p>
