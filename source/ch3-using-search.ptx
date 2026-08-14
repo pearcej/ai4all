@@ -1512,7 +1512,7 @@
         </assemblage>
 
         <p>
-            This is how systems like Deep Blue<idx><h>deep blue</h></idx> (the chess AI that beat world champion Garry Kasparov<idx><h>Kasparov, Garry</h></idx>) and AlphaGo<idx><h>AlphaGo</h></idx> (the Go AI that beat world champion Lee Sedol<idx><h>Sedol, Lee</h></idx>) achieved world-class performance—they combined deep search with sophisticated evaluation heuristics.
+            This is how systems like Deep Blue<idx><h>Deep Blue</h></idx> (the chess AI that beat world champion Garry Kasparov<idx><h>Kasparov, Garry</h></idx>) and AlphaGo<idx><h>AlphaGo</h></idx> (the Go AI that beat world champion Lee Sedol<idx><h>Sedol, Lee</h></idx>) achieved world-class performance—they combined deep search with sophisticated evaluation heuristics.
         </p>
     </subsection>
 
