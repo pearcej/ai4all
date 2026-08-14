@@ -335,7 +335,13 @@
                 </li>
             </ol>
         </p>
-
+        <p>
+            To access AI services programmatically, developers use an <term>API Key</term><idx>API key</idx>
+            —a unique password that lets apps connect to AI services. Ultimately, using AI to augment rather 
+            than replace critical thinking keeps you as a primary author and thinker in your education. 
+            Shifting your approach from asking AI for answers to asking it for guidance, explanations, and 
+            targeted practice keeps you in control of your education.
+        </p>
         <p>
             Ultimately, using AI to augment rather than replace critical thinking keeps you as a primary author and thinker in your education. Shifting your approach 
             from asking AI for answers to asking it for guidance, explanations, and targeted practice keeps you in control of your education. While AI isn't needed to 
@@ -648,7 +654,12 @@
                 </li>
                 <li>
                     <p>
-                        <term>Reference Context</term>: Supplying authoritative source text and instructing the model to rely exclusively on that reference helps prevent ungrounded predictions.
+                        <term>Context Files</term><idx>context files</idx>: Standing documents you give an AI to define how it should work across many tasks, such as your role, preferences, style rules, and background. The AI reads them at the start so you do not have to repeat instructions each time.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <term>Reference Context</term><idx>reference context</idx>: Supplying authoritative source text and instructing the model to rely exclusively on that reference helps prevent ungrounded predictions.
                     </p>
                 </li>
                 <li>

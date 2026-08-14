@@ -650,11 +650,13 @@
 
   <introduction xml:id="intro-copyright-ip">
     <p>
-      As generative AI systems become more powerful and widely used, questions
-      about copyright, intellectual property, and the creative economy have
-      become increasingly urgent. The data used to train these models, the
-      outputs they produce, and the impact on human creators all raise complex
-      legal and ethical questions that society is only beginning to address.
+        As generative AI systems become more powerful and widely used, questions
+        about copyright, intellectual property, and the creative economy have 
+        become increasingly urgent. The <term>Artifacts</term><idx>artifacts</idx> 
+        they create—standalone content (code, documents) that you can edit and download separately—raise 
+        questions about ownership and authorship. The data used to train these 
+        models, the outputs they produce, and the impact on human creators all 
+        raise complex legal and ethical questions that society is only beginning to address.
     </p>
   </introduction>
 

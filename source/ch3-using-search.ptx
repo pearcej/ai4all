@@ -350,9 +350,10 @@
       </p>
 
       <p>
-        Rather than providing a computer with step-by-step instructions on how to solve a problem, we describe
-        the problem in terms of states and allowable moves, enabling the AI agent to navigate the space and find
-        a solution independently.
+        Rather than providing a computer with step-by-step instructions on how to solve a problem, we describe 
+        the problem in terms of states and allowable moves, enabling the AI agent to navigate the space and 
+        find a solution independently. An Agent (or <term>Agentic AI</term><idx>agentic AI</idx>) is AI that can autonomously take multiple actions to complete complex tasks. Example: AI that can research, write, and edit a report without step-by-step guidance.
+
       </p>
 
       <p>
