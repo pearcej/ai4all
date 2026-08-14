@@ -8,7 +8,7 @@
 
 <introduction xml:id="intro-story-of-ai">
 
-  <p><term>Artificial intelligence</term><idx><h>artificial intelligence</h></idx> (<term>AI</term>) <idx><h>AI</h></idx> is becoming part of everyday life. It can recommend a movie, recognize faces in photographs, translate between languages, help doctors identify diseases, create works of art, and even carry on conversations that sound surprisingly human. To many people, AI feels almost magical.</p>
+  <p>Artificial intelligence (AI) is becoming part of everyday life. It can recommend a movie, recognize faces in photographs, translate between languages, help doctors identify diseases, create works of art, and even carry on conversations that sound surprisingly human. To many people, AI feels almost magical.</p>
 
 <assemblage xml:id="asm-clarke-quote">
 
@@ -71,16 +71,14 @@
         Every story has a beginning. Today's AI systems may seem as though they
         appeared almost overnight, but their story stretches back much further
         than ChatGPT—or even the Internet. The ideas behind
-        <term>artificial intelligence</term><idx>artificial intelligence</idx>
-        have developed over decades through periods of excitement,
+        artificial intelligence have developed over decades through periods of excitement,
         disappointment, and breakthroughs. Understanding AI's back
         story helps us understand why today's systems can accomplish so much,
         while also recognizing the challenges they have yet to overcome.
     </p>
 
     <p>
-        Although the field of
-        <term>artificial intelligence</term><idx>artificial intelligence</idx>
+        Although the field of artificial intelligence
         emerged after the Second World War, the idea of creating intelligent
         machines is much older. Ancient myths described artificial beings brought to
         life, inventors built increasingly sophisticated mechanical automata, and
@@ -89,17 +87,16 @@
         </p>
         <p>
         In 1950,
-        <term>Alan Turing</term><idx>Turing, Alan</idx>
+        Alan Turing<idx>Turing, Alan</idx>
         published his pioneering paper
         <em><url href="https://courses.cs.umbc.edu/471/papers/turing.pdf">
         Computing Machinery and Intelligence</url></em>, introducing ideas
         that would later become associated with the
-        <term>Turing Test</term><idx>Turing Test</idx>. A few years later,
-        <term>John McCarthy</term><idx>McCarthy, John</idx> coined the term
-        <term>artificial intelligence</term> and later described it as
-        <q>the science and engineering of making intelligent machines.</q>
-        These developments culminated in the 
-        <term>Dartmouth Conference</term><idx>Dartmouth Conference</idx>
+        <term>Turing Test</term><idx>Turing test</idx>. A few years later,
+        John McCarthy<idx>McCarthy, John</idx> coined the term
+        <term>artificial intelligence</term><idx>artificial intelligence</idx> and later described it as
+        <q>the science and engineering of making intelligent machines.</q> 
+        These developments culminated in the Dartmouth Conference<idx>Dartmouth Conference</idx>
         in 1956, which brought together researchers from multiple disciplines
         to explore the possibility of thinking machines. The conference is
         widely regarded as the birth of AI as a distinct field of study.
@@ -136,7 +133,7 @@
             thought to require human expertise. However, every rule had to be
             written by people. If knowledge changed or new situations arose,
             someone had to update the system manually. Researchers realized that
-            truly intelligent systems would need to <em>learn</em> from
+            truly intelligent systems would need to learn from
             experience instead of simply following pre-programmed rules.</em>
         </p>
     </assemblage>
@@ -164,15 +161,10 @@
         applications included handwriting and character recognition, such as
         automatically reading license plates. During this era, AI captured the
         public's imagination through several remarkable demonstrations. In
-        1997, IBM's
-        <term>Deep Blue</term><idx>Deep Blue</idx>
-        defeated world chess champion
-        <term>Garry Kasparov</term><idx>Kasparov, Garry</idx>
-        using highly optimized search algorithms together with carefully 
-        designed evaluation functions created by human experts.
-        In 2011,
-        <term>IBM Watson</term><idx>IBM Watson</idx>
-        defeated the best human contestants on the television quiz show
+        1997, IBM's Deep Blue<idx>Deep Blue</idx> defeated world chess champion
+        Garry Kasparov<idx>Kasparov, Garry</idx> using highly optimized search algorithms together with carefully 
+        designed evaluation functions created by human experts. In 2011,
+        IBM Watson<idx>IBM Watson</idx> defeated the best human contestants on the television quiz show
         <em>Jeopardy!</em>, demonstrating the growing power of AI
         combined with enormous collections of information.
     </p>
@@ -180,20 +172,17 @@
     <p>
         From 2010 to the present,
         <term>deep learning</term><idx>deep learning</idx>
-        and <term>big data</term><idx>big data</idx>
-        have transformed AI. Affordable
-        <term>graphics processing units (GPUs)</term><idx>graphics processing unit</idx>,
+        and <term>big data</term><idx>big data</idx> have transformed AI. Affordable
+        graphics processing units (GPUs)<idx>graphics processing unit</idx>,
         originally developed for fast rendering needed by video games, made it practical to
         train increasingly complex neural networks using enormous amounts of
         data. Layering these networks enables computers to recognize
         increasingly sophisticated patterns. This technology now supports
         applications ranging from automated facial and object recognition to
-        finance, healthcare, transportation, and scientific research. For
-        example,
-        <term>AlphaFold</term><idx>AlphaFold</idx>, developed by Google DeepMind, 
-        has predicted the structures 
-        of more than 200 million proteins from organisms across the tree of life, 
-        dramatically accelerating biological research.
+        finance, healthcare, transportation, and scientific research. For example,
+        AlphaFold<idx>AlphaFold</idx>, developed by Google DeepMind, 
+        has predicted the structures of more than 200 million proteins from organisms 
+        across the tree of life, dramatically accelerating biological research.
     </p>
 
     <p>
@@ -221,7 +210,6 @@
     <exercise label="ai-history-timeline" adaptive="yes">
         <title>AI History Timeline</title>
 
-        <idx>artificial intelligence history</idx>
         <statement>
             <p>
                 The events below describe key moments in the history of artificial
@@ -292,8 +280,7 @@
     <p>
         AI is a rapidly evolving field, so understanding what we mean by
         <term>intelligence</term><idx>intelligence</idx> is an important first
-        step. Before we can compare human intelligence with
-        artificial intelligence,
+        step. Before we can compare human intelligence with artificial intelligence,
         we need to think about what intelligence actually is.
         Psychologists, cognitive scientists, computer scientists,
         philosophers, educators, and many others have debated this question
@@ -310,7 +297,7 @@
         score. While IQ tests measure certain kinds of reasoning and
         problem-solving ability, they do not capture every aspect of human
         intelligence. One influential, but controversial, educational theory, proposed by
-        <term>Howard Gardner</term><idx>Gardner, Howard</idx>, suggests that
+        Howard Gardner<idx>Gardner, Howard</idx>, suggests that
         people possess several different kinds of intelligence rather than a
         single general intelligence. Gardner's theory includes intelligences
         such as linguistic, logical-mathematical, spatial, musical,
@@ -371,11 +358,11 @@
     <title>What Is Generative AI?</title>
 
     <p>
-        One reason <term>artificial intelligence</term><idx>artificial intelligence</idx> has become such a common topic of conversation is the rapid growth of <term>generative artificial intelligence</term><idx>generative artificial intelligence</idx> (<term>GenAI</term><idx>GenAI</idx>). Unlike many earlier AI systems that focused on recognizing patterns or making predictions, generative AI creates new content. Depending on the system, that content may include text, images, audio, video, computer code, or three-dimensional designs.
+        One reason artificial intelligence has become such a common topic of conversation is the rapid growth of <term>generative artificial intelligence</term><idx>generative artificial intelligence</idx> (<term>GenAI</term><idx>GenAI</idx>). Unlike many earlier AI systems that focused on recognizing patterns or making predictions, generative AI creates new content. Depending on the system, that content may include text, images, audio, video, computer code, or three-dimensional designs.
     </p>
 
     <p>
-        Generative AI learns from large collections of examples known as <term>training data</term><idx>training data</idx>. During training, the model identifies patterns and relationships within the data rather than memorizing a fixed collection of answers. When given a <term>prompt</term><idx>prompt</idx>, it uses those learned patterns to generate a new response. Although the output is influenced by its training data, it is not simply retrieved from a database or copied from a single source.
+        Generative AI learns from large collections of examples known as <term>training data</term><idx>training data</idx>. During training, the model identifies patterns and relationships within the data rather than memorizing a fixed collection of answers. When given a prompt, it uses those learned patterns to generate a new response. Although the output is influenced by its training data, it is not simply retrieved from a database or copied from a single source.
     </p>
 
     <p>
@@ -383,7 +370,7 @@
     </p>
 
     <p>
-        Like all AI systems, generative AI has both strengths and limitations. It can produce creative and useful results in seconds, but it can also make mistakes, reflect <term>bias</term><idx>bias</idx> present in its training data, or generate information that is inaccurate or misleading. Learning to understand these strengths and limitations is an important part of becoming an informed user of AI.
+        Like all AI systems, generative AI has both strengths and limitations. It can produce creative and useful results in seconds, but it can also make mistakes, reflect bias present in its training data, or generate information that is inaccurate or misleading. Learning to understand these strengths and limitations is an important part of becoming an informed user of AI.
     </p>
 
     <p>

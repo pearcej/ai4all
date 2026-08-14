@@ -165,6 +165,53 @@
             Unstructured data is extremely common—some estimates suggest that most real-world data is unstructured. Examples include product reviews, social media posts, public images, and short online videos. In practice, these unstructured datasets are often processed into structured formats so data scientists can analyze them effectively, as discussed in <xref ref="sec-the-data-split"/>.
         </p>
     </subsection>
+    <exercise label="variable-types" adaptive="yes" randomize="yes">
+        <title>Variable Types</title>
+
+        <statement>
+            <p>
+                A researcher collects the following data from a survey of
+                university students:
+            </p>
+            <ul>
+                <li>Student ID number (e.g., 100234)</li>
+                <li>Year of birth (e.g., 2004)</li>
+                <li>Letter grade in a course (e.g., B+)</li>
+                <li>Number of credits completed (e.g., 72)</li>
+                <li>
+                    Self-reported happiness level on a scale from 1 to 10, where 1
+                    is "not at all happy" and 10 is "extremely happy"
+                </li>
+            </ul>
+            <p>
+                Match each variable with its correct data type.
+            </p>
+        </statement>
+
+        <cardsort>
+            <match>
+                <premise order="1">Student ID number</premise>
+                <response>Nominal</response>
+            </match>
+            <match>
+                <premise order="2">Year of birth</premise>
+                <premise order="3">Number of credits completed</premise>
+                <response>Discrete</response>
+            </match>
+            <match>
+                <response>Numeric</response>
+            </match>
+            <match>
+                <premise order="4">Letter grade in a course</premise>
+                <premise order="5">Self-reported happiness level</premise>
+                <response>Ordinal</response>
+            </match>
+            <match>
+                <response>Continuous</response>
+            </match>
+            
+        </cardsort>
+    </exercise>
   </section>
 
   <section xml:id="sec-reading-the-distribution">
@@ -325,7 +372,7 @@
         </figure>
 
         <p>
-            The histogram makes it plain that most of the scores are in the middle of the distribution, with fewer scores in the extremes. You can also see that the distribution is not symmetric: the scores extend to the right farther than they do to the left. The distribution is therefore said to be <term>skewed</term>.
+            The histogram makes it plain that most of the scores are in the middle of the distribution, with fewer scores in the extremes. You can also see that the distribution is not symmetric: the scores extend to the right farther than they do to the left. The distribution is therefore said to be <term>skewed</term> <idx>skewed distribution</idx> to the right. If the opposite was true, the distribution would be left-skewed.
         </p>
     </subsection>
 
@@ -442,6 +489,98 @@
             Once you know how to read a distribution, you can easily summarize a mountain of raw numbers using just its visual shape, its center (averages), and its spread (variation). But looking at one variable at a time only tells us half the story. In the next section, we will look at pairs of data to see how they move together. We will learn how to spot trends, measure how closely two things are linked, and explore correlation versus causation.
         </p>
     </subsection>
+    <exercise label="frequency-polygon-relationship" adaptive="yes" randomize="yes">
+        <title>Frequency Polygon and Cumulative Frequency Polygon</title>
+
+        <statement>
+            <p>
+                A researcher administers a math proficiency test to 800 students.
+                The test scores range from 0 to 200. The researcher creates a
+                histogram with class intervals of 10 points (e.g., 39.5–49.5,
+                49.5–59.5, etc.) and observes that the distribution is skewed to
+                the left. The researcher then creates a frequency polygon and a
+                cumulative frequency polygon from the same data.
+            </p>
+            <p>
+                Which of the following statements correctly describes the
+                relationship between these graphical representations for this
+                dataset?
+            </p>
+        </statement>
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        The frequency polygon will peak in the interval 39.5–49.5,
+                        while the cumulative frequency polygon will rise most
+                        steeply in the interval 149.5–159.5.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        If a distribution were skewed to the right, the peak would
+                        be on the left (lower values) and the tail would stretch to
+                        the right. How does left-skew differ from that?
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        The frequency polygon will peak in the interval 149.5–159.5,
+                        while the cumulative frequency polygon will rise most
+                        steeply in the interval 149.5–159.5.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        Correct! In a left-skewed distribution, the data are
+                        concentrated on the right (higher scores), so the frequency
+                        polygon peaks in the higher interval. The cumulative
+                        frequency polygon rises most steeply where the frequency is
+                        highest, which is also in that same higher interval.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        The frequency polygon will peak in the interval 149.5–159.5,
+                        while the cumulative frequency polygon will rise most
+                        steeply in the interval 39.5–49.5.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        If the cumulative frequency polygon rises most steeply in a
+                        particular interval, that means many data points are being
+                        added in that interval. Would you expect that to happen in a
+                        low-frequency interval or a high-frequency interval?
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        The frequency polygon will peak in the interval 39.5–49.5,
+                        while the cumulative frequency polygon will rise most
+                        steeply in the interval 39.5–49.5.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        In a left-skewed distribution, the tail is on the left. Is a
+                        peak also on the tail, or is the peak somewhere else? Where
+                        would a left-skewed distribution's peak be located?
+                    </p>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
   </section>
 
   <section xml:id="sec-the-power-of-correlation">
@@ -787,6 +926,108 @@
         By calculating the overall spread (or variance) of scores within each group, researchers can estimate how much natural noise exists in the data. <term>Inferential statistics</term><idx>inferential statistics</idx> uses this background noise to calculate a simple probability: How likely is it that chance alone produced a difference this big between the two groups? If that probability is very low, researchers infer that the treatment had a genuine causal effect rather than a lucky fluke. Because that probability is never strictly zero, total certainty is never possible—but it gives us a reliable way to separate real cause-and-effect from pure chance.
       </p>
     </subsection>
+    <exercise label="correlation-transformations" adaptive="yes" randomize="yes">
+        <title>Correlation and Transformations</title>
+
+        <statement>
+            <p>
+                A researcher collects data on 200 employees and calculates the
+                correlation between years of work experience and annual salary.
+                The researcher finds a Pearson's correlation of <m>r = 0.85</m>.
+            </p>
+            <p>
+                The researcher then converts all salary values from dollars to
+                thousands of dollars and adds 2 years to every employee's work
+                experience to account for previous unpaid internships. The
+                researcher also restricts the analysis to only employees with
+                10–15 years of experience and recalculates the correlation for
+                this subgroup.
+            </p>
+            <p>
+                Which of the following statements best describes what will happen
+                to the correlation coefficient after these transformations?
+            </p>
+        </statement>
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        The correlation will remain <m>0.85</m> because Pearson's
+                        <m>r</m> is unaffected by linear transformations, and it
+                        will remain unchanged in the restricted subgroup because
+                        subgroups preserve the original correlation.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        Restriction of range can artificially deflate the calculated
+                        correlation. Limiting the data to only employees with 10–15
+                        years of experience reduces the variability in work
+                        experience. How might reduced variability affect the
+                        correlation?
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        The correlation will change because converting salary to
+                        thousands of dollars is not a linear transformation, and it
+                        will remain unchanged in the restricted subgroup.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        Pearson's <m>r</m> is completely unaffected by linear
+                        transformations such as multiplying or dividing by a
+                        constant.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        The correlation will remain <m>0.85</m> because Pearson's
+                        <m>r</m> is unaffected by linear transformations, but it
+                        will decrease in the restricted subgroup due to restriction
+                        of range.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        Correct! Converting salary from dollars to thousands of
+                        dollars and adding 2 years to work experience are both
+                        linear transformations, so Pearson's <m>r</m> remains
+                        <m>0.85</m>. However, restricting the data to only employees
+                        with 10–15 years of experience reduces the variability in
+                        work experience, which typically weakens the correlation
+                        (restriction of range).
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        The correlation will change because adding 2 years to work
+                        experience is not a linear transformation, and it will
+                        decrease in the restricted subgroup due to restriction of
+                        range.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        Pearson's <m>r</m> is completely unaffected by linear
+                        transformations such as adding, subtracting, multiplying, or
+                        dividing by a constant.
+                    </p>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
   </section>
 
   <section xml:id="sec-the-data-split">
@@ -1017,6 +1258,102 @@
             </p>
         </assemblage>
     </subsection>
+    <exercise label="model-deployment-performance-drop" adaptive="yes">
+        <title>Model Deployment Performance Drop</title>
+
+        <statement>
+            <p>
+                A data science team is developing a model to predict whether a
+                patient will be readmitted to the hospital within 30 days of
+                discharge. The team has collected a dataset of 10,000 patient
+                records and preprocesses the data. They split the data into
+                training, validation, and test sets. During development, they use
+                the validation set to compare multiple model architectures and
+                select the best one. After selecting the final model, they
+                evaluate it on the test set and achieve 92% accuracy. The team
+                then deploys the model, but it performs significantly worse on new
+                patients, achieving only 78% accuracy.
+            </p>
+            <p>
+                Which of the following best explains the most likely cause of this
+                performance drop?
+            </p>
+        </statement>
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        The team used the test set during model selection, causing
+                        data leakage and over-optimistic performance estimates.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        The team used the validation set for model selection, not
+                        the test set. If the test set had been used during model
+                        selection, the 92% accuracy would indeed be over-optimistic,
+                        but that is not what happened in this scenario.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        The team used the validation set to select the model, but
+                        the test set was not representative of the target
+                        population.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        Correct! The validation set was used appropriately for model
+                        selection, and the test set gave 92% accuracy. However, the
+                        drop to 78% on new patients suggests the test set did not
+                        accurately represent the broader target population. Even
+                        with proper data splitting, if the test set differs from the
+                        real-world distribution, performance will not generalize.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        The team used cross-validation instead of a simple train-test
+                        split, which overfitted the model to the training data.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        Cross-validation typically reduces overfitting by training
+                        on multiple folds and averaging performance, providing more
+                        reliable estimates than a single split. The team used a
+                        validation set approach, not cross-validation.
+                    </p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        The team used the validation set to select the model, but
+                        the test set should have been used for model selection
+                        instead.
+                    </p>
+                </statement>
+                <feedback>
+                    <p>
+                        Using the test set for model selection would defeat its
+                        purpose as a blind evaluation set. The test set must remain
+                        untouched during model development to provide an unbiased
+                        estimate of real-world performance.
+                    </p>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
   </section>
 
 </chapter>
