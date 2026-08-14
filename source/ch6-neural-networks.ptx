@@ -927,7 +927,7 @@
         </p>
 
         <p>
-            A powerful prompting technique is <term>chain-of-thought</term><idx><h>chain-of-thought</h></idx> (CoT) prompting. In CoT, the model is encouraged to generate intermediate reasoning steps before arriving at a final answer. This is particularly effective for complex problems like math, logic, and commonsense reasoning. Instead of directly answering a math problem, a CoT prompt includes step-by-step reasoning in the examples, teaching the model to think through the problem systematically.
+            A powerful prompting technique is <term>chain-of-thought (CoT)</term><idx><h>chain-of-thought</h></idx><idx>CoT</idx> prompting. In CoT, the model is encouraged to generate intermediate reasoning steps before arriving at a final answer. This is particularly effective for complex problems like math, logic, and commonsense reasoning. Instead of directly answering a math problem, a CoT prompt includes step-by-step reasoning in the examples, teaching the model to think through the problem systematically.
         </p>
 
         <p>
