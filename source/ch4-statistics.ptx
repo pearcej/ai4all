@@ -9,11 +9,11 @@
 
     <introduction>
         <p>
-            Data science allows us to extract insights and knowledge from data, driving decision-making and innovation in business, health care, entertainment, and beyond. The field has roots in math, statistics, and computer science, but it only began to emerge as its own distinct field in the early 2000s with the proliferation of digital data and advances in computing power and technology. It gained significant momentum and recognition around the mid to late 2000s with the rise of big data and the need for sophisticated techniques to analyze and derive insights from large and complex datasets. Its evolution since then has been rapid, and it is quickly becoming a cornerstone of many industries and domains.
+            <term>Data science</term><idx>data science</idx> allows us to extract insights and knowledge from data, driving decision-making and innovation in business, health care, entertainment, and beyond. The field has roots in math, statistics, and computer science, but it only began to emerge as its own distinct field in the early 2000s with the proliferation of digital data and advances in computing power and technology. It gained significant momentum and recognition around the mid to late 2000s with the rise of big data and the need for sophisticated techniques to analyze and derive insights from large and complex datasets. Its evolution since then has been rapid, and it is quickly becoming a cornerstone of many industries and domains.
         </p>
 
         <p>
-            Data, however, is not new! Humans have been collecting data and generating datasets from the beginning of time. This started in the Stone Age when people carved shapes and pictures, called <term>petroglyphs</term><idx><h>petroglyphs</h></idx>, on rock. Petroglyphs provide insights into how animals looked and how people carried out their daily lives, offering valuable historical <q>data.</q> Ancient Egyptians invented papyrus—an early form of paper—to journal their data. Papyrus made it easier to store data in bulk, such as listing inventories, recording financial transactions, and preserving stories for future generations.
+            Data, however, is not new! Humans have been collecting data and generating datasets from the beginning of time. This started in the Stone Age when people carved shapes and pictures, called <term>petroglyphs</term><idx>petroglyphs</idx>, on rock. Petroglyphs provide insights into how animals looked and how people carried out their daily lives, offering valuable historical <q>data.</q> Ancient Egyptians invented papyrus—an early form of paper—to journal their data. Papyrus made it easier to store data in bulk, such as listing inventories, recording financial transactions, and preserving stories for future generations.
         </p>
     </introduction>
 
@@ -21,7 +21,7 @@
         <title>What Exactly is Data?</title>
 
         <p>
-            The word <term>data</term><idx><h>data</h></idx> is the plural of the Latin word <em>datum</em>, which translates as <q>something that is given or used.</q> It is often used to mean a single piece of information or a single point of reference in a dataset. 
+            The word <term>data</term><idx>data</idx> is the plural of the Latin word <em>datum</em>, which translates as <q>something that is given or used.</q> It is often used to mean a single piece of information or a single point of reference in a dataset. 
         </p>
 
         <p>
@@ -40,24 +40,24 @@
             <ul>
                 <li>
                     <p>
-                        <term>Quantitative Data</term><idx><h>quantitative data</h></idx>: Deals with quantities, amounts, and numeric measurements. It is highly structured and naturally suited for mathematical calculations and statistical analysis. Quantitative variables are divided into two main types:
+                        <term>Quantitative Data</term><idx>quantitative data</idx>: Deals with quantities, amounts, and numeric measurements. It is highly structured and naturally suited for mathematical calculations and statistical analysis. Quantitative variables are divided into two main types:
                     </p>
                     <p>
                         <ul>
                             <li>
                                 <p>
-                                    <term>Numeric Data</term>: Represented by numbers indicating measurable quantities. Numeric data can be further split into:
+                                    <term>Numeric Data</term><idx>numeric data</idx>: Represented by numbers indicating measurable quantities. Numeric data can be further split into:
                                 </p>
                                 <p>
                                     <ul>
                                         <li>
                                             <p>
-                                                <term>Continuous Data</term><idx><h>continuous data</h></idx>: Can take any value within a range, including infinite fractions and decimals. Continuous data must be measured rather than counted (for example, there is an infinite number of possible values between 0 and 0.1, such as 0.05, 0.001, or 0.0001).
+                                                <term>Continuous Data</term><idx><h>numeric data</h><h>continuous data</h></idx>: Can take any value within a range, including infinite fractions and decimals. Continuous data must be measured rather than counted (for example, there is an infinite number of possible values between 0 and 0.1, such as 0.05, 0.001, or 0.0001).
                                             </p>
                                         </li>
                                         <li>
                                             <p>
-                                                <term>Discrete Data</term><idx><h>discrete data</h></idx>: Takes numerical values that follow specific intervals, making it directly countable. Examples include shoe sizes (e.g., 5, 5.5, 6, 6.5, 7), where 5.5 is valid, but 5.25 is not.
+                                                <term>Discrete Data</term><idx><h>numeric data</h><h>discrete data</h></idx>: Takes numerical values that follow specific intervals, making it directly countable. Examples include shoe sizes (e.g., 5, 5.5, 6, 6.5, 7), where 5.5 is valid, but 5.25 is not.
                                             </p>
                                         </li>
                                     </ul>
@@ -65,18 +65,18 @@
                             </li>
                             <li>
                                 <p>
-                                    <term>Categorical Data</term><idx><h>categorical data</h></idx>: Represented in various forms such as words, symbols, or code numbers. The possible values a categorical variable can take are called its <term>levels</term>. Unlike numeric data, categorical values do not indicate a physically measurable quantity. Instead, values are chosen from a finite set of classes:
+                                    <term>Categorical Data</term><idx>categorical data</idx>: Represented in various forms such as words, symbols, or code numbers. The possible values a categorical variable can take are called its <term>levels</term>. Unlike numeric data, categorical values do not indicate a physically measurable quantity. Instead, values are chosen from a finite set of classes:
                                 </p>
                                 <p>
                                     <ul>
                                         <li>
                                             <p>
-                                                <term>Nominal Data</term><idx><h>nominal data</h></idx>: Unordered categorical variables where the set of possible values carries no natural order. Examples include state of residence (AL, AK, WY), binary indicators (Yes/No), or experimental groups (treatment/control).
+                                                <term>Nominal Data</term><idx><h>categorical data</h><h>nominal data</h></idx>: Unordered categorical variables where the set of possible values carries no natural order. Examples include state of residence (AL, AK, WY), binary indicators (Yes/No), or experimental groups (treatment/control).
                                             </p>
                                         </li>
                                         <li>
                                             <p>
-                                                <term>Ordinal Data</term><idx><h>ordinal data</h></idx>: Categorical variables where the levels possess a natural, logical ordering, even if the exact mathematical distance between values cannot be measured. Examples include letter grades (A, B, C, D, F), education levels (high school diploma, some college, bachelor's degree), or satisfaction ratings (<q>Not recommended at all</q> to <q>Highly recommended</q>).
+                                                <term>Ordinal Data</term><idx><h>categorical data</h><h>ordinal data</h></idx>: Categorical variables where the levels possess a natural, logical ordering, even if the exact mathematical distance between values cannot be measured. Examples include letter grades (A, B, C, D, F), education levels (high school diploma, some college, bachelor's degree), or satisfaction ratings (<q>Not recommended at all</q> to <q>Highly recommended</q>).
                                             </p>
                                         </li>
                                     </ul>
@@ -87,7 +87,7 @@
                 </li>
                 <li>
                     <p>
-                        <term>Qualitative Data</term><idx><h>qualitative data</h></idx>: Consists of non-numerical data that describe subjective attributes, experiences, or characteristics. Unlike categorical data which is cleanly structured into predefined categories, qualitative data often deals with unquantifiable, complex details. Examples include raw descriptions, field observations, personal interviews, open-ended survey responses, or photos.
+                        <term>Qualitative Data</term><idx>qualitative data</idx>: Consists of non-numerical data that describe subjective attributes, experiences, or characteristics. Unlike categorical data which is cleanly structured into predefined categories, qualitative data often deals with unquantifiable, complex details. Examples include raw descriptions, field observations, personal interviews, open-ended survey responses, or photos.
                     </p>
                 </li>
             </ul>
@@ -98,7 +98,7 @@
         <title>Datasets</title>
 
         <p>
-            A <term>dataset</term><idx><h>dataset</h></idx> is a collection of observations or data entities organized for analysis and interpretation. Many datasets can be represented as a table where each row indicates a unique data entity and each column defines the structure of those entities.
+            A <term>dataset</term><idx>dataset</idx> is a collection of observations or data entities organized for analysis and interpretation. Many datasets can be represented as a table where each row indicates a unique data entity and each column defines the structure of those entities.
         </p>
 
         <table xml:id="tbl-course-dataset-example">
@@ -150,15 +150,15 @@
         </table>
 
         <p>
-            The dataset in <xref ref="tbl-course-dataset-example"/> has six entities (also referred to as items, entries, or instances), distinguished by semester. Each entity is defined by a combination of four attributes or characteristics (also known as features or variables)—<c>Semester</c>, <c>Instructor</c>, <c>Class Size</c>, and <c>Rating</c>.
+            The dataset in <xref ref="tbl-course-dataset-example"/> has six entities (also referred to as items, entries, or instances), distinguished by semester. Each entity is defined by a combination of four attributes or characteristics (also known as <term>features</term><idx><h>features</h></idx> or <term>variables</term><idx><h>variables</h></idx>)—<c>Semester</c>, <c>Instructor</c>, <c>Class Size</c>, and <c>Rating</c>.
         </p>
 
         <p>
-            Although the actual values of the attributes vary across entities, all entities have values for the same four attributes, making this a <term>structured dataset</term><idx><h>structured dataset</h></idx>. Structured datasets are organized in a tabular format with clearly defined fields and relationships.
+            Although the actual values of the attributes vary across entities, all entities have values for the same four attributes, making this a <term>structured dataset</term><idx>structured dataset</idx>. Structured datasets are organized in a tabular format with clearly defined fields and relationships.
         </p>
 
         <p>
-            By contrast, an <term>unstructured dataset</term><idx><h>unstructured dataset</h></idx> lacks a predefined or organized data model. Unstructured data lacks a fixed schema and is often in the form of text, images, videos, audio recordings, or other content where information does not fit neatly into rows and columns.
+            By contrast, an <term>unstructured dataset</term><idx>unstructured dataset</idx> lacks a predefined or organized data model. Unstructured data lacks a fixed schema and is often in the form of text, images, videos, audio recordings, or other content where information does not fit neatly into rows and columns.
         </p>
 
         <p>
@@ -218,13 +218,13 @@
     <title>Reading the Distribution</title>
 
     <p>
-        Graphing data is the first and often most important step in data analysis. In this day of computers, researchers all too often see only the results of complex computer analyses without ever taking a close look at the data themselves. This is all the more unfortunate because computers can create many types of graphs quickly and easily. This section covers some effective ways of graphing distributions (a mathematical function that describes how the possible values of a variable are spread out and how frequently they occur).
+        Graphing data is the first and often most important step in data analysis. In this day of computers, researchers all too often see only the results of complex computer analyses without ever taking a close look at the data themselves. This is all the more unfortunate because computers can create many types of graphs quickly and easily. This section covers some effective ways of graphing <term>distributions</term><idx>distributions</idx> (a mathematical function that describes how the possible values of a variable are spread out and how frequently they occur).
     </p>
 
     <subsection xml:id="subsec-frequency-tables">
     <title>Frequency Tables</title>
     <p>
-        All of the graphical methods shown in this section are derived from frequency tables. <xref ref="tab-imac-ownership" /> shows a frequency table for the results of a study to find out whether the iMac was expanding Apple’s market share. To find out, 500 iMac customers were interviewed. Each customer was categorized as a previous Macintosh owner, a previous Windows owner, or a new computer purchaser. The table shows the frequencies of the various response categories and the relative frequencies, which are the proportion of responses in each category. For example, the relative frequency for <q>none</q> is <m>85 / 500 = 0.17</m>.
+        All of the graphical methods shown in this section are derived from frequency tables. <xref ref="tab-imac-ownership" /> shows a frequency table for the results of a study to find out whether the iMac was expanding Apple’s market share. To find out, 500 iMac customers were interviewed. Each customer was categorized as a previous Macintosh owner, a previous Windows owner, or a new computer purchaser. The table shows the frequencies of the various response categories and the <term>relative frequencies</term><idx>relative frequency</idx>, which are the proportion of responses in each category. For example, the relative frequency for <q>none</q> is <m>85 / 500 = 0.17</m>.
     </p>
 
     <table xml:id="tab-imac-ownership">
@@ -262,7 +262,7 @@
     <subsection xml:id="subsec-pie-charts-bar-charts">
         <title>Pie Charts and Bar Charts</title>
         <p>
-            In a pie chart, each category is represented by a slice of the pie. The area of the slice is proportional to the percentage of responses in the category. Although most iMac purchasers were Macintosh owners, Apple was encouraged by the 12% of purchasers who were former Windows users, and by the 17% of purchasers who were buying a computer for the first time (<xref ref="fig-42-pie-chart" />).
+            In a <term>pie chart</term><idx>pie chart</idx>, each category is represented by a slice of the pie. The area of the slice is proportional to the percentage of responses in the category. Although most iMac purchasers were Macintosh owners, Apple was encouraged by the 12% of purchasers who were former Windows users, and by the 17% of purchasers who were buying a computer for the first time (<xref ref="fig-42-pie-chart" />).
         </p>
 
         <figure xml:id="fig-42-pie-chart">
@@ -282,7 +282,10 @@
         </figure>
 
         <p>
-            Pie charts are effective for displaying the relative frequencies of a small number of categories. Bar charts can also be used to represent frequencies of different categories. A bar chart of the iMac purchases is shown in <xref ref="fig-42-simple-bar-graph" />. Frequencies are shown on the vertical axis and the type of computer previously owned is shown on the horizontal axis. Typically, the vertical axis shows the number of observations in each category rather than the percentage of observations in each category as is typical in pie charts.
+            Pie charts are effective for displaying the relative frequencies of a small number of categories.
+        </p>
+        <p>
+            <term>Bar charts</term><idx>bar chart</idx> can also be used to represent frequencies of different categories. A bar chart of the iMac purchases is shown in <xref ref="fig-42-simple-bar-graph" />. Frequencies are shown on the vertical axis and the type of computer previously owned is shown on the horizontal axis. Typically, the vertical axis shows the number of observations in each category rather than the percentage of observations in each category as is typical in pie charts.
         </p>
 
         <figure xml:id="fig-42-simple-bar-graph">
@@ -337,10 +340,10 @@
     <subsection xml:id="subsec-histograms">
         <title>Histograms</title>
         <p>
-            Histograms are a graphical method for displaying the shape of a distribution. They are particularly useful when there are a large number of observations. We begin with an example consisting of the scores of 642 students on a psychology test. The test consists of 197 items, each graded as <q>correct</q> or <q>incorrect.</q> The students' scores ranged from 46 to 167.
+            A<term>histogram</term><idx>histogram</idx> is a graphical method for displaying the shape of a distribution. Histograms are particularly useful when there are a large number of observations. We begin with an example consisting of the scores of 642 students on a psychology test. The test consists of 197 items, each graded as <q>correct</q> or <q>incorrect.</q> The students' scores ranged from 46 to 167.
         </p>
         <p>
-            The first step is to create a frequency table. Unfortunately, a simple frequency table would be too big, containing over 100 rows. To simplify the table, the range of scores was broken into intervals, called <term>class intervals</term>. The first interval is from 39.5 to 49.5, the second from 49.5 to 59.5, etc. Next, the number of scores falling into each interval was counted to obtain the class frequencies.
+            The first step is to create a frequency table. Unfortunately, a simple frequency table would be too big, containing over 100 rows. To simplify the table, the range of scores was broken into intervals, called <term>class intervals</term><idx>class interval</idx>. The first interval is from 39.5 to 49.5, the second from 49.5 to 59.5, etc. Next, the number of scores falling into each interval was counted to obtain the class frequencies.
         </p>
         <p>
             Next, we put this data into a histogram (<xref ref="fig-42-histogram" />). The class frequencies are represented by bars, where the height of each bar corresponds to its class frequency.
@@ -376,7 +379,7 @@
     <subsection xml:id="subsec-frequency-polygons">
         <title>Frequency Polygons and Cumulative Polygons</title>
         <p>
-            Frequency polygons serve the same purpose as histograms, but are especially helpful for comparing sets of data. They are also a good choice for displaying cumulative frequency distributions.
+            <term>Frequency polygons</term><idx>frequency polygon</idx> serve the same purpose as histograms, but are especially helpful for comparing sets of data. They are also a good choice for displaying cumulative frequency distributions.
         </p>
         <p>
             <xref ref="fig-42-frequency-polygon" /> displays the psychology test scores using a frequency polygon:
@@ -584,7 +587,7 @@
     <title>The Power of Correlation</title>
 
     <p>
-      Measures of central tendency, variability, and spread summarize a single variable by providing important information about its distribution. Often, more than one variable is collected on each individual. For example, in large health studies of populations, it is common to obtain variables such as age, sex, height, weight, blood pressure, and total cholesterol on each individual. In this section, we consider <idx><h>bivariate data</h></idx><term>bivariate data</term>, which consists of two quantitative variables for each individual. Our primary interest is in summarizing such data in a way that preserves the underlying relationship between the two variables.
+      Measures of <term>central tendency</term><idx>central tendency</idx>, <term>variability</term><idx>variability</idx>, and <term>spread</term><idx>spread</idx> summarize a single variable by providing important information about its distribution. Often, more than one variable is collected on each individual. For example, in large health studies of populations, it is common to obtain variables such as age, sex, height, weight, blood pressure, and total cholesterol on each individual. In this section, we consider <idx>bivariate data</idx><term>bivariate data</term>, which consists of two quantitative variables for each individual. Our primary interest is in summarizing such data in a way that preserves the underlying relationship between the two variables.
     </p>
 
     <subsection xml:id="subsec-spotting-trends-scatter-plots">
@@ -632,7 +635,7 @@
         However, not all husbands are older than their wives. This fact is lost when we separate the variables. Even though summary statistics are provided on each variable, the pairing within couples is lost. Based on the means alone, we cannot say what percentage of couples has younger husbands than wives; we have to count across pairs. Only by maintaining the pairing can meaningful answers be found about couples per se, such as finding the average age of husbands with 45-year-old wives or identifying the overall relationship between a husband's age and a wife's age.
       </p>
       <p>
-        We can learn much more by displaying bivariate data in a graphical form that maintains the pairing: a <idx><h>scatter plot</h></idx><term>scatter plot</term>. In a scatter plot, each pair is plotted as a point defined by its horizontal (<m>x</m>) and vertical (<m>y</m>) coordinates (<xref ref="fig-43-wife-husband-age" />).
+        We can learn much more by displaying bivariate data in a graphical form that maintains the pairing: a <idx>scatter plot</idx><term>scatter plot</term>. In a scatter plot, each pair is plotted as a point defined by its horizontal (<m>x</m>) and vertical (<m>y</m>) coordinates (<xref ref="fig-43-wife-husband-age" />).
       </p>
 
       <figure xml:id="fig-43-wife-husband-age">
@@ -659,7 +662,8 @@
           </li>
           <li>
             <p>
-              <idx><h>linear relationship</h></idx>
+              <idx>linear relationship</idx>
+              <idx>non-linear relationship</idx>
               <term>Linear vs. Nonlinear Relationships:</term> When points cluster along a straight line, the relationship is called a linear relationship.
             </p>
           </li>
@@ -698,14 +702,14 @@
       </figure>
 
       <p>
-        The relationship between <q>Release Height</q> and <q>Distance Traveled</q> is not described well by a straight line: if you drew a line connecting the lowest point and highest point, all remaining points would sit above the line. These data are better fit by a parabola (<idx><h>nonlinear relationship</h></idx>nonlinear relationship).
+        The relationship between <q>Release Height</q> and <q>Distance Traveled</q> is not described well by a straight line: if you drew a line connecting the lowest point and highest point, all remaining points would sit above the line. These data are better fit by a parabola (nonlinear relationship).
       </p>
     </subsection>
 
     <subsection xml:id="subsec-values-pearsons-correlation">
       <title>Values of Pearson’s Correlation</title>
       <p>
-        Scatter plots that show linear relationships can differ in their slope and in how tightly points cluster around the line. A statistical measure of the strength of the linear relationship between two quantitative variables is the <idx><h>Pearson product-moment correlation coefficient</h></idx><idx><h>correlation coefficient</h><h>Pearson's r</h></idx><term>Pearson product-moment correlation coefficient</term> (referred to as Pearson's correlation or simply the correlation coefficient).
+        Scatter plots that show linear relationships can differ in their slope and in how tightly points cluster around the line. A statistical measure of the strength of the linear relationship between two quantitative variables is the <idx>Pearson product-moment correlation coefficient</idx><idx>correlation coefficient</idx><idx>Pearson's correlation</idx><term>Pearson product-moment correlation coefficient</term> (referred to as <term>Pearson's correlation</term> or simply the <term>correlation coefficient</term>).
       </p>
       <p>
         If the relationship between variables is not linear, the correlation coefficient does not adequately represent the strength of the relationship.
@@ -731,7 +735,7 @@
         <ul>
           <li>
             <p>
-              <term>Perfect Positive Linear Relationship (<m>r = 1</m>):</term> Indicates a perfect positive linear relationship where all points fall exactly on an upward straight line (<xref ref="fig-43-per-pos-lin-rel" />).
+              <term>Perfect Positive Linear Relationship (<m>r = 1</m>):</term> <idx><h>linear relationship</h><h>Perfect positive</h></idx> Indicates a perfect positive linear relationship where all points fall exactly on an upward straight line (<xref ref="fig-43-per-pos-lin-rel" />).
             </p>
           </li>
         </ul>
@@ -751,7 +755,7 @@
         <ul>
           <li>
             <p>
-              <term>Perfect Negative Linear Relationship (<m>r = -1</m>):</term> Indicates a perfect negative linear relationship where points fall on a downward straight line (<xref ref="fig-43-per-neg-lin-rel" />).
+              <term>Perfect Negative Linear Relationship (<m>r = -1</m>):</term> <idx><h>linear relationship</h><h>Perfect negative</h></idx> Indicates a perfect negative linear relationship where points fall on a downward straight line (<xref ref="fig-43-per-neg-lin-rel" />).
             </p>
           </li>
         </ul>
@@ -771,7 +775,7 @@
         <ul>
           <li>
             <p>
-              <term>No Linear Relationship (<m>r = 0</m>):</term> Indicates no linear relationship between variables <m>x</m> and <m>y</m> (<xref ref="fig-43-r-0" />).
+              <term>No Linear Relationship (<m>r = 0</m>):</term> <idx><h>linear relationship</h><h>None</h></idx> Indicates no linear relationship between variables <m>x</m> and <m>y</m> (<xref ref="fig-43-r-0" />).
             </p>
           </li>
         </ul>
@@ -842,9 +846,10 @@
         <ol>
           <li>
             <p>
-              <idx><h>coefficient of determination</h></idx>
-              <idx><h>variance explained</h></idx>
-              <term>Variance Explained (<m>r^2</m>):</term> Squaring the correlation coefficient (<m>r^2</m>) gives the <term>coefficient of determination</term>, which measures the proportion of variance in one variable that is predictable from the other:
+              <idx>coefficient of determination</idx>
+              <idx><m>r^2</m></idx>
+              <idx>explained variance</idx>
+              <term>Explained Variance (<m>r^2</m>):</term> Squaring the correlation coefficient (<m>r^2</m>) gives the <term>coefficient of determination</term>, which measures the proportion of variance in one variable that is predictable from the other:
             </p>
             <p>
               <ul>
@@ -881,7 +886,7 @@
     <subsection xml:id="subsec-correlation-vs-causation">
       <title>Correlation vs. Causation</title>
       <p>
-        When two variables consistently move together, it is natural to assume that one must be driving the other. In everyday thinking, we tend to link strong patterns directly to cause-and-effect relationships: if <m>x</m> and <m>y</m> always change together, <m>x</m> seems like the obvious cause of <m>y</m>. However, this instinct can be misleading. A strong correlation between two variables does not mean that a causal relationship exists between them. The primary pitfall in inferring causation from observational data is known as the <idx><h>third-variable problem</h></idx><idx><h>confounding variable</h></idx><term>third-variable problem</term>, which occurs when an unmeasured third factor is actually responsible for the observed connection between the two main variables.
+        When two variables consistently move together, it is natural to assume that one must be driving the other. In everyday thinking, we tend to link strong patterns directly to <term>cause-and-effect relationships</term><idx>cause-and-effect relationships</idx>: if <m>x</m> and <m>y</m> always change together, <m>x</m> seems like the obvious cause of <m>y</m>. However, this instinct can be misleading. A strong correlation between two variables does not mean that a causal relationship exists between them. The primary pitfall in inferring causation from observational data is known as the <idx>third-variable problem</idx><term>third-variable problem</term>, which occurs when an unmeasured third factor is actually responsible for the observed connection between the two main variables.
       </p>
       <p>
         An excellent example comes from a study in Taiwan in the 1970s that found a strong positive correlation between the use of contraception and the number of electric appliances in a person's house. Of course, using contraception does not induce someone to buy electrical appliances, nor does buying appliances cause people to use contraception. Instead, a third variable—education level (or socioeconomic status)—affects both factors independently.
@@ -890,7 +895,7 @@
         Does the possibility of a third-variable problem make it impossible to draw causal inferences without doing an experiment? One approach is to simply assume that you do not have a third-variable problem. This approach, although common, is not very satisfactory. However, be aware that the assumption of no third-variable problem may be hidden behind a complex causal model that contains sophisticated and elegant mathematics.
       </p>
       <p>
-        A better, though admittedly more difficult, approach is to find converging evidence. This was the approach taken to conclude that smoking causes cancer. The analysis included converging evidence from retrospective studies, prospective studies, lab studies with animals, and theoretical understandings of cancer causes.
+        A better, though admittedly more difficult, approach is to find <term>converging evidence</term><idx>converging evidence</idx>, where multiple independent lines of evidence point to the same causal relationship. This was the approach taken to conclude that smoking causes cancer. The analysis included converging evidence from retrospective studies, prospective studies, lab studies with animals, and theoretical understandings of cancer causes.
       </p>
       <p>
         A second major obstacle in non-experimental data is determining the <idx><h>directionality problem</h></idx>direction of causality. A correlation between two variables does not indicate which variable is causing which. For example, Reinhart and Rogoff (2010) found a strong correlation between public debt and GDP growth. Although some argued that high public debt slows economic growth, most evidence supports the alternative direction: slow GDP growth increases public debt.
@@ -909,7 +914,7 @@
         An obvious obstacle to drawing a causal conclusion is that many unmeasured variables affect sleep: stress levels, genetics, caffeine intake, or sleep quality from the night before. Could differences in these background factors be the real reason one group slept longer?
       </p>
       <p>
-        At first glance, it might seem that <idx><h>random assignment</h></idx><term>random assignment</term> eliminates these outside factors. However, random assignment only ensures that differences in unmeasured variables are chance differences—it does not remove them entirely. By pure luck, more subjects in the control group might happen to be under high stress. That stress could prevent them from sleeping, creating a difference between the two groups that has nothing to do with the drug.
+        At first glance, it might seem that <idx><h>random assignment</h></idx><term>random assignment</term>—the process of randomly assigning participants to different groups—eliminates these outside factors. However, random assignment only ensures that differences in unmeasured variables are chance differences—it does not remove them entirely. By pure luck, more subjects in the control group might happen to be under high stress. That stress could prevent them from sleeping, creating a difference between the two groups that has nothing to do with the drug.
       </p>
       <p>
         This seems like a huge problem: how can you account for variables you never measured?
@@ -918,7 +923,7 @@
         While researchers cannot measure every individual background factor, they can measure the combined effect of all unmeasured variables. Because everyone within the same group receives the exact same treatment, any differences in sleep duration among people in that same group must be caused by these unmeasured individual differences.
       </p>
       <p>
-        By calculating the overall spread (or variance) of scores within each group, researchers can estimate how much natural noise exists in the data. Inferential statistics uses this background noise to calculate a simple probability: How likely is it that chance alone produced a difference this big between the two groups? If that probability is very low, researchers infer that the treatment had a genuine causal effect rather than a lucky fluke. Because that probability is never strictly zero, total certainty is never possible—but it gives us a reliable way to separate real cause-and-effect from pure chance.
+        By calculating the overall spread (or variance) of scores within each group, researchers can estimate how much natural noise exists in the data. <term>Inferential statistics</term><idx>inferential statistics</idx> uses this background noise to calculate a simple probability: How likely is it that chance alone produced a difference this big between the two groups? If that probability is very low, researchers infer that the treatment had a genuine causal effect rather than a lucky fluke. Because that probability is never strictly zero, total certainty is never possible—but it gives us a reliable way to separate real cause-and-effect from pure chance.
       </p>
     </subsection>
     <exercise label="correlation-transformations" adaptive="yes" randomize="yes">
@@ -1032,16 +1037,16 @@
 
         <p>
             Before any analysis or learning can take place, data must first be collected. Compiling a dataset involves 
-            identifying a <idx><h>target population</h></idx><term>target population</term>—the entire group of 
+            identifying a <idx>target population</idx><term>target population</term>—the entire group of 
             individuals, objects, or events about which conclusions are to be drawn—as well as defining and measuring 
-            relevant <idx><h>features</h></idx><term>features</term> and <idx><h>labels</h></idx><term>labels</term>.
+            relevant <idx>features</idx><term>features</term> and <idx>labels</idx><term>labels</term>.
         </p>
         <p>
             Because it is rarely feasible to collect data from an entire target population, practitioners rely on 
-            <idx><h>sampling</h></idx><term>sampling</term> to collect a representative subset. In practice, machine 
+            <idx>sampling</idx><term>sampling</term> to collect a representative subset. In practice, machine 
             learning teams frequently utilize existing, pre-compiled datasets rather than conducting new data collection 
             from scratch. However, if the sampled data does not accurately reflect the broader population, the model 
-            risks inheriting significant <idx><h>representation bias</h></idx><term>representation bias</term>.
+            risks inheriting significant <idx>representation bias</idx><term>representation bias</term>.
         </p>
 
         <assemblage xml:id="asm-loan-collection-example">
@@ -1063,14 +1068,14 @@
 
         <p>
             Depending on the data modality (e.g., text, images, tabular data) and the specific learning task, raw datasets undergo 
-            <idx><h>data preprocessing</h></idx><term>data preprocessing</term> and <idx><h>data cleaning</h></idx><term>data cleaning</term> 
+            <idx>data preprocessing</idx><term>data preprocessing</term> and <idx>data cleaning</idx><term>data cleaning</term> 
             before being fed into a model. Common preprocessing steps include handling missing values, normalizing feature scales, encoding 
             categorical variables, and removing noisy or corrupted records.
         </p>
         <p>
-            Once cleaned, datasets are partitioned to support the model lifecycle. The data is divided into <idx><h>training data</h></idx><term>training data</term> 
-            used during model optimization, <idx><h>validation data</h></idx><term>validation data</term> set aside for hyperparameter tuning and model selection, and 
-            <idx><h>test data</h></idx><term>test data</term> reserved exclusively for final evaluation.
+            Once cleaned, datasets are partitioned to support the model lifecycle. The data is divided into <idx>training data</idx><term>training data</term> 
+            used during model optimization, <idx>validation data</idx><term>validation data</term> set aside for hyperparameter tuning and model selection, and 
+            <idx>test data</idx><term>test data</term> reserved exclusively for final evaluation.
         </p>
 
         <assemblage xml:id="asm-loan-preprocessing-example">
@@ -1098,16 +1103,16 @@
             <ul>
                 <li>
                     <p>
-                        <idx><h>cross-validation</h></idx><term>Cross-Validation (CV):</term> Imagine dividing your dataset into equal 
+                        <idx>cross-validation</idx><term>Cross-Validation (CV):</term> Imagine dividing your dataset into equal 
                         groups (called <em>folds</em>). The model trains on all groups except one, tests its accuracy on the remaining 
                         group, and repeats this process until every single group has had a turn acting as the test set. A special 
                         variation where every individual data point gets its own turn as a test set is called 
-                        <idx><h>leave-one-out cross-validation</h></idx><term>leave-one-out cross-validation (LOO-CV)</term>.
+                        <idx>leave-one-out cross-validation</idx><idx>LOO-CV</idx><term>leave-one-out cross-validation (LOO-CV)</term>.
                     </p>
                 </li>
                 <li>
                     <p>
-                        <idx><h>bootstrap resampling</h></idx><term>Bootstrap and Monte-Carlo Cross-Validation (MCCV):</term> These methods 
+                        <idx>bootstrap strategy</idx><idx>MCCV</idx><idx>Monte-Carlo Cross-Validation</idx><term>Bootstrap and Monte-Carlo Cross-Validation (MCCV):</term> These methods 
                         work like drawing names out of a hat. In <term>Bootstrap</term>, after a data point's name is drawn for the training 
                         set, it is placed back into the hat, meaning the same example can be chosen multiple times (typically resulting in 
                         roughly 63% of the data used for training and 37% for validation). <term>Monte-Carlo Cross-Validation</term> works 
@@ -1116,14 +1121,14 @@
                 </li>
                 <li>
                     <p>
-                        <idx><h>bootstrapped latin partition</h></idx><term>Bootstrapped Latin Partition (BLP):</term> This approach combines 
+                        <idx>bootstrapped latin partition</idx><idx>BLP</idx><term>Bootstrapped Latin Partition (BLP):</term> This approach combines 
                         randomness with careful organization. It shuffles data within specific categories so that every category is evenly 
                         represented in both training and testing, while guaranteeing every sample gets tested exactly once.
                     </p>
                 </li>
                 <li>
                     <p>
-                        <idx><h>Kennard-Stone algorithm</h></idx><term>Kennard-Stone (K-S) and SPXY Algorithms:</term> Instead of picking 
+                        <idx>Kennard-Stone algorithm</idx><idx>SPXY algorithm</idx><term>Kennard-Stone (K-S) and SPXY Algorithms:</term> Instead of picking 
                         samples randomly, these smart selection methods measure the "distance" between data points to deliberately pick 
                         the most diverse, wide-ranging examples for training. This ensures the model learns from a well-rounded dataset 
                         rather than accidentally missing important edge cases.
@@ -1139,10 +1144,10 @@
         <p>
             When performing sample classification across complex datasets, most classification models possess one or more model parameters 
             that control the overall complexity of the model. While higher model complexity provides greater discriminating power, it also 
-            increases the risk of <idx><h>over-fitting</h></idx><term>over-fitting</term>.
+            increases the risk of <term>over-fitting</term>.
         </p>
         <p>
-            Over-fitting occurs when a trained model performs extremely well on the specific samples used during training but performs 
+            <idx>over-fitting</idx>Over-fitting occurs when a trained model performs extremely well on the specific samples used during training but performs 
             poorly on new, unknown samples—meaning the model fails to generalize effectively. To find an optimal set of parameters that 
             achieves a balance between model complexity and generalizability, it is essential to partition the available data into 
             distinct training and validation sets.
@@ -1162,19 +1167,19 @@
         <title>Model Validation and Data Splitting</title>
 
         <p>
-            The <idx><h>training set</h></idx><term>training set</term> is used to build the model across multiple parameter settings, 
-            after which each trained model configuration is evaluated against the <idx><h>validation set</h></idx><term>validation set</term>. 
+            The <idx>training set</idx><term>training set</term> is used to build the model across multiple parameter settings, 
+            after which each trained model configuration is evaluated against the <idx>validation set</idx><term>validation set</term>. 
             The validation set contains samples with known ground truth, but these labels are withheld from the model during testing. 
             Predictions on the validation set allow developers to assess model accuracy and select optimal parameters based on the lowest 
-            validation error—a procedure known as <idx><h>model selection</h></idx><term>model selection</term>.
+            validation error—a procedure known as <idx>model selection</idx><term>model selection</term>.
         </p>
         <p>
             Historically, it was assumed that performance measured on a validation set served as an unbiased estimator of general performance. However, 
-            recent studies demonstrate that validation performance—including estimates derived from <idx><h>cross-validation</h></idx><term>cross-validation</term> 
+            recent studies demonstrate that validation performance—including estimates derived from <idx>cross-validation</idx><term>cross-validation</term> 
             or single train-test splits—can often yield over-optimistic or erroneous estimates of model accuracy.
         </p>
         <p>
-            Furthermore, validation procedures are susceptible to <idx><h>evaluation bias</h></idx><term>evaluation bias</term>. 
+            Furthermore, validation procedures are susceptible to <idx>evaluation bias</idx><term>evaluation bias</term>. 
             This occurs when the validation dataset or chosen benchmark metrics fail to accurately represent the target population 
             or do not adequately capture performance disparities across sensitive demographic subgroups.
         </p>
@@ -1194,18 +1199,18 @@
 
         <p>
             After the optimal model is selected and tuned, its true generalization capability must be evaluated using an 
-            independent, blind <idx><h>test set</h></idx><term>test set</term> (often called a holdout set). Crucially, 
+            independent, blind <idx>test set</idx><idx>holdout set</idx><term>test set</term> (often called a <term>holdout set</term>). Crucially, 
             the test data is strictly isolated and never touched during the feature selection, model training, or hyperparameter 
-            optimization phases. Using test data prior to this final evaluation risks <idx><h>data leakage</h></idx><term>data leakage</term>, 
+            optimization phases. Using test data prior to this final evaluation risks <idx>data leakage</idx><term>data leakage</term>, 
             which leads to over-optimistic performance claims that fail when deployed in real-world environments.
         </p>
         <p>
             To ensure a model works reliably beyond the specific environment where it was built, researchers often evaluate 
-            models against external <idx><h>benchmark datasets</h></idx><term>benchmark datasets</term>—standardized datasets 
+            models against external <idx>benchmark datasets</idx><term>benchmark datasets</term>—standardized datasets 
             used across the field to test and compare different algorithms under identical conditions.
         </p>
         <p>
-            This process, known as <idx><h>external validation</h></idx><term>external validation</term>, allows direct comparison 
+            This process, known as <idx>external validation</idx><term>external validation</term>, allows direct comparison 
             against existing methods in the literature and verifies whether the model’s predictive power holds across different 
             collection environments, instruments, or demographic groups.
         </p>
@@ -1217,8 +1222,8 @@
             future, unseen samples drawn from that same distribution.
         </p>
         <p>
-            While sampling an entire population is impossible in practice, proper <idx><h>resampling strategies</h></idx><term>resampling strategies</term> 
-            and sufficient sample sizes help approximate the <idx><h>central limit theorem</h></idx><term>central limit theorem</term>, giving confidence 
+            While sampling an entire population is impossible in practice, proper resampling strategies 
+            and sufficient sample sizes help approximate the <idx>central limit theorem</idx><term>central limit theorem</term>, giving confidence 
             that the observed test performance reflects underlying reality rather than random chance. Ultimately, the estimated test performance depends 
             heavily on the chosen metrics (e.g., accuracy, precision, recall, or root-mean-square error), the degree of overlap between datasets, and how 
             effectively the original data was partitioned.
@@ -1238,10 +1243,10 @@
         <title>Model Postprocessing</title>
 
         <p>
-            Once a model has been trained, various model <idx><h>postprocessing</h></idx><term>postprocessing</term> steps that may be needed before its predictions 
-            can be used in real-world applications. For example, if a model performing <idx><h>binary classification</h></idx><term>binary classification</term> 
-            outputs a raw probability score, but the system requires a discrete categorical answer, developers must select appropriate 
-            <idx><h>classification threshold</h></idx><term>classification thresholds</term> to convert continuous outputs into hard decisions.
+            Once a model has been trained, various model postprocessing steps that may be needed before its predictions 
+            can be used in real-world applications. For example, if a model performing <idx>binary classification</idx><term>binary classification</term> 
+            outputs a raw probability score, but the system requires a discrete, categorical answer, developers must select appropriate 
+            <idx>classification threshold</idx><term>classification thresholds</term> to convert continuous outputs into hard decisions.
         </p>
 
         <assemblage xml:id="asm-model-postprocessing-example">
