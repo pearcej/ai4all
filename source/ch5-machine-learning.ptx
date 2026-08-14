@@ -419,12 +419,9 @@
       <p>
         <term>Dimensionality reduction</term><idx><h>dimensionality reduction</h></idx> re-represents complex data using
         fewer variables or features while preserving its most critical information. This technique is particularly
-        valuable for visualizing and compressing <term>high-dimensional data</term><idx><h>high-dimensional data</h></idx>—datasets
-        containing a large number of attributes relative to the overall number of samples.
-      </p>
-      <p>
-        Dimensionality reduction is particularly useful when working with high-dimensional data. High-dimensional data
-        has many features or attributes. For example, a single image might contain thousands of pixels, each representing
+        valuable for visualizing and compressing <term>high-dimensional data</term><idx><h>high-dimensional data</h></idx>, 
+        which are datasets containing a large number of attributes relative to the overall number of samples.
+        For example, a single image might contain thousands of pixels, each representing
         a feature. While having many features can be useful, it also makes analysis more difficult.
       </p>
       <p>
