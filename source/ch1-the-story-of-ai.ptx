@@ -89,13 +89,14 @@
         </p>
         <p>
         In 1950,
-        <term>Alan Turing</term><idx>Turing, Alan</idx>
-        published his pioneering paper
+        <term>Alan Turing</term><idx>Turing, Alan</idx>,
+        a British mathematician and computer scientist who is widely considered 
+        the father of modern computer science, published his pioneering paper
         <em><url href="https://courses.cs.umbc.edu/471/papers/turing.pdf">
         Computing Machinery and Intelligence</url></em>, introducing ideas
         that would later become associated with the
         <term>Turing Test</term><idx>Turing Test</idx>. A few years later,
-        <term>John McCarthy</term><idx>McCarthy, John</idx> coined the term
+        <term>John McCarthy</term><idx>McCarthy, John</idx>, an American computer scientist, coined the term
         <term>artificial intelligence</term> and later described it as
         <q>the science and engineering of making intelligent machines.</q>
         These developments culminated in the 
