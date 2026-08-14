@@ -49,7 +49,7 @@
         </figure>
 
         <p>
-            <term>Artificial neural networks</term><idx><h>artificial neural networks</h></idx> (ANNs) approach the problem in a different way. The idea is to take a large number of examples, known as training examples (as seen above), and then develop a system which can learn from those training examples. In other words, the neural network uses the examples to automatically infer rules. To understand how this works, we must look at the basic neuron models.
+            <term>Artificial neural networks</term><idx><h>artificial neural networks</h></idx> (<term>ANNs</term><idx>ANNs</idx>) approach the problem in a different way. The idea is to take a large number of examples, known as training examples (as seen above), and then develop a system which can learn from those training examples. In other words, the neural network uses the examples to automatically infer rules. To understand how this works, we must look at the basic neuron models.
         </p>
 
         <assemblage xml:id="asm-look-closer-artificial-neurons">
@@ -64,7 +64,9 @@
         <title>Perceptrons</title>
 
         <p>
-            To get started, we'll explain a type of artificial neuron called a <term>perceptron</term><idx><h>perceptron</h></idx>. Perceptrons were developed in the 1950s and 1960s by the scientist Frank Rosenblatt, inspired by earlier work by Warren McCulloch and Walter Pitts.
+            To get started, we'll explain a type of artificial neuron called a <term>perceptron</term><idx><h>perceptron</h></idx>. 
+            Perceptrons were developed in the 1950s and 1960s by the scientist Frank Rosenblatt<idx>Rosenblatt, Frank</idx>, 
+            inspired by earlier work by Warren McCulloch<idx>McCulloch, Warren</idx> and Walter Pitts<idx>Pitts, Walter</idx>.
         </p>
 
         <p>
@@ -74,13 +76,13 @@
         <p>
             <dl>
                 <li>
-                    <title><term>Weights</term></title>
+                    <title><term>Weights</term><idx>weights</idx></title>
                     <p>
                         Real numbers expressing the importance of the respective inputs to the output.
                     </p>
                 </li>
                 <li>
-                    <title><term>Bias</term></title>
+                    <title><term>Bias</term><idx>bias</idx></title>
                     <p>
                         A measure of how easy it is to get the perceptron to output a 1. It replaces the concept of a rigid threshold.
                     </p>
@@ -266,13 +268,13 @@
         <p>
             <dl>
                 <li>
-                    <title><term>Rectified Linear Unit (ReLU)</term></title>
+                    <title><term>Rectified Linear Unit (ReLU)</term><idx>rectified linear unit</idx><idx>ReLU</idx></title>
                     <p>
                         A simple, fast activation function that outputs the input directly if it is positive, and outputs zero if it is negative (mathematically, <m>f(x) = \max(0, x)</m>). It is the default choice for many deep neural networks because it helps prevent training bottlenecks.
                     </p>
                 </li>
                 <li>
-                    <title><term>Hyperbolic Tangent (tanh)</term></title>
+                    <title><term>Hyperbolic Tangent (tanh)</term><idx>hyperbolic tangent</idx><idx>tanh</idx></title>
                     <p>
                         An S-shaped curve similar to the sigmoid function, but it maps input values to a range between -1 and 1. Because its outputs are zero-centered, it often makes optimization easier during training.
                     </p>
@@ -480,7 +482,10 @@
         </p>
 
         <p>
-            <term>Convolutional Neural Networks (CNNs)</term><idx><h>Convolutional Neural Networks</h></idx><idx><h>CNN</h></idx>: In fully connected layers, the inputs are treated as a simple, flat vertical line of neurons. In a convolutional net, it helps to think instead of the inputs as a square or two-dimensional array of pixels, whose values correspond to pixel intensities (such as three integer values encoding intensity levels in red, green, and blue color channels).
+            <term>Convolutional Neural Networks (CNNs)</term><idx><h>convolutional neural networks</h></idx><idx><h>CNN</h></idx>:
+             In fully connected layers, the inputs are treated as a simple, flat vertical line of neurons. In a convolutional net, 
+             it helps to think instead of the inputs as a square or two-dimensional array of pixels, whose values correspond to 
+             pixel intensities (such as three integer values encoding intensity levels in red, green, and blue color channels).
         </p>
 
         <p>
@@ -547,7 +552,7 @@
 
 
         <p>
-            <term>Recurrent Neural Networks (RNNs)</term><idx><h>Recurrent Neural Networks</h></idx><idx><h>RNN</h></idx>: While CNNs focus on spatial, grid-like data, other networks are explicitly built for temporal or sequential problems. In standard networks, there are no loops—information is always fed forward, never fed back.
+            <term>Recurrent Neural Networks (RNNs)</term><idx><h>recurrent neural networks</h></idx><idx><h>RNN</h></idx>: While CNNs focus on spatial, grid-like data, other networks are explicitly built for temporal or sequential problems. In standard networks, there are no loops—information is always fed forward, never fed back.
         </p>
 
         <p>
@@ -597,7 +602,13 @@
         </p>
 
         <p>
-            A <term>cost function</term><idx><h>cost function</h></idx> (sometimes called a loss function) is a mathematical yardstick that measures a neural network's performance by calculating how far off its predictions are from the correct answers, outputting a single error score that we try to get as close to zero as possible. An example is the <term>quadratic cost function</term><idx><h>quadratic cost function</h></idx> or <term>mean squared error</term><idx><h>mean squared error</h></idx>.
+            A <term>cost function</term><idx><h>cost function</h></idx> 
+            (sometimes called a <index>loss function</index>) is a mathematical yardstick
+             that measures a neural network's performance by calculating how far off its 
+             predictions are from the correct answers, outputting a single error score 
+             that we try to get as close to zero as possible. An example is the 
+             <term>quadratic cost function</term><idx><h>quadratic cost function</h></idx> 
+             or <term>mean squared error</term><idx><h>mean squared error</h></idx>.
         </p>
 
         <p>
@@ -850,11 +861,11 @@
     <subsection xml:id="subsec-llms-backstory">
         <title>The Backstory of Large Language Models</title>
         <p>
-            <term>Large language models</term><idx><h>large language models</h></idx> (LLMs) have become one of the most revolutionary advancements in artificial intelligence. These powerful systems can understand, generate, and even reason with human language in ways that were previously impossible. The key insight behind LLMs is that knowledge of the world and language can be learned simply by predicting the next word in a sentence over and over again. This approach has shifted how we build AI systems: instead of creating specialized models for each task, we now train one foundation model that can be adapted for many different problems.
+            <term>Large language models</term><idx><h>large language models</h></idx> (LLMs)<idx>LLM</idx> have become one of the most revolutionary advancements in artificial intelligence. These powerful systems can understand, generate, and even reason with human language in ways that were previously impossible. The key insight behind LLMs is that knowledge of the world and language can be learned simply by predicting the next word in a sentence over and over again. This approach has shifted how we build AI systems: instead of creating specialized models for each task, we now train one foundation model that can be adapted for many different problems.
         </p>
 
         <p>
-            The breakthrough came with the introduction of the <term>Transformer</term><idx><h>Transformer</h></idx> architecture in 2017. Transformers use a mechanism called <term>self-attention</term><idx><h>self-attention</h></idx> that allows them to weigh the importance of different words in a sentence when making predictions. This made it possible to train much larger models on much more data. The result was a new generation of models—the large language models we use today—that exhibit remarkable capabilities in understanding and generating human language.
+            The breakthrough came with the introduction of the <term>Transformer</term><idx><h>transformer</h></idx> architecture in 2017. Transformers use a mechanism called <term>self-attention</term><idx><h>self-attention</h></idx> that allows them to weigh the importance of different words in a sentence when making predictions. This made it possible to train much larger models on much more data. The result was a new generation of models—the large language models we use today—that exhibit remarkable capabilities in understanding and generating human language.
         </p>
 
         <p>
@@ -873,7 +884,7 @@
         <title>Training Large Language Models</title>
 
         <p>
-            Training an LLM is a massive undertaking. The model learns by predicting the next token and comparing its prediction to the actual token. The difference is measured by a <term>loss function</term><idx><h>loss function</h></idx>, and the model adjusts its parameters to reduce this loss over time. This process, called <term>gradient descent</term><idx><h>gradient descent</h></idx>, is repeated billions of times across trillions of tokens of text.
+            Training an LLM is a massive undertaking. The model learns by predicting the next token and comparing its prediction to the actual token. The difference is measured by a loss function, and the model adjusts its parameters to reduce this loss over time. This process, called <term>gradient descent</term><idx><h>gradient descent</h></idx>, is repeated billions of times across trillions of tokens of text.
         </p>
 
         <p>
@@ -951,7 +962,7 @@
         <title>Challenges</title>
 
         <p>
-            Despite their remarkable capabilities, LLMs face several significant challenges. <term>Bias</term><idx><h>bias in LLMs</h></idx> is a major concern—models trained on internet data can learn and amplify societal biases related to gender, race, and other characteristics. Privacy is another concern, as LLMs can memorize and reproduce sensitive information from their training data.
+            Despite their remarkable capabilities, LLMs face several significant challenges. Bias is a major concern—models trained on internet data can learn and amplify societal biases related to gender, race, and other characteristics. Privacy is another concern, as LLMs can memorize and reproduce sensitive information from their training data.
         </p>
 
         <p>
