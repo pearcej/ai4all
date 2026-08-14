@@ -87,16 +87,18 @@
         </p>
         <p>
         In 1950,
-        Alan Turing<idx>Turing, Alan</idx>
-        published his pioneering paper
+        Alan Turing<idx>Turing, Alan</idx>,
+        a British mathematician and computer scientist who is widely considered 
+        the father of modern computer science, published his pioneering paper
         <em><url href="https://courses.cs.umbc.edu/471/papers/turing.pdf">
         Computing Machinery and Intelligence</url></em>, introducing ideas
         that would later become associated with the
-        <term>Turing Test</term><idx>Turing test</idx>. A few years later,
-        John McCarthy<idx>McCarthy, John</idx> coined the term
-        <term>artificial intelligence</term><idx>artificial intelligence</idx> and later described it as
-        <q>the science and engineering of making intelligent machines.</q> 
-        These developments culminated in the Dartmouth Conference<idx>Dartmouth Conference</idx>
+        <term>Turing Test</term><idx>Turing Test</idx>. A few years later,
+        John McCarthy<idx>McCarthy, John</idx>, an American computer scientist, coined the term
+        <term>artificial intelligence</term> and later described it as
+        <q>the science and engineering of making intelligent machines.</q>
+        These developments culminated in the 
+        <term>Dartmouth Conference</term><idx>Dartmouth Conference</idx>
         in 1956, which brought together researchers from multiple disciplines
         to explore the possibility of thinking machines. The conference is
         widely regarded as the birth of AI as a distinct field of study.
@@ -338,7 +340,7 @@
 <subsection xml:id="ssec-turing-test">
     <title>The Turing Test</title>
 
-    <p>Because intelligence is difficult to define precisely, early AI researchers looked for practical ways to evaluate it. In 1950, British mathematician and computer science pioneer <term>Alan Turing</term><idx>Turing, Alan</idx> posed a provocative question: Can machines think? Rather than diving into philosophical definitions, Turing reframed the question in practical terms with his now-famous <term>Turing Test</term><idx>Turing test</idx>, introduced in his paper <q>Computing Machinery and Intelligence.</q></p>
+    <p>Because intelligence is difficult to define precisely, early AI researchers looked for practical ways to evaluate it. In 1950, <term>Alan Turing</term><idx>Turing, Alan</idx> posed a provocative question: Can machines think? Rather than diving into philosophical definitions, Turing reframed the question in practical terms with his now-famous <term>Turing Test</term><idx>Turing test</idx>, introduced in his paper <q>Computing Machinery and Intelligence.</q></p>
 
     <p>The concept is straightforward: a human judge engages in a text-based conversation with both a human and a machine, without knowing which is which. If the judge cannot reliably distinguish the machine from the human, the machine is said to have passed the test—demonstrating behavior indistinguishable from human intelligence. Turing's approach shifted the focus from the elusive concept of <q>thinking</q> to observable interaction.</p>
 
