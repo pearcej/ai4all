@@ -64,12 +64,12 @@
         tree.</p>
 
         <p>
-            <term><idx>parent</idx>Parent</term> — a node that is a direct
+            <term><idx>parent node</idx>Parent node</term> — a node that is a direct
             predecessor to one or more nodes.
         </p>
 
         <p>
-            <term><idx>child</idx>Child</term> — a node that is a direct successor
+            <term><idx>child node</idx>Child node</term> — a node that is a direct successor
             of another node. In a general tree, the children of a node are an
             unordered set. There is not a fixed or defined order for generic
             trees. Child nodes must have exactly one parent node. However, there
@@ -95,7 +95,7 @@
         </figure>
 
         <p>
-            <term><idx>root</idx>Root</term> — the topmost node of the tree that
+            <term><idx>root node</idx>Root node</term> — the topmost node of the tree that
             has no parent. To be a tree, there MUST be only one root. Also, a
             tree consisting of only a single node is still considered a tree and
             that single node would be the root.
@@ -119,7 +119,7 @@
         pointing downward.</p>
 
         <p>
-            <term><idx>siblings</idx>Siblings</term> — nodes with the same parent.
+            <term><idx>sibling nodes</idx>Sibling nodes</term> — nodes with the same parent.
         </p>
 
         <figure xml:id="fig-tree-siblings">
@@ -187,7 +187,7 @@
             <term><idx>graph</idx>Graph</term> — a set of nodes connected by edges.
         </p>
         <p>
-            The difference between trees and graphs is that trees are <term><idx>connected graphs</idx>connected</term> 
+            The difference between trees and graphs is that trees are <term><idx>connected graph</idx>connected</term> 
             (every pair of nodes has a path between them), and all nodes in a tree must descend from the root in a
             hierarchy where each node only has one parent. This also means that trees are a subset of graphs (all trees 
             are graphs but all graphs are not trees).
@@ -211,7 +211,7 @@
             </image>
         </figure>
 
-        <p><term><idx>disconnected graphs</idx>Disconnected Graphs</term> - A graph where not all nodes are connected by edges.</p> 
+        <p><term><idx>disconnected graph</idx>Disconnected Graph</term> - A graph where not all nodes are connected by edges.</p> 
 
         <p>This graph has two separate pieces that are not connected by an
         edge, making it disconnected.</p>

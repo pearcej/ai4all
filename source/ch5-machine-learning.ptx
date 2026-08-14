@@ -231,7 +231,7 @@
         <li>
           <title><term>Classification</term></title>
           <p>
-            <term>Classification algorithms</term><idx><h>classification algorithms</h></idx> 
+            <term>Classification algorithms</term><idx><h>classification algorithm</h></idx> 
             predict a label or category from a finite set of discrete values.
             Classification problems may be <term>binary classification</term><idx><h>binary classification</h></idx>,
             where there are only two possible classes (such as "spam" or "not spam"), or
@@ -244,7 +244,7 @@
         <li>
           <title><term>Regression</term></title>
           <p>
-            <term>Regression algorithms</term><idx><h>regression algorithms</h></idx> are structured 
+            <term>Regression algorithms</term><idx><h>regression algorithm</h></idx> are structured 
             similarly to classification models, except that they predict
             continuous numerical values rather than discrete categories. Like classification, regression algorithms
             learn from pairs of input data and corresponding target values. Regression is commonly applied when
@@ -939,7 +939,7 @@
     <assemblage xml:id="asm-myth-ai-addresses-complex-questions">
         <title>Misconception: The current most successful AI methods address complex questions</title>
         <p><em>Reality:</em> The current most successful AI methods, namely
-        <idx>neural networks</idx>neural networks, do not address
+        <idx>neural network</idx>neural networks, do not address
         complex questions but simple ones such as classification or regression
         for high-dimensional data. This goes counter to the tradition of AI
         taking on novel and complex problems. These complex questions are

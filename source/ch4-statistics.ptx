@@ -1139,7 +1139,7 @@
         <p>
             When performing sample classification across complex datasets, most classification models possess one or more model parameters 
             that control the overall complexity of the model. While higher model complexity provides greater discriminating power, it also 
-            increases the risk of <idx><h>over-fitting</h></idx><term>over-fitting</term>.
+            increases the risk of <idx><h>overfitting</h></idx><term>overfitting</term>.
         </p>
         <p>
             Over-fitting occurs when a trained model performs extremely well on the specific samples used during training but performs 
