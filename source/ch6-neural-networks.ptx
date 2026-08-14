@@ -49,7 +49,7 @@
         </figure>
 
         <p>
-            <term>Artificial neural networks</term><idx><h>artificial neural networks</h></idx> (<term>ANNs</term><idx>ANNs</idx>) approach the problem in a different way. The idea is to take a large number of examples, known as training examples (as seen above), and then develop a system which can learn from those training examples. In other words, the neural network uses the examples to automatically infer rules. To understand how this works, we must look at the basic neuron models.
+            <term>Artificial neural networks</term><idx><h>artificial neural network</h></idx> (<term>ANNs</term><idx>ANN</idx>) approach the problem in a different way. The idea is to take a large number of examples, known as training examples (as seen above), and then develop a system which can learn from those training examples. In other words, the neural network uses the examples to automatically infer rules. To understand how this works, we must look at the basic neuron models.
         </p>
 
         <assemblage xml:id="asm-look-closer-artificial-neurons">
@@ -454,7 +454,7 @@
         <title>Deep Networks and the Mystery of Layers</title>
 
         <p>
-            Networks with this kind of many-layer structure—two or more hidden layers—are called <term>deep neural networks</term><idx><h>deep neural networks</h></idx>.
+            Networks with this kind of many-layer structure—two or more hidden layers—are called <term>deep neural networks</term><idx><h>deep neural network</h></idx>.
         </p>
 
         <p>
@@ -482,7 +482,7 @@
         </p>
 
         <p>
-            <term>Convolutional Neural Networks (CNNs)</term><idx><h>convolutional neural networks</h></idx><idx><h>CNN</h></idx>:
+            <term>Convolutional Neural Networks (CNNs)</term><idx><h>convolutional neural network</h></idx><idx><h>CNN</h></idx>:
              In fully connected layers, the inputs are treated as a simple, flat vertical line of neurons. In a convolutional net, 
              it helps to think instead of the inputs as a square or two-dimensional array of pixels, whose values correspond to 
              pixel intensities (such as three integer values encoding intensity levels in red, green, and blue color channels).
@@ -552,7 +552,7 @@
 
 
         <p>
-            <term>Recurrent Neural Networks (RNNs)</term><idx><h>recurrent neural networks</h></idx><idx><h>RNN</h></idx>: While CNNs focus on spatial, grid-like data, other networks are explicitly built for temporal or sequential problems. In standard networks, there are no loops—information is always fed forward, never fed back.
+            <term>Recurrent Neural Networks (RNNs)</term><idx><h>recurrent neural network</h></idx><idx><h>RNN</h></idx>: While CNNs focus on spatial, grid-like data, other networks are explicitly built for temporal or sequential problems. In standard networks, there are no loops—information is always fed forward, never fed back.
         </p>
 
         <p>
@@ -861,7 +861,7 @@
     <subsection xml:id="subsec-llms-backstory">
         <title>The Backstory of Large Language Models</title>
         <p>
-            <term>Large language models</term><idx><h>large language models</h></idx> (LLMs)<idx>LLM</idx> have become one of the most revolutionary advancements in artificial intelligence. These powerful systems can understand, generate, and even reason with human language in ways that were previously impossible. The key insight behind LLMs is that knowledge of the world and language can be learned simply by predicting the next word in a sentence over and over again. This approach has shifted how we build AI systems: instead of creating specialized models for each task, we now train one foundation model that can be adapted for many different problems.
+            <term>Large language models</term><idx><h>large language model</h></idx> (LLMs)<idx>LLM</idx> have become one of the most revolutionary advancements in artificial intelligence. These powerful systems can understand, generate, and even reason with human language in ways that were previously impossible. The key insight behind LLMs is that knowledge of the world and language can be learned simply by predicting the next word in a sentence over and over again. This approach has shifted how we build AI systems: instead of creating specialized models for each task, we now train one foundation model that can be adapted for many different problems.
         </p>
 
         <p>
@@ -927,7 +927,7 @@
         </p>
 
         <p>
-            A powerful prompting technique is <term>chain-of-thought</term><idx><h>chain-of-thought</h></idx> (CoT) prompting. In CoT, the model is encouraged to generate intermediate reasoning steps before arriving at a final answer. This is particularly effective for complex problems like math, logic, and commonsense reasoning. Instead of directly answering a math problem, a CoT prompt includes step-by-step reasoning in the examples, teaching the model to think through the problem systematically.
+            A powerful prompting technique is <term>chain-of-thought (CoT)</term><idx><h>chain-of-thought</h></idx><idx>CoT</idx> prompting. In CoT, the model is encouraged to generate intermediate reasoning steps before arriving at a final answer. This is particularly effective for complex problems like math, logic, and commonsense reasoning. Instead of directly answering a math problem, a CoT prompt includes step-by-step reasoning in the examples, teaching the model to think through the problem systematically.
         </p>
 
         <p>
@@ -943,7 +943,7 @@
         </p>
 
         <p>
-            The way an LLM selects its output is controlled by <term>decoding algorithms</term><idx><h>decoding algorithms</h></idx>. The simplest method is <term>greedy decoding</term><idx><h>greedy decoding</h></idx>, which always picks the most likely next token. <term>Beam search</term><idx><h>beam search</h></idx> keeps track of multiple possible sequences, improving output quality at the cost of more computation. <term>Sampling-based methods</term><idx><h>sampling-based decoding</h></idx>, like top-k and top-p sampling, introduce randomness for more diverse and creative outputs.
+            The way an LLM selects its output is controlled by <term>decoding algorithms</term><idx><h>decoding algorithm</h></idx>. The simplest method is <term>greedy decoding</term><idx><h>greedy decoding</h></idx>, which always picks the most likely next token. <term>Beam search</term><idx><h>beam search</h></idx> keeps track of multiple possible sequences, improving output quality at the cost of more computation. <term>Sampling-based methods</term><idx><h>sampling-based decoding</h></idx>, like top-k and top-p sampling, introduce randomness for more diverse and creative outputs.
         </p>
 
         <p>
@@ -966,7 +966,7 @@
         </p>
 
         <p>
-            <term>Hallucination</term><idx><h>hallucination in LLMs</h></idx>—when a model generates plausible-sounding but factually incorrect information—is a persistent problem, especially in high-stakes applications. The computational cost of LLMs is also substantial. Training and running these models requires enormous amounts of energy and specialized hardware, raising environmental and economic concerns.
+            <term>Hallucination</term><idx><h>hallucination</h></idx>—when a model generates plausible-sounding but factually incorrect information—is a persistent problem, especially in high-stakes applications. The computational cost of LLMs is also substantial. Training and running these models requires enormous amounts of energy and specialized hardware, raising environmental and economic concerns.
         </p>
 
         <p>

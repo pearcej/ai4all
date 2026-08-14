@@ -1144,10 +1144,10 @@
         <p>
             When performing sample classification across complex datasets, most classification models possess one or more model parameters 
             that control the overall complexity of the model. While higher model complexity provides greater discriminating power, it also 
-            increases the risk of <term>over-fitting</term>.
+            increases the risk of <term>overfitting</term>.
         </p>
         <p>
-            <idx>over-fitting</idx>Over-fitting occurs when a trained model performs extremely well on the specific samples used during training but performs 
+            <idx>overfitting</idx>Overfitting occurs when a trained model performs extremely well on the specific samples used during training but performs 
             poorly on new, unknown samples—meaning the model fails to generalize effectively. To find an optimal set of parameters that 
             achieves a balance between model complexity and generalizability, it is essential to partition the available data into 
             distinct training and validation sets.

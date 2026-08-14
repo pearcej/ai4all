@@ -340,7 +340,7 @@
 <subsection xml:id="ssec-turing-test">
     <title>The Turing Test</title>
 
-    <p>Because intelligence is difficult to define precisely, early AI researchers looked for practical ways to evaluate it. In 1950, <term>Alan Turing</term><idx>Turing, Alan</idx> posed a provocative question: Can machines think? Rather than diving into philosophical definitions, Turing reframed the question in practical terms with his now-famous <term>Turing Test</term><idx>Turing Test</idx>, introduced in his paper <q>Computing Machinery and Intelligence.</q></p>
+    <p>Because intelligence is difficult to define precisely, early AI researchers looked for practical ways to evaluate it. In 1950, <term>Alan Turing</term><idx>Turing, Alan</idx> posed a provocative question: Can machines think? Rather than diving into philosophical definitions, Turing reframed the question in practical terms with his now-famous <term>Turing Test</term><idx>Turing test</idx>, introduced in his paper <q>Computing Machinery and Intelligence.</q></p>
 
     <p>The concept is straightforward: a human judge engages in a text-based conversation with both a human and a machine, without knowing which is which. If the judge cannot reliably distinguish the machine from the human, the machine is said to have passed the test—demonstrating behavior indistinguishable from human intelligence. Turing's approach shifted the focus from the elusive concept of <q>thinking</q> to observable interaction.</p>
 
@@ -384,7 +384,6 @@
 <exercise label="turing-test-intention" adaptive="yes">
     <title>Turing Test Intention</title>
 
-    <idx>Turing Test</idx>
     <statement>
         <p>
             Which of the following best describes Alan Turing's primary

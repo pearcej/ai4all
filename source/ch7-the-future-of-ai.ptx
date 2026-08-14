@@ -94,7 +94,7 @@
       processed by complex algorithms, the internal reasoning becomes hidden. The
       user can’t see how the system is getting the outcomes and this is what is
       referred to as the <term>Black Box Problem</term>
-      <idx>Black Box Problem</idx>. The algorithms are so complicated that the
+      <idx>black box problem</idx>. The algorithms are so complicated that the
       processes behind them are hidden, even to the people creating them.
     </p>
 
@@ -157,7 +157,7 @@
         <subsection xml:id="ssec-data-centers-the-engines-of-ai">
             <title>Data Centers: The Engines of AI</title>
 
-            <p><term>Data centers</term><idx>Data centers</idx> are the physical infrastructure that makes modern AI
+            <p><term>Data centers</term><idx>data center</idx> are the physical infrastructure that makes modern AI
             possible. These facilities house thousands of specialized computers
             that train and run AI models. Think of them as giant warehouses
             filled with computing power.</p>
