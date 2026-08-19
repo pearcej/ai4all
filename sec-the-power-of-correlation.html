@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Power of Correlation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+lang: "en-US",
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="AI for All">
+<meta property="og:title" content="AI for All">
+<meta property="book:title" content="AI for All">
+<meta name="twitter:description" content="Designed for all students and minimal background in mathematics, this work is designed as an introduction to artificial intelligence and machine learning.">
+<meta property="og:description" content="Designed for all students and minimal background in mathematics, this work is designed as an introduction to artificial intelligence and machine learning.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.47"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.47"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.5';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.18d8728f6d56e11d.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.b388362b5f43738a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="ai4all" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="ai4all.html"><span class="title">AI for All</span></a></div>
+<p class="byline">Dr. Jan Pearce, Editor</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="ai4all-10.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-read-aloud-button" class="ptx-read-aloud-button button" title="Read aloud" aria-expanded="false"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf1bc;</span><span class="name">Read aloud</span></button><div id="ptx-read-aloud-player" class="ptx-read-aloud-player" hidden="hidden" role="group" aria-label="Read aloud">
+<button id="ptx-read-aloud-prev" class="button" title="Previous sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe045;</span></button><button id="ptx-read-aloud-toggle" class="ptx-read-aloud-toggle button" title="Play"><span class="ptx-read-aloud-icon-play"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></span><span class="ptx-read-aloud-icon-pause"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe034;</span></span></button><button id="ptx-read-aloud-next" class="button" title="Next sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe044;</span></button><a id="ptx-read-aloud-continue" class="ptx-read-aloud-continue button" hidden="hidden">Continue<span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></a><button id="ptx-read-aloud-settings-button" class="ptx-read-aloud-settings-button button" title="Reading settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe429;</span></button>
+</div>
+<dialog class="ptx-dialog ptx-read-aloud-settings-popup" id="ptx-read-aloud-settings-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Read aloud settings</h2>
+<button class="ptx-read-aloud-settings-close-button button" id="ptx-read-aloud-settings-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label for="ptx-read-aloud-voice"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe91f;</span><span>Voice</span></label><select id="ptx-read-aloud-voice"></select><label class="ptx-readability-slider-label" for="ptx-read-aloud-rate"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe9e4;</span><span>Reading speed</span><output id="ptx-read-aloud-rate-value" for="ptx-read-aloud-rate">1×</output></label><input type="range" id="ptx-read-aloud-rate" min="0.5" max="2" step="0.1" value="1"><label for="ptx-read-aloud-asides"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d7;</span><span>Collapsed content</span></label><select id="ptx-read-aloud-asides"><option value="skip">Announce, do not read</option>
+<option value="read">Read automatically</option></select><label for="ptx-read-aloud-autoscroll"><input type="checkbox" id="ptx-read-aloud-autoscroll" checked><span>Follow along (auto-scroll)</span></label><label for="ptx-read-aloud-autocontinue"><input type="checkbox" id="ptx-read-aloud-autocontinue"><span>Continue to the next page automatically</span></label>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="sec-reading-the-distribution.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="statistics-needed-by-ai.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-the-data-split.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Prefaces</span></a></div>
+<ul id="ptx-toc-group-frontmatter" class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="repository-and-license.html" class="internal"><span class="title">Repository and License</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="sec-how-this-book-was-created.html" class="internal"><span class="title">How This Book Was Created</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="acknowledgements.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="the-story-of-ai.html" class="internal"><span class="codenumber">1</span> <span class="title">The Story of AI</span></a></div>
+<ul id="ptx-toc-group-the-story-of-ai" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ai-backstory.html" class="internal"><span class="codenumber">1.1</span> <span class="title">AI’s Back Story</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-characterizing-intelligence.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Characterizing Intelligence</span></a></div>
+<ul id="ptx-toc-group-sec-characterizing-intelligence" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-characterizing-intelligence.html#ssec-turing-test" class="internal"><span class="codenumber">1.2.1</span> <span class="title">The Turing Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-characterizing-intelligence.html#ssec-what-is-generative-ai" class="internal"><span class="codenumber">1.2.2</span> <span class="title">What Is Generative AI?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-mythbusting-ch1.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Mythbusting</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ai-in-education.html" class="internal"><span class="codenumber">2</span> <span class="title">AI in Education</span></a></div>
+<ul id="ptx-toc-group-ai-in-education" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html" class="internal"><span class="codenumber">2.1</span> <span class="title">The Dangers of AI as a Learner</span></a></div>
+<ul id="ptx-toc-group-sec-the-dangers-of-ai-as-a-learner" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-ai-as-a-learning-tool" class="internal"><span class="codenumber">2.1.1</span> <span class="title">AI as a Learning Tool</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-new-opportunities-for-learning" class="internal"><span class="codenumber">2.1.2</span> <span class="title">New Opportunities for Learning</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-risks-of-overreliance" class="internal"><span class="codenumber">2.1.3</span> <span class="title">The Risks of Overreliance</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-learning-new-skills-with-ai" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Learning New Skills</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-evidence-from-mathematics-learning" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Evidence from Mathematics Learning</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-decreased-cognitive-engagement" class="internal"><span class="codenumber">2.1.6</span> <span class="title">Decreased Cognitive Engagement</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-breaking-the-cycle" class="internal"><span class="codenumber">2.1.7</span> <span class="title">Breaking the Cycle</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-how-mistakes-help-you-learn.html" class="internal"><span class="codenumber">2.2</span> <span class="title">How Mistakes Help You Learn</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ai-powered-study-buddy.html" class="internal"><span class="codenumber">2.3</span> <span class="title">AI-Powered Study Buddy</span></a></div>
+<ul id="ptx-toc-group-sec-ai-powered-study-buddy" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ai-powered-study-buddy.html#ssec-static-vs-dynamic-learning" class="internal"><span class="codenumber">2.3.1</span> <span class="title">From Static Resources to Dynamic Interaction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ai-powered-study-buddy.html#ssec-ai-for-personalization-and-accessibility" class="internal"><span class="codenumber">2.3.2</span> <span class="title">AI for Personalization and Accessibility</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ai-powered-study-buddy.html#ssec-strategies-for-effective-ai-interaction" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Strategies for Effective AI Interaction</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-ai-powered-study-buddy.html#rqs-effective-vs-ineffective-practices" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-anatomy-of-a-prompt-and-writing-loops.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The Anatomy of a Prompt and Writing Loops</span></a></div>
+<ul id="ptx-toc-group-sec-the-anatomy-of-a-prompt-and-writing-loops" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-anatomy-of-a-prompt-and-writing-loops.html#ssec-in-context-learning" class="internal"><span class="codenumber">2.4.1</span> <span class="title">In-Context Learning</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-anatomy-of-a-prompt-and-writing-loops.html#ssec-writing-good-prompts" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Strategies for Effective Prompts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-anatomy-of-a-prompt-and-writing-loops.html#ssec-human-ai-writing-loops" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Human-AI Writing Loops</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-spotting-hallucinations.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Spotting Hallucinations</span></a></div>
+<ul id="ptx-toc-group-sec-spotting-hallucinations" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-spotting-hallucinations.html#ssec-why-ai-fabricates-information" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Why AI Fabricates Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-spotting-hallucinations.html#ssec-manifestations-of-hallucinations" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Manifestations of Hallucinations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-spotting-hallucinations.html#ssec-verification-strategies" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Strategies for Fact-Checking AI Output</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-academic-integrity-and-ai-policies.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Academic Integrity and AI Policies</span></a></div>
+<ul id="ptx-toc-group-sec-academic-integrity-and-ai-policies" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-academic-integrity-and-ai-policies.html#ssec-the-bright-red-line" class="internal"><span class="codenumber">2.6.1</span> <span class="title">The Bright “Red Line”</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-academic-integrity-and-ai-policies.html#ssec-when-the-red-line-can-be-a-bit-fuzzy" class="internal"><span class="codenumber">2.6.2</span> <span class="title">When the “Red Line” Can Be a Bit Fuzzy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-academic-integrity-and-ai-policies.html#ssec-all-about-attribution" class="internal"><span class="codenumber">2.6.3</span> <span class="title">All About Attribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-academic-integrity-and-ai-policies.html#ssec-basic-elements-of-ai-attribution" class="internal"><span class="codenumber">2.6.4</span> <span class="title">Basic Elements of AI Attribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-academic-integrity-and-ai-policies.html#ssec-navigating-ai-responsibly" class="internal"><span class="codenumber">2.6.5</span> <span class="title">Navigating AI Responsibly</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mythbusting-ch2.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Mythbusting</span></a></div>
+<ul id="ptx-toc-group-sec-mythbusting-ch2" class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-mythbusting-ch2.html#rqs-myth-ai-education" class="internal"><span class="codenumber">2.7</span> <span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="solving-problems-using-search.html" class="internal"><span class="codenumber">3</span> <span class="title">Solving Problems Using Search</span></a></div>
+<ul id="ptx-toc-group-solving-problems-using-search" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-trees-and-graphs.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Trees and Graphs</span></a></div>
+<ul id="ptx-toc-group-sec-trees-and-graphs" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trees-and-graphs.html#ssec-tree-definitions" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Tree Definitions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trees-and-graphs.html#ssec-tree-applications" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Real World Application of Tree Structure</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trees-and-graphs.html#ssec-graphs" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trees-and-graphs.html#ssec-real-world-graphs" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Real World Examples of Graphs</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-trees-and-graphs.html#rq-tree-properties" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Reading Question</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Introduction to State Spaces</span></a></div>
+<ul id="ptx-toc-group-sec-introduction-to-state-spaces" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html#ssec-nodes-and-arcs" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Nodes, Arcs, and Relationships</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html#ssec-tic-tac-toe-example" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Tic-Tac-Toe Example</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html#ssec-problem-solving-process" class="internal"><span class="codenumber">3.2.3</span> <span class="title">The Problem-Solving Process</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html#ssec-real-world-state-spaces" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Real-World State Spaces</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html#ssec-characteristics-of-state-spaces" class="internal"><span class="codenumber">3.2.5</span> <span class="title">Important Characteristics of State Spaces</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html#ssec-challenge-of-representation" class="internal"><span class="codenumber">3.2.6</span> <span class="title">The Challenge of Representation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-uninformed-search.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Uninformed Search</span></a></div>
+<ul id="ptx-toc-group-sec-uninformed-search" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uninformed-search.html#subsec-breadth-first-search" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Breadth-First Search (BFS)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uninformed-search.html#subsec-depth-first-search" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Depth-First Search (DFS)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uninformed-search.html#subsec-depth-limited-search" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Depth-Limited Search (DLS)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uninformed-search.html#subsec-comparing-uninformed" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Comparing Uninformed Search Strategies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uninformed-search.html#subsec-when-to-use-uninformed" class="internal"><span class="codenumber">3.3.5</span> <span class="title">When to Use Uninformed Search</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-informed-search.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Informed Search</span></a></div>
+<ul id="ptx-toc-group-sec-informed-search" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-what-is-a-heuristic" class="internal"><span class="codenumber">3.4.1</span> <span class="title">What Is a Heuristic?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-best-first-search" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Best-First Search</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-greedy-best-first" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Greedy Best-First Search</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-uniform-cost" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Uniform-Cost Search</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-a-star-search" class="internal"><span class="codenumber">3.4.5</span> <span class="title">A* Search</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-heuristic-functions" class="internal"><span class="codenumber">3.4.6</span> <span class="title">Heuristic Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-admissible-heuristics" class="internal"><span class="codenumber">3.4.7</span> <span class="title">Admissible Heuristics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-consistency" class="internal"><span class="codenumber">3.4.8</span> <span class="title">Consistency</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-informed-search-summary" class="internal"><span class="codenumber">3.4.9</span> <span class="title">Comparing Informed Search Strategies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-when-to-use-informed" class="internal"><span class="codenumber">3.4.10</span> <span class="title">When to Use Informed Search</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-adversarial-search.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Adversarial Search</span></a></div>
+<ul id="ptx-toc-group-sec-adversarial-search" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-adversarial-search.html#subsec-minimax-algorithm" class="internal"><span class="codenumber">3.5.1</span> <span class="title">The Minimax Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-adversarial-search.html#subsec-game-state-spaces" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Game State Spaces</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-adversarial-search.html#subsec-alpha-beta-pruning" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Alpha-Beta Pruning</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-adversarial-search.html#subsec-heuristics-in-games" class="internal"><span class="codenumber">3.5.4</span> <span class="title">Why Larger Games Still Need Heuristics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-adversarial-search.html#subsec-adversarial-applications" class="internal"><span class="codenumber">3.5.5</span> <span class="title">Real-World Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-adversarial-search.html#subsec-adversarial-search-summary" class="internal"><span class="codenumber">3.5.6</span> <span class="title">Summary: Key Concepts in Adversarial Search</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-adversarial-search.html#rqs-search-methods" class="internal"><span class="codenumber">3.5.7</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="statistics-needed-by-ai.html" class="internal"><span class="codenumber">4</span> <span class="title">Statistics Needed by AI</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-statistics-needed-by-ai">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-data-literacy.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Data Literacy</span></a></div>
+<ul id="ptx-toc-group-sec-data-literacy" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-data-literacy.html#ssec-what-is-data" class="internal"><span class="codenumber">4.1.1</span> <span class="title">What Exactly is Data?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-data-literacy.html#ssec-types-of-data" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Types of Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-data-literacy.html#ssec-datasets" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Datasets</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-reading-the-distribution.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Reading the Distribution</span></a></div>
+<ul id="ptx-toc-group-sec-reading-the-distribution" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reading-the-distribution.html#subsec-frequency-tables" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Frequency Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reading-the-distribution.html#subsec-pie-charts-bar-charts" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Pie Charts and Bar Charts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reading-the-distribution.html#subsec-comparing-distributions" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Comparing Distributions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reading-the-distribution.html#subsec-histograms" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Histograms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reading-the-distribution.html#subsec-frequency-polygons" class="internal"><span class="codenumber">4.2.5</span> <span class="title">Frequency Polygons and Cumulative Polygons</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-the-power-of-correlation.html" class="internal"><span class="codenumber">4.3</span> <span class="title">The Power of Correlation</span></a></div>
+<ul class="structural toc-item-list active" id="ptx-toc-group-sec-the-power-of-correlation">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-correlation.html#subsec-spotting-trends-scatter-plots" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Spotting Trends with Scatter Plots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-correlation.html#subsec-values-pearsons-correlation" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Values of Pearson’s Correlation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-correlation.html#subsec-core-mathematical-properties" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Core Mathematical Properties of <span class="process-math">\(r\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-correlation.html#subsec-interpreting-r-real-world" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Interpreting <span class="process-math">\(r\)</span> in Real-World Contexts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-correlation.html#subsec-correlation-vs-causation" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Correlation vs. Causation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-correlation.html#subsec-establishing-causation-experiments" class="internal"><span class="codenumber">4.3.6</span> <span class="title">Establishing Causation in Experiments</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-data-split.html" class="internal"><span class="codenumber">4.4</span> <span class="title">The Data Split</span></a></div>
+<ul id="ptx-toc-group-sec-the-data-split" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-data-split.html#ssec-data-preprocessing" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Data Preprocessing and Data Splitting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-data-split.html#ssec-data-splitting-strategies" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Data Splitting Strategies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-data-split.html#ssec-model-building-and-training" class="internal"><span class="codenumber">4.4.3</span> <span class="title">Model Building and Training</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-data-split.html#ssec-model-validation-and-data-splitting" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Model Validation and Data Splitting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-data-split.html#ssec-testing-on-unseen-data" class="internal"><span class="codenumber">4.4.5</span> <span class="title">Testing on Unseen Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-data-split.html#ssec-model-postprocessing" class="internal"><span class="codenumber">4.4.6</span> <span class="title">Model Postprocessing</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="machine-learning.html" class="internal"><span class="codenumber">5</span> <span class="title">Machine Learning</span></a></div>
+<ul id="ptx-toc-group-machine-learning" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-an-overview.html" class="internal"><span class="codenumber">5.1</span> <span class="title">An Overview of Machine Learning</span></a></div>
+<ul id="ptx-toc-group-sec-an-overview" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-an-overview.html#subsec-traditional-vs-ml" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Traditional Computing vs. Machine Learning</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-supervised-learning.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Supervised Learning</span></a></div>
+<ul id="ptx-toc-group-sec-supervised-learning" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-supervised-learning.html#subsec-supervised-categories" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Categories of Supervised Learning</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-supervised-learning.html#subsec-supervised-applications" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Applications of Supervised Learning</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-supervised-learning.html#rqs-supervised-learning-types" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-unsupervised-learning.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Unsupervised Learning</span></a></div>
+<ul id="ptx-toc-group-sec-unsupervised-learning" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-unsupervised-learning.html#subsec-what-is-unsupervised-learning" class="internal"><span class="codenumber">5.3.1</span> <span class="title">What Is Unsupervised Learning?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-unsupervised-learning.html#subsec-unsupervised-tasks" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Common Unsupervised Learning Tasks</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-unsupervised-learning.html#subsec-unsupervised-applications" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Applications of Unsupervised Learning</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-reinforcement-learning.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Reinforcement Learning</span></a></div>
+<ul id="ptx-toc-group-sec-reinforcement-learning" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reinforcement-learning.html#subsec-agent-environment" class="internal"><span class="codenumber">5.4.1</span> <span class="title">The Agent and Environment Loop</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reinforcement-learning.html#subsec-policy-and-goals" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Policies and Long-Term Strategy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reinforcement-learning.html#subsec-rl-applications" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Applications of Reinforcement Learning</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-evaluating-success.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Evaluating Success</span></a></div>
+<ul id="ptx-toc-group-sec-evaluating-success" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-evaluating-success.html#subsec-data-splitting" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Data Splitting and Overfitting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-evaluating-success.html#subsec-loss-functions" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Loss Functions and Error Severity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-evaluating-success.html#subsec-classification-errors" class="internal"><span class="codenumber">5.5.3</span> <span class="title">False Positives vs. False Negatives</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-evaluating-success.html#rqs-model-evaluation-terms" class="internal"><span class="codenumber">5.5.4</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mythbusting-ch5.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Mythbusting</span></a></div>
+<ul id="ptx-toc-group-sec-mythbusting-ch5" class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-mythbusting-ch5.html#rqs-machine-learning-myths" class="internal"><span class="codenumber">5.6</span> <span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="neural-networks.html" class="internal"><span class="codenumber">6</span> <span class="title">Neural Networks</span></a></div>
+<ul id="ptx-toc-group-neural-networks" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-artificial-neurons.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Artificial Neurons</span></a></div>
+<ul id="ptx-toc-group-sec-artificial-neurons" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-artificial-neurons.html#subsec-perceptrons" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Perceptrons</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-artificial-neurons.html#subsec-learning-problem" class="internal"><span class="codenumber">6.1.2</span> <span class="title">The Learning Problem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-artificial-neurons.html#subsec-sigmoid-neurons" class="internal"><span class="codenumber">6.1.3</span> <span class="title">Sigmoid Neurons</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-inputs-weights-and-biases.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Inputs, Weights, and Biases</span></a></div>
+<ul id="ptx-toc-group-sec-inputs-weights-and-biases" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-inputs-weights-and-biases.html#subsec-role-of-components" class="internal"><span class="codenumber">6.2.1</span> <span class="title">The Role of Each Component</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-inputs-weights-and-biases.html#subsec-how-layer-activates" class="internal"><span class="codenumber">6.2.2</span> <span class="title">How the Layer Activates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-inputs-weights-and-biases.html#subsec-activation-function" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Activation Functions</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-inputs-weights-and-biases.html#rq-inputs-weights-biases" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-power-of-layers.html" class="internal"><span class="codenumber">6.3</span> <span class="title">The Power of Layers</span></a></div>
+<ul id="ptx-toc-group-sec-the-power-of-layers" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-layers.html#subsec-deep-networks-mystery" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Deep Networks and the Mystery of Layers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-layers.html#subsec-cnns-and-rnns" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Architectural Divergence: CNNs &amp; RNNs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-layers.html#subsec-typical-network-architecture" class="internal"><span class="codenumber">6.3.3</span> <span class="title">A Typical Network Architecture</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-training-the-network.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Training the Network</span></a></div>
+<ul id="ptx-toc-group-sec-training-the-network" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-training-the-network.html#subsec-cost-function" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Cost Function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-training-the-network.html#subsec-gradient-descent" class="internal"><span class="codenumber">6.4.2</span> <span class="title">Learning with Gradient Descent</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-training-the-network.html#subsec-stochastic-gradient-descent" class="internal"><span class="codenumber">6.4.3</span> <span class="title">Stochastic Gradient Descent (SGD)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-training-the-network.html#subsec-backpropagation" class="internal"><span class="codenumber">6.4.4</span> <span class="title">The Backpropagation Algorithm</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-training-the-network.html#rq-training-the-network" class="internal"><span class="codenumber">6.4.5</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-large-language-models.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Large Language Models</span></a></div>
+<ul id="ptx-toc-group-sec-large-language-models" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-llms-backstory" class="internal"><span class="codenumber">6.5.1</span> <span class="title">The Backstory of Large Language Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-training-llms" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Training Large Language Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-fine-tuning-and-alignment" class="internal"><span class="codenumber">6.5.3</span> <span class="title">Fine-Tuning and Alignment</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-prompting-and-reasoning" class="internal"><span class="codenumber">6.5.4</span> <span class="title">Prompting and Reasoning</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-inference" class="internal"><span class="codenumber">6.5.5</span> <span class="title">Inference</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-challenges" class="internal"><span class="codenumber">6.5.6</span> <span class="title">Challenges</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-summary" class="internal"><span class="codenumber">6.5.7</span> <span class="title">Summary</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mythbusting-ch6.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Mythbusting</span></a></div>
+<ul id="ptx-toc-group-sec-mythbusting-ch6" class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-mythbusting-ch6.html#rq-mythbusting-ch6" class="internal"><span class="codenumber">6.6</span> <span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="the-future-of-ai.html" class="internal"><span class="codenumber">7</span> <span class="title">The Future of AI</span></a></div>
+<ul id="ptx-toc-group-the-future-of-ai" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-algorithmic-bias-and-echo-chambers.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Algorithmic Bias and Echo Chambers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-black-box-problem.html" class="internal"><span class="codenumber">7.2</span> <span class="title">The Black Box Problem</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-environmental-impacts.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Environmental Impacts</span></a></div>
+<ul id="ptx-toc-group-sec-environmental-impacts" class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-the-energy-demands-of-ai" class="internal"><span class="codenumber">7.3.1</span> <span class="title">The Energy Demands of AI</span></a></div>
+<ul id="ptx-toc-group-ssec-the-energy-demands-of-ai" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-data-centers-the-engines-of-ai" class="internal"><span class="codenumber">7.3.1.1</span> <span class="title">Data Centers: The Engines of AI</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-training-vs-inference" class="internal"><span class="codenumber">7.3.1.2</span> <span class="title">Training vs. Inference</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-why-energy-efficiency-matters" class="internal"><span class="codenumber">7.3.1.3</span> <span class="title">Why Energy Efficiency Matters</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-the-water-footprint-of-ai" class="internal"><span class="codenumber">7.3.2</span> <span class="title">The Water Footprint of AI</span></a></div>
+<ul id="ptx-toc-group-ssec-the-water-footprint-of-ai" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-water-for-cooling" class="internal"><span class="codenumber">7.3.2.1</span> <span class="title">Water for Cooling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-the-water-energy-connection" class="internal"><span class="codenumber">7.3.2.2</span> <span class="title">The Water-Energy Connection</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-geographic-concentration-and-water-stress" class="internal"><span class="codenumber">7.3.2.3</span> <span class="title">Geographic Concentration and Water Stress</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-electronic-waste-e-waste" class="internal"><span class="codenumber">7.3.3</span> <span class="title">Electronic Waste (E-Waste)</span></a></div>
+<ul id="ptx-toc-group-ssec-electronic-waste-e-waste" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-the-scale-of-the-problem" class="internal"><span class="codenumber">7.3.3.1</span> <span class="title">The Scale of the Problem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-whats-in-ai-e-waste" class="internal"><span class="codenumber">7.3.3.2</span> <span class="title">What’s in AI E-Waste?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-the-geography-of-e-waste" class="internal"><span class="codenumber">7.3.3.3</span> <span class="title">The Geography of E-Waste</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-what-can-be-done" class="internal"><span class="codenumber">7.3.4</span> <span class="title">What Can Be Done?</span></a></div>
+<ul id="ptx-toc-group-ssec-what-can-be-done" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-efficiency-improvements" class="internal"><span class="codenumber">7.3.4.1</span> <span class="title">Efficiency Improvements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-circular-economy-strategies" class="internal"><span class="codenumber">7.3.4.2</span> <span class="title">Circular Economy Strategies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-strategic-location" class="internal"><span class="codenumber">7.3.4.3</span> <span class="title">Strategic Location</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-clean-energy-procurement" class="internal"><span class="codenumber">7.3.4.4</span> <span class="title">Clean Energy Procurement</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-transparency-and-policy" class="internal"><span class="codenumber">7.3.4.5</span> <span class="title">Transparency and Policy</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-environmental-impacts.html#rq-environmental-impacts" class="internal"><span class="codenumber">7.3.5</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-deepfakes-and-disinformation.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Deepfakes and Disinformation</span></a></div>
+<ul id="ptx-toc-group-sec-deepfakes-and-disinformation" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-deepfakes-and-disinformation.html#ssec-navigating-synthetic-media" class="internal"><span class="codenumber">7.4.1</span> <span class="title">How to Navigate in a World of Synthetic Media</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-copyright-intellectual-property-and-the-creative-economy.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Copyright, Intellectual Property, and the Creative Economy</span></a></div>
+<ul id="ptx-toc-group-sec-copyright-intellectual-property-and-the-creative-economy" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-copyright-intellectual-property-and-the-creative-economy.html#ssec-nonconsensual-training" class="internal"><span class="codenumber">7.5.1</span> <span class="title">Non-Consensual Training and Data Extraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-copyright-intellectual-property-and-the-creative-economy.html#ssec-ethics-ai-art" class="internal"><span class="codenumber">7.5.2</span> <span class="title">Ethics of AI Art Generation and Creative Labor</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-copyright-intellectual-property-and-the-creative-economy.html#ssec-copyright-ownership" class="internal"><span class="codenumber">7.5.3</span> <span class="title">Copyright and Ownership of AI-Generated Work</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-copyright-intellectual-property-and-the-creative-economy.html#rq-copyright-ip" class="internal"><span class="codenumber">7.5.4</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ai-as-a-disruptor-in-the-workforce.html" class="internal"><span class="codenumber">7.6</span> <span class="title">AI as a Disruptor in the Workforce</span></a></div>
+<ul id="ptx-toc-group-sec-ai-as-a-disruptor-in-the-workforce" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ai-as-a-disruptor-in-the-workforce.html#ssec-new-jobs-ai-rise" class="internal"><span class="codenumber">7.6.1</span> <span class="title">New Jobs with the Rise of AI</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mythbusting-ch7.html" class="internal"><span class="codenumber">7.7</span> <span class="title">Mythbusting</span></a></div>
+<ul id="ptx-toc-group-sec-mythbusting-ch7" class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-mythbusting-ch7.html#rq-mythbusting" class="internal"><span class="codenumber">7.7</span> <span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="ai4all-10.html" class="internal"><span class="title">Index</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec-the-power-of-correlation">
+<h1 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Power of Correlation</span>
+</h1>
+<div class="para" id="sec-the-power-of-correlation-2">Measures of <dfn class="terminology">central tendency</dfn>, <dfn class="terminology">variability</dfn>, and <dfn class="terminology">spread</dfn> summarize a single variable by providing important information about its distribution. Often, more than one variable is collected on each individual. For example, in large health studies of populations, it is common to obtain variables such as age, sex, height, weight, blood pressure, and total cholesterol on each individual. In this section, we consider <dfn class="terminology">bivariate data</dfn>, which consists of two quantitative variables for each individual. Our primary interest is in summarizing such data in a way that preserves the underlying relationship between the two variables.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-the-power-of-correlation-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsection" id="subsec-spotting-trends-scatter-plots">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Spotting Trends with Scatter Plots</span>
+</h2>
+<div class="para" id="subsec-spotting-trends-scatter-plots-2">To illustrate bivariate data, consider something familiar: age. Do people tend to marry other people of about the same age? Looking at a sample of spousal ages for 10 White American couples (<a href="sec-the-power-of-correlation.html#tab-spousal-ages" class="xref" data-knowl="./knowl/xref/tab-spousal-ages.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 4.3.1: Sample of spousal ages for 10 couples">Table 4.3.1</a>), we see that husbands and wives tend to be of about the same age, with men having a tendency to be slightly older than their wives:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-spotting-trends-scatter-plots-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="tab-spousal-ages"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Sample of spousal ages for 10 couples<div class="autopermalink" aria-hidden="true" data-description="Table 4.3.1: Sample of spousal ages for 10 couples"><a tabindex="-1" href="#tab-spousal-ages" title="Copy heading and permalink for Table 4.3.1: Sample of spousal ages for 10 couples" aria-label="Copy heading and permalink for Table 4.3.1: Sample of spousal ages for 10 couples">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Husband</td>
+<td class="l m b0 r0 l0 t0 lines">36</td>
+<td class="l m b0 r0 l0 t0 lines">72</td>
+<td class="l m b0 r0 l0 t0 lines">37</td>
+<td class="l m b0 r0 l0 t0 lines">36</td>
+<td class="l m b0 r0 l0 t0 lines">51</td>
+<td class="l m b0 r0 l0 t0 lines">50</td>
+<td class="l m b0 r0 l0 t0 lines">47</td>
+<td class="l m b0 r0 l0 t0 lines">50</td>
+<td class="l m b0 r0 l0 t0 lines">37</td>
+<td class="l m b0 r0 l0 t0 lines">41</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Wife</td>
+<td class="l m b0 r0 l0 t0 lines">35</td>
+<td class="l m b0 r0 l0 t0 lines">67</td>
+<td class="l m b0 r0 l0 t0 lines">33</td>
+<td class="l m b0 r0 l0 t0 lines">35</td>
+<td class="l m b0 r0 l0 t0 lines">50</td>
+<td class="l m b0 r0 l0 t0 lines">46</td>
+<td class="l m b0 r0 l0 t0 lines">47</td>
+<td class="l m b0 r0 l0 t0 lines">42</td>
+<td class="l m b0 r0 l0 t0 lines">36</td>
+<td class="l m b0 r0 l0 t0 lines">41</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-spotting-trends-scatter-plots-4">In a larger dataset consisting of 282 pairs of spousal ages, summarizing each variable separately using histograms or summary statistics (such as the mean and standard deviation) causes critical information to be lost. For this sample, the mean age for husbands is 49 (standard deviation = 11) and for wives is 47 (standard deviation = 11), with both distributions being fairly skewed with a long right tail.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-spotting-trends-scatter-plots-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-spotting-trends-scatter-plots-5">However, not all husbands are older than their wives. This fact is lost when we separate the variables. Even though summary statistics are provided on each variable, the pairing within couples is lost. Based on the means alone, we cannot say what percentage of couples has younger husbands than wives; we have to count across pairs. Only by maintaining the pairing can meaningful answers be found about couples per se, such as finding the average age of husbands with 45-year-old wives or identifying the overall relationship between a husband’s age and a wife’s age.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-spotting-trends-scatter-plots-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-spotting-trends-scatter-plots-6">We can learn much more by displaying bivariate data in a graphical form that maintains the pairing: a <dfn class="terminology">scatter plot</dfn>. In a scatter plot, each pair is plotted as a point defined by its horizontal (<span class="process-math">\(x\)</span>) and vertical (<span class="process-math">\(y\)</span>) coordinates (<a href="sec-the-power-of-correlation.html#fig-43-wife-husband-age" class="xref" data-knowl="./knowl/xref/fig-43-wife-husband-age.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.3.2">Figure 4.3.2</a>).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-spotting-trends-scatter-plots-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-43-wife-husband-age"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;">
+<img src="external/4.3-wife-husband-age.png" class="contained" alt="A scatter plot displaying a strong, positive linear relationship between a husband’s age and his wife’s age."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-43-wife-husband-age-2-description">
+<div class="para" id="fig-43-wife-husband-age-2-2-1">A scatter plot showing a strong positive association between the ages of husbands and wives. The horizontal axis, labeled "Husband’s Age," ranges from 30 to 80. The vertical axis, labeled "Wife’s Age," also ranges from 30 to 85. The plot contains hundreds of data points in a light blue color. The points cluster very tightly along an upward-sloping diagonal line, indicating that as the husband’s age increases, the wife’s age increases at a nearly identical rate. While most points follow the diagonal trend, there is a slight tendency for points to sit just below the diagonal for older age groups, reflecting that husbands are sometimes slightly older than their wives.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-43-wife-husband-age-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Scatter plot showing wife’s age as a function of husband’s age.<div class="autopermalink" aria-hidden="true" data-description="Figure 4.3.2"><a tabindex="-1" href="#fig-43-wife-husband-age" title="Copy heading and permalink for Figure 4.3.2" aria-label="Copy heading and permalink for Figure 4.3.2">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-spotting-trends-scatter-plots-8">A scatter plot reveals key characteristics of bivariate data:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-spotting-trends-scatter-plots-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-spotting-trends-scatter-plots-9">
+<ul class="disc" id="subsec-spotting-trends-scatter-plots-9-1">
+<li id="subsec-spotting-trends-scatter-plots-9-1-1">
+<div class="para" id="subsec-spotting-trends-scatter-plots-9-1-1-1"> <dfn class="terminology">Positive vs. Negative Association:</dfn> When one variable (<span class="process-math">\(y\)</span>) increases with the second variable (<span class="process-math">\(x\)</span>), <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> have a positive association. In the spousal age plot, the older the husband, the older the wife. Conversely, when <span class="process-math">\(y\)</span> decreases as <span class="process-math">\(x\)</span> increases, they have a negative association.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-spotting-trends-scatter-plots-9-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-spotting-trends-scatter-plots-9-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-spotting-trends-scatter-plots-9-1-2">
+<div class="para" id="subsec-spotting-trends-scatter-plots-9-1-2-1"> <dfn class="terminology">Linear vs. Nonlinear Relationships:</dfn> When points cluster along a straight line, the relationship is called a linear relationship.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-spotting-trends-scatter-plots-9-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-spotting-trends-scatter-plots-9-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-spotting-trends-scatter-plots-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-spotting-trends-scatter-plots-10">Another example of a linear relationship is shown in a study of 149 individuals working in physically demanding jobs (such as electricians, construction and maintenance workers, and auto mechanics), shown in <a href="sec-the-power-of-correlation.html#fig-43-grip-arm-strength" class="xref" data-knowl="./knowl/xref/fig-43-grip-arm-strength.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.3.3">Figure 4.3.3</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-spotting-trends-scatter-plots-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-43-grip-arm-strength"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;">
+<img src="external/4.3-grip-arm-strength.png" class="contained" alt="A scatter plot illustrating a moderate positive correlation between individuals’ grip strength and their arm strength."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-43-grip-arm-strength-2-description">
+<div class="para" id="fig-43-grip-arm-strength-2-2-1">A scatter plot showing the relationship between physical strength measurements. The horizontal axis, labeled "Grip Strength," ranges from 20 to 200. The vertical axis, labeled "Arm Strength," ranges from 10 to 140. The plot displays a large collection of dark blue data points representing individuals. There is a clear positive association visible; as grip strength increases, arm strength generally increases as well. However, the points are spread out in a wide, diffuse cloud around the diagonal trend, showing much more variability than the spousal age graph. This spread indicates a moderate positive linear relationship, rather than a perfect or tight fit.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-43-grip-arm-strength-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Scatter plot of Grip Strength and Arm Strength.<div class="autopermalink" aria-hidden="true" data-description="Figure 4.3.3"><a tabindex="-1" href="#fig-43-grip-arm-strength" title="Copy heading and permalink for Figure 4.3.3" aria-label="Copy heading and permalink for Figure 4.3.3">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-spotting-trends-scatter-plots-12">As expected, the stronger someone’s grip, the stronger their arm tends to be, showing a positive association. Although the points cluster along a line, they are not clustered quite as closely as they are for spousal age.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-spotting-trends-scatter-plots-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-spotting-trends-scatter-plots-13">Not all scatter plots show linear relationships. Consider Galileo’s experiment on projectile motion (<a href="sec-the-power-of-correlation.html#fig-43-dis-t-rel-h" class="xref" data-knowl="./knowl/xref/fig-43-dis-t-rel-h.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.3.4">Figure 4.3.4</a>), where he rolled balls down an incline and measured how far they traveled as a function of release height.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-spotting-trends-scatter-plots-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-43-dis-t-rel-h"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;">
+<img src="external/4.3-dis-t-rel-h.png" class="contained" alt="A scatter plot displaying a curved, non-linear relationship between the release height of a ball and the distance it travels."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-43-dis-t-rel-h-2-description">
+<div class="para" id="fig-43-dis-t-rel-h-2-2-1">A scatter plot illustrating Galileo’s data on projectile motion, showing a distinct non-linear trend. The horizontal axis, labeled "Release Height," ranges from 0 to 1250. The vertical axis, labeled "Distance Traveled," ranges from 200 to 600. The plot contains only seven distinct data points plotted as light blue dots. The points follow a clear upward curve. Because the slope of the trend becomes shallower as the release height increases, the data creates a convex, parabolic shape. A straight line drawn through the data would leave the middle points sitting far above it, demonstrating that the relationship between release height and distance traveled is not linear.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-43-dis-t-rel-h-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Galileo’s data showing a non-linear relationship.<div class="autopermalink" aria-hidden="true" data-description="Figure 4.3.4"><a tabindex="-1" href="#fig-43-dis-t-rel-h" title="Copy heading and permalink for Figure 4.3.4" aria-label="Copy heading and permalink for Figure 4.3.4">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-spotting-trends-scatter-plots-15">The relationship between “Release Height” and “Distance Traveled” is not described well by a straight line: if you drew a line connecting the lowest point and highest point, all remaining points would sit above the line. These data are better fit by a parabola (nonlinear relationship).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-spotting-trends-scatter-plots-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 4.3.1: Spotting Trends with Scatter Plots"><a tabindex="-1" href="#subsec-spotting-trends-scatter-plots" title="Copy heading and permalink for Subsection 4.3.1: Spotting Trends with Scatter Plots" aria-label="Copy heading and permalink for Subsection 4.3.1: Spotting Trends with Scatter Plots">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-values-pearsons-correlation">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Values of Pearson’s Correlation</span>
+</h2>
+<div class="para" id="subsec-values-pearsons-correlation-2">Scatter plots that show linear relationships can differ in their slope and in how tightly points cluster around the line. A statistical measure of the strength of the linear relationship between two quantitative variables is the <dfn class="terminology">Pearson product-moment correlation coefficient</dfn> (referred to as <dfn class="terminology">Pearson’s correlation</dfn> or simply the <dfn class="terminology">correlation coefficient</dfn>).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-values-pearsons-correlation-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-values-pearsons-correlation-3">If the relationship between variables is not linear, the correlation coefficient does not adequately represent the strength of the relationship.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-values-pearsons-correlation-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-values-pearsons-correlation-4">
+<ul class="disc" id="subsec-values-pearsons-correlation-4-1">
+<li id="subsec-values-pearsons-correlation-4-1-1">
+<div class="para" id="subsec-values-pearsons-correlation-4-1-1-1">
+<dfn class="terminology">Symbols:</dfn> The symbol for Pearson’s correlation in a population is <span class="process-math">\(\rho\)</span> (rho), and in a sample it is <span class="process-math">\(r\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-values-pearsons-correlation-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-values-pearsons-correlation-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-values-pearsons-correlation-4-1-2">
+<div class="para" id="subsec-values-pearsons-correlation-4-1-2-1">
+<dfn class="terminology">Range:</dfn> Pearson’s <span class="process-math">\(r\)</span> ranges from <span class="process-math">\(-1\)</span> to <span class="process-math">\(1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-values-pearsons-correlation-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-values-pearsons-correlation-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-values-pearsons-correlation-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-values-pearsons-correlation-5">The values of <span class="process-math">\(r\)</span> represent specific linear patterns:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-values-pearsons-correlation-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-values-pearsons-correlation-6">
+<ul class="disc" id="subsec-values-pearsons-correlation-6-1">
+<li id="subsec-values-pearsons-correlation-6-1-1">
+<div class="para" id="subsec-values-pearsons-correlation-6-1-1-1">
+<dfn class="terminology">Perfect Positive Linear Relationship (<span class="process-math">\(r = 1\)</span>):</dfn>  Indicates a perfect positive linear relationship where all points fall exactly on an upward straight line (<a href="sec-the-power-of-correlation.html#fig-43-per-pos-lin-rel" class="xref" data-knowl="./knowl/xref/fig-43-per-pos-lin-rel.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.3.5">Figure 4.3.5</a>).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-values-pearsons-correlation-6-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-values-pearsons-correlation-6-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-values-pearsons-correlation-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-43-per-pos-lin-rel"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;">
+<img src="external/4.3-per-pos-lin-rel.png" class="contained" alt="A scatter plot showing a perfect positive linear relationship, where points fall exactly on a straight line sloping upward."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-43-per-pos-lin-rel-2-description">
+<div class="para" id="fig-43-per-pos-lin-rel-2-2-1">A scatter plot demonstrating a perfect positive linear correlation. The horizontal axis is labeled "x" and ranges from -3 to 3. The vertical axis is labeled "y" and ranges from -6 to 4. The plot contains a series of light blue data points that fall precisely and exactly on a straight diagonal line moving from the bottom left to the top right. There is no scatter or deviation from this line, meaning that for every unit increase in x, y increases by a perfectly consistent amount. This visual represents a correlation coefficient of exactly r = 1.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-43-per-pos-lin-rel-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A perfect linear relationship, <span class="process-math">\(r = 1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 4.3.5"><a tabindex="-1" href="#fig-43-per-pos-lin-rel" title="Copy heading and permalink for Figure 4.3.5" aria-label="Copy heading and permalink for Figure 4.3.5">🔗</a></div></figcaption>
+</figure>
+<div class="para logical" id="subsec-values-pearsons-correlation-8">
+<ul class="disc" id="subsec-values-pearsons-correlation-8-1">
+<li id="subsec-values-pearsons-correlation-8-1-1">
+<div class="para" id="subsec-values-pearsons-correlation-8-1-1-1">
+<dfn class="terminology">Perfect Negative Linear Relationship (<span class="process-math">\(r = -1\)</span>):</dfn>  Indicates a perfect negative linear relationship where points fall on a downward straight line (<a href="sec-the-power-of-correlation.html#fig-43-per-neg-lin-rel" class="xref" data-knowl="./knowl/xref/fig-43-per-neg-lin-rel.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.3.6">Figure 4.3.6</a>).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-values-pearsons-correlation-8-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-values-pearsons-correlation-8-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-values-pearsons-correlation-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-43-per-neg-lin-rel"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;">
+<img src="external/4.3-per-neg-lin-rel.png" class="contained" alt="A scatter plot showing a perfect negative linear relationship, where points fall exactly on a straight line sloping downward."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-43-per-neg-lin-rel-2-description">
+<div class="para" id="fig-43-per-neg-lin-rel-2-2-1">A scatter plot demonstrating a perfect negative linear correlation. The horizontal axis is labeled "x" and ranges from -3 to 3. The vertical axis is labeled "y" and ranges from -6 to 8. The plot consists of light blue data points that lie perfectly and exactly on a straight diagonal line moving from the top left to the bottom right. There is no scatter or deviation from this line, meaning that for every unit increase in x, y decreases by a perfectly consistent amount. This visual represents a correlation coefficient of exactly r = -1.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-43-per-neg-lin-rel-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A perfect negative linear relationship, <span class="process-math">\(r = -1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 4.3.6"><a tabindex="-1" href="#fig-43-per-neg-lin-rel" title="Copy heading and permalink for Figure 4.3.6" aria-label="Copy heading and permalink for Figure 4.3.6">🔗</a></div></figcaption>
+</figure>
+<div class="para logical" id="subsec-values-pearsons-correlation-10">
+<ul class="disc" id="subsec-values-pearsons-correlation-10-1">
+<li id="subsec-values-pearsons-correlation-10-1-1">
+<div class="para" id="subsec-values-pearsons-correlation-10-1-1-1">
+<dfn class="terminology">No Linear Relationship (<span class="process-math">\(r = 0\)</span>):</dfn>  Indicates no linear relationship between variables <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> (<a href="sec-the-power-of-correlation.html#fig-43-r-0" class="xref" data-knowl="./knowl/xref/fig-43-r-0.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.3.7">Figure 4.3.7</a>).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-values-pearsons-correlation-10-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-values-pearsons-correlation-10-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-values-pearsons-correlation-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-43-r-0"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;">
+<img src="external/4.3-r-0.png" class="contained" alt="A scatter plot displaying no apparent linear relationship, where points form a random, scattered cloud."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-43-r-0-2-description">
+<div class="para" id="fig-43-r-0-2-2-1">A scatter plot illustrating a dataset with no linear relationship. The horizontal axis is labeled "x" and ranges from -3 to 3. The vertical axis is labeled "y" and ranges from -3 to 4. The data is plotted using dark blue diamond-shaped points. Instead of following a line, the points are distributed randomly and widely across the entire plotting area. While there are two distinct vertical clusters of points around x = -0.5 and x = 2, the points within these columns are scattered vertically with no clear upward or downward trend. This random, directionless scatter represents a correlation coefficient of approximately r = 0.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-43-r-0-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A scatter plot for which <span class="process-math">\(r = 0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 4.3.7"><a tabindex="-1" href="#fig-43-r-0" title="Copy heading and permalink for Figure 4.3.7" aria-label="Copy heading and permalink for Figure 4.3.7">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-values-pearsons-correlation-12">With real-world data, values of <span class="process-math">\(r\)</span> are rarely exactly <span class="process-math">\(-1\text{,}\)</span> <span class="process-math">\(0\text{,}\)</span> or <span class="process-math">\(1\text{:}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-values-pearsons-correlation-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-values-pearsons-correlation-13">
+<ul class="disc" id="subsec-values-pearsons-correlation-13-1">
+<li id="subsec-values-pearsons-correlation-13-1-1">
+<div class="para" id="subsec-values-pearsons-correlation-13-1-1-1">The data for spousal ages has an <span class="process-math">\(r\)</span> of <span class="process-math">\(0.97\)</span> (<a href="sec-the-power-of-correlation.html#fig-43-wife-husband-age" class="xref" data-knowl="./knowl/xref/fig-43-wife-husband-age.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.3.2">Figure 4.3.2</a>), showing a very tight clustering along a line.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-values-pearsons-correlation-13-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-values-pearsons-correlation-13-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-values-pearsons-correlation-13-1-2">
+<div class="para" id="subsec-values-pearsons-correlation-13-1-2-1">The data for grip strength and arm strength has an <span class="process-math">\(r\)</span> of <span class="process-math">\(0.63\)</span> (<a href="sec-the-power-of-correlation.html#fig-43-grip-arm-strength" class="xref" data-knowl="./knowl/xref/fig-43-grip-arm-strength.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.3.3">Figure 4.3.3</a>), reflecting a moderate positive linear relationship.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-values-pearsons-correlation-13-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-values-pearsons-correlation-13-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-values-pearsons-correlation-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 4.3.2: Values of Pearson’s Correlation"><a tabindex="-1" href="#subsec-values-pearsons-correlation" title="Copy heading and permalink for Subsection 4.3.2: Values of Pearson’s Correlation" aria-label="Copy heading and permalink for Subsection 4.3.2: Values of Pearson’s Correlation">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-core-mathematical-properties">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Core Mathematical Properties of <span class="process-math">\(r\)</span></span>
+</h2>
+<div class="para" id="subsec-core-mathematical-properties-2">Pearson’s <span class="process-math">\(r\)</span> obeys three fundamental mathematical rules that dictate how it behaves in any dataset:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-core-mathematical-properties-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-core-mathematical-properties-3">
+<ol class="decimal" id="subsec-core-mathematical-properties-3-1">
+<li id="subsec-core-mathematical-properties-3-1-1">
+<div class="para" id="subsec-core-mathematical-properties-3-1-1-1">
+<dfn class="terminology">Strict Bounds (<span class="process-math">\(-1\)</span> to <span class="process-math">\(+1\)</span>):</dfn> The value of <span class="process-math">\(r\)</span> always stays between <span class="process-math">\(-1\)</span> and <span class="process-math">\(+1\text{.}\)</span> The sign indicates direction (positive or negative), while the absolute magnitude reflects strength.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-core-mathematical-properties-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#subsec-core-mathematical-properties-3-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-core-mathematical-properties-3-1-2">
+<div class="para" id="subsec-core-mathematical-properties-3-1-2-1">
+<dfn class="terminology">Symmetry:</dfn> Correlation works identically in both directions. The correlation of <span class="process-math">\(x\)</span> with <span class="process-math">\(y\)</span> is the exact same as <span class="process-math">\(y\)</span> with <span class="process-math">\(x\)</span>—measuring weight versus height yields the same value as height versus weight.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-core-mathematical-properties-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#subsec-core-mathematical-properties-3-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsec-core-mathematical-properties-3-1-3">
+<div class="para" id="subsec-core-mathematical-properties-3-1-3-1"> <dfn class="terminology">Invariance to Scale Changes:</dfn> Pearson’s <span class="process-math">\(r\)</span> is completely unaffected by linear transformations (adding, subtracting, multiplying, or dividing by a constant). For instance, the correlation between height and weight remains identical whether height is measured in inches, feet, or meters. Similarly, adding five bonus points to every student’s test score will not alter how those scores correlate with GPA.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-core-mathematical-properties-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#subsec-core-mathematical-properties-3-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-core-mathematical-properties-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 4.3.3: Core Mathematical Properties of r"><a tabindex="-1" href="#subsec-core-mathematical-properties" title="Copy heading and permalink for Subsection 4.3.3: Core Mathematical Properties of r" aria-label="Copy heading and permalink for Subsection 4.3.3: Core Mathematical Properties of r">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-interpreting-r-real-world">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Interpreting <span class="process-math">\(r\)</span> in Real-World Contexts</span>
+</h2>
+<div class="para" id="subsec-interpreting-r-real-world-2">Beyond its mathematical definitions, two practical factors heavily influence how a correlation coefficient should be interpreted in practice:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-interpreting-r-real-world-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-interpreting-r-real-world-3">
+<ol class="decimal" id="subsec-interpreting-r-real-world-3-1">
+<li id="subsec-interpreting-r-real-world-3-1-1">
+<div class="para" id="subsec-interpreting-r-real-world-3-1-1-1"> <dfn class="terminology">Explained Variance (<span class="process-math">\(r^2\)</span>):</dfn> Squaring the correlation coefficient (<span class="process-math">\(r^2\)</span>) gives the <dfn class="terminology">coefficient of determination</dfn>, which measures the proportion of variance in one variable that is predictable from the other:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-interpreting-r-real-world-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-interpreting-r-real-world-3-1-1-2">
+<ul class="disc" id="subsec-interpreting-r-real-world-3-1-1-2-1">
+<li id="subsec-interpreting-r-real-world-3-1-1-2-1-1">
+<div class="para" id="subsec-interpreting-r-real-world-3-1-1-2-1-1-1">
+<dfn class="terminology">High Shared Variance:</dfn> In the spousal age dataset (<span class="process-math">\(r = 0.97\)</span>), <span class="process-math">\(r^2 = 0.94\text{,}\)</span> meaning 94% of the variance in wives’ ages is accounted for by their husbands’ ages.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-interpreting-r-real-world-3-1-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-interpreting-r-real-world-3-1-1-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-interpreting-r-real-world-3-1-1-2-1-2">
+<div class="para" id="subsec-interpreting-r-real-world-3-1-1-2-1-2-1">
+<dfn class="terminology">Moderate Shared Variance:</dfn> For arm and grip strength (<span class="process-math">\(r = 0.63\)</span>), <span class="process-math">\(r^2 \approx 0.40\text{,}\)</span> leaving 60% of the variance unexplained by grip strength alone.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-interpreting-r-real-world-3-1-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-interpreting-r-real-world-3-1-1-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-interpreting-r-real-world-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#subsec-interpreting-r-real-world-3-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-interpreting-r-real-world-3-1-2">
+<div class="para" id="subsec-interpreting-r-real-world-3-1-2-1"> <dfn class="terminology">Restriction of Range:</dfn> Truncating or limiting data to a narrow range of values can artificially deflate the calculated correlation.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-interpreting-r-real-world-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-interpreting-r-real-world-3-1-2-2">
+<article class="example example-like" id="ex-restriction-of-range"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="ex-restriction-of-range-1">Across the general high school population, standardized admissions test scores and academic performance share a strong positive correlation. However, if an analysis focuses solely on students admitted to an elite university—where test scores fall within a restricted, highly competitive band—the observed correlation between test scores and college GPA drops significantly, hiding the true strength of the broader relationship.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-restriction-of-range-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 4.3.8"><a tabindex="-1" href="#ex-restriction-of-range" title="Copy heading and permalink for Example 4.3.8" aria-label="Copy heading and permalink for Example 4.3.8">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-interpreting-r-real-world-3-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#subsec-interpreting-r-real-world-3-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-interpreting-r-real-world-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 4.3.4: Interpreting r in Real-World Contexts"><a tabindex="-1" href="#subsec-interpreting-r-real-world" title="Copy heading and permalink for Subsection 4.3.4: Interpreting r in Real-World Contexts" aria-label="Copy heading and permalink for Subsection 4.3.4: Interpreting r in Real-World Contexts">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-correlation-vs-causation">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Correlation vs. Causation</span>
+</h2>
+<div class="para" id="subsec-correlation-vs-causation-2">When two variables consistently move together, it is natural to assume that one must be driving the other. In everyday thinking, we tend to link strong patterns directly to <dfn class="terminology">cause-and-effect relationships</dfn>: if <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> always change together, <span class="process-math">\(x\)</span> seems like the obvious cause of <span class="process-math">\(y\text{.}\)</span> However, this instinct can be misleading. A strong correlation between two variables does not mean that a causal relationship exists between them. The primary pitfall in inferring causation from observational data is known as the <dfn class="terminology">third-variable problem</dfn>, which occurs when an unmeasured third factor is actually responsible for the observed connection between the two main variables.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-correlation-vs-causation-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-correlation-vs-causation-3">An excellent example comes from a study in Taiwan in the 1970s that found a strong positive correlation between the use of contraception and the number of electric appliances in a person’s house. Of course, using contraception does not induce someone to buy electrical appliances, nor does buying appliances cause people to use contraception. Instead, a third variable—education level (or socioeconomic status)—affects both factors independently.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-correlation-vs-causation-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-correlation-vs-causation-4">Does the possibility of a third-variable problem make it impossible to draw causal inferences without doing an experiment? One approach is to simply assume that you do not have a third-variable problem. This approach, although common, is not very satisfactory. However, be aware that the assumption of no third-variable problem may be hidden behind a complex causal model that contains sophisticated and elegant mathematics.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-correlation-vs-causation-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-correlation-vs-causation-5">A better, though admittedly more difficult, approach is to find <dfn class="terminology">converging evidence</dfn>, where multiple independent lines of evidence point to the same causal relationship. This was the approach taken to conclude that smoking causes cancer. The analysis included converging evidence from retrospective studies, prospective studies, lab studies with animals, and theoretical understandings of cancer causes.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-correlation-vs-causation-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-correlation-vs-causation-6">A second major obstacle in non-experimental data is determining the direction of causality. A correlation between two variables does not indicate which variable is causing which. For example, Reinhart and Rogoff (2010) found a strong correlation between public debt and GDP growth. Although some argued that high public debt slows economic growth, most evidence supports the alternative direction: slow GDP growth increases public debt.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-correlation-vs-causation-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 4.3.5: Correlation vs. Causation"><a tabindex="-1" href="#subsec-correlation-vs-causation" title="Copy heading and permalink for Subsection 4.3.5: Correlation vs. Causation" aria-label="Copy heading and permalink for Subsection 4.3.5: Correlation vs. Causation">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-establishing-causation-experiments">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Establishing Causation in Experiments</span>
+</h2>
+<div class="para" id="subsec-establishing-causation-experiments-2">Because non-experimental correlations are vulnerable to the third-variable problem and directionality issues, establishing a clear causal connection often requires a controlled experiment.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-establishing-causation-experiments-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-establishing-causation-experiments-3">Consider a simple experiment where people are chosen at random from a population and assigned randomly to either an experimental group or a control group. To make this concrete, imagine the experimental group receives a drug for insomnia, the control group receives a placebo, and researchers measure how many minutes each person sleeps that night. If the experimental group sleeps significantly longer on average than the control group, does that prove the drug caused the difference?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-establishing-causation-experiments-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-establishing-causation-experiments-4">An obvious obstacle to drawing a causal conclusion is that many unmeasured variables affect sleep: stress levels, genetics, caffeine intake, or sleep quality from the night before. Could differences in these background factors be the real reason one group slept longer?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-establishing-causation-experiments-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-establishing-causation-experiments-5">At first glance, it might seem that <dfn class="terminology">random assignment</dfn>—the process of randomly assigning participants to different groups—eliminates these outside factors. However, random assignment only ensures that differences in unmeasured variables are chance differences—it does not remove them entirely. By pure luck, more subjects in the control group might happen to be under high stress. That stress could prevent them from sleeping, creating a difference between the two groups that has nothing to do with the drug.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-establishing-causation-experiments-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-establishing-causation-experiments-6">This seems like a huge problem: how can you account for variables you never measured?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-establishing-causation-experiments-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-establishing-causation-experiments-7">While researchers cannot measure every individual background factor, they can measure the combined effect of all unmeasured variables. Because everyone within the same group receives the exact same treatment, any differences in sleep duration among people in that same group must be caused by these unmeasured individual differences.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-establishing-causation-experiments-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-establishing-causation-experiments-8">By calculating the overall spread (or variance) of scores within each group, researchers can estimate how much natural noise exists in the data. <dfn class="terminology">Inferential statistics</dfn> uses this background noise to calculate a simple probability: How likely is it that chance alone produced a difference this big between the two groups? If that probability is very low, researchers infer that the treatment had a genuine causal effect rather than a lucky fluke. Because that probability is never strictly zero, total certainty is never possible—but it gives us a reliable way to separate real cause-and-effect from pure chance.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-establishing-causation-experiments-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 4.3.6: Establishing Causation in Experiments"><a tabindex="-1" href="#subsec-establishing-causation-experiments" title="Copy heading and permalink for Subsection 4.3.6: Establishing Causation in Experiments" aria-label="Copy heading and permalink for Subsection 4.3.6: Establishing Causation in Experiments">🔗</a></div>
+</section>
+<article class="exercise exercise-like" id="correlation-transformations"><h2 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Correlation and Transformations.</span>
+</h2>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="correlation-transformations-2-1">A researcher collects data on 200 employees and calculates the correlation between years of work experience and annual salary. The researcher finds a Pearson’s correlation of <span class="process-math">\(r = 0.85\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#correlation-transformations-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="correlation-transformations-2-2">The researcher then converts all salary values from dollars to thousands of dollars and adds 2 years to every employee’s work experience to account for previous unpaid internships. The researcher also restricts the analysis to only employees with 10–15 years of experience and recalculates the correlation for this subgroup.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#correlation-transformations-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="correlation-transformations-2-3">Which of the following statements best describes what will happen to the correlation coefficient after these transformations?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#correlation-transformations-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-correlation-transformations" data-multipleanswers="false">
+<li data-component="answer" id="rs-correlation-transformations_opt_a">
+<div class="para" id="correlation-transformations-3-1-1-1">The correlation will remain <span class="process-math">\(0.85\)</span> because Pearson’s <span class="process-math">\(r\)</span> is unaffected by linear transformations, and it will remain unchanged in the restricted subgroup because subgroups preserve the original correlation.</div>
+</li>
+<li data-component="feedback" id="rs-correlation-transformations_opt_a">
+<div class="para" id="correlation-transformations-3-1-2-1">Restriction of range can artificially deflate the calculated correlation. Limiting the data to only employees with 10–15 years of experience reduces the variability in work experience. How might reduced variability affect the correlation?</div>
+</li>
+<li data-component="answer" id="rs-correlation-transformations_opt_b">
+<div class="para" id="correlation-transformations-3-2-1-1">The correlation will change because converting salary to thousands of dollars is not a linear transformation, and it will remain unchanged in the restricted subgroup.</div>
+</li>
+<li data-component="feedback" id="rs-correlation-transformations_opt_b">
+<div class="para" id="correlation-transformations-3-2-2-1">Pearson’s <span class="process-math">\(r\)</span> is completely unaffected by linear transformations such as multiplying or dividing by a constant.</div>
+</li>
+<li data-component="answer" id="rs-correlation-transformations_opt_c" data-correct="">
+<div class="para" id="correlation-transformations-3-3-1-1">The correlation will remain <span class="process-math">\(0.85\)</span> because Pearson’s <span class="process-math">\(r\)</span> is unaffected by linear transformations, but it will decrease in the restricted subgroup due to restriction of range.</div>
+</li>
+<li data-component="feedback" id="rs-correlation-transformations_opt_c">
+<div class="para" id="correlation-transformations-3-3-2-1">Correct! Converting salary from dollars to thousands of dollars and adding 2 years to work experience are both linear transformations, so Pearson’s <span class="process-math">\(r\)</span> remains <span class="process-math">\(0.85\text{.}\)</span> However, restricting the data to only employees with 10–15 years of experience reduces the variability in work experience, which typically weakens the correlation (restriction of range).</div>
+</li>
+<li data-component="answer" id="rs-correlation-transformations_opt_d">
+<div class="para" id="correlation-transformations-3-4-1-1">The correlation will change because adding 2 years to work experience is not a linear transformation, and it will decrease in the restricted subgroup due to restriction of range.</div>
+</li>
+<li data-component="feedback" id="rs-correlation-transformations_opt_d">
+<div class="para" id="correlation-transformations-3-4-2-1">Pearson’s <span class="process-math">\(r\)</span> is completely unaffected by linear transformations such as adding, subtracting, multiplying, or dividing by a constant.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 4.3.9: Correlation and Transformations"><a tabindex="-1" href="#correlation-transformations" title="Copy heading and permalink for Checkpoint 4.3.9: Correlation and Transformations" aria-label="Copy heading and permalink for Checkpoint 4.3.9: Correlation and Transformations">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Section 4.3: The Power of Correlation"><a tabindex="-1" href="#sec-the-power-of-correlation" title="Copy heading and permalink for Section 4.3: The Power of Correlation" aria-label="Copy heading and permalink for Section 4.3: The Power of Correlation">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-reading-the-distribution.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-the-data-split.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

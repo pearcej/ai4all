@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Reading the Distribution</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+lang: "en-US",
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="AI for All">
+<meta property="og:title" content="AI for All">
+<meta property="book:title" content="AI for All">
+<meta name="twitter:description" content="Designed for all students and minimal background in mathematics, this work is designed as an introduction to artificial intelligence and machine learning.">
+<meta property="og:description" content="Designed for all students and minimal background in mathematics, this work is designed as an introduction to artificial intelligence and machine learning.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.47"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.47"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.5';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.18d8728f6d56e11d.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.b388362b5f43738a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="ai4all" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="ai4all.html"><span class="title">AI for All</span></a></div>
+<p class="byline">Dr. Jan Pearce, Editor</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="ai4all-10.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-read-aloud-button" class="ptx-read-aloud-button button" title="Read aloud" aria-expanded="false"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf1bc;</span><span class="name">Read aloud</span></button><div id="ptx-read-aloud-player" class="ptx-read-aloud-player" hidden="hidden" role="group" aria-label="Read aloud">
+<button id="ptx-read-aloud-prev" class="button" title="Previous sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe045;</span></button><button id="ptx-read-aloud-toggle" class="ptx-read-aloud-toggle button" title="Play"><span class="ptx-read-aloud-icon-play"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></span><span class="ptx-read-aloud-icon-pause"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe034;</span></span></button><button id="ptx-read-aloud-next" class="button" title="Next sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe044;</span></button><a id="ptx-read-aloud-continue" class="ptx-read-aloud-continue button" hidden="hidden">Continue<span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></a><button id="ptx-read-aloud-settings-button" class="ptx-read-aloud-settings-button button" title="Reading settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe429;</span></button>
+</div>
+<dialog class="ptx-dialog ptx-read-aloud-settings-popup" id="ptx-read-aloud-settings-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Read aloud settings</h2>
+<button class="ptx-read-aloud-settings-close-button button" id="ptx-read-aloud-settings-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label for="ptx-read-aloud-voice"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe91f;</span><span>Voice</span></label><select id="ptx-read-aloud-voice"></select><label class="ptx-readability-slider-label" for="ptx-read-aloud-rate"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe9e4;</span><span>Reading speed</span><output id="ptx-read-aloud-rate-value" for="ptx-read-aloud-rate">1×</output></label><input type="range" id="ptx-read-aloud-rate" min="0.5" max="2" step="0.1" value="1"><label for="ptx-read-aloud-asides"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d7;</span><span>Collapsed content</span></label><select id="ptx-read-aloud-asides"><option value="skip">Announce, do not read</option>
+<option value="read">Read automatically</option></select><label for="ptx-read-aloud-autoscroll"><input type="checkbox" id="ptx-read-aloud-autoscroll" checked><span>Follow along (auto-scroll)</span></label><label for="ptx-read-aloud-autocontinue"><input type="checkbox" id="ptx-read-aloud-autocontinue"><span>Continue to the next page automatically</span></label>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="sec-data-literacy.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="statistics-needed-by-ai.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-the-power-of-correlation.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Prefaces</span></a></div>
+<ul id="ptx-toc-group-frontmatter" class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="repository-and-license.html" class="internal"><span class="title">Repository and License</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="sec-how-this-book-was-created.html" class="internal"><span class="title">How This Book Was Created</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="acknowledgements.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="the-story-of-ai.html" class="internal"><span class="codenumber">1</span> <span class="title">The Story of AI</span></a></div>
+<ul id="ptx-toc-group-the-story-of-ai" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ai-backstory.html" class="internal"><span class="codenumber">1.1</span> <span class="title">AI’s Back Story</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-characterizing-intelligence.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Characterizing Intelligence</span></a></div>
+<ul id="ptx-toc-group-sec-characterizing-intelligence" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-characterizing-intelligence.html#ssec-turing-test" class="internal"><span class="codenumber">1.2.1</span> <span class="title">The Turing Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-characterizing-intelligence.html#ssec-what-is-generative-ai" class="internal"><span class="codenumber">1.2.2</span> <span class="title">What Is Generative AI?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-mythbusting-ch1.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Mythbusting</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ai-in-education.html" class="internal"><span class="codenumber">2</span> <span class="title">AI in Education</span></a></div>
+<ul id="ptx-toc-group-ai-in-education" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html" class="internal"><span class="codenumber">2.1</span> <span class="title">The Dangers of AI as a Learner</span></a></div>
+<ul id="ptx-toc-group-sec-the-dangers-of-ai-as-a-learner" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-ai-as-a-learning-tool" class="internal"><span class="codenumber">2.1.1</span> <span class="title">AI as a Learning Tool</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-new-opportunities-for-learning" class="internal"><span class="codenumber">2.1.2</span> <span class="title">New Opportunities for Learning</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-risks-of-overreliance" class="internal"><span class="codenumber">2.1.3</span> <span class="title">The Risks of Overreliance</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-learning-new-skills-with-ai" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Learning New Skills</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-evidence-from-mathematics-learning" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Evidence from Mathematics Learning</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-decreased-cognitive-engagement" class="internal"><span class="codenumber">2.1.6</span> <span class="title">Decreased Cognitive Engagement</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-breaking-the-cycle" class="internal"><span class="codenumber">2.1.7</span> <span class="title">Breaking the Cycle</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-how-mistakes-help-you-learn.html" class="internal"><span class="codenumber">2.2</span> <span class="title">How Mistakes Help You Learn</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ai-powered-study-buddy.html" class="internal"><span class="codenumber">2.3</span> <span class="title">AI-Powered Study Buddy</span></a></div>
+<ul id="ptx-toc-group-sec-ai-powered-study-buddy" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ai-powered-study-buddy.html#ssec-static-vs-dynamic-learning" class="internal"><span class="codenumber">2.3.1</span> <span class="title">From Static Resources to Dynamic Interaction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ai-powered-study-buddy.html#ssec-ai-for-personalization-and-accessibility" class="internal"><span class="codenumber">2.3.2</span> <span class="title">AI for Personalization and Accessibility</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ai-powered-study-buddy.html#ssec-strategies-for-effective-ai-interaction" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Strategies for Effective AI Interaction</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-ai-powered-study-buddy.html#rqs-effective-vs-ineffective-practices" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-anatomy-of-a-prompt-and-writing-loops.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The Anatomy of a Prompt and Writing Loops</span></a></div>
+<ul id="ptx-toc-group-sec-the-anatomy-of-a-prompt-and-writing-loops" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-anatomy-of-a-prompt-and-writing-loops.html#ssec-in-context-learning" class="internal"><span class="codenumber">2.4.1</span> <span class="title">In-Context Learning</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-anatomy-of-a-prompt-and-writing-loops.html#ssec-writing-good-prompts" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Strategies for Effective Prompts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-anatomy-of-a-prompt-and-writing-loops.html#ssec-human-ai-writing-loops" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Human-AI Writing Loops</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-spotting-hallucinations.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Spotting Hallucinations</span></a></div>
+<ul id="ptx-toc-group-sec-spotting-hallucinations" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-spotting-hallucinations.html#ssec-why-ai-fabricates-information" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Why AI Fabricates Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-spotting-hallucinations.html#ssec-manifestations-of-hallucinations" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Manifestations of Hallucinations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-spotting-hallucinations.html#ssec-verification-strategies" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Strategies for Fact-Checking AI Output</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-academic-integrity-and-ai-policies.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Academic Integrity and AI Policies</span></a></div>
+<ul id="ptx-toc-group-sec-academic-integrity-and-ai-policies" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-academic-integrity-and-ai-policies.html#ssec-the-bright-red-line" class="internal"><span class="codenumber">2.6.1</span> <span class="title">The Bright “Red Line”</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-academic-integrity-and-ai-policies.html#ssec-when-the-red-line-can-be-a-bit-fuzzy" class="internal"><span class="codenumber">2.6.2</span> <span class="title">When the “Red Line” Can Be a Bit Fuzzy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-academic-integrity-and-ai-policies.html#ssec-all-about-attribution" class="internal"><span class="codenumber">2.6.3</span> <span class="title">All About Attribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-academic-integrity-and-ai-policies.html#ssec-basic-elements-of-ai-attribution" class="internal"><span class="codenumber">2.6.4</span> <span class="title">Basic Elements of AI Attribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-academic-integrity-and-ai-policies.html#ssec-navigating-ai-responsibly" class="internal"><span class="codenumber">2.6.5</span> <span class="title">Navigating AI Responsibly</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mythbusting-ch2.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Mythbusting</span></a></div>
+<ul id="ptx-toc-group-sec-mythbusting-ch2" class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-mythbusting-ch2.html#rqs-myth-ai-education" class="internal"><span class="codenumber">2.7</span> <span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="solving-problems-using-search.html" class="internal"><span class="codenumber">3</span> <span class="title">Solving Problems Using Search</span></a></div>
+<ul id="ptx-toc-group-solving-problems-using-search" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-trees-and-graphs.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Trees and Graphs</span></a></div>
+<ul id="ptx-toc-group-sec-trees-and-graphs" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trees-and-graphs.html#ssec-tree-definitions" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Tree Definitions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trees-and-graphs.html#ssec-tree-applications" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Real World Application of Tree Structure</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trees-and-graphs.html#ssec-graphs" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trees-and-graphs.html#ssec-real-world-graphs" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Real World Examples of Graphs</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-trees-and-graphs.html#rq-tree-properties" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Reading Question</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Introduction to State Spaces</span></a></div>
+<ul id="ptx-toc-group-sec-introduction-to-state-spaces" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html#ssec-nodes-and-arcs" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Nodes, Arcs, and Relationships</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html#ssec-tic-tac-toe-example" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Tic-Tac-Toe Example</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html#ssec-problem-solving-process" class="internal"><span class="codenumber">3.2.3</span> <span class="title">The Problem-Solving Process</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html#ssec-real-world-state-spaces" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Real-World State Spaces</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html#ssec-characteristics-of-state-spaces" class="internal"><span class="codenumber">3.2.5</span> <span class="title">Important Characteristics of State Spaces</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html#ssec-challenge-of-representation" class="internal"><span class="codenumber">3.2.6</span> <span class="title">The Challenge of Representation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-uninformed-search.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Uninformed Search</span></a></div>
+<ul id="ptx-toc-group-sec-uninformed-search" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uninformed-search.html#subsec-breadth-first-search" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Breadth-First Search (BFS)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uninformed-search.html#subsec-depth-first-search" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Depth-First Search (DFS)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uninformed-search.html#subsec-depth-limited-search" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Depth-Limited Search (DLS)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uninformed-search.html#subsec-comparing-uninformed" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Comparing Uninformed Search Strategies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uninformed-search.html#subsec-when-to-use-uninformed" class="internal"><span class="codenumber">3.3.5</span> <span class="title">When to Use Uninformed Search</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-informed-search.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Informed Search</span></a></div>
+<ul id="ptx-toc-group-sec-informed-search" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-what-is-a-heuristic" class="internal"><span class="codenumber">3.4.1</span> <span class="title">What Is a Heuristic?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-best-first-search" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Best-First Search</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-greedy-best-first" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Greedy Best-First Search</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-uniform-cost" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Uniform-Cost Search</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-a-star-search" class="internal"><span class="codenumber">3.4.5</span> <span class="title">A* Search</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-heuristic-functions" class="internal"><span class="codenumber">3.4.6</span> <span class="title">Heuristic Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-admissible-heuristics" class="internal"><span class="codenumber">3.4.7</span> <span class="title">Admissible Heuristics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-consistency" class="internal"><span class="codenumber">3.4.8</span> <span class="title">Consistency</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-informed-search-summary" class="internal"><span class="codenumber">3.4.9</span> <span class="title">Comparing Informed Search Strategies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-when-to-use-informed" class="internal"><span class="codenumber">3.4.10</span> <span class="title">When to Use Informed Search</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-adversarial-search.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Adversarial Search</span></a></div>
+<ul id="ptx-toc-group-sec-adversarial-search" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-adversarial-search.html#subsec-minimax-algorithm" class="internal"><span class="codenumber">3.5.1</span> <span class="title">The Minimax Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-adversarial-search.html#subsec-game-state-spaces" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Game State Spaces</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-adversarial-search.html#subsec-alpha-beta-pruning" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Alpha-Beta Pruning</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-adversarial-search.html#subsec-heuristics-in-games" class="internal"><span class="codenumber">3.5.4</span> <span class="title">Why Larger Games Still Need Heuristics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-adversarial-search.html#subsec-adversarial-applications" class="internal"><span class="codenumber">3.5.5</span> <span class="title">Real-World Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-adversarial-search.html#subsec-adversarial-search-summary" class="internal"><span class="codenumber">3.5.6</span> <span class="title">Summary: Key Concepts in Adversarial Search</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-adversarial-search.html#rqs-search-methods" class="internal"><span class="codenumber">3.5.7</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="statistics-needed-by-ai.html" class="internal"><span class="codenumber">4</span> <span class="title">Statistics Needed by AI</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-statistics-needed-by-ai">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-data-literacy.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Data Literacy</span></a></div>
+<ul id="ptx-toc-group-sec-data-literacy" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-data-literacy.html#ssec-what-is-data" class="internal"><span class="codenumber">4.1.1</span> <span class="title">What Exactly is Data?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-data-literacy.html#ssec-types-of-data" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Types of Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-data-literacy.html#ssec-datasets" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Datasets</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-reading-the-distribution.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Reading the Distribution</span></a></div>
+<ul class="structural toc-item-list active" id="ptx-toc-group-sec-reading-the-distribution">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reading-the-distribution.html#subsec-frequency-tables" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Frequency Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reading-the-distribution.html#subsec-pie-charts-bar-charts" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Pie Charts and Bar Charts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reading-the-distribution.html#subsec-comparing-distributions" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Comparing Distributions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reading-the-distribution.html#subsec-histograms" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Histograms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reading-the-distribution.html#subsec-frequency-polygons" class="internal"><span class="codenumber">4.2.5</span> <span class="title">Frequency Polygons and Cumulative Polygons</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-power-of-correlation.html" class="internal"><span class="codenumber">4.3</span> <span class="title">The Power of Correlation</span></a></div>
+<ul id="ptx-toc-group-sec-the-power-of-correlation" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-correlation.html#subsec-spotting-trends-scatter-plots" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Spotting Trends with Scatter Plots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-correlation.html#subsec-values-pearsons-correlation" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Values of Pearson’s Correlation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-correlation.html#subsec-core-mathematical-properties" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Core Mathematical Properties of <span class="process-math">\(r\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-correlation.html#subsec-interpreting-r-real-world" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Interpreting <span class="process-math">\(r\)</span> in Real-World Contexts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-correlation.html#subsec-correlation-vs-causation" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Correlation vs. Causation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-correlation.html#subsec-establishing-causation-experiments" class="internal"><span class="codenumber">4.3.6</span> <span class="title">Establishing Causation in Experiments</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-data-split.html" class="internal"><span class="codenumber">4.4</span> <span class="title">The Data Split</span></a></div>
+<ul id="ptx-toc-group-sec-the-data-split" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-data-split.html#ssec-data-preprocessing" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Data Preprocessing and Data Splitting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-data-split.html#ssec-data-splitting-strategies" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Data Splitting Strategies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-data-split.html#ssec-model-building-and-training" class="internal"><span class="codenumber">4.4.3</span> <span class="title">Model Building and Training</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-data-split.html#ssec-model-validation-and-data-splitting" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Model Validation and Data Splitting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-data-split.html#ssec-testing-on-unseen-data" class="internal"><span class="codenumber">4.4.5</span> <span class="title">Testing on Unseen Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-data-split.html#ssec-model-postprocessing" class="internal"><span class="codenumber">4.4.6</span> <span class="title">Model Postprocessing</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="machine-learning.html" class="internal"><span class="codenumber">5</span> <span class="title">Machine Learning</span></a></div>
+<ul id="ptx-toc-group-machine-learning" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-an-overview.html" class="internal"><span class="codenumber">5.1</span> <span class="title">An Overview of Machine Learning</span></a></div>
+<ul id="ptx-toc-group-sec-an-overview" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-an-overview.html#subsec-traditional-vs-ml" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Traditional Computing vs. Machine Learning</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-supervised-learning.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Supervised Learning</span></a></div>
+<ul id="ptx-toc-group-sec-supervised-learning" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-supervised-learning.html#subsec-supervised-categories" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Categories of Supervised Learning</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-supervised-learning.html#subsec-supervised-applications" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Applications of Supervised Learning</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-supervised-learning.html#rqs-supervised-learning-types" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-unsupervised-learning.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Unsupervised Learning</span></a></div>
+<ul id="ptx-toc-group-sec-unsupervised-learning" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-unsupervised-learning.html#subsec-what-is-unsupervised-learning" class="internal"><span class="codenumber">5.3.1</span> <span class="title">What Is Unsupervised Learning?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-unsupervised-learning.html#subsec-unsupervised-tasks" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Common Unsupervised Learning Tasks</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-unsupervised-learning.html#subsec-unsupervised-applications" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Applications of Unsupervised Learning</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-reinforcement-learning.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Reinforcement Learning</span></a></div>
+<ul id="ptx-toc-group-sec-reinforcement-learning" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reinforcement-learning.html#subsec-agent-environment" class="internal"><span class="codenumber">5.4.1</span> <span class="title">The Agent and Environment Loop</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reinforcement-learning.html#subsec-policy-and-goals" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Policies and Long-Term Strategy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reinforcement-learning.html#subsec-rl-applications" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Applications of Reinforcement Learning</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-evaluating-success.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Evaluating Success</span></a></div>
+<ul id="ptx-toc-group-sec-evaluating-success" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-evaluating-success.html#subsec-data-splitting" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Data Splitting and Overfitting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-evaluating-success.html#subsec-loss-functions" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Loss Functions and Error Severity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-evaluating-success.html#subsec-classification-errors" class="internal"><span class="codenumber">5.5.3</span> <span class="title">False Positives vs. False Negatives</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-evaluating-success.html#rqs-model-evaluation-terms" class="internal"><span class="codenumber">5.5.4</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mythbusting-ch5.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Mythbusting</span></a></div>
+<ul id="ptx-toc-group-sec-mythbusting-ch5" class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-mythbusting-ch5.html#rqs-machine-learning-myths" class="internal"><span class="codenumber">5.6</span> <span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="neural-networks.html" class="internal"><span class="codenumber">6</span> <span class="title">Neural Networks</span></a></div>
+<ul id="ptx-toc-group-neural-networks" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-artificial-neurons.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Artificial Neurons</span></a></div>
+<ul id="ptx-toc-group-sec-artificial-neurons" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-artificial-neurons.html#subsec-perceptrons" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Perceptrons</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-artificial-neurons.html#subsec-learning-problem" class="internal"><span class="codenumber">6.1.2</span> <span class="title">The Learning Problem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-artificial-neurons.html#subsec-sigmoid-neurons" class="internal"><span class="codenumber">6.1.3</span> <span class="title">Sigmoid Neurons</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-inputs-weights-and-biases.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Inputs, Weights, and Biases</span></a></div>
+<ul id="ptx-toc-group-sec-inputs-weights-and-biases" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-inputs-weights-and-biases.html#subsec-role-of-components" class="internal"><span class="codenumber">6.2.1</span> <span class="title">The Role of Each Component</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-inputs-weights-and-biases.html#subsec-how-layer-activates" class="internal"><span class="codenumber">6.2.2</span> <span class="title">How the Layer Activates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-inputs-weights-and-biases.html#subsec-activation-function" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Activation Functions</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-inputs-weights-and-biases.html#rq-inputs-weights-biases" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-power-of-layers.html" class="internal"><span class="codenumber">6.3</span> <span class="title">The Power of Layers</span></a></div>
+<ul id="ptx-toc-group-sec-the-power-of-layers" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-layers.html#subsec-deep-networks-mystery" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Deep Networks and the Mystery of Layers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-layers.html#subsec-cnns-and-rnns" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Architectural Divergence: CNNs &amp; RNNs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-layers.html#subsec-typical-network-architecture" class="internal"><span class="codenumber">6.3.3</span> <span class="title">A Typical Network Architecture</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-training-the-network.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Training the Network</span></a></div>
+<ul id="ptx-toc-group-sec-training-the-network" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-training-the-network.html#subsec-cost-function" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Cost Function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-training-the-network.html#subsec-gradient-descent" class="internal"><span class="codenumber">6.4.2</span> <span class="title">Learning with Gradient Descent</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-training-the-network.html#subsec-stochastic-gradient-descent" class="internal"><span class="codenumber">6.4.3</span> <span class="title">Stochastic Gradient Descent (SGD)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-training-the-network.html#subsec-backpropagation" class="internal"><span class="codenumber">6.4.4</span> <span class="title">The Backpropagation Algorithm</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-training-the-network.html#rq-training-the-network" class="internal"><span class="codenumber">6.4.5</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-large-language-models.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Large Language Models</span></a></div>
+<ul id="ptx-toc-group-sec-large-language-models" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-llms-backstory" class="internal"><span class="codenumber">6.5.1</span> <span class="title">The Backstory of Large Language Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-training-llms" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Training Large Language Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-fine-tuning-and-alignment" class="internal"><span class="codenumber">6.5.3</span> <span class="title">Fine-Tuning and Alignment</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-prompting-and-reasoning" class="internal"><span class="codenumber">6.5.4</span> <span class="title">Prompting and Reasoning</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-inference" class="internal"><span class="codenumber">6.5.5</span> <span class="title">Inference</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-challenges" class="internal"><span class="codenumber">6.5.6</span> <span class="title">Challenges</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-summary" class="internal"><span class="codenumber">6.5.7</span> <span class="title">Summary</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mythbusting-ch6.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Mythbusting</span></a></div>
+<ul id="ptx-toc-group-sec-mythbusting-ch6" class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-mythbusting-ch6.html#rq-mythbusting-ch6" class="internal"><span class="codenumber">6.6</span> <span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="the-future-of-ai.html" class="internal"><span class="codenumber">7</span> <span class="title">The Future of AI</span></a></div>
+<ul id="ptx-toc-group-the-future-of-ai" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-algorithmic-bias-and-echo-chambers.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Algorithmic Bias and Echo Chambers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-black-box-problem.html" class="internal"><span class="codenumber">7.2</span> <span class="title">The Black Box Problem</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-environmental-impacts.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Environmental Impacts</span></a></div>
+<ul id="ptx-toc-group-sec-environmental-impacts" class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-the-energy-demands-of-ai" class="internal"><span class="codenumber">7.3.1</span> <span class="title">The Energy Demands of AI</span></a></div>
+<ul id="ptx-toc-group-ssec-the-energy-demands-of-ai" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-data-centers-the-engines-of-ai" class="internal"><span class="codenumber">7.3.1.1</span> <span class="title">Data Centers: The Engines of AI</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-training-vs-inference" class="internal"><span class="codenumber">7.3.1.2</span> <span class="title">Training vs. Inference</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-why-energy-efficiency-matters" class="internal"><span class="codenumber">7.3.1.3</span> <span class="title">Why Energy Efficiency Matters</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-the-water-footprint-of-ai" class="internal"><span class="codenumber">7.3.2</span> <span class="title">The Water Footprint of AI</span></a></div>
+<ul id="ptx-toc-group-ssec-the-water-footprint-of-ai" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-water-for-cooling" class="internal"><span class="codenumber">7.3.2.1</span> <span class="title">Water for Cooling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-the-water-energy-connection" class="internal"><span class="codenumber">7.3.2.2</span> <span class="title">The Water-Energy Connection</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-geographic-concentration-and-water-stress" class="internal"><span class="codenumber">7.3.2.3</span> <span class="title">Geographic Concentration and Water Stress</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-electronic-waste-e-waste" class="internal"><span class="codenumber">7.3.3</span> <span class="title">Electronic Waste (E-Waste)</span></a></div>
+<ul id="ptx-toc-group-ssec-electronic-waste-e-waste" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-the-scale-of-the-problem" class="internal"><span class="codenumber">7.3.3.1</span> <span class="title">The Scale of the Problem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-whats-in-ai-e-waste" class="internal"><span class="codenumber">7.3.3.2</span> <span class="title">What’s in AI E-Waste?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-the-geography-of-e-waste" class="internal"><span class="codenumber">7.3.3.3</span> <span class="title">The Geography of E-Waste</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-what-can-be-done" class="internal"><span class="codenumber">7.3.4</span> <span class="title">What Can Be Done?</span></a></div>
+<ul id="ptx-toc-group-ssec-what-can-be-done" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-efficiency-improvements" class="internal"><span class="codenumber">7.3.4.1</span> <span class="title">Efficiency Improvements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-circular-economy-strategies" class="internal"><span class="codenumber">7.3.4.2</span> <span class="title">Circular Economy Strategies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-strategic-location" class="internal"><span class="codenumber">7.3.4.3</span> <span class="title">Strategic Location</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-clean-energy-procurement" class="internal"><span class="codenumber">7.3.4.4</span> <span class="title">Clean Energy Procurement</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-transparency-and-policy" class="internal"><span class="codenumber">7.3.4.5</span> <span class="title">Transparency and Policy</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-environmental-impacts.html#rq-environmental-impacts" class="internal"><span class="codenumber">7.3.5</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-deepfakes-and-disinformation.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Deepfakes and Disinformation</span></a></div>
+<ul id="ptx-toc-group-sec-deepfakes-and-disinformation" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-deepfakes-and-disinformation.html#ssec-navigating-synthetic-media" class="internal"><span class="codenumber">7.4.1</span> <span class="title">How to Navigate in a World of Synthetic Media</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-copyright-intellectual-property-and-the-creative-economy.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Copyright, Intellectual Property, and the Creative Economy</span></a></div>
+<ul id="ptx-toc-group-sec-copyright-intellectual-property-and-the-creative-economy" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-copyright-intellectual-property-and-the-creative-economy.html#ssec-nonconsensual-training" class="internal"><span class="codenumber">7.5.1</span> <span class="title">Non-Consensual Training and Data Extraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-copyright-intellectual-property-and-the-creative-economy.html#ssec-ethics-ai-art" class="internal"><span class="codenumber">7.5.2</span> <span class="title">Ethics of AI Art Generation and Creative Labor</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-copyright-intellectual-property-and-the-creative-economy.html#ssec-copyright-ownership" class="internal"><span class="codenumber">7.5.3</span> <span class="title">Copyright and Ownership of AI-Generated Work</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-copyright-intellectual-property-and-the-creative-economy.html#rq-copyright-ip" class="internal"><span class="codenumber">7.5.4</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ai-as-a-disruptor-in-the-workforce.html" class="internal"><span class="codenumber">7.6</span> <span class="title">AI as a Disruptor in the Workforce</span></a></div>
+<ul id="ptx-toc-group-sec-ai-as-a-disruptor-in-the-workforce" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ai-as-a-disruptor-in-the-workforce.html#ssec-new-jobs-ai-rise" class="internal"><span class="codenumber">7.6.1</span> <span class="title">New Jobs with the Rise of AI</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mythbusting-ch7.html" class="internal"><span class="codenumber">7.7</span> <span class="title">Mythbusting</span></a></div>
+<ul id="ptx-toc-group-sec-mythbusting-ch7" class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-mythbusting-ch7.html#rq-mythbusting" class="internal"><span class="codenumber">7.7</span> <span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="ai4all-10.html" class="internal"><span class="title">Index</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec-reading-the-distribution">
+<h1 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Reading the Distribution</span>
+</h1>
+<div class="para" id="sec-reading-the-distribution-2">Graphing data is the first and often most important step in data analysis. In this day of computers, researchers all too often see only the results of complex computer analyses without ever taking a close look at the data themselves. This is all the more unfortunate because computers can create many types of graphs quickly and easily. This section covers some effective ways of graphing <dfn class="terminology">distributions</dfn> (a mathematical function that describes how the possible values of a variable are spread out and how frequently they occur).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-reading-the-distribution-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsection" id="subsec-frequency-tables">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Frequency Tables</span>
+</h2>
+<div class="para" id="subsec-frequency-tables-2">All of the graphical methods shown in this section are derived from frequency tables. <a href="sec-reading-the-distribution.html#tab-imac-ownership" class="xref" data-knowl="./knowl/xref/tab-imac-ownership.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 4.2.1: Previous computer ownership for iMac purchasers">Table 4.2.1</a> shows a frequency table for the results of a study to find out whether the iMac was expanding Apple’s market share. To find out, 500 iMac customers were interviewed. Each customer was categorized as a previous Macintosh owner, a previous Windows owner, or a new computer purchaser. The table shows the frequencies of the various response categories and the <dfn class="terminology">relative frequencies</dfn>, which are the proportion of responses in each category. For example, the relative frequency for “none” is <span class="process-math">\(85 / 500 = 0.17\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-frequency-tables-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="tab-imac-ownership"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Previous computer ownership for iMac purchasers<div class="autopermalink" aria-hidden="true" data-description="Table 4.2.1: Previous computer ownership for iMac purchasers"><a tabindex="-1" href="#tab-imac-ownership" title="Copy heading and permalink for Table 4.2.1: Previous computer ownership for iMac purchasers" aria-label="Copy heading and permalink for Table 4.2.1: Previous computer ownership for iMac purchasers">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines">Previous Ownership</th>
+<th scope="col" class="l m b0 r0 l0 t0 lines">Frequency</th>
+<th scope="col" class="l m b0 r0 l0 t0 lines">Relative Frequency</th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">None</td>
+<td class="l m b0 r0 l0 t0 lines">85</td>
+<td class="l m b0 r0 l0 t0 lines">0.17</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Windows</td>
+<td class="l m b0 r0 l0 t0 lines">60</td>
+<td class="l m b0 r0 l0 t0 lines">0.12</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Macintosh</td>
+<td class="l m b0 r0 l0 t0 lines">355</td>
+<td class="l m b0 r0 l0 t0 lines">0.71</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Total</td>
+<td class="l m b0 r0 l0 t0 lines">500</td>
+<td class="l m b0 r0 l0 t0 lines">1.00</td>
+</tr>
+</table></div>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Subsection 4.2.1: Frequency Tables"><a tabindex="-1" href="#subsec-frequency-tables" title="Copy heading and permalink for Subsection 4.2.1: Frequency Tables" aria-label="Copy heading and permalink for Subsection 4.2.1: Frequency Tables">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-pie-charts-bar-charts">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Pie Charts and Bar Charts</span>
+</h2>
+<div class="para" id="subsec-pie-charts-bar-charts-2">In a <dfn class="terminology">pie chart</dfn>, each category is represented by a slice of the pie. The area of the slice is proportional to the percentage of responses in the category. Although most iMac purchasers were Macintosh owners, Apple was encouraged by the 12% of purchasers who were former Windows users, and by the 17% of purchasers who were buying a computer for the first time (<a href="sec-reading-the-distribution.html#fig-42-pie-chart" class="xref" data-knowl="./knowl/xref/fig-42-pie-chart.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.2.2">Figure 4.2.2</a>).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-pie-charts-bar-charts-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-42-pie-chart"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;">
+<img src="external/4.2-pie-chart.png" class="contained" alt="Pie chart showing iMac buyers’ previous computer ownership: Macintosh 71%, None 17%, and Windows 12%."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-42-pie-chart-2-description">
+<div class="para" id="fig-42-pie-chart-2-2-1">A standard circular pie chart divided into three slices showing previous computer ownership among iMac buyers. The largest slice represents previous Macintosh owners at 71%, followed by buyers who previously owned no computer at 17%, and former Windows users making up the smallest slice at 12%.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-42-pie-chart-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Pie chart of iMac purchases illustrating frequencies of previous computer ownership.<div class="autopermalink" aria-hidden="true" data-description="Figure 4.2.2"><a tabindex="-1" href="#fig-42-pie-chart" title="Copy heading and permalink for Figure 4.2.2" aria-label="Copy heading and permalink for Figure 4.2.2">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-pie-charts-bar-charts-4">Pie charts are effective for displaying the relative frequencies of a small number of categories.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-pie-charts-bar-charts-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-pie-charts-bar-charts-5">
+<dfn class="terminology">Bar charts</dfn> can also be used to represent frequencies of different categories. A bar chart of the iMac purchases is shown in <a href="sec-reading-the-distribution.html#fig-42-simple-bar-graph" class="xref" data-knowl="./knowl/xref/fig-42-simple-bar-graph.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.2.3">Figure 4.2.3</a>. Frequencies are shown on the vertical axis and the type of computer previously owned is shown on the horizontal axis. Typically, the vertical axis shows the number of observations in each category rather than the percentage of observations in each category as is typical in pie charts.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-pie-charts-bar-charts-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-42-simple-bar-graph"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;">
+<img src="external/4.2-simple-bar-graph.png" class="contained" alt="Bar chart of iMac buyers by previous computer owned: Macintosh 355, None 85, and Windows 60."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-42-simple-bar-graph-2-description">
+<div class="para" id="fig-42-simple-bar-graph-2-2-1">A vertical bar chart displaying the frequency of iMac purchases based on previous computer ownership. The horizontal axis lists three categories: None, Windows, and Macintosh. The vertical axis measures the number of buyers, ranging from 0 to 400. The bar for Macintosh is the tallest at 355 buyers, followed by None at 85 buyers, and Windows at 60 buyers.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-42-simple-bar-graph-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Bar chart of iMac purchases as a function of previous computer ownership.<div class="autopermalink" aria-hidden="true" data-description="Figure 4.2.3"><a tabindex="-1" href="#fig-42-simple-bar-graph" title="Copy heading and permalink for Figure 4.2.3" aria-label="Copy heading and permalink for Figure 4.2.3">🔗</a></div></figcaption>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Subsection 4.2.2: Pie Charts and Bar Charts"><a tabindex="-1" href="#subsec-pie-charts-bar-charts" title="Copy heading and permalink for Subsection 4.2.2: Pie Charts and Bar Charts" aria-label="Copy heading and permalink for Subsection 4.2.2: Pie Charts and Bar Charts">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-comparing-distributions">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Comparing Distributions</span>
+</h2>
+<div class="para" id="subsec-comparing-distributions-2">Often we need to compare the results of different surveys, or of different conditions within the same overall survey. Bar charts are often excellent for illustrating differences between two distributions. <a href="sec-reading-the-distribution.html#fig-42-complex-bar-graph" class="xref" data-knowl="./knowl/xref/fig-42-complex-bar-graph.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.2.4">Figure 4.2.4</a> shows the number of people playing card games at the Yahoo website on a Sunday and on a Wednesday in the spring of 2001. We see that there were more players overall on Wednesday compared to Sunday. The number of people playing Pinochle was nonetheless the same on these two days. In contrast, there were about twice as many people playing Hearts on Wednesday as on Sunday. Facts like these emerge clearly from a well-designed bar chart.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-comparing-distributions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-comparing-distributions-3">Here the bars are oriented horizontally rather than vertically. The horizontal format is useful when you have many categories because there is more room for the category labels.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-comparing-distributions-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-42-complex-bar-graph"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;">
+<img src="external/4.2-complex-bar-graph.png" class="contained" alt="Horizontal bar chart comparing card game participation on Sunday and Wednesday across ten games, ranging from under 1,000 to over 7,000 players."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-42-complex-bar-graph-2-description">
+<div class="para" id="fig-42-complex-bar-graph-2-2-1">A horizontal bar chart comparing player counts for various card games on Sunday (represented in yellow) and Wednesday (represented in blue). The horizontal axis indicates player volume, scaled from 0 to over 7,000, while the vertical axis lists ten card games ordered by overall popularity from top to bottom.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-42-complex-bar-graph-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="fig-42-complex-bar-graph-2-2-2">Participation levels across the games are as follows:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-42-complex-bar-graph-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="fig-42-complex-bar-graph-2-2-3">Poker and Blackjack record the lowest participation, with fewer than 1,000 players each and minimal difference between days. Bridge and Gin show moderate increases, with Wednesday participation visibly exceeding Sunday’s. Cribbage centers around 2,000 players per day. Hearts shows a notable contrast, with Wednesday participation (approximately 3,000 players) nearly doubling Sunday’s total. Canasta and Pinochle reach mid-tier volumes, with Pinochle showing equal turnout for both days at approximately 3,500 players. Euchre and Spades draw the largest audiences by a wide margin: Euchre ranges from 5,500 on Sunday to 6,300 on Wednesday, while Spades peaks as the most played game, reaching about 6,600 players on Sunday and over 7,000 on Wednesday.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-42-complex-bar-graph-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A bar chart of the number of people playing different card games on Sunday and Wednesday.<div class="autopermalink" aria-hidden="true" data-description="Figure 4.2.4"><a tabindex="-1" href="#fig-42-complex-bar-graph" title="Copy heading and permalink for Figure 4.2.4" aria-label="Copy heading and permalink for Figure 4.2.4">🔗</a></div></figcaption>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Subsection 4.2.3: Comparing Distributions"><a tabindex="-1" href="#subsec-comparing-distributions" title="Copy heading and permalink for Subsection 4.2.3: Comparing Distributions" aria-label="Copy heading and permalink for Subsection 4.2.3: Comparing Distributions">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-histograms">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Histograms</span>
+</h2>
+<div class="para" id="subsec-histograms-2">A<dfn class="terminology">histogram</dfn> is a graphical method for displaying the shape of a distribution. Histograms are particularly useful when there are a large number of observations. We begin with an example consisting of the scores of 642 students on a psychology test. The test consists of 197 items, each graded as “correct” or “incorrect.” The students’ scores ranged from 46 to 167.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-histograms-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-histograms-3">The first step is to create a frequency table. Unfortunately, a simple frequency table would be too big, containing over 100 rows. To simplify the table, the range of scores was broken into intervals, called <dfn class="terminology">class intervals</dfn>. The first interval is from 39.5 to 49.5, the second from 49.5 to 59.5, etc. Next, the number of scores falling into each interval was counted to obtain the class frequencies.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-histograms-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-histograms-4">Next, we put this data into a histogram (<a href="sec-reading-the-distribution.html#fig-42-histogram" class="xref" data-knowl="./knowl/xref/fig-42-histogram.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.2.5">Figure 4.2.5</a>). The class frequencies are represented by bars, where the height of each bar corresponds to its class frequency.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-histograms-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-42-histogram"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;">
+<img src="external/4.2-histogram.png" class="contained" alt="Histogram of psychology test scores from 39.5 to 169.5 in bin intervals of 10, peaking between 79.5 and 89.5 with nearly 150 students."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-42-histogram-2-description">
+<div class="para" id="fig-42-histogram-2-2-1">A vertical histogram illustrating the distribution of student scores on a psychology test. The horizontal axis represents test scores divided into 10-point class intervals ranging from 39.5 to 169.5. The vertical axis measures student frequency, scaled from 0 to 150.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-42-histogram-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="fig-42-histogram-2-2-2">The distribution is right-skewed, rising sharply from low frequencies at the low end to a prominent peak in the middle before tapering off gradually across a long upper tail:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-42-histogram-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="fig-42-histogram-2-2-3">The lowest interval (39.5–49.5) contains only 2 to 3 students. Frequencies increase rapidly in subsequent bins, with approximately 12 students in the 49.5–59.5 range, 50 in 59.5–69.5, and just over 100 in 69.5–79.5. The distribution reaches its peak in the 79.5–89.5 interval at nearly 150 students. Beyond the peak, frequencies steadily decline: just over 125 students in 89.5–99.5, around 75 in 99.5–109.5, 60 in 109.5–119.5, 35 in 119.5–129.5, 15 in 129.5–139.5, and 8 in 139.5–149.5. The final two high-score intervals each contain only a single student.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-42-histogram-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Histogram of scores on a psychology test.<div class="autopermalink" aria-hidden="true" data-description="Figure 4.2.5"><a tabindex="-1" href="#fig-42-histogram" title="Copy heading and permalink for Figure 4.2.5" aria-label="Copy heading and permalink for Figure 4.2.5">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-histograms-6">The histogram makes it plain that most of the scores are in the middle of the distribution, with fewer scores in the extremes. You can also see that the distribution is not symmetric: the scores extend to the right farther than they do to the left. The distribution is therefore said to be <dfn class="terminology">skewed</dfn>  to the right. If the opposite was true, the distribution would be left-skewed.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-histograms-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 4.2.4: Histograms"><a tabindex="-1" href="#subsec-histograms" title="Copy heading and permalink for Subsection 4.2.4: Histograms" aria-label="Copy heading and permalink for Subsection 4.2.4: Histograms">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-frequency-polygons">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Frequency Polygons and Cumulative Polygons</span>
+</h2>
+<div class="para" id="subsec-frequency-polygons-2">
+<dfn class="terminology">Frequency polygons</dfn> serve the same purpose as histograms, but are especially helpful for comparing sets of data. They are also a good choice for displaying cumulative frequency distributions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-frequency-polygons-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-frequency-polygons-3">
+<a href="sec-reading-the-distribution.html#fig-42-frequency-polygon" class="xref" data-knowl="./knowl/xref/fig-42-frequency-polygon.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.2.6">Figure 4.2.6</a> displays the psychology test scores using a frequency polygon:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-frequency-polygons-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-42-frequency-polygon"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;">
+<img src="external/4.2-frequency-polygon.png" class="contained" alt="Frequency polygon of psychology test scores plotted at interval centers labeled 35 to 175, following the same right-skewed distribution as the histogram."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-42-frequency-polygon-2-description">
+<div class="para" id="fig-42-frequency-polygon-2-2-1">A line-based frequency polygon displaying the distribution of psychology test scores. The horizontal axis is labeled with score points from 35 to 175 in increments of 10, while the vertical axis represents student frequency scaled from 0 to 160.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-42-frequency-polygon-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="fig-42-frequency-polygon-2-2-2">The line tracks the exact same right-skewed pattern as the histogram: starting near zero at 35, rising sharply through 45, 55, and 65 to reach a peak of nearly 150 students at 85, and then steadily descending through 95, 105, and 115 before tapering off near zero between 145 and 175.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-42-frequency-polygon-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Frequency polygon for the psychology test scores.<div class="autopermalink" aria-hidden="true" data-description="Figure 4.2.6"><a tabindex="-1" href="#fig-42-frequency-polygon" title="Copy heading and permalink for Figure 4.2.6" aria-label="Copy heading and permalink for Figure 4.2.6">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-frequency-polygons-5">A cumulative frequency polygon for the same test scores is shown in <a href="sec-reading-the-distribution.html#fig-42-cumulative-freq-poly" class="xref" data-knowl="./knowl/xref/fig-42-cumulative-freq-poly.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.2.7">Figure 4.2.7</a>. The graph is similar to the frequency polygon except that the vertical value for each point is the number of students in the corresponding interval plus all numbers in lower intervals. For example, there are no scores in the interval labeled “35,” three in the interval “45,” and 10 in the interval “55.” Therefore, the vertical value corresponding to “55” is 13. Since 642 students took the test, the cumulative frequency for the last interval is 642.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-frequency-polygons-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-42-cumulative-freq-poly"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;">
+<img src="external/4.2-cumulative-freq-poly.png" class="contained" alt="Cumulative frequency polygon of psychology test scores from 35 to 165, accumulating to a total frequency near 650 on a Y-axis scaled to 700."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-42-cumulative-freq-poly-2-description">
+<div class="para" id="fig-42-cumulative-freq-poly-2-2-1">A line graph displaying the cumulative frequency distribution of psychology test scores. The horizontal axis lists test scores labeled from 35 to 165, while the vertical axis represents total accumulated student frequency marked in increments of 100 up to 700.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-42-cumulative-freq-poly-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="fig-42-cumulative-freq-poly-2-2-2">The line forms a characteristic S-shaped cumulative curve that continually rises from left to right as scores increase:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-42-cumulative-freq-poly-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="fig-42-cumulative-freq-poly-2-2-3">Starting near zero at a score of 35, the curve stays below the 100-mark through scores 45, 55, and 65. It then climbs steeply through the most common score range, crossing above 150 near score 75, passing 300 by score 85, and hitting 450 around 95. Above 95, the upward trajectory slows down as it crosses 500, steadily flattening out as it approaches its total count of just over 600 near score 165.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-42-cumulative-freq-poly-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Cumulative frequency polygon for the psychology test scores.<div class="autopermalink" aria-hidden="true" data-description="Figure 4.2.7"><a tabindex="-1" href="#fig-42-cumulative-freq-poly" title="Copy heading and permalink for Figure 4.2.7" aria-label="Copy heading and permalink for Figure 4.2.7">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-frequency-polygons-7">Frequency polygons are useful for comparing distributions. This is achieved by overlaying the frequency polygons drawn for different data sets. The data in <a href="sec-reading-the-distribution.html#fig-42-overlayed-freq-poly" class="xref" data-knowl="./knowl/xref/fig-42-overlayed-freq-poly.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.2.8">Figure 4.2.8</a> comes from a task in which the goal is to move a computer cursor to a target on the screen as fast as possible. On 20 of the trials, the target was a small rectangle; on the other 20, the target was a large rectangle. Time to reach the target was recorded on each trial. The two distributions (one for each target) are plotted together. The figure shows that, although there is some overlap in times, it generally took longer to move the cursor to the small target than to the large one.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-frequency-polygons-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-42-overlayed-freq-poly"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;">
+<img src="external/4.2-overlayed-freq-poly.png" class="contained" alt="Overlayed frequency polygons comparing response times in milliseconds for large targets (blue) and small targets (red), showing faster completion times for large targets."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-42-overlayed-freq-poly-2-description">
+<div class="para" id="fig-42-overlayed-freq-poly-2-2-1">An overlayed line graph comparing movement time distributions (in milliseconds) for two different target sizes: a large target (represented by a blue line) and a small target (represented by a red line). The horizontal axis measures time in milliseconds from 350 to 1150 in 100-msec intervals, while the vertical axis measures frequency from 0 to 10 in increments of 2.5.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-42-overlayed-freq-poly-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="fig-42-overlayed-freq-poly-2-2-2">The two distributions highlight a clear difference in performance time depending on target size:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-42-overlayed-freq-poly-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="fig-42-overlayed-freq-poly-2-2-3">The blue curve for the large target sits further to the left, indicating faster movement times. It begins at 0 at 350 msec, rises rapidly to a peak frequency of 10 at 550 msec, and drops back to 0 by 750 msec.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-42-overlayed-freq-poly-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="fig-42-overlayed-freq-poly-2-2-4">In contrast, the red curve for the small target is shifted further to the right, showing longer movement times. It remains at 0 through 450 msec, rises to a peak around 650 msec, and maintains moderate frequencies between 650 and 850 msec before tapering off and reaching zero near 1150 msec.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-42-overlayed-freq-poly-2-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Overlaid frequency polygons.<div class="autopermalink" aria-hidden="true" data-description="Figure 4.2.8"><a tabindex="-1" href="#fig-42-overlayed-freq-poly" title="Copy heading and permalink for Figure 4.2.8" aria-label="Copy heading and permalink for Figure 4.2.8">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-frequency-polygons-9">It is also possible to plot two cumulative frequency distributions in the same graph (<a href="sec-reading-the-distribution.html#fig-42-cumulative-over-freq-poly" class="xref" data-knowl="./knowl/xref/fig-42-cumulative-over-freq-poly.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.2.9">Figure 4.2.9</a>).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-frequency-polygons-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-42-cumulative-over-freq-poly"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;">
+<img src="external/4.2-cumulative-over-freq-poly.png" class="contained" alt="Overlayed cumulative frequency polygons comparing response times in milliseconds for large targets (blue) and small targets (red), both accumulating to 20 total trials."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-42-cumulative-over-freq-poly-2-description">
+<div class="para" id="fig-42-cumulative-over-freq-poly-2-2-1">An overlayed line graph showing the cumulative frequency distributions of movement times (in milliseconds) for large targets (blue line) and small targets (red line). The horizontal axis measures response time in milliseconds from 350 to 1150, while the vertical axis measures total accumulated trials from 0 to 20.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-42-cumulative-over-freq-poly-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="fig-42-cumulative-over-freq-poly-2-2-2">Both curves form S-shaped cumulative patterns, but their horizontal placement highlights the speed advantage for larger targets:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-42-cumulative-over-freq-poly-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="fig-42-cumulative-over-freq-poly-2-2-3">The blue curve for the large target ascends steeply between 350 and 650 msec, reaching its total of 20 trials much earlier. In contrast, the red curve for the small target is shifted to the right, beginning its rise around 550 msec and climbing more gradually until reaching 20 trials near 1050 msec.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-42-cumulative-over-freq-poly-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Overlaid cumulative frequency polygons.<div class="autopermalink" aria-hidden="true" data-description="Figure 4.2.9"><a tabindex="-1" href="#fig-42-cumulative-over-freq-poly" title="Copy heading and permalink for Figure 4.2.9" aria-label="Copy heading and permalink for Figure 4.2.9">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-frequency-polygons-11">Once you know how to read a distribution, you can easily summarize a mountain of raw numbers using just its visual shape, its center (averages), and its spread (variation). But looking at one variable at a time only tells us half the story. In the next section, we will look at pairs of data to see how they move together. We will learn how to spot trends, measure how closely two things are linked, and explore correlation versus causation.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-frequency-polygons-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 4.2.5: Frequency Polygons and Cumulative Polygons"><a tabindex="-1" href="#subsec-frequency-polygons" title="Copy heading and permalink for Subsection 4.2.5: Frequency Polygons and Cumulative Polygons" aria-label="Copy heading and permalink for Subsection 4.2.5: Frequency Polygons and Cumulative Polygons">🔗</a></div>
+</section>
+<article class="exercise exercise-like" id="frequency-polygon-relationship"><h2 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Frequency Polygon and Cumulative Frequency Polygon.</span>
+</h2>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="frequency-polygon-relationship-2-1">A researcher administers a math proficiency test to 800 students. The test scores range from 0 to 200. The researcher creates a histogram with class intervals of 10 points (e.g., 39.5–49.5, 49.5–59.5, etc.) and observes that the distribution is skewed to the left. The researcher then creates a frequency polygon and a cumulative frequency polygon from the same data.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#frequency-polygon-relationship-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="frequency-polygon-relationship-2-2">Which of the following statements correctly describes the relationship between these graphical representations for this dataset?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#frequency-polygon-relationship-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-frequency-polygon-relationship" data-multipleanswers="false">
+<li data-component="answer" id="rs-frequency-polygon-relationship_opt_a">
+<div class="para" id="frequency-polygon-relationship-3-1-1-1">The frequency polygon will peak in the interval 39.5–49.5, while the cumulative frequency polygon will rise most steeply in the interval 149.5–159.5.</div>
+</li>
+<li data-component="feedback" id="rs-frequency-polygon-relationship_opt_a">
+<div class="para" id="frequency-polygon-relationship-3-1-2-1">If a distribution were skewed to the right, the peak would be on the left (lower values) and the tail would stretch to the right. How does left-skew differ from that?</div>
+</li>
+<li data-component="answer" id="rs-frequency-polygon-relationship_opt_b" data-correct="">
+<div class="para" id="frequency-polygon-relationship-3-2-1-1">The frequency polygon will peak in the interval 149.5–159.5, while the cumulative frequency polygon will rise most steeply in the interval 149.5–159.5.</div>
+</li>
+<li data-component="feedback" id="rs-frequency-polygon-relationship_opt_b">
+<div class="para" id="frequency-polygon-relationship-3-2-2-1">Correct! In a left-skewed distribution, the data are concentrated on the right (higher scores), so the frequency polygon peaks in the higher interval. The cumulative frequency polygon rises most steeply where the frequency is highest, which is also in that same higher interval.</div>
+</li>
+<li data-component="answer" id="rs-frequency-polygon-relationship_opt_c">
+<div class="para" id="frequency-polygon-relationship-3-3-1-1">The frequency polygon will peak in the interval 149.5–159.5, while the cumulative frequency polygon will rise most steeply in the interval 39.5–49.5.</div>
+</li>
+<li data-component="feedback" id="rs-frequency-polygon-relationship_opt_c">
+<div class="para" id="frequency-polygon-relationship-3-3-2-1">If the cumulative frequency polygon rises most steeply in a particular interval, that means many data points are being added in that interval. Would you expect that to happen in a low-frequency interval or a high-frequency interval?</div>
+</li>
+<li data-component="answer" id="rs-frequency-polygon-relationship_opt_d">
+<div class="para" id="frequency-polygon-relationship-3-4-1-1">The frequency polygon will peak in the interval 39.5–49.5, while the cumulative frequency polygon will rise most steeply in the interval 39.5–49.5.</div>
+</li>
+<li data-component="feedback" id="rs-frequency-polygon-relationship_opt_d">
+<div class="para" id="frequency-polygon-relationship-3-4-2-1">In a left-skewed distribution, the tail is on the left. Is a peak also on the tail, or is the peak somewhere else? Where would a left-skewed distribution’s peak be located?</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 4.2.10: Frequency Polygon and Cumulative Frequency Polygon"><a tabindex="-1" href="#frequency-polygon-relationship" title="Copy heading and permalink for Checkpoint 4.2.10: Frequency Polygon and Cumulative Frequency Polygon" aria-label="Copy heading and permalink for Checkpoint 4.2.10: Frequency Polygon and Cumulative Frequency Polygon">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Section 4.2: Reading the Distribution"><a tabindex="-1" href="#sec-reading-the-distribution" title="Copy heading and permalink for Section 4.2: Reading the Distribution" aria-label="Copy heading and permalink for Section 4.2: Reading the Distribution">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-data-literacy.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-the-power-of-correlation.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

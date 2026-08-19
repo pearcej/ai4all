@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Environmental Impacts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+lang: "en-US",
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="AI for All">
+<meta property="og:title" content="AI for All">
+<meta property="book:title" content="AI for All">
+<meta name="twitter:description" content="Designed for all students and minimal background in mathematics, this work is designed as an introduction to artificial intelligence and machine learning.">
+<meta property="og:description" content="Designed for all students and minimal background in mathematics, this work is designed as an introduction to artificial intelligence and machine learning.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.47"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.47"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.5';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.18d8728f6d56e11d.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.b388362b5f43738a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="ai4all" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="ai4all.html"><span class="title">AI for All</span></a></div>
+<p class="byline">Dr. Jan Pearce, Editor</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="ai4all-10.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-read-aloud-button" class="ptx-read-aloud-button button" title="Read aloud" aria-expanded="false"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf1bc;</span><span class="name">Read aloud</span></button><div id="ptx-read-aloud-player" class="ptx-read-aloud-player" hidden="hidden" role="group" aria-label="Read aloud">
+<button id="ptx-read-aloud-prev" class="button" title="Previous sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe045;</span></button><button id="ptx-read-aloud-toggle" class="ptx-read-aloud-toggle button" title="Play"><span class="ptx-read-aloud-icon-play"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></span><span class="ptx-read-aloud-icon-pause"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe034;</span></span></button><button id="ptx-read-aloud-next" class="button" title="Next sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe044;</span></button><a id="ptx-read-aloud-continue" class="ptx-read-aloud-continue button" hidden="hidden">Continue<span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></a><button id="ptx-read-aloud-settings-button" class="ptx-read-aloud-settings-button button" title="Reading settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe429;</span></button>
+</div>
+<dialog class="ptx-dialog ptx-read-aloud-settings-popup" id="ptx-read-aloud-settings-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Read aloud settings</h2>
+<button class="ptx-read-aloud-settings-close-button button" id="ptx-read-aloud-settings-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label for="ptx-read-aloud-voice"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe91f;</span><span>Voice</span></label><select id="ptx-read-aloud-voice"></select><label class="ptx-readability-slider-label" for="ptx-read-aloud-rate"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe9e4;</span><span>Reading speed</span><output id="ptx-read-aloud-rate-value" for="ptx-read-aloud-rate">1×</output></label><input type="range" id="ptx-read-aloud-rate" min="0.5" max="2" step="0.1" value="1"><label for="ptx-read-aloud-asides"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d7;</span><span>Collapsed content</span></label><select id="ptx-read-aloud-asides"><option value="skip">Announce, do not read</option>
+<option value="read">Read automatically</option></select><label for="ptx-read-aloud-autoscroll"><input type="checkbox" id="ptx-read-aloud-autoscroll" checked><span>Follow along (auto-scroll)</span></label><label for="ptx-read-aloud-autocontinue"><input type="checkbox" id="ptx-read-aloud-autocontinue"><span>Continue to the next page automatically</span></label>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="sec-the-black-box-problem.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="the-future-of-ai.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-deepfakes-and-disinformation.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Prefaces</span></a></div>
+<ul id="ptx-toc-group-frontmatter" class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="repository-and-license.html" class="internal"><span class="title">Repository and License</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="sec-how-this-book-was-created.html" class="internal"><span class="title">How This Book Was Created</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="acknowledgements.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="the-story-of-ai.html" class="internal"><span class="codenumber">1</span> <span class="title">The Story of AI</span></a></div>
+<ul id="ptx-toc-group-the-story-of-ai" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ai-backstory.html" class="internal"><span class="codenumber">1.1</span> <span class="title">AI’s Back Story</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-characterizing-intelligence.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Characterizing Intelligence</span></a></div>
+<ul id="ptx-toc-group-sec-characterizing-intelligence" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-characterizing-intelligence.html#ssec-turing-test" class="internal"><span class="codenumber">1.2.1</span> <span class="title">The Turing Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-characterizing-intelligence.html#ssec-what-is-generative-ai" class="internal"><span class="codenumber">1.2.2</span> <span class="title">What Is Generative AI?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-mythbusting-ch1.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Mythbusting</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ai-in-education.html" class="internal"><span class="codenumber">2</span> <span class="title">AI in Education</span></a></div>
+<ul id="ptx-toc-group-ai-in-education" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html" class="internal"><span class="codenumber">2.1</span> <span class="title">The Dangers of AI as a Learner</span></a></div>
+<ul id="ptx-toc-group-sec-the-dangers-of-ai-as-a-learner" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-ai-as-a-learning-tool" class="internal"><span class="codenumber">2.1.1</span> <span class="title">AI as a Learning Tool</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-new-opportunities-for-learning" class="internal"><span class="codenumber">2.1.2</span> <span class="title">New Opportunities for Learning</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-risks-of-overreliance" class="internal"><span class="codenumber">2.1.3</span> <span class="title">The Risks of Overreliance</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-learning-new-skills-with-ai" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Learning New Skills</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-evidence-from-mathematics-learning" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Evidence from Mathematics Learning</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-decreased-cognitive-engagement" class="internal"><span class="codenumber">2.1.6</span> <span class="title">Decreased Cognitive Engagement</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-dangers-of-ai-as-a-learner.html#ssec-breaking-the-cycle" class="internal"><span class="codenumber">2.1.7</span> <span class="title">Breaking the Cycle</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-how-mistakes-help-you-learn.html" class="internal"><span class="codenumber">2.2</span> <span class="title">How Mistakes Help You Learn</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ai-powered-study-buddy.html" class="internal"><span class="codenumber">2.3</span> <span class="title">AI-Powered Study Buddy</span></a></div>
+<ul id="ptx-toc-group-sec-ai-powered-study-buddy" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ai-powered-study-buddy.html#ssec-static-vs-dynamic-learning" class="internal"><span class="codenumber">2.3.1</span> <span class="title">From Static Resources to Dynamic Interaction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ai-powered-study-buddy.html#ssec-ai-for-personalization-and-accessibility" class="internal"><span class="codenumber">2.3.2</span> <span class="title">AI for Personalization and Accessibility</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ai-powered-study-buddy.html#ssec-strategies-for-effective-ai-interaction" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Strategies for Effective AI Interaction</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-ai-powered-study-buddy.html#rqs-effective-vs-ineffective-practices" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-anatomy-of-a-prompt-and-writing-loops.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The Anatomy of a Prompt and Writing Loops</span></a></div>
+<ul id="ptx-toc-group-sec-the-anatomy-of-a-prompt-and-writing-loops" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-anatomy-of-a-prompt-and-writing-loops.html#ssec-in-context-learning" class="internal"><span class="codenumber">2.4.1</span> <span class="title">In-Context Learning</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-anatomy-of-a-prompt-and-writing-loops.html#ssec-writing-good-prompts" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Strategies for Effective Prompts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-anatomy-of-a-prompt-and-writing-loops.html#ssec-human-ai-writing-loops" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Human-AI Writing Loops</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-spotting-hallucinations.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Spotting Hallucinations</span></a></div>
+<ul id="ptx-toc-group-sec-spotting-hallucinations" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-spotting-hallucinations.html#ssec-why-ai-fabricates-information" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Why AI Fabricates Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-spotting-hallucinations.html#ssec-manifestations-of-hallucinations" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Manifestations of Hallucinations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-spotting-hallucinations.html#ssec-verification-strategies" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Strategies for Fact-Checking AI Output</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-academic-integrity-and-ai-policies.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Academic Integrity and AI Policies</span></a></div>
+<ul id="ptx-toc-group-sec-academic-integrity-and-ai-policies" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-academic-integrity-and-ai-policies.html#ssec-the-bright-red-line" class="internal"><span class="codenumber">2.6.1</span> <span class="title">The Bright “Red Line”</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-academic-integrity-and-ai-policies.html#ssec-when-the-red-line-can-be-a-bit-fuzzy" class="internal"><span class="codenumber">2.6.2</span> <span class="title">When the “Red Line” Can Be a Bit Fuzzy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-academic-integrity-and-ai-policies.html#ssec-all-about-attribution" class="internal"><span class="codenumber">2.6.3</span> <span class="title">All About Attribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-academic-integrity-and-ai-policies.html#ssec-basic-elements-of-ai-attribution" class="internal"><span class="codenumber">2.6.4</span> <span class="title">Basic Elements of AI Attribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-academic-integrity-and-ai-policies.html#ssec-navigating-ai-responsibly" class="internal"><span class="codenumber">2.6.5</span> <span class="title">Navigating AI Responsibly</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mythbusting-ch2.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Mythbusting</span></a></div>
+<ul id="ptx-toc-group-sec-mythbusting-ch2" class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-mythbusting-ch2.html#rqs-myth-ai-education" class="internal"><span class="codenumber">2.7</span> <span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="solving-problems-using-search.html" class="internal"><span class="codenumber">3</span> <span class="title">Solving Problems Using Search</span></a></div>
+<ul id="ptx-toc-group-solving-problems-using-search" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-trees-and-graphs.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Trees and Graphs</span></a></div>
+<ul id="ptx-toc-group-sec-trees-and-graphs" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trees-and-graphs.html#ssec-tree-definitions" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Tree Definitions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trees-and-graphs.html#ssec-tree-applications" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Real World Application of Tree Structure</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trees-and-graphs.html#ssec-graphs" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trees-and-graphs.html#ssec-real-world-graphs" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Real World Examples of Graphs</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-trees-and-graphs.html#rq-tree-properties" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Reading Question</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Introduction to State Spaces</span></a></div>
+<ul id="ptx-toc-group-sec-introduction-to-state-spaces" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html#ssec-nodes-and-arcs" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Nodes, Arcs, and Relationships</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html#ssec-tic-tac-toe-example" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Tic-Tac-Toe Example</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html#ssec-problem-solving-process" class="internal"><span class="codenumber">3.2.3</span> <span class="title">The Problem-Solving Process</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html#ssec-real-world-state-spaces" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Real-World State Spaces</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html#ssec-characteristics-of-state-spaces" class="internal"><span class="codenumber">3.2.5</span> <span class="title">Important Characteristics of State Spaces</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-introduction-to-state-spaces.html#ssec-challenge-of-representation" class="internal"><span class="codenumber">3.2.6</span> <span class="title">The Challenge of Representation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-uninformed-search.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Uninformed Search</span></a></div>
+<ul id="ptx-toc-group-sec-uninformed-search" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uninformed-search.html#subsec-breadth-first-search" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Breadth-First Search (BFS)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uninformed-search.html#subsec-depth-first-search" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Depth-First Search (DFS)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uninformed-search.html#subsec-depth-limited-search" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Depth-Limited Search (DLS)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uninformed-search.html#subsec-comparing-uninformed" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Comparing Uninformed Search Strategies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uninformed-search.html#subsec-when-to-use-uninformed" class="internal"><span class="codenumber">3.3.5</span> <span class="title">When to Use Uninformed Search</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-informed-search.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Informed Search</span></a></div>
+<ul id="ptx-toc-group-sec-informed-search" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-what-is-a-heuristic" class="internal"><span class="codenumber">3.4.1</span> <span class="title">What Is a Heuristic?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-best-first-search" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Best-First Search</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-greedy-best-first" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Greedy Best-First Search</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-uniform-cost" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Uniform-Cost Search</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-a-star-search" class="internal"><span class="codenumber">3.4.5</span> <span class="title">A* Search</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-heuristic-functions" class="internal"><span class="codenumber">3.4.6</span> <span class="title">Heuristic Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-admissible-heuristics" class="internal"><span class="codenumber">3.4.7</span> <span class="title">Admissible Heuristics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-consistency" class="internal"><span class="codenumber">3.4.8</span> <span class="title">Consistency</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-informed-search-summary" class="internal"><span class="codenumber">3.4.9</span> <span class="title">Comparing Informed Search Strategies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-informed-search.html#subsec-when-to-use-informed" class="internal"><span class="codenumber">3.4.10</span> <span class="title">When to Use Informed Search</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-adversarial-search.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Adversarial Search</span></a></div>
+<ul id="ptx-toc-group-sec-adversarial-search" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-adversarial-search.html#subsec-minimax-algorithm" class="internal"><span class="codenumber">3.5.1</span> <span class="title">The Minimax Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-adversarial-search.html#subsec-game-state-spaces" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Game State Spaces</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-adversarial-search.html#subsec-alpha-beta-pruning" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Alpha-Beta Pruning</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-adversarial-search.html#subsec-heuristics-in-games" class="internal"><span class="codenumber">3.5.4</span> <span class="title">Why Larger Games Still Need Heuristics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-adversarial-search.html#subsec-adversarial-applications" class="internal"><span class="codenumber">3.5.5</span> <span class="title">Real-World Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-adversarial-search.html#subsec-adversarial-search-summary" class="internal"><span class="codenumber">3.5.6</span> <span class="title">Summary: Key Concepts in Adversarial Search</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-adversarial-search.html#rqs-search-methods" class="internal"><span class="codenumber">3.5.7</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="statistics-needed-by-ai.html" class="internal"><span class="codenumber">4</span> <span class="title">Statistics Needed by AI</span></a></div>
+<ul id="ptx-toc-group-statistics-needed-by-ai" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-data-literacy.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Data Literacy</span></a></div>
+<ul id="ptx-toc-group-sec-data-literacy" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-data-literacy.html#ssec-what-is-data" class="internal"><span class="codenumber">4.1.1</span> <span class="title">What Exactly is Data?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-data-literacy.html#ssec-types-of-data" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Types of Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-data-literacy.html#ssec-datasets" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Datasets</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-reading-the-distribution.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Reading the Distribution</span></a></div>
+<ul id="ptx-toc-group-sec-reading-the-distribution" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reading-the-distribution.html#subsec-frequency-tables" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Frequency Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reading-the-distribution.html#subsec-pie-charts-bar-charts" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Pie Charts and Bar Charts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reading-the-distribution.html#subsec-comparing-distributions" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Comparing Distributions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reading-the-distribution.html#subsec-histograms" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Histograms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reading-the-distribution.html#subsec-frequency-polygons" class="internal"><span class="codenumber">4.2.5</span> <span class="title">Frequency Polygons and Cumulative Polygons</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-power-of-correlation.html" class="internal"><span class="codenumber">4.3</span> <span class="title">The Power of Correlation</span></a></div>
+<ul id="ptx-toc-group-sec-the-power-of-correlation" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-correlation.html#subsec-spotting-trends-scatter-plots" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Spotting Trends with Scatter Plots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-correlation.html#subsec-values-pearsons-correlation" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Values of Pearson’s Correlation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-correlation.html#subsec-core-mathematical-properties" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Core Mathematical Properties of <span class="process-math">\(r\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-correlation.html#subsec-interpreting-r-real-world" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Interpreting <span class="process-math">\(r\)</span> in Real-World Contexts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-correlation.html#subsec-correlation-vs-causation" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Correlation vs. Causation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-correlation.html#subsec-establishing-causation-experiments" class="internal"><span class="codenumber">4.3.6</span> <span class="title">Establishing Causation in Experiments</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-data-split.html" class="internal"><span class="codenumber">4.4</span> <span class="title">The Data Split</span></a></div>
+<ul id="ptx-toc-group-sec-the-data-split" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-data-split.html#ssec-data-preprocessing" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Data Preprocessing and Data Splitting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-data-split.html#ssec-data-splitting-strategies" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Data Splitting Strategies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-data-split.html#ssec-model-building-and-training" class="internal"><span class="codenumber">4.4.3</span> <span class="title">Model Building and Training</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-data-split.html#ssec-model-validation-and-data-splitting" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Model Validation and Data Splitting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-data-split.html#ssec-testing-on-unseen-data" class="internal"><span class="codenumber">4.4.5</span> <span class="title">Testing on Unseen Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-data-split.html#ssec-model-postprocessing" class="internal"><span class="codenumber">4.4.6</span> <span class="title">Model Postprocessing</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="machine-learning.html" class="internal"><span class="codenumber">5</span> <span class="title">Machine Learning</span></a></div>
+<ul id="ptx-toc-group-machine-learning" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-an-overview.html" class="internal"><span class="codenumber">5.1</span> <span class="title">An Overview of Machine Learning</span></a></div>
+<ul id="ptx-toc-group-sec-an-overview" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-an-overview.html#subsec-traditional-vs-ml" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Traditional Computing vs. Machine Learning</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-supervised-learning.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Supervised Learning</span></a></div>
+<ul id="ptx-toc-group-sec-supervised-learning" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-supervised-learning.html#subsec-supervised-categories" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Categories of Supervised Learning</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-supervised-learning.html#subsec-supervised-applications" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Applications of Supervised Learning</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-supervised-learning.html#rqs-supervised-learning-types" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-unsupervised-learning.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Unsupervised Learning</span></a></div>
+<ul id="ptx-toc-group-sec-unsupervised-learning" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-unsupervised-learning.html#subsec-what-is-unsupervised-learning" class="internal"><span class="codenumber">5.3.1</span> <span class="title">What Is Unsupervised Learning?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-unsupervised-learning.html#subsec-unsupervised-tasks" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Common Unsupervised Learning Tasks</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-unsupervised-learning.html#subsec-unsupervised-applications" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Applications of Unsupervised Learning</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-reinforcement-learning.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Reinforcement Learning</span></a></div>
+<ul id="ptx-toc-group-sec-reinforcement-learning" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reinforcement-learning.html#subsec-agent-environment" class="internal"><span class="codenumber">5.4.1</span> <span class="title">The Agent and Environment Loop</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reinforcement-learning.html#subsec-policy-and-goals" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Policies and Long-Term Strategy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-reinforcement-learning.html#subsec-rl-applications" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Applications of Reinforcement Learning</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-evaluating-success.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Evaluating Success</span></a></div>
+<ul id="ptx-toc-group-sec-evaluating-success" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-evaluating-success.html#subsec-data-splitting" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Data Splitting and Overfitting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-evaluating-success.html#subsec-loss-functions" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Loss Functions and Error Severity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-evaluating-success.html#subsec-classification-errors" class="internal"><span class="codenumber">5.5.3</span> <span class="title">False Positives vs. False Negatives</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-evaluating-success.html#rqs-model-evaluation-terms" class="internal"><span class="codenumber">5.5.4</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mythbusting-ch5.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Mythbusting</span></a></div>
+<ul id="ptx-toc-group-sec-mythbusting-ch5" class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-mythbusting-ch5.html#rqs-machine-learning-myths" class="internal"><span class="codenumber">5.6</span> <span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="neural-networks.html" class="internal"><span class="codenumber">6</span> <span class="title">Neural Networks</span></a></div>
+<ul id="ptx-toc-group-neural-networks" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-artificial-neurons.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Artificial Neurons</span></a></div>
+<ul id="ptx-toc-group-sec-artificial-neurons" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-artificial-neurons.html#subsec-perceptrons" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Perceptrons</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-artificial-neurons.html#subsec-learning-problem" class="internal"><span class="codenumber">6.1.2</span> <span class="title">The Learning Problem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-artificial-neurons.html#subsec-sigmoid-neurons" class="internal"><span class="codenumber">6.1.3</span> <span class="title">Sigmoid Neurons</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-inputs-weights-and-biases.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Inputs, Weights, and Biases</span></a></div>
+<ul id="ptx-toc-group-sec-inputs-weights-and-biases" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-inputs-weights-and-biases.html#subsec-role-of-components" class="internal"><span class="codenumber">6.2.1</span> <span class="title">The Role of Each Component</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-inputs-weights-and-biases.html#subsec-how-layer-activates" class="internal"><span class="codenumber">6.2.2</span> <span class="title">How the Layer Activates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-inputs-weights-and-biases.html#subsec-activation-function" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Activation Functions</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-inputs-weights-and-biases.html#rq-inputs-weights-biases" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-power-of-layers.html" class="internal"><span class="codenumber">6.3</span> <span class="title">The Power of Layers</span></a></div>
+<ul id="ptx-toc-group-sec-the-power-of-layers" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-layers.html#subsec-deep-networks-mystery" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Deep Networks and the Mystery of Layers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-layers.html#subsec-cnns-and-rnns" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Architectural Divergence: CNNs &amp; RNNs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-power-of-layers.html#subsec-typical-network-architecture" class="internal"><span class="codenumber">6.3.3</span> <span class="title">A Typical Network Architecture</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-training-the-network.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Training the Network</span></a></div>
+<ul id="ptx-toc-group-sec-training-the-network" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-training-the-network.html#subsec-cost-function" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Cost Function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-training-the-network.html#subsec-gradient-descent" class="internal"><span class="codenumber">6.4.2</span> <span class="title">Learning with Gradient Descent</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-training-the-network.html#subsec-stochastic-gradient-descent" class="internal"><span class="codenumber">6.4.3</span> <span class="title">Stochastic Gradient Descent (SGD)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-training-the-network.html#subsec-backpropagation" class="internal"><span class="codenumber">6.4.4</span> <span class="title">The Backpropagation Algorithm</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-training-the-network.html#rq-training-the-network" class="internal"><span class="codenumber">6.4.5</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-large-language-models.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Large Language Models</span></a></div>
+<ul id="ptx-toc-group-sec-large-language-models" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-llms-backstory" class="internal"><span class="codenumber">6.5.1</span> <span class="title">The Backstory of Large Language Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-training-llms" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Training Large Language Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-fine-tuning-and-alignment" class="internal"><span class="codenumber">6.5.3</span> <span class="title">Fine-Tuning and Alignment</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-prompting-and-reasoning" class="internal"><span class="codenumber">6.5.4</span> <span class="title">Prompting and Reasoning</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-inference" class="internal"><span class="codenumber">6.5.5</span> <span class="title">Inference</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-challenges" class="internal"><span class="codenumber">6.5.6</span> <span class="title">Challenges</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-large-language-models.html#subsec-summary" class="internal"><span class="codenumber">6.5.7</span> <span class="title">Summary</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mythbusting-ch6.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Mythbusting</span></a></div>
+<ul id="ptx-toc-group-sec-mythbusting-ch6" class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-mythbusting-ch6.html#rq-mythbusting-ch6" class="internal"><span class="codenumber">6.6</span> <span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="the-future-of-ai.html" class="internal"><span class="codenumber">7</span> <span class="title">The Future of AI</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-the-future-of-ai">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-algorithmic-bias-and-echo-chambers.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Algorithmic Bias and Echo Chambers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-black-box-problem.html" class="internal"><span class="codenumber">7.2</span> <span class="title">The Black Box Problem</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-environmental-impacts.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Environmental Impacts</span></a></div>
+<ul class="structural toc-item-list active" id="ptx-toc-group-sec-environmental-impacts">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-the-energy-demands-of-ai" class="internal"><span class="codenumber">7.3.1</span> <span class="title">The Energy Demands of AI</span></a></div>
+<ul id="ptx-toc-group-ssec-the-energy-demands-of-ai" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-data-centers-the-engines-of-ai" class="internal"><span class="codenumber">7.3.1.1</span> <span class="title">Data Centers: The Engines of AI</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-training-vs-inference" class="internal"><span class="codenumber">7.3.1.2</span> <span class="title">Training vs. Inference</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-why-energy-efficiency-matters" class="internal"><span class="codenumber">7.3.1.3</span> <span class="title">Why Energy Efficiency Matters</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-the-water-footprint-of-ai" class="internal"><span class="codenumber">7.3.2</span> <span class="title">The Water Footprint of AI</span></a></div>
+<ul id="ptx-toc-group-ssec-the-water-footprint-of-ai" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-water-for-cooling" class="internal"><span class="codenumber">7.3.2.1</span> <span class="title">Water for Cooling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-the-water-energy-connection" class="internal"><span class="codenumber">7.3.2.2</span> <span class="title">The Water-Energy Connection</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-geographic-concentration-and-water-stress" class="internal"><span class="codenumber">7.3.2.3</span> <span class="title">Geographic Concentration and Water Stress</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-electronic-waste-e-waste" class="internal"><span class="codenumber">7.3.3</span> <span class="title">Electronic Waste (E-Waste)</span></a></div>
+<ul id="ptx-toc-group-ssec-electronic-waste-e-waste" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-the-scale-of-the-problem" class="internal"><span class="codenumber">7.3.3.1</span> <span class="title">The Scale of the Problem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-whats-in-ai-e-waste" class="internal"><span class="codenumber">7.3.3.2</span> <span class="title">What’s in AI E-Waste?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-the-geography-of-e-waste" class="internal"><span class="codenumber">7.3.3.3</span> <span class="title">The Geography of E-Waste</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-what-can-be-done" class="internal"><span class="codenumber">7.3.4</span> <span class="title">What Can Be Done?</span></a></div>
+<ul id="ptx-toc-group-ssec-what-can-be-done" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-efficiency-improvements" class="internal"><span class="codenumber">7.3.4.1</span> <span class="title">Efficiency Improvements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-circular-economy-strategies" class="internal"><span class="codenumber">7.3.4.2</span> <span class="title">Circular Economy Strategies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-strategic-location" class="internal"><span class="codenumber">7.3.4.3</span> <span class="title">Strategic Location</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-clean-energy-procurement" class="internal"><span class="codenumber">7.3.4.4</span> <span class="title">Clean Energy Procurement</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-environmental-impacts.html#ssec-transparency-and-policy" class="internal"><span class="codenumber">7.3.4.5</span> <span class="title">Transparency and Policy</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-environmental-impacts.html#rq-environmental-impacts" class="internal"><span class="codenumber">7.3.5</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-deepfakes-and-disinformation.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Deepfakes and Disinformation</span></a></div>
+<ul id="ptx-toc-group-sec-deepfakes-and-disinformation" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-deepfakes-and-disinformation.html#ssec-navigating-synthetic-media" class="internal"><span class="codenumber">7.4.1</span> <span class="title">How to Navigate in a World of Synthetic Media</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-copyright-intellectual-property-and-the-creative-economy.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Copyright, Intellectual Property, and the Creative Economy</span></a></div>
+<ul id="ptx-toc-group-sec-copyright-intellectual-property-and-the-creative-economy" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-copyright-intellectual-property-and-the-creative-economy.html#ssec-nonconsensual-training" class="internal"><span class="codenumber">7.5.1</span> <span class="title">Non-Consensual Training and Data Extraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-copyright-intellectual-property-and-the-creative-economy.html#ssec-ethics-ai-art" class="internal"><span class="codenumber">7.5.2</span> <span class="title">Ethics of AI Art Generation and Creative Labor</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-copyright-intellectual-property-and-the-creative-economy.html#ssec-copyright-ownership" class="internal"><span class="codenumber">7.5.3</span> <span class="title">Copyright and Ownership of AI-Generated Work</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-copyright-intellectual-property-and-the-creative-economy.html#rq-copyright-ip" class="internal"><span class="codenumber">7.5.4</span> <span class="title">Reading Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ai-as-a-disruptor-in-the-workforce.html" class="internal"><span class="codenumber">7.6</span> <span class="title">AI as a Disruptor in the Workforce</span></a></div>
+<ul id="ptx-toc-group-sec-ai-as-a-disruptor-in-the-workforce" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ai-as-a-disruptor-in-the-workforce.html#ssec-new-jobs-ai-rise" class="internal"><span class="codenumber">7.6.1</span> <span class="title">New Jobs with the Rise of AI</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mythbusting-ch7.html" class="internal"><span class="codenumber">7.7</span> <span class="title">Mythbusting</span></a></div>
+<ul id="ptx-toc-group-sec-mythbusting-ch7" class="structural toc-item-list"><li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="sec-mythbusting-ch7.html#rq-mythbusting" class="internal"><span class="codenumber">7.7</span> <span class="title">Reading Questions</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="ai4all-10.html" class="internal"><span class="title">Index</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec-environmental-impacts">
+<h1 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Environmental Impacts</span>
+</h1>
+<section class="introduction" id="sec-environmental-impacts-2">
+<div class="para" id="sec-environmental-impacts-2-1">As we’ve seen throughout this book, artificial intelligence has the power to transform nearly every aspect of our lives. But like all powerful technologies, AI comes with significant environmental costs that we need to understand and address. In this section, we’ll explore the environmental footprint of AI systems—from the energy they consume to the water they use and the electronic waste they generate.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-environmental-impacts-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<section class="subsection" id="ssec-the-energy-demands-of-ai">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Energy Demands of AI</span>
+</h2>
+<div class="para" id="ssec-the-energy-demands-of-ai-2">When you ask an AI chatbot a question or use an AI-powered feature on your phone, you’re tapping into a vast network of computers working behind the scenes. These aren’t the laptops or phones in your hands—they’re powerful servers located in massive facilities called data centers.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-the-energy-demands-of-ai-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsection" id="ssec-data-centers-the-engines-of-ai">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Data Centers: The Engines of AI</span>
+</h3>
+<div class="para" id="ssec-data-centers-the-engines-of-ai-2">
+<dfn class="terminology">Data centers</dfn> are the physical infrastructure that makes modern AI possible. These facilities house thousands of specialized computers that train and run AI models. Think of them as giant warehouses filled with computing power.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-data-centers-the-engines-of-ai-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ssec-data-centers-the-engines-of-ai-3">The energy consumption of data centers has grown dramatically as AI has expanded:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-data-centers-the-engines-of-ai-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="ssec-data-centers-the-engines-of-ai-4">
+<li id="ssec-data-centers-the-engines-of-ai-4-1">
+<div class="para" id="ssec-data-centers-the-engines-of-ai-4-1-1">In 2024, data centers worldwide consumed approximately 415 terawatt-hours (TWh) of electricity—about 1.5% of all electricity used globally<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-data-centers-the-engines-of-ai-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-data-centers-the-engines-of-ai-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ssec-data-centers-the-engines-of-ai-4-2">
+<div class="para" id="ssec-data-centers-the-engines-of-ai-4-2-1">Data center electricity consumption has been growing at about 12% per year, which is more than four times faster than total global electricity growth<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-data-centers-the-engines-of-ai-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-data-centers-the-engines-of-ai-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ssec-data-centers-the-engines-of-ai-4-3">
+<div class="para" id="ssec-data-centers-the-engines-of-ai-4-3-1">By 2030, data center electricity consumption is projected to more than double to around 945 TWh<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-data-centers-the-engines-of-ai-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-data-centers-the-engines-of-ai-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="ssec-data-centers-the-engines-of-ai-5">To put this in perspective, a large AI-focused data center can consume as much electricity as 100,000 households. The largest data centers under construction today may consume 20 times that amount.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-data-centers-the-engines-of-ai-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 7.3.1.1: Data Centers: The Engines of AI"><a tabindex="-1" href="#ssec-data-centers-the-engines-of-ai" title="Copy heading and permalink for Subsection 7.3.1.1: Data Centers: The Engines of AI" aria-label="Copy heading and permalink for Subsection 7.3.1.1: Data Centers: The Engines of AI">🔗</a></div>
+</section>
+<section class="subsection" id="ssec-training-vs-inference">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Training vs. Inference</span>
+</h3>
+<div class="para" id="ssec-training-vs-inference-2">AI models consume energy in two main phases:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-training-vs-inference-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ssec-training-vs-inference-3">
+<dfn class="terminology">Training</dfn> is the process where an AI model learns from data. This is incredibly energy-intensive. For example, training GPT-4—one of the most powerful language models—required approximately 42.4 GWh of electricity. That’s enough to power about 28,500 households for a day.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-training-vs-inference-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ssec-training-vs-inference-4">
+<dfn class="terminology">Inference</dfn> happens when you actually use a trained AI model. Each time you ask ChatGPT a question, the model performs millions of calculations to generate a response. While individual queries use less energy than training, the massive scale of users means inference can dominate total energy consumption over time.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-training-vs-inference-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ssec-training-vs-inference-5">The energy cost varies widely depending on the task:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-training-vs-inference-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="ssec-training-vs-inference-6">
+<li id="ssec-training-vs-inference-6-1">
+<div class="para" id="ssec-training-vs-inference-6-1-1">A simple text response might use about 0.24 Wh of electricity<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-training-vs-inference-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-training-vs-inference-6-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ssec-training-vs-inference-6-2">
+<div class="para" id="ssec-training-vs-inference-6-2-1">Generating a single image uses about 1.7 Wh<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-training-vs-inference-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-training-vs-inference-6-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ssec-training-vs-inference-6-3">
+<div class="para" id="ssec-training-vs-inference-6-3-1">Generating a short video can consume 115 Wh—equivalent to charging a laptop twice<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-training-vs-inference-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-training-vs-inference-6-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 7.3.1.2: Training vs. Inference"><a tabindex="-1" href="#ssec-training-vs-inference" title="Copy heading and permalink for Subsection 7.3.1.2: Training vs. Inference" aria-label="Copy heading and permalink for Subsection 7.3.1.2: Training vs. Inference">🔗</a></div>
+</section>
+<section class="subsection" id="ssec-why-energy-efficiency-matters">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Why Energy Efficiency Matters</span>
+</h3>
+<div class="para" id="ssec-why-energy-efficiency-matters-2">You might be wondering: “If AI is so energy-hungry, why doesn’t efficiency keep pace?” The answer lies in what economists call the <dfn class="terminology">rebound effect</dfn>—when improvements in efficiency actually lead to increased consumption. Here’s how it works:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-why-energy-efficiency-matters-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="ssec-why-energy-efficiency-matters-3">
+<li id="ssec-why-energy-efficiency-matters-3-1">
+<div class="para" id="ssec-why-energy-efficiency-matters-3-1-1">AI models become more efficient (using less energy per calculation)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-why-energy-efficiency-matters-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#ssec-why-energy-efficiency-matters-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="ssec-why-energy-efficiency-matters-3-2">
+<div class="para" id="ssec-why-energy-efficiency-matters-3-2-1">This makes them cheaper to run<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-why-energy-efficiency-matters-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#ssec-why-energy-efficiency-matters-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="ssec-why-energy-efficiency-matters-3-3">
+<div class="para" id="ssec-why-energy-efficiency-matters-3-3-1">Cheaper AI encourages more people to use it<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-why-energy-efficiency-matters-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#ssec-why-energy-efficiency-matters-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="ssec-why-energy-efficiency-matters-3-4">
+<div class="para" id="ssec-why-energy-efficiency-matters-3-4-1">More users mean more total energy consumption<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-why-energy-efficiency-matters-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 4"><a tabindex="-1" href="#ssec-why-energy-efficiency-matters-3-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="para" id="ssec-why-energy-efficiency-matters-4">This pattern is similar to what happened with cars: as engines became more fuel-efficient, people drove more, and total fuel consumption didn’t drop as much as expected.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-why-energy-efficiency-matters-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 7.3.1.3: Why Energy Efficiency Matters"><a tabindex="-1" href="#ssec-why-energy-efficiency-matters" title="Copy heading and permalink for Subsection 7.3.1.3: Why Energy Efficiency Matters" aria-label="Copy heading and permalink for Subsection 7.3.1.3: Why Energy Efficiency Matters">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Subsection 7.3.1: The Energy Demands of AI"><a tabindex="-1" href="#ssec-the-energy-demands-of-ai" title="Copy heading and permalink for Subsection 7.3.1: The Energy Demands of AI" aria-label="Copy heading and permalink for Subsection 7.3.1: The Energy Demands of AI">🔗</a></div>
+</section>
+<section class="subsection" id="ssec-the-water-footprint-of-ai">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Water Footprint of AI</span>
+</h2>
+<div class="para" id="ssec-the-water-footprint-of-ai-2">Energy isn’t the only resource AI consumes. Data centers require massive amounts of water for cooling.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-the-water-footprint-of-ai-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsection" id="ssec-water-for-cooling">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Water for Cooling</span>
+</h3>
+<div class="para" id="ssec-water-for-cooling-2">The computers in data centers generate enormous amounts of heat. If not cooled properly, they would overheat and fail. Many data centers use water-based cooling systems that evaporate water to remove heat.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-water-for-cooling-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ssec-water-for-cooling-3">A medium-sized data center (15 megawatts) uses as much water as three average-sized hospitals or more than two 18-hole golf courses.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-water-for-cooling-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ssec-water-for-cooling-4">For a typical AI text prompt (like asking Gemini or ChatGPT a question), the water consumption is about 0.26 mL—roughly five drops of water. While this seems tiny, consider that billions of prompts are processed every day, adding up to significant water usage.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-water-for-cooling-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 7.3.2.1: Water for Cooling"><a tabindex="-1" href="#ssec-water-for-cooling" title="Copy heading and permalink for Subsection 7.3.2.1: Water for Cooling" aria-label="Copy heading and permalink for Subsection 7.3.2.1: Water for Cooling">🔗</a></div>
+</section>
+<section class="subsection" id="ssec-the-water-energy-connection">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Water-Energy Connection</span>
+</h3>
+<div class="para" id="ssec-the-water-energy-connection-2">There’s also an indirect water cost: the water used to generate the electricity that powers data centers. Electricity generation—especially from coal, natural gas, and nuclear power—requires water for cooling. When you factor this in, the water footprint of AI grows even larger.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-the-water-energy-connection-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 7.3.2.2: The Water-Energy Connection"><a tabindex="-1" href="#ssec-the-water-energy-connection" title="Copy heading and permalink for Subsection 7.3.2.2: The Water-Energy Connection" aria-label="Copy heading and permalink for Subsection 7.3.2.2: The Water-Energy Connection">🔗</a></div>
+</section>
+<section class="subsection" id="ssec-geographic-concentration-and-water-stress">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Geographic Concentration and Water Stress</span>
+</h3>
+<div class="para" id="ssec-geographic-concentration-and-water-stress-2">Data centers aren’t spread evenly across the world. They tend to cluster in specific regions—Northern Virginia, California, Texas in the United States; Dublin in Ireland; and Singapore in Asia. Many of these regions already face water stress.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-geographic-concentration-and-water-stress-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ssec-geographic-concentration-and-water-stress-3">About 20% of data center servers in the United States draw their water from moderately to highly stressed watersheds. This means AI infrastructure is competing with agriculture, municipal water supplies, and ecosystems for limited water resources.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-geographic-concentration-and-water-stress-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 7.3.2.3: Geographic Concentration and Water Stress"><a tabindex="-1" href="#ssec-geographic-concentration-and-water-stress" title="Copy heading and permalink for Subsection 7.3.2.3: Geographic Concentration and Water Stress" aria-label="Copy heading and permalink for Subsection 7.3.2.3: Geographic Concentration and Water Stress">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Subsection 7.3.2: The Water Footprint of AI"><a tabindex="-1" href="#ssec-the-water-footprint-of-ai" title="Copy heading and permalink for Subsection 7.3.2: The Water Footprint of AI" aria-label="Copy heading and permalink for Subsection 7.3.2: The Water Footprint of AI">🔗</a></div>
+</section>
+<section class="subsection" id="ssec-electronic-waste-e-waste">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Electronic Waste (E-Waste)</span>
+</h2>
+<div class="para" id="ssec-electronic-waste-e-waste-2">The hardware that powers AI has a limited lifespan—typically just 3 to 5 years. As AI models grow more powerful, the equipment that runs them becomes obsolete quickly, generating a growing stream of electronic waste.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-electronic-waste-e-waste-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsection" id="ssec-the-scale-of-the-problem">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Scale of the Problem</span>
+</h3>
+<div class="para" id="ssec-the-scale-of-the-problem-2">
+<dfn class="terminology">Electronic waste</dfn> (<dfn class="terminology">e-waste</dfn>) refers to discarded electronic devices and components. Between 2020 and 2030, it’s estimated that AI-related servers will generate approximately 16 million tons of e-waste. This is about 11% of all global e-waste during that period.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-the-scale-of-the-problem-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ssec-the-scale-of-the-problem-3">To give you a sense of how fast this is growing:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-the-scale-of-the-problem-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="ssec-the-scale-of-the-problem-4">
+<li id="ssec-the-scale-of-the-problem-4-1">
+<div class="para" id="ssec-the-scale-of-the-problem-4-1-1">AI-related e-waste is growing at about 110% per year<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-the-scale-of-the-problem-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-the-scale-of-the-problem-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ssec-the-scale-of-the-problem-4-2">
+<div class="para" id="ssec-the-scale-of-the-problem-4-2-1">Global conventional e-waste grows at about 2.8% per year<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-the-scale-of-the-problem-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-the-scale-of-the-problem-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 7.3.3.1: The Scale of the Problem"><a tabindex="-1" href="#ssec-the-scale-of-the-problem" title="Copy heading and permalink for Subsection 7.3.3.1: The Scale of the Problem" aria-label="Copy heading and permalink for Subsection 7.3.3.1: The Scale of the Problem">🔗</a></div>
+</section>
+<section class="subsection" id="ssec-whats-in-ai-e-waste">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">What’s in AI E-Waste?</span>
+</h3>
+<div class="para" id="ssec-whats-in-ai-e-waste-2">Server equipment contains valuable and hazardous materials:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-whats-in-ai-e-waste-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ssec-whats-in-ai-e-waste-3">Valuable metals that can be recycled:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-whats-in-ai-e-waste-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="ssec-whats-in-ai-e-waste-4">
+<li id="ssec-whats-in-ai-e-waste-4-1">
+<div class="para" id="ssec-whats-in-ai-e-waste-4-1-1">Gold, silver, platinum, and palladium (used in circuit boards)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-whats-in-ai-e-waste-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-whats-in-ai-e-waste-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ssec-whats-in-ai-e-waste-4-2">
+<div class="para" id="ssec-whats-in-ai-e-waste-4-2-1">Copper, aluminum, nickel, and tin<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-whats-in-ai-e-waste-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-whats-in-ai-e-waste-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="ssec-whats-in-ai-e-waste-5">Toxic materials that pose environmental risks:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-whats-in-ai-e-waste-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="ssec-whats-in-ai-e-waste-6">
+<li id="ssec-whats-in-ai-e-waste-6-1">
+<div class="para" id="ssec-whats-in-ai-e-waste-6-1-1">Lead and chromium (found in circuit boards)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-whats-in-ai-e-waste-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-whats-in-ai-e-waste-6-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ssec-whats-in-ai-e-waste-6-2">
+<div class="para" id="ssec-whats-in-ai-e-waste-6-2-1">Cadmium and mercury<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-whats-in-ai-e-waste-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-whats-in-ai-e-waste-6-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="ssec-whats-in-ai-e-waste-7">If properly recycled, the valuable materials in AI server e-waste could be worth approximately 70 billion dollars. If improperly disposed of, the toxic materials can contaminate soil and groundwater, damaging ecosystems and public health.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-whats-in-ai-e-waste-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 7.3.3.2: What’s in AI E-Waste?"><a tabindex="-1" href="#ssec-whats-in-ai-e-waste" title="Copy heading and permalink for Subsection 7.3.3.2: What’s in AI E-Waste?" aria-label="Copy heading and permalink for Subsection 7.3.3.2: What’s in AI E-Waste?">🔗</a></div>
+</section>
+<section class="subsection" id="ssec-the-geography-of-e-waste">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.3.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Geography of E-Waste</span>
+</h3>
+<div class="para" id="ssec-the-geography-of-e-waste-2">Most AI servers are concentrated in just a few regions:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-the-geography-of-e-waste-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="ssec-the-geography-of-e-waste-3">
+<li id="ssec-the-geography-of-e-waste-3-1">
+<div class="para" id="ssec-the-geography-of-e-waste-3-1-1">North America: 58%<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-the-geography-of-e-waste-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-the-geography-of-e-waste-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ssec-the-geography-of-e-waste-3-2">
+<div class="para" id="ssec-the-geography-of-e-waste-3-2-1">East Asia: 25%<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-the-geography-of-e-waste-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-the-geography-of-e-waste-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ssec-the-geography-of-e-waste-3-3">
+<div class="para" id="ssec-the-geography-of-e-waste-3-3-1">Europe: 14%<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-the-geography-of-e-waste-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-the-geography-of-e-waste-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="ssec-the-geography-of-e-waste-4">This means the e-waste problem is also concentrated. However, the supply chains that produce the hardware span the globe, with semiconductor manufacturing concentrated in East Asia and mineral extraction occurring worldwide.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-the-geography-of-e-waste-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 7.3.3.3: The Geography of E-Waste"><a tabindex="-1" href="#ssec-the-geography-of-e-waste" title="Copy heading and permalink for Subsection 7.3.3.3: The Geography of E-Waste" aria-label="Copy heading and permalink for Subsection 7.3.3.3: The Geography of E-Waste">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Subsection 7.3.3: Electronic Waste (E-Waste)"><a tabindex="-1" href="#ssec-electronic-waste-e-waste" title="Copy heading and permalink for Subsection 7.3.3: Electronic Waste (E-Waste)" aria-label="Copy heading and permalink for Subsection 7.3.3: Electronic Waste (E-Waste)">🔗</a></div>
+</section>
+<section class="subsection" id="ssec-what-can-be-done">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">What Can Be Done?</span>
+</h2>
+<div class="para" id="ssec-what-can-be-done-2">Despite these environmental challenges, there are many promising strategies to reduce AI’s ecological footprint.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-what-can-be-done-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsection" id="ssec-efficiency-improvements">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.4.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Efficiency Improvements</span>
+</h3>
+<div class="para" id="ssec-efficiency-improvements-2">Google, Microsoft, and other companies have made significant progress in improving energy efficiency:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-efficiency-improvements-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="ssec-efficiency-improvements-3">
+<li id="ssec-efficiency-improvements-3-1">
+<div class="para" id="ssec-efficiency-improvements-3-1-1">Google improved energy efficiency per AI inference by over 30 times between 2023 and 2024 alone<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-efficiency-improvements-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-efficiency-improvements-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ssec-efficiency-improvements-3-2">
+<div class="para" id="ssec-efficiency-improvements-3-2-1">Modern data centers have Power Usage Effectiveness (PUE) ratings as low as 1.1, meaning only 10% of energy goes to non-computing functions like cooling<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-efficiency-improvements-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-efficiency-improvements-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ssec-efficiency-improvements-3-3">
+<div class="para" id="ssec-efficiency-improvements-3-3-1">Advanced cooling technologies like liquid immersion cooling can reduce energy and water use<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-efficiency-improvements-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-efficiency-improvements-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 7.3.4.1: Efficiency Improvements"><a tabindex="-1" href="#ssec-efficiency-improvements" title="Copy heading and permalink for Subsection 7.3.4.1: Efficiency Improvements" aria-label="Copy heading and permalink for Subsection 7.3.4.1: Efficiency Improvements">🔗</a></div>
+</section>
+<section class="subsection" id="ssec-circular-economy-strategies">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.4.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Circular Economy Strategies</span>
+</h3>
+<div class="para" id="ssec-circular-economy-strategies-2">The concept of a circular economy—where materials are reused rather than discarded—can help address e-waste:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-circular-economy-strategies-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="ssec-circular-economy-strategies-3">
+<li id="ssec-circular-economy-strategies-3-1">
+<div class="para" id="ssec-circular-economy-strategies-3-1-1">
+<dfn class="terminology">Lifespan Extension</dfn> — Extending the average lifespan of servers by just one year could reduce e-waste by about 58%.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-circular-economy-strategies-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#ssec-circular-economy-strategies-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="ssec-circular-economy-strategies-3-2">
+<div class="para" id="ssec-circular-economy-strategies-3-2-1">
+<dfn class="terminology">Module Reuse</dfn> — Reusing components like GPUs, CPUs, and memory modules from obsolete servers in other applications could reduce e-waste by about 21%.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-circular-economy-strategies-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#ssec-circular-economy-strategies-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="ssec-circular-economy-strategies-3-3">
+<div class="para" id="ssec-circular-economy-strategies-3-3-1">
+<dfn class="terminology">Material Recycling</dfn> — Properly recovering valuable metals from retired equipment reduces the need for new mining and provides economic value.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-circular-economy-strategies-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#ssec-circular-economy-strategies-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 7.3.4.2: Circular Economy Strategies"><a tabindex="-1" href="#ssec-circular-economy-strategies" title="Copy heading and permalink for Subsection 7.3.4.2: Circular Economy Strategies" aria-label="Copy heading and permalink for Subsection 7.3.4.2: Circular Economy Strategies">🔗</a></div>
+</section>
+<section class="subsection" id="ssec-strategic-location">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.4.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Strategic Location</span>
+</h3>
+<div class="para" id="ssec-strategic-location-2">Where data centers are built matters tremendously. A data center’s environmental impact can vary by 50 times or more depending on its location. Factors that matter:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-strategic-location-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="ssec-strategic-location-3">
+<li id="ssec-strategic-location-3-1">
+<div class="para" id="ssec-strategic-location-3-1-1">
+<dfn class="terminology">Climate:</dfn> Cooler regions require less energy for cooling<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-strategic-location-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-strategic-location-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ssec-strategic-location-3-2">
+<div class="para" id="ssec-strategic-location-3-2-1">
+<dfn class="terminology">Grid mix:</dfn> Regions with more renewable energy produce fewer carbon emissions<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-strategic-location-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-strategic-location-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ssec-strategic-location-3-3">
+<div class="para" id="ssec-strategic-location-3-3-1">
+<dfn class="terminology">Water availability:</dfn> Regions with abundant water create less stress on local supplies<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-strategic-location-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-strategic-location-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 7.3.4.3: Strategic Location"><a tabindex="-1" href="#ssec-strategic-location" title="Copy heading and permalink for Subsection 7.3.4.3: Strategic Location" aria-label="Copy heading and permalink for Subsection 7.3.4.3: Strategic Location">🔗</a></div>
+</section>
+<section class="subsection" id="ssec-clean-energy-procurement">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.4.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Clean Energy Procurement</span>
+</h3>
+<div class="para" id="ssec-clean-energy-procurement-2">Major tech companies are increasingly powering their data centers with renewable energy:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-clean-energy-procurement-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="ssec-clean-energy-procurement-3">
+<li id="ssec-clean-energy-procurement-3-1">
+<div class="para" id="ssec-clean-energy-procurement-3-1-1">Google and Microsoft are leading in purchasing renewable energy<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-clean-energy-procurement-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-clean-energy-procurement-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ssec-clean-energy-procurement-3-2">
+<div class="para" id="ssec-clean-energy-procurement-3-2-1">Corporate power purchase agreements (PPAs) for renewable energy from data center operators account for over 30% of all corporate PPAs globally<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-clean-energy-procurement-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-clean-energy-procurement-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 7.3.4.4: Clean Energy Procurement"><a tabindex="-1" href="#ssec-clean-energy-procurement" title="Copy heading and permalink for Subsection 7.3.4.4: Clean Energy Procurement" aria-label="Copy heading and permalink for Subsection 7.3.4.4: Clean Energy Procurement">🔗</a></div>
+</section>
+<section class="subsection" id="ssec-transparency-and-policy">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.4.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Transparency and Policy</span>
+</h3>
+<div class="para" id="ssec-transparency-and-policy-2">One of the biggest challenges is that much of the environmental impact of AI is hidden from the public. Currently:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-transparency-and-policy-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="ssec-transparency-and-policy-3">
+<li id="ssec-transparency-and-policy-3-1">
+<div class="para" id="ssec-transparency-and-policy-3-1-1">Less than a third of data center operators track water consumption<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-transparency-and-policy-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-transparency-and-policy-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ssec-transparency-and-policy-3-2">
+<div class="para" id="ssec-transparency-and-policy-3-2-1">Many companies treat water use as proprietary information<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-transparency-and-policy-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-transparency-and-policy-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ssec-transparency-and-policy-3-3">
+<div class="para" id="ssec-transparency-and-policy-3-3-1">Standardized environmental reporting for AI systems is just beginning to emerge<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-transparency-and-policy-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-transparency-and-policy-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="ssec-transparency-and-policy-4">Better transparency would allow:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-transparency-and-policy-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="ssec-transparency-and-policy-5">
+<li id="ssec-transparency-and-policy-5-1">
+<div class="para" id="ssec-transparency-and-policy-5-1-1">Consumers to make informed choices about AI services<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-transparency-and-policy-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-transparency-and-policy-5-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ssec-transparency-and-policy-5-2">
+<div class="para" id="ssec-transparency-and-policy-5-2-1">Researchers to identify improvement opportunities<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-transparency-and-policy-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-transparency-and-policy-5-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ssec-transparency-and-policy-5-3">
+<div class="para" id="ssec-transparency-and-policy-5-3-1">Policymakers to develop effective regulations<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ssec-transparency-and-policy-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ssec-transparency-and-policy-5-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 7.3.4.5: Transparency and Policy"><a tabindex="-1" href="#ssec-transparency-and-policy" title="Copy heading and permalink for Subsection 7.3.4.5: Transparency and Policy" aria-label="Copy heading and permalink for Subsection 7.3.4.5: Transparency and Policy">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Subsection 7.3.4: What Can Be Done?"><a tabindex="-1" href="#ssec-what-can-be-done" title="Copy heading and permalink for Subsection 7.3.4: What Can Be Done?" aria-label="Copy heading and permalink for Subsection 7.3.4: What Can Be Done?">🔗</a></div>
+</section>
+<section class="conclusion" id="sec-environmental-impacts-7">
+<div class="para" id="sec-environmental-impacts-7-1">Artificial intelligence offers tremendous potential benefits—advances in medicine, scientific discovery, climate modeling, and countless other areas. But these benefits come with real environmental costs.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-environmental-impacts-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-environmental-impacts-7-2">The key question isn’t whether we should use AI, but how we can develop and deploy it responsibly. This requires:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-environmental-impacts-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="sec-environmental-impacts-7-3">
+<li id="sec-environmental-impacts-7-3-1">
+<div class="para" id="sec-environmental-impacts-7-3-1-1">Continuing efficiency improvements in both hardware and software<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-environmental-impacts-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec-environmental-impacts-7-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-environmental-impacts-7-3-2">
+<div class="para" id="sec-environmental-impacts-7-3-2-1">Transitioning to renewable energy for data centers<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-environmental-impacts-7-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec-environmental-impacts-7-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec-environmental-impacts-7-3-3">
+<div class="para" id="sec-environmental-impacts-7-3-3-1">Developing circular economy approaches to hardware<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-environmental-impacts-7-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#sec-environmental-impacts-7-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="sec-environmental-impacts-7-3-4">
+<div class="para" id="sec-environmental-impacts-7-3-4-1">Making environmental impacts transparent so we can track progress<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-environmental-impacts-7-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 4"><a tabindex="-1" href="#sec-environmental-impacts-7-3-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="sec-environmental-impacts-7-3-5">
+<div class="para" id="sec-environmental-impacts-7-3-5-1">Strategic planning about where to build new infrastructure<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-environmental-impacts-7-3-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5"><a tabindex="-1" href="#sec-environmental-impacts-7-3-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+</ol>
+<div class="para" id="sec-environmental-impacts-7-4">As AI becomes increasingly integrated into our lives, understanding its environmental impacts isn’t just academic—it’s essential for making informed decisions about the kind of future we want to build.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-environmental-impacts-7-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<section class="reading-questions" id="rq-environmental-impacts">
+<h2 class="heading hide-type">
+<span class="type">Reading Questions</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Reading Questions</span>
+</h2>
+<article class="exercise exercise-like" id="multiple-choice-environmental-impacts"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="multiple-choice-environmental-impacts-1-1">A technology company announces plans to build a new AI-focused data center. They emphasize that the facility will use the most energy-efficient servers available. Which of the following statements best explains why this efficiency alone may not reduce the facility’s overall environmental impact?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#multiple-choice-environmental-impacts-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-multiple-choice-environmental-impacts" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-multiple-choice-environmental-impacts_opt_a">
+<div class="para" id="multiple-choice-environmental-impacts-2-1-1-1">Energy-efficient servers require more specialized manufacturing processes that produce higher carbon emissions during production, offsetting operational savings over the servers’ lifespan.</div>
+</li>
+<li data-component="feedback" id="rs-multiple-choice-environmental-impacts_opt_a">
+<div class="para" id="multiple-choice-environmental-impacts-2-1-2-1">Incorrect. While manufacturing emissions are a real concern, this is not the primary reason efficiency gains fail to reduce overall impact.</div>
+</li>
+<li data-component="answer" id="rs-multiple-choice-environmental-impacts_opt_b" data-correct="">
+<div class="para" id="multiple-choice-environmental-impacts-2-2-1-1">The rebound effect means that as AI becomes more efficient and cheaper to run, more people and organizations will use it, potentially increasing total energy consumption.</div>
+</li>
+<li data-component="feedback" id="rs-multiple-choice-environmental-impacts_opt_b">
+<div class="para" id="multiple-choice-environmental-impacts-2-2-2-1">Correct. The rebound effect occurs when efficiency improvements make AI cheaper to run, which encourages more usage, and more users mean more total energy consumption. This is similar to how fuel-efficient cars led to more driving, not less total fuel consumption.</div>
+</li>
+<li data-component="answer" id="rs-multiple-choice-environmental-impacts_opt_c">
+<div class="para" id="multiple-choice-environmental-impacts-2-3-1-1">Energy-efficient servers actually consume more water for cooling because they operate at higher densities, creating a trade-off between energy and water consumption.</div>
+</li>
+<li data-component="feedback" id="rs-multiple-choice-environmental-impacts_opt_c">
+<div class="para" id="multiple-choice-environmental-impacts-2-3-2-1">Incorrect. Water consumption is a concern, but that does not mean that energy-efficient servers necessarily consume more water.</div>
+</li>
+<li data-component="answer" id="rs-multiple-choice-environmental-impacts_opt_d">
+<div class="para" id="multiple-choice-environmental-impacts-2-4-1-1">The energy savings from efficiency improvements are negligible compared to the energy required to train large AI models, which dominates total data center consumption.</div>
+</li>
+<li data-component="feedback" id="rs-multiple-choice-environmental-impacts_opt_d">
+<div class="para" id="multiple-choice-environmental-impacts-2-4-2-1">Incorrect. While training is energy-intensive, the use of trained models can dominate total energy consumption over time due to the massive scale of users. Efficiency improvements apply to both phases.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Reading Question 7.3.5.1"><a tabindex="-1" href="#multiple-choice-environmental-impacts" title="Copy heading and permalink for Reading Question 7.3.5.1" aria-label="Copy heading and permalink for Reading Question 7.3.5.1">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Reading Questions 7.3.5"><a tabindex="-1" href="#rq-environmental-impacts" title="Copy heading and permalink for Reading Questions 7.3.5" aria-label="Copy heading and permalink for Reading Questions 7.3.5">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section 7.3: Environmental Impacts"><a tabindex="-1" href="#sec-environmental-impacts" title="Copy heading and permalink for Section 7.3: Environmental Impacts" aria-label="Copy heading and permalink for Section 7.3: Environmental Impacts">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-the-black-box-problem.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-deepfakes-and-disinformation.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
