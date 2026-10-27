@@ -174,16 +174,26 @@
     <p>
         From 2010 to the present,
         <term>deep learning</term><idx>deep learning</idx>
-        and <term>big data</term><idx>big data</idx> have transformed AI. Affordable
-        graphics processing units (GPUs)<idx>graphics processing unit</idx>,
-        originally developed for fast rendering needed by video games, made it practical to
-        train increasingly complex neural networks using enormous amounts of
-        data. Layering these networks enables computers to recognize
-        increasingly sophisticated patterns. This technology now supports
-        applications ranging from automated facial and object recognition to
-        finance, healthcare, transportation, and scientific research. For example,
-        AlphaFold<idx>AlphaFold</idx>, developed by Google DeepMind, 
-        has predicted the structures of more than 200 million proteins from organisms 
+        and <term>big data</term><idx>big data</idx> have transformed AI. Deep 
+        learning uses neural networks with many layers, where each layer builds 
+        on the patterns found by the one before it, allowing computers to recognize 
+        increasingly sophisticated relationships. Big data refers to collections of information 
+        so large, fast-growing, or varied that traditional software cannot easily store or 
+        analyze them, such as the billions of photos, messages, search queries, and sensor
+        readings created every day. The two go hand in hand: deep learning models contain 
+        millions or even billions of adjustable settings, and they need enormous numbers 
+        of examples to tune those settings well enough to handle new situations rather than 
+        simply memorizing what they have already seen.
+    </p>    
+
+        
+    <p>    
+        Affordable graphics processing units 
+        (GPUs)<idx>graphics processing unit</idx>, originally developed for fast rendering 
+        needed by video games, made it practical to train these large networks on so much data. 
+        This technology now supports applications ranging from automated facial and object recognition 
+        to finance, healthcare, transportation, and scientific research. For example, AlphaFold<idx>AlphaFold</idx>, 
+        developed by Google DeepMind, has predicted the structures of more than 200 million proteins from organisms 
         across the tree of life, dramatically accelerating biological research.
     </p>
 
