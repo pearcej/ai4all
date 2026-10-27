@@ -1074,8 +1074,10 @@
         </p>
         <p>
             Once cleaned, datasets are partitioned to support the model lifecycle. The data is divided into <idx>training data</idx><term>training data</term> 
-            used during model optimization, <idx>validation data</idx><term>validation data</term> set aside for hyperparameter tuning and model selection, and 
-            <idx>test data</idx><term>test data</term> reserved exclusively for final evaluation.
+            used during model optimization, <idx>validation data</idx><term>validation data</term> set aside for <idx>hyperparameter</idx><term>hyperparameter</term> 
+            tuning and model selection, and <idx>test data</idx><term>test data</term> reserved exclusively for final evaluation. A hyperparameter is
+            a setting that developers choose before training begins, such as how complex the model is allowed to be, rather than something the model learns from
+            the data itself.
         </p>
 
         <assemblage xml:id="asm-loan-preprocessing-example">
@@ -1169,9 +1171,10 @@
         <p>
             The <idx>training set</idx><term>training set</term> is used to build the model across multiple parameter settings, 
             after which each trained model configuration is evaluated against the <idx>validation set</idx><term>validation set</term>. 
-            The validation set contains samples with known ground truth, but these labels are withheld from the model during testing. 
-            Predictions on the validation set allow developers to assess model accuracy and select optimal parameters based on the lowest 
-            validation error—a procedure known as <idx>model selection</idx><term>model selection</term>.
+            The validation set contains samples with known <idx>ground truth</idx><term>ground truth</term>, meaning the correct answers 
+            are already known (for example, whether each past applicant actually repaid their loan), but these labels are withheld from 
+            the model during testing. Predictions on the validation set allow developers to assess model accuracy and select optimal 
+            parameters based on the lowest validation error—a procedure known as <idx>model selection</idx><term>model selection</term>.
         </p>
         <p>
             Historically, it was assumed that performance measured on a validation set served as an unbiased estimator of general performance. However, 
@@ -1200,9 +1203,11 @@
         <p>
             After the optimal model is selected and tuned, its true generalization capability must be evaluated using an 
             independent, blind <idx>test set</idx><idx>holdout set</idx><term>test set</term> (often called a <term>holdout set</term>). Crucially, 
-            the test data is strictly isolated and never touched during the feature selection, model training, or hyperparameter 
-            optimization phases. Using test data prior to this final evaluation risks <idx>data leakage</idx><term>data leakage</term>, 
-            which leads to over-optimistic performance claims that fail when deployed in real-world environments.
+            the test data is strictly isolated and never touched during the feature selection, model training, or hyperparameter optimization phases. 
+            Using test data prior to this final evaluation risks <idx>data leakage</idx><term>data leakage</term>, which happens when information from 
+            the test set accidentally influences the model during development. It is like a student seeing the exam questions before the test: the score 
+            looks impressive but does not reflect real understanding. Data leakage leads to over-optimistic performance claims that fail when deployed in 
+            real-world environments.
         </p>
         <p>
             To ensure a model works reliably beyond the specific environment where it was built, researchers often evaluate 
@@ -1223,10 +1228,12 @@
         </p>
         <p>
             While sampling an entire population is impossible in practice, proper resampling strategies 
-            and sufficient sample sizes help approximate the <idx>central limit theorem</idx><term>central limit theorem</term>, giving confidence 
-            that the observed test performance reflects underlying reality rather than random chance. Ultimately, the estimated test performance depends 
-            heavily on the chosen metrics (e.g., accuracy, precision, recall, or root-mean-square error), the degree of overlap between datasets, and how 
-            effectively the original data was partitioned.
+            and sufficient sample sizes allow us to rely on the <idx>central limit theorem</idx><term>central limit theorem</term>. This theorem states 
+            that when we take many reasonably large random samples from a population, the averages of those samples tend to form a bell-shaped (normal) 
+            distribution centered on the true population average, even if the population itself is not bell-shaped. This gives confidence that the observed 
+            test performance reflects underlying reality rather than random chance. Ultimately, the estimated test performance depends heavily on the chosen 
+            metrics (e.g., accuracy, precision, recall, or root-mean-square error), the degree of overlap between datasets, and how effectively the original 
+            data was partitioned.
         </p>
 
         <assemblage xml:id="asm-loan-testing-example">
@@ -1243,10 +1250,13 @@
         <title>Model Postprocessing</title>
 
         <p>
-            Once a model has been trained, various model postprocessing steps that may be needed before its predictions 
-            can be used in real-world applications. For example, if a model performing <idx>binary classification</idx><term>binary classification</term> 
-            outputs a raw probability score, but the system requires a discrete, categorical answer, developers must select appropriate 
-            <idx>classification threshold</idx><term>classification thresholds</term> to convert continuous outputs into hard decisions.
+            Once a model has been trained, various postprocessing steps may be needed before its predictions can be used in real-world 
+            applications. For example, a model performing <idx>binary classification</idx><term>binary classification</term> sorts each 
+            input into one of exactly two categories, such as approve or deny. Many of these models output a raw probability score between 
+            0 and 1 rather than a direct yes-or-no answer. When the system requires a discrete, categorical answer, developers must select 
+            an appropriate <idx>classification threshold</idx><term>classification threshold</term>, the cutoff value that decides which 
+            category a score falls into. For instance, with a threshold of 0.5, a loan application scoring 0.7 would be labeled approve, 
+            while one scoring 0.3 would be labeled deny. Raising or lowering the threshold changes how cautious the model's decisions are.
         </p>
 
         <assemblage xml:id="asm-model-postprocessing-example">
